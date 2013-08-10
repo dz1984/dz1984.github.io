@@ -1,19 +1,19 @@
-title:            Site Title
+title:            1984年產物 
 tagline:          A short tagline
 description:      Describe your website.
 #Comment out url when working locally to resolve base urls correctly
-url:              http://your-site.com
+#url:              http://your-site.com
 
 # Owner/author information
 owner:
-  name:           Your Name
+  name:           DonaldIsFreak 
   avatar:         bio-photo.jpg
   bio:            "Describe your self."
-  email:          your@email.com
+  email:          ron81018@gmail.com 
   # Social networking links are used in author-bio sidebar. Update and remove as you like.
   twitter:        
   facebook:       
-  github:         
+  github:         DonaldIsFreak 
   linkedin:       
   instagram:      
   lastfm:         
@@ -30,18 +30,13 @@ bing_verify:
 # Links to include in top navigation
 # For external links add external: true
 links:
-  - title: About
-    url: /about
-  - title: Articles
+  - title: 關於我 
+    url: /aboutme
+  - title: 文章 
     url: /articles
-  - title: Theme Setup
-    url: /theme-setup
-  - title: Made Mistakes
-    url: http://mademistakes.com
-    external: true
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    America/New_York
+timezone:    Asia/Taipei 
 future:      true
 pygments:    true
 markdown:    kramdown

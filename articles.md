@@ -1,9 +1,9 @@
 ---
 layout: post-index
 permalink: /articles/index.html
-title: Articles
+title: 文章 
 tagline: A List of Posts
 tags: [blog, graphic design]
 image:
-  feature: texture-feature-03.jpg
+  feature: texture-feature-01.jpg
 ---
