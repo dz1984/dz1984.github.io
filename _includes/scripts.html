@@ -11,5 +11,31 @@
 
   ga('create', '{{ site.google_analytics }}', 'githb.io');
   ga('send', 'pageview');
+  
+ $(function() {
+  var minFont = 15.0,
+	  maxFont = 40.0,
+	  diffFont = maxFont - minFont,
+	  size = 0;
+   
+  {% assign max = 1.0 %}
+  {% for tag in site.tags %}
+	 {% if tag[1].size > max %}
+		{% assign max = tag[1].size %}
+	 {% endif %}
+  {% endfor %}
+		
+  {% for tag in site.tags %}
+	 size = (Math.log({{ tag[1].size }}) / Math.log({{ max }})) * diffFont + minFont;
+	 $("#{{ forloop.index }}").css("font-size", size + "px");
+  {% endfor %}
+
+  $('.tag-cloud a[class^="__tag"]').click(function() {
+	 $('.post-list').empty();
+	 $('#list_' + $(this).attr('id')).each(function() {
+		$('.post-list').append('<ul>' + $(this).html() + '</ul>');
+	 });
+  });
+});
 </script>
 {% endif %}

@@ -1,14 +1,14 @@
 title:            1984年產物 
 tagline:          A short tagline
-description:      Describe your website.
+description:      自己專屬個人網站，會放一些有關Coding的心得，或是寫寫抒發文
 #Comment out url when working locally to resolve base urls correctly
-#url:              http://your-site.com
+url:              http://DonaldIsFreak.github.io/
 
 # Owner/author information
 owner:
   name:           DonaldIsFreak 
   avatar:         bio-photo.jpg
-  bio:            "Describe your self."
+  bio:            "I love Programming that lets me Build a lot of Dreams on the computer."
   email:          ron81018@gmail.com 
   # Social networking links are used in author-bio sidebar. Update and remove as you like.
   twitter:        
