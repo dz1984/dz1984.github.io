@@ -1,5 +1,5 @@
 title:            1984年產物 
-tagline:          A short tagline
+tagline:          
 description:      自己專屬個人網站，會放一些有關Coding的心得，或是寫寫抒發文
 #Comment out url when working locally to resolve base urls correctly
 url:              http://DonaldIsFreak.github.io
@@ -19,7 +19,7 @@ owner:
   lastfm:         
   tumblr:         
   # For Google Authorship https://plus.google.com/authorship
-  google_plus:    
+  google_plus:    https://plus.google.com/102226996973468813662/
 
 # Analytics and webmaster tools stuff goes here
 google_analytics:   UA-43075793-1
@@ -34,6 +34,8 @@ links:
     url: /aboutme
   - title: 文章 
     url: /articles
+  - title: 標籤
+    url: /tags
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    Asia/Taipei 
