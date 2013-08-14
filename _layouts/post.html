@@ -2,6 +2,7 @@
 <!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
 <!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<<<<<<< HEAD
 <!--[if gt IE 8]><!--> 
 <html>
 <!--<![endif]-->
@@ -10,11 +11,20 @@
 	</head>
 
 	<body>
+=======
+<!--[if gt IE 8]><!--> <html><!--<![endif]-->
+<head>
+{% include head.html %}
+</head>
+
+<body>
+>>>>>>> c10d5ccdbc476771b4223e21f4d777339aa5402e
 
 	{% include chrome-frame.html %}
 
 	{% include navigation.html %}
 
+<<<<<<< HEAD
 	{% if page.image.feature %}
 	<img class="img-polaroid"src="{{ site.url }}/images/{{ page.image.feature }}" alt="{{ page.title }} feature image">
 	{% endif %}
@@ -57,6 +67,46 @@
 			{% include footer.html %}
 		</div> <!-- container -->
 	</div><!-- footer -->
+=======
+{% if page.image.feature %}
+  <img class="img-polaroid"src="{{ site.url }}/images/{{ page.image.feature }}" alt="{{ page.title }} feature image">
+{% endif %}
+
+<div id="wrap">
+	<div class="container">
+	<div class="row">
+	<div class="span4">
+    {% include author-bio.html %}
+  </div>
+  <div class="span8">
+  <article>
+	<div class="pull-right"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time></div>
+	<div class="page-header">
+	<h1>{{ page.title }}</h1>
+    <h3>{{ page.tagline }}</h3>
+    </div><!-- page-header -->
+
+    <div class="article">
+      {{ content }}
+      <footer  class="muted credit">
+	  	<div>Tag:{% for tag in page.tags %} 
+			<a href="/tags/#{{ tag }}" class="label">#{{ tag }} </a>
+			{% endfor %}
+		</div>
+      </footer>
+    </div><!-- /.article-wrap -->
+  </article>
+	</div><!-- span8 -->
+	</div> <!-- row -->
+	</div> <!-- container -->
+</div> <!-- wrap -->
+<hr/>
+<div id="footer">
+	<div class="container">
+		{% include footer.html %}
+	</div> <!-- container -->
+</div><!-- footer -->
+>>>>>>> c10d5ccdbc476771b4223e21f4d777339aa5402e
 
 	{% include scripts.html %}	        
 
