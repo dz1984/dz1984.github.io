@@ -2,41 +2,45 @@
 <!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
 <!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-tw"><!--<![endif]-->
+<!--[if gt IE 8]><!--> <html><!--<![endif]-->
 <head>
 {% include head.html %}
 </head>
 
-<body class="page" itemscope itemtype="http://schema.org/WebPage">
+<body>
 
 {% include chrome-frame.html %}
 
 {% include navigation.html %}
 
-{% if page.image.feature %}<div class="image-wrap">
-  <img src="{{ site.url }}/images/{{ page.image.feature }}" alt="{{ page.title }} feature image" itemprop="primaryImageOfPage">
-</div><!-- /.image-wrap -->{% endif %}
-
-<div id="main" role="main"  itemprop="mainContentOfPage">
-  <div class="article-author-top">
-    {% include author-bio.html %}
-  </div>
-  <article itemscope itemtype="http://schema.org/CreativeWork">
-    <div class="headline-wrap">
-      <h1 itemprop="headline">{{ page.title }}</h1>
-    </div><!--/ .headline-wrap -->
-    <div class="article-wrap" itemprop="text">
-      {{ content }}
-    </div><!-- /.article-wrap -->
-  </article>
-</div><!-- /#index -->
-
-<div class="footer-wrap">
-  <footer>
+{% if page.image.feature %}
+  <img class="img-polaroid" src="{{ site.url }}/images/{{ page.image.feature }}" alt="{{ page.title }} feature image" style="width:100%">
+{% endif %}
+<div id="wrap">
+<div class="container">
+	<div class="row">
+		<div class="span4">
+		{% include author-bio.html %}
+		</div>
+	  
+		<div class="span8">
+		  <article>
+			<div class="page-header">
+			  <h1>{{ page.title }}</h1>
+			</div><!--/ .headline-wrap -->
+			<div class="article">
+			  {{ content }}
+			</div><!-- /.article-wrap -->
+		  </article>
+		</div>
+	</div><!-- row -->
+</div><!-- container -->
+</div><!-- wrap -->
+<div id="footer">
+<div class="container">
     {% include footer.html %}
-  </footer>
-</div><!-- /.footer-wrap -->
-
+</div> <!-- container -->
+</div><!-- footer -->
 {% include scripts.html %}          
 
 </body>

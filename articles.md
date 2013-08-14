@@ -1,8 +1,8 @@
 ---
 layout: post-index
 permalink: /articles/index.html
-title: 文章 
-tagline: 所有的文章都在這囉！
+title: 
+tagline: 
 tags: [blog]
 image:
   feature: texture-feature-01.jpg

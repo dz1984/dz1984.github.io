@@ -2,54 +2,58 @@
 <!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
 <!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<!--[if gt IE 8]><!--> <html><!--<![endif]-->
 <head>
 {% include head.html %}
 </head>
 
-<body class="articles" itemscope itemtype="http://schema.org/WebPage">
+<body>
 
 {% include chrome-frame.html %}
 
 {% include navigation.html %}
 
-<div class="image-wrap">
-  <div class="headline-wrap">
+<div>
+  <div>
+    <img class="img-polaroid" src="{{ site.url }}/images/{{ page.image.feature }}" alt="{{ page.title }} feature image">
     <h1>{{ page.title }}</h1>
     {% if page.tagline %}<h2 class="hidden-phone">{{ page.tagline }}</h2>{% endif %}
   </div><!--/ .headline-wrap -->
-  <img src="{{ site.url }}/images/{{ page.image.feature }}" alt="{{ page.title }} feature image">
+
 </div><!-- /.image-wrap -->
+<div id="wrap">
+	<div class="container">
+		<div class="row">
+			<div class="span4">
+			{% include author-bio.html %}
+			</div>
 
-<div class="article-author-top">
-  {% include author-bio.html %}
-</div>
-
-<div id="index" itemprop="mainContentOfPage" itemscope itemtype="http://schema.org/Blog">
-  {% for post in site.posts %}  
-  {% unless post.next %}
-    <h3>{{ post.date | date: '%Y' }}</h3>
-    <hr />
-    {% else %}
-      {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
-      {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
-      {% if year != nyear %}
-        <h3>{{ post.date | date: '%Y' }}</h3>
-        <hr />
-      {% endif %}
-    {% endunless %}
-    <article itemscope itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
-      <h2 itemprop="headline"><a href="{{ site.url }}{{ post.url }}" rel="bookmark" title="{{ post.title }}">{{ post.title }}</a></h2>
-      <p itemprop="text">{% if post.description %}{{ post.description }}{% else %}{{ post.content | strip_html | strip_newlines | truncate: 120 }}{% endif %}</p>
-    </article>
-  {% endfor %}
-</div><!-- /#index -->
-
-<div class="footer-wrap">
-  <footer>
+			<div class="span8">
+			{% for post in site.posts %}  
+			{% unless post.next %}
+			<h2 class="page-header">{{ post.date | date: '%Y' }}</h2>
+			{% else %}
+			  {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+			  {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
+			  {% if year != nyear %}
+				<h2 class="page-header">{{ post.date | date: '%Y' }}</h2>
+			  {% endif %}
+			{% endunless %}
+			<article>
+				<h3><a href="{{ site.url }}{{ post.url }}" rel="bookmark" title="{{ post.title }}">{{ post.title }}</a></h3>
+				<p itemprop="text">{% if post.description %}{{ post.description }}{% else %}{{ post.content | strip_html | strip_newlines | truncate: 80 }}{% endif %}</p>
+			</article>
+			{% endfor %}
+			</div>
+			</div><!-- row -->
+	</div><!-- container -->
+</div><!-- wrap -->
+<hr/>
+<div id="footer">
+<div class="container">
     {% include footer.html %}
-  </footer>
-</div><!-- /.footer-wrap -->
+</div> <!-- container -->
+</div><!-- footer -->
 
 {% include scripts.html %}
   
