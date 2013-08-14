@@ -1,11 +1,12 @@
 <img src="{{ site.url }}/images/{{ site.owner.avatar }}" class="img-circle" alt="{{ site.owner.name }} bio photo" width="200" height="200"></a>
 <h2>{{ site.owner.name }}</h2>
 <p>{{ site.owner.bio }}</p>
-{% if site.owner.twitter %}<p style="text-indent:0;margin-top:1.5em;"><a href="http://twitter.com/{{ site.owner.twitter }}" target="_blank"><i class="myicon-twitter"></i> Twitter</a></p>{% endif %}
-{% if site.owner.facebook %}<p style="text-indent:0;"><a href="http://facebook.com/{{ site.owner.facebook }}" target="_blank"><i class="myicon-facebook"></i> Facebook</a></p>{% endif %}
-{% if site.owner.google_plus %}<p style="text-indent:0;"><a href="{{ site.owner.google_plus }}" target="_blank"><i class="myicon-google-plus"></i> Google+</a></p>{% endif %}
-{% if site.owner.linkedin %}<p style="text-indent:0;"><a href="http://linkedin.com/in/{{ site.owner.linkedin }}" target="_blank"><i class="myicon-linkedin"></i> LinkedIn</a></p>{% endif %}
-{% if site.owner.instagram %}<p style="text-indent:0;"><a href="http://instagram.com/{{ site.owner.instagram }}" target="_blank"><i class="myicon-instagram"></i> Instagram</a></p>{% endif %}
-{% if site.owner.github %}<p style="text-indent:0;"><a href="http://github.com/{{ site.owner.github }}" target="_blank"><i class="myicon-github"></i> Github</a></p>{% endif %}
-{% if site.owner.lastfm %}<p style="text-indent:0;"><a href="http://lastfm.com/{{ site.owner.lastfm }}" target="_blank"><i class="myicon-lastfm"></i> Last.fm</a></p>{% endif %}
-{% if site.owner.tumblr %}<p style="text-indent:0;"><a href="http://{{ site.owner.tumblr }}.tumblr.com" target="_blank"><i class="myicon-tumblr"></i> Tumblr</a></p>{% endif %}
+{% if site.owner.twitter %}<p style="text-indent:0;margin-top:1.5em;"><a class="symbol" title="twitter"href="http://twitter.com/{{ site.owner.twitter }}" target="_blank">Twitter</a></p>{% endif %}
+{% if site.owner.facebook %}<p style="text-indent:0;"><a class="symbol" title="facebook" href="http://facebook.com/{{ site.owner.facebook }}" target="_blank">Facebook</a></p>{% endif %}
+{% if site.owner.google_plus %}<p style="text-indent:0;"><a class="symbol" title="googleplus" href="https://plus.google.com/{{ site.owner.google_plus }}" target="_blank">Google+</a></p>{% endif %}
+{% if site.owner.linkedin %}<p style="text-indent:0;"><a class="symbol" title="linkedin" href="http://linkedin.com/in/{{ site.owner.linkedin }}" target="_blank">LinkedIn</a></p>{% endif %}
+{% if site.owner.instagram %}<p style="text-indent:0;"><a class="symbol" title="instagram" href="http://instagram.com/{{ site.owner.instagram }}" target="_blank">Instagram</a></p>{% endif %}
+{% if site.owner.github %}<p style="text-indent:0;"><a class="symbol" title="githubalt" href="http://github.com/{{ site.owner.github }}" target="_blank">Github</a></p>{% endif %}
+{% if site.owner.blogger %}<p style="text-indent:0;"><a class="symbol" title="blogger" href="http://{{ site.owner.blogger }}.blogspot.tw/" target="_blank">Blogger</a></p>{% endif %}
+{% if site.owner.tumblr %}<p style="text-indent:0;"><a class="symbol" title="tumblr" href="http://{{ site.owner.tumblr }}.tumblr.com" target="_blank">Tumblr</a></p>{% endif %}
+{% if site.owner.aboutme %}<p style="text-indent:0;"><a class="symbol" title="aboutme" href="http://about.me/{{ site.owner.aboutme }}" target="_blank">Aboutme</a></p>{% endif %}
