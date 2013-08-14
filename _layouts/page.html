@@ -2,7 +2,6 @@
 <!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
 <!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
-<<<<<<< HEAD
 <!--[if gt IE 8]><!-->
 <html>
 <!--<![endif]-->
@@ -47,48 +46,4 @@
 		</div><!-- footer -->
 		{% include scripts.html %}          
 	</body>
-=======
-<!--[if gt IE 8]><!--> <html><!--<![endif]-->
-<head>
-{% include head.html %}
-</head>
-
-<body>
-
-{% include chrome-frame.html %}
-
-{% include navigation.html %}
-
-{% if page.image.feature %}
-  <img class="img-polaroid" src="{{ site.url }}/images/{{ page.image.feature }}" alt="{{ page.title }} feature image" style="width:100%">
-{% endif %}
-<div id="wrap">
-<div class="container">
-	<div class="row">
-		<div class="span4">
-		{% include author-bio.html %}
-		</div>
-	  
-		<div class="span8">
-		  <article>
-			<div class="page-header">
-			  <h1>{{ page.title }}</h1>
-			</div><!--/ .headline-wrap -->
-			<div class="article">
-			  {{ content }}
-			</div><!-- /.article-wrap -->
-		  </article>
-		</div>
-	</div><!-- row -->
-</div><!-- container -->
-</div><!-- wrap -->
-<div id="footer">
-<div class="container">
-    {% include footer.html %}
-</div> <!-- container -->
-</div><!-- footer -->
-{% include scripts.html %}          
-
-</body>
->>>>>>> c10d5ccdbc476771b4223e21f4d777339aa5402e
 </html>
