@@ -44,7 +44,7 @@ self:        true
 future:      true
 pygments:    true
 lsi:         false
-markdown:    kramdown
+markdown:    rdiscount 
 
 # https://github.com/mojombo/jekyll/wiki/Permalinks
 permalink:   /:categories/:title
