@@ -39,9 +39,11 @@ links:
     url: /tags
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    Asia/Taipei 
+timezone:    Asia/Taipei
+self:        true
 future:      true
 pygments:    true
+lsi:         false
 markdown:    kramdown
 
 # https://github.com/mojombo/jekyll/wiki/Permalinks

@@ -6,7 +6,6 @@ tags: [font,icon,jekyll]
 image:
   feature: texture-feature-01.jpg
 ---
-
 {% highlight ruby %}
 def foo
 	puts "foo"
