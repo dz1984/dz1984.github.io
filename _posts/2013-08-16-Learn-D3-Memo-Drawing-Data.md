@@ -66,7 +66,8 @@ d3.select("body").selectAll("p")
 		return barHeight+'px'
 	});
 {% endhighlight %}
-[Demo](http://jsbin.com/asapuh/)
+[Demo](http://bit.ly/17IF1ns)
+
 ### 使用SVG繪畫圓點
 CSS繪圖能力有限，所以~改用SVG來畫圖，先新增一個SVG元素插入body。
 {% highlight js %}
@@ -100,7 +101,7 @@ circles.attr('cx',function(d,i){
 	return d*0.2;
 });
 {% endhighlight %}
-[Demo](http://jsbin.com/ubewek/)
+[Demo](http://bit.ly/16JcrWp)
 
 ### SVG版長條圖
 把原本CSS版長條圖改成SVG版本，先建立SVG物件。
@@ -145,11 +146,13 @@ labels.attr({
 	"text-anchor":"middle"
 });
 {% endhighlight %}
-[Demo](http://jsbin.com/OfEkiYe/)
+[Demo](http://bit.ly/13PYtMB)
+
 ### 畫個散佈圖
 要畫散佈圖一定要有x,y的座標資料，所以~我改寫亂數函數，可以調整參數一次產生幾個亂數。
 {% highlight js %}
-/* Generate random function 
+/*
+	Generate random function.
 	rand(max) - generate a random number between zero and max.
 	rand(min,max) - generate a random number between min and max.
 	rand(min,max,n) - genrate n random numbers between min and max.
@@ -224,3 +227,6 @@ labels.attr({
 });
 {% endhighlight %}
 [Demo](http://jsbin.com/eRaYOPO/)
+
+#### 參考資料
+1. [Interactive Data Visualization for the Web-Ch.6](http://bit.ly/14AnxY9)
