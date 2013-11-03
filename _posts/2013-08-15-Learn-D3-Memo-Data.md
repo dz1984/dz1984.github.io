@@ -2,7 +2,7 @@
 layout: post
 title: 學習D3筆記 - 讀取資料(草稿)
 categories: articles
-tags: [D3,javascript,Memo]
+tags: [D3,Javascript,Memo]
 image:
   feature: texture-feature-01.jpg
 date: 2013-08-15 20:30

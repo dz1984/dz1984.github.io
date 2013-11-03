@@ -2,7 +2,7 @@
 layout: post
 title: 學習D3筆記 - 刻度(草稿)
 categories: articles
-tags: [D3,javascript,Memo]
+tags: [D3,Javascript,Memo]
 image:
   feature: texture-feature-01.jpg
 date: 2013-08-20 22:33

@@ -35,6 +35,8 @@ links:
     url: /aboutme
   - title: 文章 
     url: /articles
+  - title: 簡報
+    url: /presentations
   - title: 標籤
     url: /tags
 
