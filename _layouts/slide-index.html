@@ -41,7 +41,7 @@
 							<h2 class="page-header">{{ post.date | date: '%Y' }}</h2>
 							{% endif %}
 						{% endunless %}
-						{% if post.categories contains 'presentations' %}
+						{% if post.categories contains 'slides' %}
 							<article>
 								<h3><a href="{{ site.url }}{{ post.url }}" rel="bookmark" title="{{ post.title }}">{{ post.title }}</a></h3>
 								<p itemprop="text">{% if post.description %}{{ post.description }}{% else %}{{ post.content | strip_html | strip_newlines | truncate: 80 }}{% endif %}</p>

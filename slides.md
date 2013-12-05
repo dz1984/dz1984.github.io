@@ -1,6 +1,6 @@
 ---
-layout: present-index
-permalink: /presentations/index.html
+layout: slide-index
+permalink: /slides/index.html
 title: 
 tagline: 
 tags: [blog]
