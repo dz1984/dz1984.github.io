@@ -30,7 +30,7 @@
 					{% include author-bio.html %}
 					</div>
 					<div class="span8">
-					{% for post in site.posts %}  
+					{% for post in paginator.posts %}  
 						{% unless post.next %}
 						<h2 class="page-header">{{ post.date | date: '%Y' }}</h2>
 						{% else %}
@@ -47,11 +47,38 @@
 							</article>
 						{% endif %}
 					{% endfor %}
+					
+					{% if paginator.total_pages > 1 %}
+						<ul class="pager">
+							{% if paginator.previous_page %}
+								<li><a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a></li>
+							{% else %}
+								<li class="disabled"><span>&laquo; Prev</span></li>
+							{% endif %}
+
+							{% for page in (1.paginator.total_pages) %}
+								{% if page == paginator.page %}
+								  <em>{{ page }}</em>
+								{% elsif page == 1 %}
+								  <a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+								{% else %}
+								  <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+								{% endif %}
+							{% endfor %}
+
+							{% if paginator.next_page %}
+								<li><a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a></li>
+							{% else %}
+								<li class="disabled"><span>Next &raquo;</span></li>
+							{% endif %}
+						</ul>
+					{% endif %}
 					</div>
-					</div><!-- row -->
+				</div><!-- row -->
 			</div><!-- container -->
 		</div><!-- wrap -->
 		<hr/>
+
 		<div id="footer">
 		<div class="container">
 			{% include footer.html %}
@@ -59,6 +86,6 @@
 		</div><!-- footer -->
 
 		{% include scripts.html %}
-	  
+		{% include pagination-scripts.html %}
 	</body>
 </html>
