@@ -67,7 +67,7 @@ IEEE專業協會認為2014年可以看到整合識別物件至資訊網路的物
 ### 預言10：Hadoop有足夠時間注入企業強心針
 雖然Hadoop是夢幻平台，但仍需要更多成果，在2014年，將會看到Hadoop技術發展成更加安全性、操作管理、資源管理，以及多點備援(multi-site replication)。
 
-![Time for Hadoop to Get Some Enterprise Hardening](/images/BigData_Predictions_For_2014/010.jpg
+![Time for Hadoop to Get Some Enterprise Hardening](/images/BigData_Predictions_For_2014/010.jpg)
 
 
 ### 預言11：2014年底將會有NoSQL資料庫公司成功首次公開募股
