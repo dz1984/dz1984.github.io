@@ -68,3 +68,6 @@ image:
 <blockquote>研究Open Source的專案時，要先去瞭解有什麼與自己以往不同想法的新功能特色，並牢牢記下再與其他的Project比較時，就有Know How可以運用，也是對自己強化核心能力，須要常常做的功課，進而以批評式學習來看待專案之間的差異性，能提出一定層度的批評比較，而表示對此有很深入之瞭解。</blockquote>
 <blockquote>要快速瞭解一項技術或產品時，先不用急著去讀Manual，可以從Feature或是About看起，明白What It Can Do?What It Can't Do?，更高竿一點就是從Feature去揣測運作原理及設計架構。</blockquote>
 <blockquote>除了每天的學習外，還可以多逛有News的網站，去收集更多新的知識和想法，能刺激新鮮的創意誕生。</blockquote>
+
+### 2010
+<blockquote>存在本身就是意義，意義一直都存在。</blockquote>
