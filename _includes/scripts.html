@@ -1,16 +1,12 @@
-<script src="{{ site.url }}/assets/js/main.min.js"></script>
-<script src="{{ site.url }}/assets/js/vendor/jquery.tagcloud.js"></script>
-{% if site.google_analytics %}
-<!-- Asynchronous Google Analytics snippet -->
-<script>
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+<script type="text/javascript" src="{{ site.url }}/assets/js/main.min.js"></script>
+<script type="text/javascript" src="{{ site.url }}/assets/js/vendor/jquery.tagcloud.js"></script>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/x-mathjax-config">
+	MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+</script>
+<script type="text/javascript">
 
-	ga('create', '{{ site.google_analytics }}', 'githb.io');
-	ga('send', 'pageview');
-  
+	// Enable Tag Cloud plugin
 	$.fn.tagcloud.defaults = {
 	  size: {start: 14, end: 18, unit: 'pt'},
 	  color: {start: '#cde', end: '#f52'}
@@ -19,5 +15,17 @@
 	$(function () {
 	  $('#tag_cloud a').tagcloud();
 	});
+</script>
+{% if site.google_analytics %}
+<!-- Asynchronous Google Analytics snippet -->
+<script type="text/javascript">
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', '{{ site.google_analytics }}', 'githb.io');
+	ga('send', 'pageview');
+
 </script>
 {% endif %}
