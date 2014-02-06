@@ -41,8 +41,7 @@ a.symbol:before {
     content: attr(title);
     font-size: 150%;
 }
-
-ol li,ul li {
+.article ol li,.article ul li {
 	font-size: 16pt;
 	line-height: 24pt;
 }
