@@ -7,6 +7,8 @@ tags: [quote]
 image:
   feature: texture-feature-01.jpg
 ---
+### 2014
+<blockquote>人無遠慮，必有近憂，正常人預期未來時，會傾向於樂觀，自我感覺良好，只有悲觀主義者比較接近事實。</blockquote>
 ### 2013
 <blockquote>「兩個不同頻率群組，經由媒介或特定方式，影響群組內各分子行為，進而改變群組頻率，使原本不同頻率群組，逐漸形成共振效應」。原來，我之前的想法，就是「多邊平台(Multi-Sided Platforms)」，即是將兩個截然不同、但相互依賴的客戶群，聚集在一起的平台。</blockquote>
 <blockquote>如果用一個字形容自己，那字便是”傲”，是集結傲氣，傲骨，傲姿而成，我又想當一匹狼，故以”傲狼”自稱口貝！</blockquote>
@@ -68,3 +70,6 @@ image:
 <blockquote>研究Open Source的專案時，要先去瞭解有什麼與自己以往不同想法的新功能特色，並牢牢記下再與其他的Project比較時，就有Know How可以運用，也是對自己強化核心能力，須要常常做的功課，進而以批評式學習來看待專案之間的差異性，能提出一定層度的批評比較，而表示對此有很深入之瞭解。</blockquote>
 <blockquote>要快速瞭解一項技術或產品時，先不用急著去讀Manual，可以從Feature或是About看起，明白What It Can Do?What It Can't Do?，更高竿一點就是從Feature去揣測運作原理及設計架構。</blockquote>
 <blockquote>除了每天的學習外，還可以多逛有News的網站，去收集更多新的知識和想法，能刺激新鮮的創意誕生。</blockquote>
+
+### 2010
+<blockquote>存在本身就是意義，意義一直都存在。</blockquote>
