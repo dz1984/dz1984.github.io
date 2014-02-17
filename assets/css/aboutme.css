@@ -1,0 +1,12 @@
+.aboutme_main section > img {
+	position: absolute;
+	z-index: 1;
+	max-width: 100%;
+}
+
+.aboutme_main .page {
+	font-size: 14pt;
+	width: 50%;
+	margin-left:25%;
+	margin-top: 25%;
+}
