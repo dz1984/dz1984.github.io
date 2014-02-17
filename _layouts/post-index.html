@@ -48,7 +48,7 @@
 								<li class="disabled"><span>&laquo; Prev</span></li>
 							{% endif %}
 
-							{% for page in (1.paginator.total_pages) %}
+							{% for page in (1..paginator.total_pages) %}
 								{% if page == paginator.page %}
 								  <em>{{ page }}</em>
 								{% elsif page == 1 %}
