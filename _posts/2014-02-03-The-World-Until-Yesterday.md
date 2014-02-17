@@ -21,10 +21,11 @@ image:
 
 分配公式：
 $$f(x)=\frac{\lambda\^xe^{-\lambda}}{x!} x=0,1,2,...,\infty$$
-```python
+
+{% highlight python %}
 # Poisson distribution
 f = lambda la,x: ((la**x)*(math.exp(1)**(-la)))/math.factorial(x);
 
 # 平均每1.5小時就有一人
 f(8.0,3) # 0.02862614424768102
-```
+{% endhighlight %}
