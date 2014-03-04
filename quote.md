@@ -8,6 +8,7 @@ image:
   feature: texture-feature-01.jpg
 ---
 ### 2014
+<blockquote>用心體會framework，每個背後的設計理念。</blockquote>
 <blockquote>人無遠慮，必有近憂，正常人預期未來時，會傾向於樂觀，自我感覺良好，只有悲觀主義者比較接近事實。</blockquote>
 ### 2013
 <blockquote>「兩個不同頻率群組，經由媒介或特定方式，影響群組內各分子行為，進而改變群組頻率，使原本不同頻率群組，逐漸形成共振效應」。原來，我之前的想法，就是「多邊平台(Multi-Sided Platforms)」，即是將兩個截然不同、但相互依賴的客戶群，聚集在一起的平台。</blockquote>
