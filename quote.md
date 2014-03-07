@@ -8,6 +8,7 @@ image:
   feature: texture-feature-01.jpg
 ---
 ### 2014
+<blockquote>若有十分話，我只會說滿九分，剩下一分是留給自己轉身餘地。</blockquote>
 <blockquote>用心體會framework，每個背後的設計理念。</blockquote>
 <blockquote>人無遠慮，必有近憂，正常人預期未來時，會傾向於樂觀，自我感覺良好，只有悲觀主義者比較接近事實。</blockquote>
 ### 2013
