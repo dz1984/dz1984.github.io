@@ -9,6 +9,8 @@ image:
 ---
 ### 2014
 <blockquote>先剝奪你所擁有的，在一點一滴地還給你，這就叫作「恩賜」。</blockquote>
+<blockquote>「心靜了，世界就安靜。有一顆安靜的心，人生才處處有驛站。 」 -- 佚名<br/><br/>
+瞬間澭入太多同性質訊息，反而讓人看不清楚，像是擾動水面…現在最需要的是安靜地思考。</blockquote>
 <blockquote>若有十分話，我只會說滿九分，剩下一分是留給自己轉身餘地。</blockquote>
 <blockquote>用心體會framework，每個背後的設計理念。</blockquote>
 <blockquote>人無遠慮，必有近憂，正常人預期未來時，會傾向於樂觀，自我感覺良好，只有悲觀主義者比較接近事實。</blockquote>
