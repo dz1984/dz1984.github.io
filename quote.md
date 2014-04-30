@@ -8,6 +8,7 @@ image:
   feature: texture-feature-01.jpg
 ---
 ### 2014
+<blockquote>看著TODO LIST，一個一個減少，又一個一個增加，這就是「人蔘」。</blockquote>
 <blockquote>先剝奪你所擁有的，在一點一滴地還給你，這就叫作「恩賜」。</blockquote>
 <blockquote>「心靜了，世界就安靜。有一顆安靜的心，人生才處處有驛站。 」 -- 佚名<br/><br/>
 瞬間澭入太多同性質訊息，反而讓人看不清楚，像是擾動水面…現在最需要的是安靜地思考。</blockquote>
