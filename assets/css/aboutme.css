@@ -1,13 +1,14 @@
 .aboutme_main section > img {
-	position: absolute;
-	z-index: -1;
-	max-width: 100%;
-    opacity: 0.5;
+    position: absolute;
+    max-width: 100%;
+    opacity: 0.6;
 }
 
 .aboutme_main .page {
-	font-size: 28pt;
-	width: 80%;
-	margin-left:15%;
-	margin-top: 25%;
+    position: relative;
+    font-size: 28pt;
+    width: 80%;
+    margin-left:15%;
+    margin-top: 25%;
+    z-index: 3;
 }
