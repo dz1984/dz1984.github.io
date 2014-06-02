@@ -9,6 +9,7 @@ image:
 ---
 ### 2014
 <blockquote>用工程師的話來講”認錯改過”就是”Find the bug and fix it.”</blockquote>
+<blockquote>不是咄咄逼人，把人逼到啞口無言，就叫作「贏」。</blockquote>
 <blockquote>Google猶如毒販，提供一個又一個令人上癮服務。<br/><br/>就拿GA(Google Analytics)來說，他給予的已經超乎使用者所能想像，而且~他只用一套相同工具，就能與別人換來無數豐富有價值的資料，使用它就像吸毒一樣，或許會帶來欣慰和快感，但同時它也正在侵蝕你的身體。
 </blockquote>
 <blockquote>看著TODO LIST，一個一個減少，又一個一個增加，這就是「人蔘」。</blockquote>
