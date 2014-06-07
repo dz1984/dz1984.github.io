@@ -2,7 +2,7 @@ title:            1984年產物
 tagline:          
 description:      自己專屬個人網站，會放一些有關Coding的心得，或是寫寫抒發文
 #Comment out url when working locally to resolve base urls correctly
-url:              http://localhost:4000
+url:              http://dz1984.info
 
 # Owner/author information
 owner:
