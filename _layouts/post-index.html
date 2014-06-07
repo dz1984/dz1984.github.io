@@ -24,20 +24,18 @@
 					<div class="col-md-8">
 					{% for post in paginator.posts %}  
 						{% unless post.next %}
-						<h2 class="page-header">{{ post.date | date: '%Y' }}</h2>
+						<h2 class="page-header">{{ post.date | date: '%Y' }}年</h2>
 						{% else %}
 							{% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
 							{% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
 							{% if year != nyear %}
-							<h2 class="page-header">{{ post.date | date: '%Y' }}</h2>
+							<h2 class="page-header">{{ post.date | date: '%Y' }}年</h2>
 							{% endif %}
 						{% endunless %}
-						{% if post.categories contains 'articles' %}
 							<article>
 								<h3><a href="{{ site.url }}{{ post.url }}" rel="bookmark" title="{{ post.title }}">{{ post.title }}</a></h3>
 								<p itemprop="text">{% if post.description %}{{ post.description }}{% else %}{{ post.content | strip_html | strip_newlines | truncate: 80 }}{% endif %}</p>
 							</article>
-						{% endif %}
 					{% endfor %}
 					
 					{% if paginator.total_pages > 1 %}

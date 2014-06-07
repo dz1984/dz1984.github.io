@@ -24,15 +24,6 @@
 
 					<div class="col-md-8">
 					{% for post in site.posts %}  
-						{% unless post.next %}
-						<h2 class="page-header">{{ post.date | date: '%Y' }}</h2>
-						{% else %}
-							{% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
-							{% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
-							{% if year != nyear %}
-							<h2 class="page-header">{{ post.date | date: '%Y' }}</h2>
-							{% endif %}
-						{% endunless %}
 						{% if post.categories contains 'slides' %}
 							<article>
 								<h3><a href="{{ site.url }}{{ post.url }}" rel="bookmark" title="{{ post.title }}">{{ post.title }}</a></h3>
