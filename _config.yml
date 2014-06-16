@@ -2,7 +2,7 @@ title:            1984年產物
 tagline:          
 description:      自己專屬個人網站，會放一些有關Coding的心得，或是寫寫抒發文
 #Comment out url when working locally to resolve base urls correctly
-url:              http://dz1984.info
+url:              http://dz1984.info/
 
 # Owner/author information
 owner:
@@ -31,12 +31,10 @@ bing_verify:
 # Links to include in top navigation
 # For external links add external: true
 links:
+  - title: 文章
+    url: /blog
   - title: 關於我 
     url: /aboutme
-  - title: 文章 
-    url: /articles
-  - title: 簡報
-    url: /slides
   - title: 呢喃
     url: /quote
   - title: 標籤
@@ -69,5 +67,5 @@ kramdown:
 
 include: [".htaccess"]
 exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "minimal-mistakes.sublime-project", "minimal-mistakes.sublime-workspace"]
-paginate: 8
-paginate_path: "articles/page:num"
+paginate: 4
+paginate_path: "blog/page:num"

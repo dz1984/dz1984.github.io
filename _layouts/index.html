@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+	<head>
+	{% include head.html %}
+	</head>
+
+	<body>
+		{% include chrome-frame.html %}
+	<div class="container">
+		<div class="main-page">
+			<div class="index-logo">
+				<img src="{{ site.url }}/images/{{ site.owner.avatar }}" class="img-circle" alt="{{ site.owner.name }} bio photo" width="400" height="400">
+			</div>
+			<div class="link-resource">
+				<a class="symbol" title="blogger" href="{{ site.url }}/blog">Blogger</a> 
+				<a class="symbol" title="twitter" href="http://twitter.com/{{ site.owner.twitter }}" target="_blank">Twitter</a>
+				<a class="symbol" title="githubalt" href="http://github.com/{{ site.owner.github }}" target="_blank">Github</a>
+				<a class="symbol" title="googleplus" href="https://plus.google.com/{{ site.owner.google_plus }}" target="_blank">Google+</a>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+  		<div class="footer-note">
+    		{% include footer.html %}
+  		</div>
+	</div>
+
+		{% include scripts.html %}
+	  
+	</body>
+</html>

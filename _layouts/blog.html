@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+	<head>
+	{% include head.html %}
+	</head>
+
+	<body>
+	{% include chrome-frame.html %}
+	<div class="container">
+		<div class="page">
+			{% include navigation.html %}
+		    <div class="articles">
+		    	{% for post in paginator.posts %}
+					<article>
+						<h3>
+							<a href="{{ site.url }}{{ post.url }}" rel="bookmark" title="{{ post.title }}">{{ post.title }}</a>
+						</h3>
+						<p itemprop="text">
+							{% if post.description %}
+								{{ post.description }}
+							{% else %}
+								{{ post.content | strip_html | strip_newlines | truncate: 80 }}
+							{% endif %}
+						</p>
+					</article>  
+		    	{% endfor %}
+		    	
+		    	{% if paginator.total_pages > 1 %}
+					<ul class="pager">
+						{% if paginator.previous_page %}
+							<li><a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a></li>
+						{% else %}
+							<li class="disabled"><span>&laquo; Prev</span></li>
+						{% endif %}
+
+						{% if paginator.next_page %}
+							<li><a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a></li>
+						{% else %}
+							<li class="disabled"><span>Next &raquo;</span></li>
+						{% endif %}
+					</ul>
+				{% endif %}
+		    </div>
+  		</div>
+	</div>
+	<div id="footer">
+  		<div class="footer-note">
+    		{% include footer.html %}
+  		</div>
+	</div>
+
+		{% include scripts.html %}
+	  
+	</body>
+</html>

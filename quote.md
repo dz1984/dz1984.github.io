@@ -4,8 +4,6 @@ permalink: /quote/index.html
 title:  呢喃
 tagline:
 tags: [quote]
-image:
-  feature: texture-feature-01.jpg
 ---
 ### 2014
 <blockquote>用工程師的話來講”認錯改過”就是”Find the bug and fix it.”</blockquote>
