@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.3.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/DOOM2_32.jpg">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/DOOM2_16.jpg">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0/css/all.min.css" integrity="sha256-jTIdiMuX/e3DGJUGwl3pKSxuc6YOuqtJYkM0bGQESA4=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"dz1984.cc","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.10.1","exturl":false,"sidebar":{"position":"right","display":"hide","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="寫在前頭">
+<meta property="og:type" content="article">
+<meta property="og:title" content="運用3D深度感測器探討自然人機互動介面">
+<meta property="og:url" content="http://dz1984.cc/articles/3D-Sensor-NUI/index.html">
+<meta property="og:site_name" content="1984年產物">
+<meta property="og:description" content="寫在前頭">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:image" content="http://dz1984.cc/images/3D_Sensor_NUI/sys_arch.png">
+<meta property="og:image" content="http://dz1984.cc/images/3D_Sensor_NUI/process.png">
+<meta property="article:published_time" content="2013-12-15T04:20:00.000Z">
+<meta property="article:modified_time" content="2023-02-28T00:38:03.838Z">
+<meta property="article:author" content="Donald Zhan">
+<meta property="article:tag" content="3D Sensor">
+<meta property="article:tag" content="NUI">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://dz1984.cc/images/3D_Sensor_NUI/sys_arch.png">
+
+
+<link rel="canonical" href="http://dz1984.cc/articles/3D-Sensor-NUI/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-TW","comments":true,"permalink":"http://dz1984.cc/articles/3D-Sensor-NUI/","path":"articles/3D-Sensor-NUI/","title":"運用3D深度感測器探討自然人機互動介面"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>運用3D深度感測器探討自然人機互動介面 | 1984年產物</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MXEK8ZCR3J"></script>
+  <script class="next-config" data-name="google_analytics" type="application/json">{"tracking_id":"G-MXEK8ZCR3J","only_pageview":false}</script>
+  <script src="/js/third-party/analytics/google-analytics.js"></script>
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">1984年產物</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li>
+        <li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li>
+        <li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags</a></li>
+        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a></li>
+        <li class="menu-item menu-item-quote"><a href="/quote" rel="section"><i class="fa fa-quote-right fa-fw"></i>呢喃</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="Searching..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AF%AB%E5%9C%A8%E5%89%8D%E9%A0%AD"><span class="nav-number">1.</span> <span class="nav-text">寫在前頭</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%83%8C%E6%99%AF"><span class="nav-number">2.</span> <span class="nav-text">背景</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8B%95%E6%A9%9F%E7%9B%AE%E7%9A%84"><span class="nav-number">3.</span> <span class="nav-text">動機目的</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%87%AA%E7%84%B6%E4%BA%BA%E6%A9%9F%E4%BB%8B%E9%9D%A2"><span class="nav-number">4.</span> <span class="nav-text">自然人機介面</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8B%95%E4%BD%9C%E8%BE%A8%E8%AD%98"><span class="nav-number">5.</span> <span class="nav-text">動作辨識</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%B3%BB%E7%B5%B1%E6%9E%B6%E6%A7%8B"><span class="nav-number">6.</span> <span class="nav-text">系統架構</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%93%8D%E4%BD%9C%E6%B5%81%E7%A8%8B"><span class="nav-number">7.</span> <span class="nav-text">操作流程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%83%E8%80%83%E6%96%87%E7%8D%BB"><span class="nav-number">8.</span> <span class="nav-text">參考文獻</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Donald Zhan"
+      src="/images/bio-photo.jpg">
+  <p class="site-author-name" itemprop="name">Donald Zhan</p>
+  <div class="site-description" itemprop="description">自己專屬個人網站，會放一些有關Coding的心得，或是寫寫抒發文</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">54</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">categories</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">56</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/dz1984" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;dz1984" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://twitter.com/donaldzhan" title="Twitter → https:&#x2F;&#x2F;twitter.com&#x2F;donaldzhan" rel="noopener" target="_blank"><i class="fab fa-twitter fa-fw"></i>Twitter</a>
+      </span>
+  </div>
+  <div class="cc-license site-overview-item animated" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="https://cdn.jsdelivr.net/npm/@creativecommons/vocabulary@2020.11.3/assets/license_badges/small/by.svg" alt="Creative Commons"></a>
+  </div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button" aria-label="Back to top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-TW">
+    <link itemprop="mainEntityOfPage" href="http://dz1984.cc/articles/3D-Sensor-NUI/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/bio-photo.jpg">
+      <meta itemprop="name" content="Donald Zhan">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="1984年產物">
+      <meta itemprop="description" content="自己專屬個人網站，會放一些有關Coding的心得，或是寫寫抒發文">
+    </span>
+    
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="運用3D深度感測器探討自然人機互動介面 | 1984年產物">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          運用3D深度感測器探討自然人機互動介面
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2013-12-15 12:20:00" itemprop="dateCreated datePublished" datetime="2013-12-15T12:20:00+08:00">2013-12-15</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/articles/" itemprop="url" rel="index"><span itemprop="name">articles</span></a>
+        </span>
+    </span>
+
+  
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus: </span>
+    
+    <a title="disqus" href="/articles/3D-Sensor-NUI/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="articles/3D-Sensor-NUI/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <h2 id="寫在前頭"><a href="#寫在前頭" class="headerlink" title="寫在前頭"></a>寫在前頭</h2><span id="more"></span>
+<p>今天在整理文件時，無意中發現去年讀研究方法作業，練習如何寫小論文(只寫前三章即可)，當時Kinect正紅，索性就想了這個主題來發揮，可惜因課業繁忙沒有把系統實作出來，真是<strong>殘念呀！(&gt;_&lt;)…</strong></p>
+<ul>
+<li>從這篇文章你可以得到：<ul>
+<li>自然人~妻~機介面初淺知識。</li>
+<li>3D深度感測器結合辨識系統基本輪廓。</li>
+</ul>
+</li>
+<li>無法得到：<ul>
+<li>因沒有完成實體作品，不會有任何程式碼，屬於嘴炮理論。</li>
+<li>結論。(完全是自己寫爽的)</li>
+</ul>
+</li>
+</ul>
+<h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>隨著數位化、資訊化及網路化之應用趨勢廣泛，逐漸從個人電腦延伸至行動電話、電視、家用遊戲機等消費性電子產品，導致有愈來愈多電子產品功能增加，操作方式也變為繁雜，從早期鍵盤輸入，到滑鼠、光筆、搖桿、數位板等輸入工具，使用者與電子產品之間仍產生一道鴻溝。因此，設計再精密的機器，若沒有考慮到使用者的需求，還是無法發揮其效用，故符合簡單、自然、友善、一致的人機互動模式，成為設計使用者介面的重要原則，良好的人機介面可以在使用初期減少學習成本，加快發揮系統效益，扮演介於使用者與機器之間溝通角色。</p>
+<h2 id="動機目的"><a href="#動機目的" class="headerlink" title="動機目的"></a>動機目的</h2><p>自然人機介面(Natural User Interface, NUI)是近年來人機互動介面趨勢，有別以往透圖形化介面，操作鍵盤、滑鼠…等，且使用者需先學習如何操作這些輸入設備及打字，才可以與內容達到互動效果。反觀 NUI 將依照使用者之身體語言操控裝置，如觸覺、視覺、聲音、手寫、移動…等，即可進行互動，在操作上更加直覺自然。</p>
+<p>嘗試使用 3D 深度感測器(3D Depth Sensors)，加入辨識人類肢體動作特徵之演算法及架構，應用於行動裝置與個人電腦或是筆記型電腦進行資料同步更新，改善以往人機介面操作程序，提升良好互動模式，希望此次研究能將自然人機介面融入於日常生活之中，讓用戶感受到機器不在是冰冷又呆版刻版印象。</p>
+<h2 id="自然人機介面"><a href="#自然人機介面" class="headerlink" title="自然人機介面"></a>自然人機介面</h2><p>首先，初步瞭解自然人機介面之涵意，引用 J.  Black 提出定義為「重覆利用已會技能直接與內容互動的使用者介面設計」，下列三項是針對定義再進一步解釋：</p>
+<ol>
+<li>介面設計：介面設計需事先妥善規劃考量，並注重使用者在內容和情境上互動是否合適。</li>
+<li>重覆利用已會的技能：從現實生活中的經驗，挖掘用戶能夠理解之操作模式，如觸摸、手勢、身體移動…等，除人類本能外，任何介面技術的互動方式，如 CLI(Command-Line Interface)、GUI(Graphic User Interface)，只要是以運用現有技能為重心，皆可融入於自然人機介面之中。</li>
+<li>直接與內容互動：直接操作內容為主要互動方式，而控制元件則為輔助項目，如Multi-Touching 技術直接在圖片上放大、縮小等指令，無頇再搭配任何按鈕元件。從定義中可以看出降低操作介面所帶來的學習成本，達到易於操作且相容特性，將會成為自然人機介面未來重要指標。</li>
+</ol>
+<h2 id="動作辨識"><a href="#動作辨識" class="headerlink" title="動作辨識"></a>動作辨識</h2><p>在動作辨識已有大量的研究論文可供參考，此次將運用星狀骨架的概念，進行研究運用，可以由陳宣勝發表「使用星狀骨架作人類動作自動辨識」這篇論文提出一套建構在隱藏式馬可夫模型的動作辨識方法，將引述論文部份摘要說明，此方法使用「星狀骨架來對人類的姿勢做出代表性的描述，此辨識方法將人的動作視為沿著時間的一連串星狀骨架，因此，表示人類動作的時間序列影像被轉換成特徵向量序列。接著，特徵向量序列必頇轉換成符號序列使得隱藏式馬可夫模型可以為動作建立模型，設計一本包含每一類動作星狀骨架的姿勢編碼書，並且為特徵向量定義距離來量測特徵向量間的相似度。姿勢序列中的每個特徵向量會和編碼書中的特徵向量做比對，並會被編碼成編碼書中與自己最為相似的特徵向量所代表的符號。因此時間序列的姿勢影像被轉換成符號序列。以隱藏式馬可夫模型為每種被辨識的動作建立模型。在訓練模型的階段，每個動作模型的參數皆最佳化以適當地描述訓練的符號序列。在動作辨識的階段，與測試符號序列最相配的動作模型即為所辨識出的動作。」</p>
+<p><img src="/images/3D_Sensor_NUI/sys_arch.png" alt="process"></p>
+<h2 id="系統架構"><a href="#系統架構" class="headerlink" title="系統架構"></a>系統架構</h2><p>此系統分別由來源設備(如行動裝置)、3D深度感測器與辨識系統，以及目標設備(如個人電腦或是筆記型電腦)等元件，三者所構成之間關係，如圖1所示。辨識系統主要負責由3D深度感測器取得肢體動作資訊，並搜尋相似的特徵向量，根據動作特徵決定所代表意義，去執行處理。</p>
+<p><img src="/images/3D_Sensor_NUI/process.png" alt="process"></p>
+<h2 id="操作流程"><a href="#操作流程" class="headerlink" title="操作流程"></a>操作流程</h2><p>肢體動作操控設計上，將導入自然人機介面原則，刪減繁複步驟，讓用戶感覺自然簡便，只要將行動裝置對準感測器，由感測器自行辨識對應之裝置型號及啟動連線程序，接著在來源設備上做一個抓取，並丟放至目標設備之手勢動作，當感測器辨識到此動作時，就會與目標設備進行資料同步更新，故不論是行動裝置上傳至個人電腦，或是從個人電腦下載到行動裝置等傳輸方向，皆透過簡單抓取、丟放之手勢即可完成資料同步程序。</p>
+<h2 id="參考文獻"><a href="#參考文獻" class="headerlink" title="參考文獻"></a>參考文獻</h2><ul>
+<li>Andrew D. Wilson (2010). Using a Depth Camera as a Touch Sensor. ITS 2010: Devices &amp; Algorithms, page 69-72</li>
+<li>陳治孙 (2003)。虛擬滑鼠：以視覺為基礎之手勢辨識。國立中山大學資訊工程學系論文</li>
+<li>顧正偉 (2005)。利用多觀察值型隱馬可夫模型進行人體動作辨識。國立交通大學資訊工程系碩士論文</li>
+<li>陳宣勝 (2006)。使用星狀骨架做人體辨識。國立交通大學資訊科學與工程研究所</li>
+<li>林宸生 (2008)。互動式電腦視覺系統應用於寓教於樂之大眾科學遊戲研究。逢甲大學自動控制工程研究所碩士論文</li>
+<li>李佳勳 (2002)。互動式媒體-以感官多模式探討數位設計環境中人機互動介面設計與應用實例。成功大學建築學系碩士論文</li>
+<li>方裕民（2003）。人與物的對話─互動介面設計理論與實務。台北市：田園城市文化事業有限公司</li>
+<li><a target="_blank" rel="noopener" href="http://www.nuigroup.com/">NUI Group-Natural User Interface Group</a></li>
+<li><a target="_blank" rel="noopener" href="http://openkinect.org/">OpenKinect–OpenKinect Project</a></li>
+<li><a target="_blank" rel="noopener" href="http://www.openni.org/">OpenNI–OpenNI Organization</a></li>
+<li><a target="_blank" rel="noopener" href="http://theclevermonkey.blogspot.com/2010/03/blakes-definition-of-nui.html">The iPad Entrepreneur - Blake’s Definition of NUI</a></li>
+<li><a target="_blank" rel="noopener" href="http://nui.joshland.org/2010/04/nuis-reuse-existing-skills.html">DECONSTRUCTING THE NUI - NUIs reuse existing skills (updated NUI definition)</a></li>
+</ul>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>Post author:  </strong>Donald Zhan
+  </li>
+  <li class="post-copyright-link">
+      <strong>Post link: </strong>
+      <a href="http://dz1984.cc/articles/3D-Sensor-NUI/" title="運用3D深度感測器探討自然人機互動介面">http://dz1984.cc/articles/3D-Sensor-NUI/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY</a> unless stating additionally.
+  </li>
+</ul>
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/3D-Sensor/" rel="tag"># 3D Sensor</a>
+              <a href="/tags/NUI/" rel="tag"># NUI</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/articles/Data-Scientist-Memo/" rel="prev" title="資料科學家筆記">
+                  <i class="fa fa-chevron-left"></i> 資料科學家筆記
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/articles/BigData-Predictions-For-2014/" rel="next" title="2014年12個大數據(Big Data)預言">
+                  2014年12個大數據(Big Data)預言 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    
+  <div class="comments" id="disqus_thread">
+    <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+  </div>
+  
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="fa fa-laugh-wink"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Donald Zhan</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
+
+  
+<script src="https://cdn.jsdelivr.net/npm/hexo-generator-searchdb@1.4.0/dist/search.js" integrity="sha256-vXZMYLEqsROAXkEw93GGIvaB2ab+QW6w3+1ahD9nXXA=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+
+  
+
+
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">true</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","js":{"url":"https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js","integrity":"sha256-r+3itOMtGGjap0x+10hu6jW/gZCzxHsoKrOd7gyRSGY="}}</script>
+<script src="/js/third-party/math/mathjax.js"></script>
+
+
+<script class="next-config" data-name="disqus" type="application/json">{"enable":true,"shortname":"dz1984","count":true,"i18n":{"disqus":"disqus"}}</script>
+<script src="/js/third-party/comments/disqus.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.3.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/DOOM2_32.jpg">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/DOOM2_16.jpg">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0/css/all.min.css" integrity="sha256-jTIdiMuX/e3DGJUGwl3pKSxuc6YOuqtJYkM0bGQESA4=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"dz1984.cc","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.10.1","exturl":false,"sidebar":{"position":"right","display":"hide","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="學習 Haskell 是條漫長又艱辛的道路，在學習過程中，隨身總會攜帶著幾本，可以應付不同時期需求的讀物，已經有人列出十本於不同領域和層次的書藉，試著翻譯 Top 10 Books To Learn Haskell Programming 這篇文章。 進入正文吧！">
+<meta property="og:type" content="article">
+<meta property="og:title" content="學習 Haskell 的十本好書(上)">
+<meta property="og:url" content="http://dz1984.cc/articles/Top-Ten-Books-To-Learn-Haskell-Part1/index.html">
+<meta property="og:site_name" content="1984年產物">
+<meta property="og:description" content="學習 Haskell 是條漫長又艱辛的道路，在學習過程中，隨身總會攜帶著幾本，可以應付不同時期需求的讀物，已經有人列出十本於不同領域和層次的書藉，試著翻譯 Top 10 Books To Learn Haskell Programming 這篇文章。 進入正文吧！">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:image" content="http://dz1984.cc/images/2017/05/real_world_haskell.jpg">
+<meta property="og:image" content="http://dz1984.cc/images/2017/05/learn_you_a_haskell_good.jpg">
+<meta property="og:image" content="http://dz1984.cc/images/2017/05/haskell_craft_functional_programming.jpg">
+<meta property="og:image" content="http://dz1984.cc/images/2017/05/beginning_haskell_project_approach.jpg">
+<meta property="og:image" content="http://dz1984.cc/images/2017/05/thinking_functionally_haskell.jpg">
+<meta property="article:published_time" content="2017-05-26T17:24:18.000Z">
+<meta property="article:modified_time" content="2023-02-28T00:38:03.875Z">
+<meta property="article:author" content="Donald Zhan">
+<meta property="article:tag" content="Haskell">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://dz1984.cc/images/2017/05/real_world_haskell.jpg">
+
+
+<link rel="canonical" href="http://dz1984.cc/articles/Top-Ten-Books-To-Learn-Haskell-Part1/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-TW","comments":true,"permalink":"http://dz1984.cc/articles/Top-Ten-Books-To-Learn-Haskell-Part1/","path":"articles/Top-Ten-Books-To-Learn-Haskell-Part1/","title":"學習 Haskell 的十本好書(上)"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>學習 Haskell 的十本好書(上) | 1984年產物</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MXEK8ZCR3J"></script>
+  <script class="next-config" data-name="google_analytics" type="application/json">{"tracking_id":"G-MXEK8ZCR3J","only_pageview":false}</script>
+  <script src="/js/third-party/analytics/google-analytics.js"></script>
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">1984年產物</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li>
+        <li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li>
+        <li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags</a></li>
+        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a></li>
+        <li class="menu-item menu-item-quote"><a href="/quote" rel="section"><i class="fa fa-quote-right fa-fw"></i>呢喃</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="Searching..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Real-World-Haskell"><span class="nav-number">1.</span> <span class="nav-text">Real World Haskell</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Learn-You-a-Haskell-for-Great-Good"><span class="nav-number">2.</span> <span class="nav-text">Learn You a Haskell for Great Good!</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Haskell-The-Craft-of-Functional-Programming"><span class="nav-number">3.</span> <span class="nav-text">Haskell: The Craft of Functional Programming</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Beginning-Haskell-A-Project-Based-Approach"><span class="nav-number">4.</span> <span class="nav-text">Beginning Haskell: A Project-Based Approach</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Thinking-Functionally-with-Haskell"><span class="nav-number">5.</span> <span class="nav-text">Thinking Functionally with Haskell</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Donald Zhan"
+      src="/images/bio-photo.jpg">
+  <p class="site-author-name" itemprop="name">Donald Zhan</p>
+  <div class="site-description" itemprop="description">自己專屬個人網站，會放一些有關Coding的心得，或是寫寫抒發文</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">54</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">categories</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">56</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/dz1984" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;dz1984" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://twitter.com/donaldzhan" title="Twitter → https:&#x2F;&#x2F;twitter.com&#x2F;donaldzhan" rel="noopener" target="_blank"><i class="fab fa-twitter fa-fw"></i>Twitter</a>
+      </span>
+  </div>
+  <div class="cc-license site-overview-item animated" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="https://cdn.jsdelivr.net/npm/@creativecommons/vocabulary@2020.11.3/assets/license_badges/small/by.svg" alt="Creative Commons"></a>
+  </div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button" aria-label="Back to top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-TW">
+    <link itemprop="mainEntityOfPage" href="http://dz1984.cc/articles/Top-Ten-Books-To-Learn-Haskell-Part1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/bio-photo.jpg">
+      <meta itemprop="name" content="Donald Zhan">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="1984年產物">
+      <meta itemprop="description" content="自己專屬個人網站，會放一些有關Coding的心得，或是寫寫抒發文">
+    </span>
+    
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="學習 Haskell 的十本好書(上) | 1984年產物">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          學習 Haskell 的十本好書(上)
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2017-05-27 01:24:18" itemprop="dateCreated datePublished" datetime="2017-05-27T01:24:18+08:00">2017-05-27</time>
+    </span>
+
+  
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus: </span>
+    
+    <a title="disqus" href="/articles/Top-Ten-Books-To-Learn-Haskell-Part1/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="articles/Top-Ten-Books-To-Learn-Haskell-Part1/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <p>學習 Haskell 是條漫長又艱辛的道路，在學習過程中，隨身總會攜帶著幾本，可以應付不同時期需求的讀物，已經有人列出十本於不同領域和層次的書藉，試著翻譯 <a target="_blank" rel="noopener" href="http://whatpixel.com/best-haskell-books/">Top 10 Books To Learn Haskell Programming</a> 這篇文章。</p>
+<p>進入正文吧！</p>
+<span id="more"></span>
+<hr>
+<p>函數編程有趣地方，是能夠快速成型以及擴展新想法，但對毫無經驗新手而言，不容易去學習。剛開始使用程序編程的知識去開發很容易，可是一旦轉換到函數編程，便會發現更多樂趣。</p>
+<p>Haskell 是個好玩的函數程式語言，如果你用心學習，保證將會感受到 Haskell 的威力。該從那裡開始呢？這篇文章會列出十本學習 Haskell 的好書，含蓋初學到進階，符合各階段對象的需要。</p>
+<h1 id="Real-World-Haskell"><a href="#Real-World-Haskell" class="headerlink" title="Real World Haskell"></a>Real World Haskell</h1><p><img src="/images/2017/05/real_world_haskell.jpg" alt="Real World Haskell"></p>
+<p>這或許是我見過以來，最終級的學習手冊。從2008年發佈第一版，到現在整本已超過700多頁的入門教學和新手指南。 <a target="_blank" rel="noopener" href="https://www.amazon.com/gp/product/0596514980/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;tag=whatpixel-20&amp;camp=1789&amp;creative=9325&amp;linkCode=as2&amp;creativeASIN=0596514980&amp;linkId=8ab7948167a4db4ab54bec1dd1444eee">Real World Haskell</a> 會帶領你透過函數編程，按步就班地完成各種實際練習，來指引你前進，不僅是學習如何寫 Haskell 程式，還學會如何像函數程式師思考，建置 Haskell 應用程式的方法，既可以完全當個初學者，又可以遊走於實用知識，不過你須大致瞭解一些編程概念，像是變數、函數，以及類型等。</p>
+<p>由於這本書太豐富，你會從正規化表達式到網路編程和 web/desktop 應用開發，每一樣都學一點，這無疑是無廢話學 Haskell 的最佳入門指南。</p>
+<blockquote>
+<p>譯者注：線上閱讀 Real World Haskell。 <strong><a target="_blank" rel="noopener" href="http://book.realworldhaskell.org/read/">英文版</a></strong>、 <strong><a target="_blank" rel="noopener" href="http://cnhaskell.com">中文版</a></strong></p>
+</blockquote>
+<h1 id="Learn-You-a-Haskell-for-Great-Good"><a href="#Learn-You-a-Haskell-for-Great-Good" class="headerlink" title="Learn You a Haskell for Great Good!"></a>Learn You a Haskell for Great Good!</h1><p><img src="/images/2017/05/learn_you_a_haskell_good.jpg" alt="Learn You a Haskell for Greet Good!"></p>
+<p>也許在函數編程的書海中，你會發現這本是最好的 Haskell 入門書。作者巧妙運用插圖和喜劇幽默，打造出一個愉快的讀物，寫作風格非常平易近人，並以一種開玩笑的教學方式引入 Haskell 概念。</p>
+<p>Haskell 零基礎以 <a target="_blank" rel="noopener" href="https://www.amazon.com/gp/product/1593272839/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;tag=whatpixel-20&amp;camp=1789&amp;creative=9325&amp;linkCode=as2&amp;creativeASIN=1593272839&amp;linkId=7db0e37edf48c8d2915cc0f002feb912">Learn You a Haskell for Great Good!</a> 為開始，帶你走訪每個重點特色，最後會學習從無開始建置自己的類型類和模組。有一些命式式/程序式編程知識可以加快協助你閱讀這本書，若沒有任何編程知識的人也適合，只是花的時間會比別人長。</p>
+<p>搞笑天性、超棒插圖，以及逗趣幽默的流行對話文化，我可是這本書的大粉絲。全書 360頁，實際上它把學習 Haskell 變成有趣的冒險。</p>
+<blockquote>
+<p>譯者注：線上閱讀 Learn You a Haskell for Great Good!。 <strong><a target="_blank" rel="noopener" href="http://learnyouahaskell.com/chapters">英文版</a></strong>、 <strong><a target="_blank" rel="noopener" href="https://www.gitbook.com/book/mno2/learnyouahaskell-zh/details">中文版</a></strong></p>
+</blockquote>
+<h1 id="Haskell-The-Craft-of-Functional-Programming"><a href="#Haskell-The-Craft-of-Functional-Programming" class="headerlink" title="Haskell: The Craft of Functional Programming"></a>Haskell: The Craft of Functional Programming</h1><p><img src="/images/2017/05/haskell_craft_functional_programming.jpg" alt="Haskell: The Craft of Functional Programming"></p>
+<p>函數編程不是一個容易進入主題，Haskell 剛開始可能會很複雜，除非有良好的學習資料。<a target="_blank" rel="noopener" href="https://www.amazon.com/gp/product/0201882957/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;tag=whatpixel-20&amp;camp=1789&amp;creative=9325&amp;linkCode=as2&amp;creativeASIN=0201882957&amp;linkId=3041aec3df4509a9a9ce355e0739e91e">Haskell: The Craft of Functional Programming</a> 目前第三版手冊已達600多頁，我認為這本是最佳的函數編程入門書，從基礎帶到進階，裡面很多應用是需要有堅韌不拔精神才能克服，也許要要花上幾個月，甚至是幾年，才能完全瞭解 Haskell，特別喜歡這本書的原因是從最基本開始教函數編程。</p>
+<p>你可以在毫無預備知識下讀這本書，隨手翻翻就好了，但要注意，這會耗上專門的學習時間和令人非常受挫的挑戰部份。</p>
+<h1 id="Beginning-Haskell-A-Project-Based-Approach"><a href="#Beginning-Haskell-A-Project-Based-Approach" class="headerlink" title="Beginning Haskell: A Project-Based Approach"></a>Beginning Haskell: A Project-Based Approach</h1><p><img src="/images/2017/05/beginning_haskell_project_approach.jpg" alt="Beginning Haskell: A Project-Based Approach"></p>
+<p>從實作專案中學習，可以讓人瞭解 Haskell 在現實世界環境如何運作，<a target="_blank" rel="noopener" href="https://www.amazon.com/gp/product/1430262508/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;tag=whatpixel-20&amp;camp=1789&amp;creative=9325&amp;linkCode=as2&amp;creativeASIN=1430262508&amp;linkId=ba41a905e8ea319ba0a0872412a323e2">Beginning Haskell: A Project-Based Approach</a> 將 Haskell 分成一小步一小步合理的學習過程，依然會學到所有的理論概念，像是 arrows 和 monoids ，不過是以實用性方式來學習，就算是 Haskell 零經驗的人打開此書，一樣能學到良好的函數編程知識。</p>
+<p>你可以任意選擇三大主流作業系統的 IDE，作者採用部份熟悉的編程概念，雖然不太可能有人會拿 Haskell 作為第一個學習的語言。</p>
+<p>雖然這本書步調確實快，但我強烈推薦給已有函數或程序編程知識，並想從專案練習中，學習 Haskell 的任何人。</p>
+<h1 id="Thinking-Functionally-with-Haskell"><a href="#Thinking-Functionally-with-Haskell" class="headerlink" title="Thinking Functionally with Haskell"></a>Thinking Functionally with Haskell</h1><p><img src="/images/2017/05/thinking_functionally_haskell.jpg" alt="Thinking Functionally with Haskell"></p>
+<p><a target="_blank" rel="noopener" href="https://www.amazon.com/gp/product/1107452643/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;tag=whatpixel-20&amp;camp=1789&amp;creative=9325&amp;linkCode=as2&amp;creativeASIN=1107452643&amp;linkId=ed2e1add1b1fc1b77c8d930cc24f82fb">Thinking Functionally with Haskell</a> 是另一本介紹熱切地學生進入 Haskell 世界的函數編程書，學習如何用正確的數學模型方式來撰寫函數程式碼，有超過 100 多種不同的練習題，可以學到所有開發 Haskell 的細節，你會建置一個很棒的解數獨器和方程式運算。</p>
+<p>實用的範例有利於加強作業流程中的好習慣，這本教科書是針對大學生，但也適用於任何想坐下來好好研究 Haskell 的人。</p>
+<p>(未完待續)</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>Post author:  </strong>Donald Zhan
+  </li>
+  <li class="post-copyright-link">
+      <strong>Post link: </strong>
+      <a href="http://dz1984.cc/articles/Top-Ten-Books-To-Learn-Haskell-Part1/" title="學習 Haskell 的十本好書(上)">http://dz1984.cc/articles/Top-Ten-Books-To-Learn-Haskell-Part1/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY</a> unless stating additionally.
+  </li>
+</ul>
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/Haskell/" rel="tag"># Haskell</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/articles/A-new-story/" rel="prev" title="舊說新寫">
+                  <i class="fa fa-chevron-left"></i> 舊說新寫
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/articles/Haskell-AMP/" rel="next" title="Haskell AMP">
+                  Haskell AMP <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    
+  <div class="comments" id="disqus_thread">
+    <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+  </div>
+  
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="fa fa-laugh-wink"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Donald Zhan</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
+
+  
+<script src="https://cdn.jsdelivr.net/npm/hexo-generator-searchdb@1.4.0/dist/search.js" integrity="sha256-vXZMYLEqsROAXkEw93GGIvaB2ab+QW6w3+1ahD9nXXA=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+
+  
+
+
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">true</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","js":{"url":"https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js","integrity":"sha256-r+3itOMtGGjap0x+10hu6jW/gZCzxHsoKrOd7gyRSGY="}}</script>
+<script src="/js/third-party/math/mathjax.js"></script>
+
+
+<script class="next-config" data-name="disqus" type="application/json">{"enable":true,"shortname":"dz1984","count":true,"i18n":{"disqus":"disqus"}}</script>
+<script src="/js/third-party/comments/disqus.js"></script>
+
+</body>
+</html>

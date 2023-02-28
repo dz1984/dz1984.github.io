@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.3.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/DOOM2_32.jpg">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/DOOM2_16.jpg">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0/css/all.min.css" integrity="sha256-jTIdiMuX/e3DGJUGwl3pKSxuc6YOuqtJYkM0bGQESA4=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"dz1984.cc","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.10.1","exturl":false,"sidebar":{"position":"right","display":"hide","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="在看這本書時，發現書中有些小地方有錯誤，便決定列出來，提供大家參考使用。  書名： 貝氏統計導論：EXCEL應用 作者： 楊士慶、陳耀茂 ISBN： 9789571197197 出版年份：2018.06 出版商：五南">
+<meta property="og:type" content="article">
+<meta property="og:title" content="貝氏統計導論 勘誤表">
+<meta property="og:url" content="http://dz1984.cc/articles/errata-on-baysian-statistics/index.html">
+<meta property="og:site_name" content="1984年產物">
+<meta property="og:description" content="在看這本書時，發現書中有些小地方有錯誤，便決定列出來，提供大家參考使用。  書名： 貝氏統計導論：EXCEL應用 作者： 楊士慶、陳耀茂 ISBN： 9789571197197 出版年份：2018.06 出版商：五南">
+<meta property="og:locale" content="zh_TW">
+<meta property="article:published_time" content="2019-07-01T10:16:49.000Z">
+<meta property="article:modified_time" content="2023-02-28T00:38:03.892Z">
+<meta property="article:author" content="Donald Zhan">
+<meta property="article:tag" content="Book">
+<meta property="article:tag" content="勘誤">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="http://dz1984.cc/articles/errata-on-baysian-statistics/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-TW","comments":true,"permalink":"http://dz1984.cc/articles/errata-on-baysian-statistics/","path":"articles/errata-on-baysian-statistics/","title":"貝氏統計導論 勘誤表"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>貝氏統計導論 勘誤表 | 1984年產物</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MXEK8ZCR3J"></script>
+  <script class="next-config" data-name="google_analytics" type="application/json">{"tracking_id":"G-MXEK8ZCR3J","only_pageview":false}</script>
+  <script src="/js/third-party/analytics/google-analytics.js"></script>
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">1984年產物</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li>
+        <li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li>
+        <li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags</a></li>
+        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a></li>
+        <li class="menu-item menu-item-quote"><a href="/quote" rel="section"><i class="fa fa-quote-right fa-fw"></i>呢喃</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="Searching..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-overview-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Donald Zhan"
+      src="/images/bio-photo.jpg">
+  <p class="site-author-name" itemprop="name">Donald Zhan</p>
+  <div class="site-description" itemprop="description">自己專屬個人網站，會放一些有關Coding的心得，或是寫寫抒發文</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">54</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">categories</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">56</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/dz1984" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;dz1984" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://twitter.com/donaldzhan" title="Twitter → https:&#x2F;&#x2F;twitter.com&#x2F;donaldzhan" rel="noopener" target="_blank"><i class="fab fa-twitter fa-fw"></i>Twitter</a>
+      </span>
+  </div>
+  <div class="cc-license site-overview-item animated" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="https://cdn.jsdelivr.net/npm/@creativecommons/vocabulary@2020.11.3/assets/license_badges/small/by.svg" alt="Creative Commons"></a>
+  </div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button" aria-label="Back to top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-TW">
+    <link itemprop="mainEntityOfPage" href="http://dz1984.cc/articles/errata-on-baysian-statistics/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/bio-photo.jpg">
+      <meta itemprop="name" content="Donald Zhan">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="1984年產物">
+      <meta itemprop="description" content="自己專屬個人網站，會放一些有關Coding的心得，或是寫寫抒發文">
+    </span>
+    
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="貝氏統計導論 勘誤表 | 1984年產物">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          貝氏統計導論 勘誤表
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2019-07-01 18:16:49" itemprop="dateCreated datePublished" datetime="2019-07-01T18:16:49+08:00">2019-07-01</time>
+    </span>
+
+  
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus: </span>
+    
+    <a title="disqus" href="/articles/errata-on-baysian-statistics/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="articles/errata-on-baysian-statistics/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <p>在看這本書時，發現書中有些小地方有錯誤，便決定列出來，提供大家參考使用。</p>
+<ul>
+<li>書名： 貝氏統計導論：EXCEL應用</li>
+<li>作者： 楊士慶、陳耀茂</li>
+<li>ISBN： 9789571197197</li>
+<li>出版年份：2018.06</li>
+<li>出版商：五南</li>
+</ul>
+<span id="more"></span>
+<hr>
+<ul>
+<li>p.39 式(2)中等號左邊的 $P(A|B)$ 應修正為 $$(A_1|B)$。</li>
+<li>p.42 例3.4，題目 b 壺原為 2 個紅球，應修正為 8 個紅球。</li>
+<li>p.43 例3.5，題目 b 壺原是紅球 1 個，應修正為紅球 2 個。</li>
+<li>p.57 E 表格中，0 列的 $P(E)$ 欄，原為 0.498，應修正為 0.998。</li>
+<li>p.59 中間的式子，應修正為：<script type="math/tex">P(B \cap E | A)= \frac {P(A|B \cap E) \cdot P(B \cap E)}{P(A)}。</script></li>
+<li>p.60 在 E 表格中，0 列的 $P(E)$ 欄，原為 0.498，應修正為 0.998。</li>
+<li>p.60 倒數第二行的式子，應修正為：<script type="math/tex">P(S|B \cap A) = P(S|A)，P(S|B \cap \bar{A})=P(S|\bar{A})</script></li>
+<li>P.61 中間的 $P(B \cap A)$ 原為 0.0094 修正為 0.00094 ，而 $P(B \cap \bar{A})$ 原為 0.0006 修正為 0.00006 。</li>
+<li>p.61 式(7)中，原 0.0006 應修正為 0.00006 。</li>
+<li>p.63 最後一行，”另外，在第3章第3節…” 應修正為 “另外，在第3章第2節…”。</li>
+<li>p.63 最後一個式子有誤，應參考 P.40 中的式(3)。</li>
+<li>p.64 方框中， 原是 “D 表數碼”，應修正為 “D 表數據”。</li>
+<li>p.67 中間的表格，壺3欄的機率列，原為 $\frac {2}{3}$ 應修正為 1。</li>
+<li>p.72 倒數第二個方框，第一行 “事後分配是與概似和事前分配的乘機成比例”中的，”機” 修改為 “積”。</li>
+<li>p.73 因事前分配的變異數是1，所以，<script type="math/tex">事前分配=\frac {1}{\sqrt{2\pi}}e^{- \frac{(\mu-100)^2}{2}}</script></li>
+<li>p.74 Memo 的方框中，式(7)，應修正為： <script type="math/tex">\begin{align}
+&\propto \frac{1}{\sqrt{2 \pi \times 3}}e^{-\frac{(99-\mu)^2}{2 \times 3}} \frac{1}{\sqrt{2 \pi \times 3}}e^{-\frac{(100-\mu)^2}{2 \times 3}} \frac{1}{\sqrt{2 \pi \times 3}}e^{-\frac{(101-\mu)^2}{2 \times 3}} \frac {1}{\sqrt{2\pi}}e^{- \frac{(\mu-100)^2}{2}} \\\\
+&\propto e^{- \frac{(99-\mu)^2+(100-\mu)^2+(101-\mu)^2} {2\times 3} + \frac{(\mu - 100)^2} {2} }
+\end{align}</script>還有下面的式子，修正為： <script type="math/tex">-\frac{1}{2 \times 3}\lbrace(99-\mu)^2+(100-\mu)^2+(101-\mu)^2\rbrace+\frac{1}{2}(\mu-100)^2 \\\\
+=-\frac{1}{2 \times 3}\lbrace6(\mu-100)^2+2\rbrace</script></li>
+<li>p.76 最下面的公式 $ \pi(\theta | D_1) \propto \theta \times 1 = \theta $ 為 (5) 式。</li>
+<li>p.80 公式(2) 修正為：<script type="math/tex; mode=display">\text{概似} f(D|\theta) = _5{C_4}\theta^4(1-\theta), (0 \le \theta \le 1)</script></li>
+<li>p.80 下面的公式，應修改為：<script type="math/tex">事前分配\pi(\theta) = \text{常數}</script></li>
+<li>p.81 修改為：<script type="math/tex">事前分配\pi(\theta) = 1，(0 \le \theta \le 1)
+\tag{3}</script></li>
+<li>p.82 從上數來第5行，平均值…後分配利用”機”分即可簡單計算，修改為積。</li>
+<li>p.89 最下面的式子，修改為： <script type="math/tex">\text{事後分配}=30 \theta^{5-1}(1-\theta)^{2-1}
+\tag{答}</script></li>
+<li><p>p.91 中間的”事後分配的變異數”公式，應修改為： <script type="math/tex">事後分配的變異數=\frac{5}{196} (\doteq 0.026)</script></p>
+</li>
+<li><p>p.94 最下面的事前分配，應修改為：<script type="math/tex">\begin{align}
+事前分配 & \propto = \frac{1}{\sqrt{2\pi}}e^{-\frac{(100-\mu)^2}{2}}\frac{1}{\sqrt{2\pi}}e^{-\frac{(102-\mu)^2}{2}}\frac{1}{\sqrt{2\pi}}e^{-\frac{(104-\mu)^2}{2}}\frac{1}{\sqrt{2\pi}}e^{-\frac{(\mu-100)^2}{2}} \\\\
+&\propto e^{\frac{1}{2 \times \frac{1}{4}} (\mu -101.5)^2}
+\end{align}</script></p>
+</li>
+<li>p.103 式(6)，e 的指數部份有誤，應修改為： <script type="math/tex">\large
+\text{事後分配} \propto (\sigma^2)^{-\frac{n_1+1}{2} -1 } e^{-\frac{n_1s_1+m_1(\mu -\mu_1)^2}{2\sigma^2}}
+\tag{6}</script></li>
+<li>p.111 例 5.6 中 $M_1$的 $\theta = 0.5 $。</li>
+<li>p.113 中間的95%信賴區間，原為 $ 99367 \le \mu \le 100.93 $，應修改為：<script type="math/tex">99.67 \le \mu \le 100.93</script><br>下面式(3)應修改為：<script type="math/tex">\large
+f(x)=\frac{1}{\sqrt{2\pi} \times \frac{0.64}{\sqrt{4}}}e^{-\frac{(\chi-\mu)^2}{2\times(\frac{0.64}{\sqrt{4}})^2}}
+\tag{3}</script></li>
+<li>p.131 最後一行，修改為： <script type="math/tex">n_0 = 0.02 \text{，} s_0=1</script></li>
+<li>p.132 中間的 $n_1s_1$ 和 $\mu_1$，應修改為： <script type="math/tex">n_1s_1 = 0.02 \times 1 + 138.22 + \frac{0.25 \times 30} {0.25+30} \times (5.11-5)^2 = 138.24 \\\\
+\mu_1 = \frac{30 \times 5.11 + 0.25 \times 5} {0.25+30} = 5.11</script></li>
+<li>p.145 方框內的式(1)，應修改為： <script type="math/tex">\large
+\text{事後分配} \propto (\sigma^2)^{-\frac{n_1+1}{2} -1 } e^{-\frac{n_1s_1+m_1(\mu -\mu_1)^2}{2\sigma^2}}
+\tag{1}</script></li>
+<li>p.150 “在「P_原」工作單…”中，”原”修改為 “元”。</li>
+<li>p.163 上面的式(3)，應修改為：<script type="math/tex">q_i = \frac{1}{1+e^{-(\beta - \gamma_i)}}
+\tag{3}</script></li>
+<li>p.164 式(6) 最未項分母的x，應修改為 $\times$ 符號。</li>
+<li>p.165 上面的式(7)的$q_i$部份，應修改為：<script type="math/tex">q_i = \frac{1}{1+e^{-(\beta - \gamma_i)}}</script><br>另外，式(8)有誤，其最末項是乘上式(5)。</li>
+<li>p.166 中間的$q_i$部份，同上一頁修改。</li>
+<li>p.169 中間$q$部份，也同樣要補上括號。</li>
+<li>p.176 中間的$q_i$部份，補上括號。</li>
+<li>p.179 式(2)的$q_i$部份補上括號。</li>
+<li>p.191 和 p.192 的 Excel 計算有誤。(註：因 F9 未設定為 3，導致計算錯誤。)</li>
+<li>p.216 方框與中間表格，當出席人數為10時，其便當預約數應為 20。</li>
+<li>p.231 第一行應修改為： <script type="math/tex">\text{(5)的指數部份}=-\frac{1}{2} \times \frac{1}{25} \lbrace 21593.8\alpha^2 - 2\times 6603.1\alpha^2 \rbrace + C</script></li>
+<li>p.238 從上往下第5行，”…依序設為 x,y,…”，應修改為：…依序設為 x,u ,…”</li>
+<li>p.240 式(7)的符號錯誤，P 應修改為 $\beta$，X 修改為$\Sigma_0$。</li>
+<li>p.248 最下面的式(4)，應修改為： <script type="math/tex">\large \text{概似}f(D|\mu) \propto e^{-\frac{n(\bar{x}-\mu)^2}{2\sigma^2}} \tag{4}</script></li>
+<li>p.249 式(6) 的推導過程，應修變為： <script type="math/tex">\large
+\begin{align}
+\text{(6)式的指數} &= -\frac{n(\bar{x}-\mu)^2}{2\sigma^2}-\frac{(\mu-\mu_0)^2}{2\sigma_0^2} \\\\
+&= -\frac{1}{2}\lbrace[\frac{n}{\sigma^2}+\frac{1}{\sigma_0^2}]\mu^2-2[\frac{n\bar{x}}{\sigma^2}+\frac{\mu_0}{\sigma_0^2}]\mu\rbrace+\lbrace不含\mu之項\rbrace \\\\
+&= -\frac{1}{2}[\frac{n}{\sigma^2}+\frac{1}{\sigma_0^2}][\mu^2-2(\frac{\frac{n\bar{x}}{\sigma^2}+\frac{\mu_0}{\sigma_0^2}}{\frac{n}{\sigma^2}+\frac{1}{\sigma_0^2}})\mu]+\lbrace不含\mu之項\rbrace \\\\
+&= -\frac{1}{2}[\frac{n}{\sigma^2}+\frac{1}{\sigma_0^2}][\mu-\frac{\frac{n\bar{x}}{\sigma^2}+\frac{\mu_0}{\sigma_0^2}}{\frac{n}{\sigma^2}+\frac{1}{\sigma_0^2}}]^2+\lbrace不含\mu之項\rbrace
+\end{align}</script></li>
+<li>p.250 最後一行式子，應修改為：<script type="math/tex">(\chi_1 - \bar{x})+(\chi_2 - \bar{x})+\dots+(\chi_n-\bar{x}) = 0</script></li>
+<li>p.252 式(4)事後分配公式中，最後一行應修改為：$$<br>\large<br>\propto (\sigma^2)^{-a-\frac{n}{2}-\frac{3}{2}}e^{-\frac{Q+n(\mu-\bar{x})^2+m_0(\mu-\mu_0)^2+2\lambda}{2\sigma^2}}<br>\tag{4}<script type="math/tex; mode=display">
+式(5) 第一行應修為：</script>\text{分子}=\mathcal{Q}+n(\mu - \bar{x})^2+m_0(\mu - \mu_0)^2 + 2\lambda <script type="math/tex">式(6) 事後分配，應修改為：</script><br>\large<br>\text{事後分配} \propto (\sigma^2)^{-a-\frac{n}{2}-\frac{3}{2}}e^{-\frac{Q+(m_0+n)(\mu-\mu_1)^2+\frac{m_0 n}{m_0+n}(\bar{x}-\mu_0)+2\lambda}{2\sigma^2}}<br>\tag{6} <script type="math/tex">式 (7) 應修改為：</script><br>\large<br>\mu_1 = \frac{n\bar{x}+m_0\mu_0}{m_0 + n}<br>\tag{7} $$</li>
+<li>p.253 中間 $m_1$ 和 $n_1$，以及 $n_1s_1$ 部份，應修改為： <script type="math/tex">m_1 = m_0 +n \text{，} n_1=n_0+n \\\\
+n_1s_1 = n_0s_0 + \mathcal{Q} + \frac{m_0n}{m_0+n_0}(\bar{x} - \mu_0)^2</script></li>
+<li>p.255 式(4)應修改為： <script type="math/tex">\text{事後分配} \propto e^{-n\theta}\theta^{n\bar{x}}\times\theta^{a-1}e^{-\lambda\theta} = \theta^{a+n\bar{x}-1}e^{-(\lambda+n)\theta}
+\tag{4}</script><br>以及 第二行原為 $ Ga(\alpha+\bar{n}, \lambda+n) $ 修改為 $ Ga(\alpha+n\bar{x}, \lambda+n) $。</li>
+<li>p.262 於”可利用下式定義”的下面須插入一式： <script type="math/tex">E[g(\theta)] = \int_a^b g(\theta)\cdot p(\theta) \cdot d\theta
+\tag{1}</script></li>
+<li>p.264 公式推導的符號有誤，像是方框內的底標重複，而非按照預期的。</li>
+<li>p.266 最後一行，原為： $ w<em>1 , w_2, \dots ,w</em>{t-2},w_t,w_{t+1},\dots $，應修改為：<script type="math/tex; mode=display">w_1,w\_2,\dots,w_{t-1},w\_t,w\_{t+1},\dots</script></li>
+</ul>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>Post author:  </strong>Donald Zhan
+  </li>
+  <li class="post-copyright-link">
+      <strong>Post link: </strong>
+      <a href="http://dz1984.cc/articles/errata-on-baysian-statistics/" title="貝氏統計導論 勘誤表">http://dz1984.cc/articles/errata-on-baysian-statistics/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY</a> unless stating additionally.
+  </li>
+</ul>
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/Book/" rel="tag"># Book</a>
+              <a href="/tags/%E5%8B%98%E8%AA%A4/" rel="tag"># 勘誤</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/articles/orbital-cloud/" rel="prev" title="軌道之雲">
+                  <i class="fa fa-chevron-left"></i> 軌道之雲
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/articles/prophet/" rel="next" title="先知">
+                  先知 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    
+  <div class="comments" id="disqus_thread">
+    <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+  </div>
+  
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="fa fa-laugh-wink"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Donald Zhan</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
+
+  
+<script src="https://cdn.jsdelivr.net/npm/hexo-generator-searchdb@1.4.0/dist/search.js" integrity="sha256-vXZMYLEqsROAXkEw93GGIvaB2ab+QW6w3+1ahD9nXXA=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+
+  
+
+
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">true</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","js":{"url":"https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js","integrity":"sha256-r+3itOMtGGjap0x+10hu6jW/gZCzxHsoKrOd7gyRSGY="}}</script>
+<script src="/js/third-party/math/mathjax.js"></script>
+
+
+<script class="next-config" data-name="disqus" type="application/json">{"enable":true,"shortname":"dz1984","count":true,"i18n":{"disqus":"disqus"}}</script>
+<script src="/js/third-party/comments/disqus.js"></script>
+
+</body>
+</html>

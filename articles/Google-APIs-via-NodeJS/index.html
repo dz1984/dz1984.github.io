@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.3.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/DOOM2_32.jpg">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/DOOM2_16.jpg">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0/css/all.min.css" integrity="sha256-jTIdiMuX/e3DGJUGwl3pKSxuc6YOuqtJYkM0bGQESA4=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"dz1984.cc","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.10.1","exturl":false,"sidebar":{"position":"right","display":"hide","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="寫在前頭之前，實作 天龍特公地 專案時，接觸到 Google API 連到 Fusion Tables 的經驗，這篇隨手筆記存放有點久，現在才拿出來當 Blog 的新文章。 XD 想想 Fusion Tables 挺適合在小專案，但如果專案開始長大，就顯得有點不足，故 天龍特公地 即將以 PostgreSQL 為 DB，以應付越來越多擴展性功能。 Google APIs建立專案 先到 Google">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Google APIs via NodeJS">
+<meta property="og:url" content="http://dz1984.cc/articles/Google-APIs-via-NodeJS/index.html">
+<meta property="og:site_name" content="1984年產物">
+<meta property="og:description" content="寫在前頭之前，實作 天龍特公地 專案時，接觸到 Google API 連到 Fusion Tables 的經驗，這篇隨手筆記存放有點久，現在才拿出來當 Blog 的新文章。 XD 想想 Fusion Tables 挺適合在小專案，但如果專案開始長大，就顯得有點不足，故 天龍特公地 即將以 PostgreSQL 為 DB，以應付越來越多擴展性功能。 Google APIs建立專案 先到 Google">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:image" content="http://i.imgur.com/10GICZK.png">
+<meta property="og:image" content="http://i.imgur.com/T94oPB4.png">
+<meta property="og:image" content="http://i.imgur.com/Im8jyvv.png">
+<meta property="og:image" content="http://i.imgur.com/INetjjp.png">
+<meta property="og:image" content="http://i.imgur.com/nUz4SFO.png">
+<meta property="og:image" content="http://i.imgur.com/KGHjSDN.png">
+<meta property="og:image" content="http://i.imgur.com/AVizYpP.png">
+<meta property="og:image" content="http://i.imgur.com/DrjIeLC.png">
+<meta property="og:image" content="http://i.imgur.com/G2L3KK6.png">
+<meta property="og:image" content="http://i.imgur.com/KykU7qS.png">
+<meta property="og:image" content="http://i.imgur.com/U6CJu35.png">
+<meta property="og:image" content="http://i.imgur.com/qxJ0AhU.png">
+<meta property="article:published_time" content="2014-10-16T03:00:00.000Z">
+<meta property="article:modified_time" content="2023-02-28T00:38:03.842Z">
+<meta property="article:author" content="Donald Zhan">
+<meta property="article:tag" content="Javascript">
+<meta property="article:tag" content="NodeJS">
+<meta property="article:tag" content="GeoJSON">
+<meta property="article:tag" content="Google API">
+<meta property="article:tag" content="Fusion Table">
+<meta property="article:tag" content="天龍特公地">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://i.imgur.com/10GICZK.png">
+
+
+<link rel="canonical" href="http://dz1984.cc/articles/Google-APIs-via-NodeJS/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-TW","comments":true,"permalink":"http://dz1984.cc/articles/Google-APIs-via-NodeJS/","path":"articles/Google-APIs-via-NodeJS/","title":"Google APIs via NodeJS"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>Google APIs via NodeJS | 1984年產物</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MXEK8ZCR3J"></script>
+  <script class="next-config" data-name="google_analytics" type="application/json">{"tracking_id":"G-MXEK8ZCR3J","only_pageview":false}</script>
+  <script src="/js/third-party/analytics/google-analytics.js"></script>
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">1984年產物</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li>
+        <li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li>
+        <li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags</a></li>
+        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a></li>
+        <li class="menu-item menu-item-quote"><a href="/quote" rel="section"><i class="fa fa-quote-right fa-fw"></i>呢喃</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="Searching..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AF%AB%E5%9C%A8%E5%89%8D%E9%A0%AD"><span class="nav-number">1.</span> <span class="nav-text">寫在前頭</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Google-APIs"><span class="nav-number">2.</span> <span class="nav-text">Google APIs</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Fusion-Table"><span class="nav-number">3.</span> <span class="nav-text">Fusion Table</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#NodeJS"><span class="nav-number">4.</span> <span class="nav-text">NodeJS</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Donald Zhan"
+      src="/images/bio-photo.jpg">
+  <p class="site-author-name" itemprop="name">Donald Zhan</p>
+  <div class="site-description" itemprop="description">自己專屬個人網站，會放一些有關Coding的心得，或是寫寫抒發文</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">54</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">categories</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">56</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/dz1984" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;dz1984" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://twitter.com/donaldzhan" title="Twitter → https:&#x2F;&#x2F;twitter.com&#x2F;donaldzhan" rel="noopener" target="_blank"><i class="fab fa-twitter fa-fw"></i>Twitter</a>
+      </span>
+  </div>
+  <div class="cc-license site-overview-item animated" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="https://cdn.jsdelivr.net/npm/@creativecommons/vocabulary@2020.11.3/assets/license_badges/small/by.svg" alt="Creative Commons"></a>
+  </div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button" aria-label="Back to top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-TW">
+    <link itemprop="mainEntityOfPage" href="http://dz1984.cc/articles/Google-APIs-via-NodeJS/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/bio-photo.jpg">
+      <meta itemprop="name" content="Donald Zhan">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="1984年產物">
+      <meta itemprop="description" content="自己專屬個人網站，會放一些有關Coding的心得，或是寫寫抒發文">
+    </span>
+    
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="Google APIs via NodeJS | 1984年產物">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Google APIs via NodeJS
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2014-10-16 11:00:00" itemprop="dateCreated datePublished" datetime="2014-10-16T11:00:00+08:00">2014-10-16</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/articles/" itemprop="url" rel="index"><span itemprop="name">articles</span></a>
+        </span>
+    </span>
+
+  
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus: </span>
+    
+    <a title="disqus" href="/articles/Google-APIs-via-NodeJS/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="articles/Google-APIs-via-NodeJS/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <h2 id="寫在前頭"><a href="#寫在前頭" class="headerlink" title="寫在前頭"></a>寫在前頭</h2><p>之前，實作 <strong>天龍特公地</strong> 專案時，接觸到 Google API 連到 Fusion Tables 的經驗，這篇隨手筆記存放有點久，現在才拿出來當 Blog 的新文章。 XD</p>
+<p>想想 Fusion Tables 挺適合在小專案，但如果專案開始長大，就顯得有點不足，故 <strong>天龍特公地</strong> 即將以 PostgreSQL 為 DB，以應付越來越多擴展性功能。</p>
+<h2 id="Google-APIs"><a href="#Google-APIs" class="headerlink" title="Google APIs"></a>Google APIs</h2><p><strong>建立專案</strong></p>
+<p>先到 <a target="_blank" rel="noopener" href="https://console.developers.google.com/project">Google Developers Console</a> 建立新專案。 </p>
+<p><img src="http://i.imgur.com/10GICZK.png" alt=""></p>
+<p><strong>開啟 API</strong></p>
+<p>啟動想使用的 API  ，這邊以 <a target="_blank" rel="noopener" href="https://developers.google.com/fusiontables/?csw=1">Google Fusion Tables APIs </a> 為例子。</p>
+<p><img src="http://i.imgur.com/T94oPB4.png" alt=""></p>
+<p><strong>產生憑證</strong></p>
+<p>這邊是以 <strong>瀏覽器金鑰</strong> 為例子。</p>
+<ul>
+<li>按下 <strong>建立新的金鑰 </strong>按鈕後<strong>，</strong>在選擇按下<strong> 瀏覽器金鑰  </strong>按鈕。</li>
+</ul>
+<p><img src="http://i.imgur.com/Im8jyvv.png" alt=""></p>
+<ul>
+<li>可以不填寫中介網址，按下 <strong>建立</strong> 按鈕，即會產生一組  <strong>API 金鑰。</strong>  </li>
+</ul>
+<p><img src="http://i.imgur.com/INetjjp.png" alt=""></p>
+<ul>
+<li>記住這組金鑰，等等會用到。</li>
+</ul>
+<p><img src="http://i.imgur.com/nUz4SFO.png" alt=""></p>
+<p><strong>如何練習 Google APIs？</strong></p>
+<p>Google APIs  琳瑯滿目，常常不知道要怎麼用，又懶得爬文，沒關係！ Google 很搭心，可以直接用  <a target="_blank" rel="noopener" href="https://developers.google.com/apis-explorer/">APIs Expoloer</a> 把玩每個 APIs ， Try 遍每個 APis 提供的 Method。</p>
+<h2 id="Fusion-Table"><a href="#Fusion-Table" class="headerlink" title="Fusion Table"></a>Fusion Table</h2><p><strong>新增 Fusion Table</strong></p>
+<ul>
+<li>Google Drive 連結 Fusion Table 。</li>
+</ul>
+<p><img src="http://i.imgur.com/KGHjSDN.png" alt=""></p>
+<p><img src="http://i.imgur.com/AVizYpP.png" alt=""></p>
+<ul>
+<li>在 Google Drive 建立 <strong>空白 Fusion Table</strong> 。</li>
+</ul>
+<p><img src="http://i.imgur.com/DrjIeLC.png" alt=""></p>
+<p><strong>設定存取權限</strong></p>
+<ul>
+<li>將權限設定成 <strong>Public </strong>。 ( Fusion Table API 無法操作 Private 權限) </li>
+</ul>
+<p><img src="http://i.imgur.com/G2L3KK6.png" alt=""></p>
+<p><strong>取得 Table ID</strong></p>
+<ul>
+<li>按下 <strong>File</strong> -&gt; <strong>About this table</strong> ，取得 <strong>Table ID</strong>， 當然也可以從 URL 得知 ( docid 後面一大串東西)。</li>
+</ul>
+<p><img src="http://i.imgur.com/KykU7qS.png" alt=""></p>
+<h2 id="NodeJS"><a href="#NodeJS" class="headerlink" title="NodeJS"></a>NodeJS</h2><p><strong>專為 NodeJS 打造的 Google APIs  Client</strong></p>
+<p>可以參考  <a target="_blank" rel="noopener" href="https://github.com/google/google-api-nodejs-client/">Google/google-api-nodejs-client</a> ，裡面有很完整的安裝說明及<a target="_blank" rel="noopener" href="https://github.com/google/google-api-nodejs-client/tree/master/examples">範例</a>。</p>
+<p><strong>小踹  Fusion Tables Query</strong></p>
+<p>目的只能先 Try sql 語法，還不用動真格寫扣，可以利用 APIs Exploer 平台的 <a target="_blank" rel="noopener" href="https://developers.google.com/apis-explorer/#p/fusiontables/v1/fusiontables.query.sql">fusiontables.query.sql</a> 來踹踹看。</p>
+<ul>
+<li>直接就丟 SQL Script： <code>SELECT * FROM YOUR_TABLE_ID</code>  ，接著就  <strong>Execute </strong>。 ( 記得把<em> YOUR_TABLE_ID</em> 替換成你剛剛準備的新 Fusion Table ID )</li>
+</ul>
+<p><img src="http://i.imgur.com/U6CJu35.png" alt=""></p>
+<ul>
+<li>執行後，可以看到花費時間、Request ，以及  Response 結果，別得不管了！ 只要看到 <strong>rows</strong> 關鍵字，這裡面的東西才是我們要，另外，在看看 <strong>query?</strong> 後面一拖拉庫的東西，用了 <em>sql </em>和 <em>key</em> 兩個參數，這是不是在告訴我們一件事，執行 API 時，記得下參數。</li>
+</ul>
+<p><img src="http://i.imgur.com/qxJ0AhU.png" alt=""></p>
+<p><strong>動手踹 <s>共 </s>扣</strong></p>
+<p>看完 <a target="_blank" rel="noopener" href="https://github.com/google/google-api-nodejs-client/">Google/google-api-nodejs-client</a> 的<a target="_blank" rel="noopener" href="https://github.com/google/google-api-nodejs-client/blob/master/README.md"> README.md </a>，就可以抓到這工具大致用法，那就寫扣去…</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> google = <span class="built_in">require</span>(<span class="string">&#x27;googleapis&#x27;</span>);</span><br><span class="line"><span class="keyword">var</span> fusiontables = google.<span class="title function_">fusiontables</span>(<span class="string">&#x27;v1&#x27;</span>);</span><br><span class="line"> <span class="comment">// 從上面步驟得知 YOUR_API_KEY 和 YOUR_TABLE_ID </span></span><br><span class="line"><span class="keyword">var</span> <span class="variable constant_">API_KEY</span> = <span class="string">&#x27;YOUR_API_KEY&#x27;</span>;</span><br><span class="line"><span class="keyword">var</span> <span class="variable constant_">TABLEID</span> = <span class="string">&#x27;YOUR_TABLE_ID&#x27;</span>;</span><br><span class="line"><span class="keyword">var</span> <span class="variable constant_">SQLSCRIPT</span> = <span class="string">&#x27;SELECT * FROM &#x27;</span> + <span class="variable constant_">TABLEID</span>;</span><br><span class="line"><span class="keyword">var</span> params = &#123;</span><br><span class="line">        <span class="string">&#x27;sql&#x27;</span>: query,</span><br><span class="line">        <span class="string">&#x27;key&#x27;</span>: <span class="variable constant_">API_KEY</span></span><br><span class="line">&#125;;</span><br><span class="line">fusiontables.<span class="property">query</span>.<span class="title function_">sqlGet</span>(params, <span class="keyword">function</span>(<span class="params">err, result</span>) &#123;</span><br><span class="line">    <span class="keyword">if</span> (err) &#123;</span><br><span class="line">        <span class="variable language_">console</span>.<span class="title function_">log</span>(err);</span><br><span class="line">   &#125;</span><br><span class="line">   </span><br><span class="line">   <span class="keyword">var</span> rows = result.<span class="property">rows</span>;</span><br><span class="line">   </span><br><span class="line">   <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;ok&#x27;</span>);  </span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>      
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>Post author:  </strong>Donald Zhan
+  </li>
+  <li class="post-copyright-link">
+      <strong>Post link: </strong>
+      <a href="http://dz1984.cc/articles/Google-APIs-via-NodeJS/" title="Google APIs via NodeJS">http://dz1984.cc/articles/Google-APIs-via-NodeJS/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY</a> unless stating additionally.
+  </li>
+</ul>
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/Javascript/" rel="tag"># Javascript</a>
+              <a href="/tags/NodeJS/" rel="tag"># NodeJS</a>
+              <a href="/tags/GeoJSON/" rel="tag"># GeoJSON</a>
+              <a href="/tags/Google-API/" rel="tag"># Google API</a>
+              <a href="/tags/Fusion-Table/" rel="tag"># Fusion Table</a>
+              <a href="/tags/%E5%A4%A9%E9%BE%8D%E7%89%B9%E5%85%AC%E5%9C%B0/" rel="tag"># 天龍特公地</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/articles/Ten-Books/" rel="prev" title="影響我的十本書">
+                  <i class="fa fa-chevron-left"></i> 影響我的十本書
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/articles/Crawl-via-Docker/" rel="next" title="Crawl via Docker">
+                  Crawl via Docker <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    
+  <div class="comments" id="disqus_thread">
+    <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+  </div>
+  
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="fa fa-laugh-wink"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Donald Zhan</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
+
+  
+<script src="https://cdn.jsdelivr.net/npm/hexo-generator-searchdb@1.4.0/dist/search.js" integrity="sha256-vXZMYLEqsROAXkEw93GGIvaB2ab+QW6w3+1ahD9nXXA=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+
+  
+
+
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">true</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","js":{"url":"https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js","integrity":"sha256-r+3itOMtGGjap0x+10hu6jW/gZCzxHsoKrOd7gyRSGY="}}</script>
+<script src="/js/third-party/math/mathjax.js"></script>
+
+
+<script class="next-config" data-name="disqus" type="application/json">{"enable":true,"shortname":"dz1984","count":true,"i18n":{"disqus":"disqus"}}</script>
+<script src="/js/third-party/comments/disqus.js"></script>
+
+</body>
+</html>

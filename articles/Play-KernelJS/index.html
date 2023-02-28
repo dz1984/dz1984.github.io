@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.3.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/DOOM2_32.jpg">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/DOOM2_16.jpg">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0/css/all.min.css" integrity="sha256-jTIdiMuX/e3DGJUGwl3pKSxuc6YOuqtJYkM0bGQESA4=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"dz1984.cc","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.10.1","exturl":false,"sidebar":{"position":"right","display":"hide","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="Nicholas Zakas 大神提出 Scalable Javascript architecutre 後，經由 Addy Osmani 大神不斷地推廣，對這架構非常著迷，所以~找了一些實作此架構的 JS ，一不小心就發現了 Kernel.js ，覺得它輕巧易懂，故寫一篇紀錄自己把玩 Kernel.js 過程。 寫在前頭">
+<meta property="og:type" content="article">
+<meta property="og:title" content="初探 Kernel.js 記">
+<meta property="og:url" content="http://dz1984.cc/articles/Play-KernelJS/index.html">
+<meta property="og:site_name" content="1984年產物">
+<meta property="og:description" content="Nicholas Zakas 大神提出 Scalable Javascript architecutre 後，經由 Addy Osmani 大神不斷地推廣，對這架構非常著迷，所以~找了一些實作此架構的 JS ，一不小心就發現了 Kernel.js ，覺得它輕巧易懂，故寫一篇紀錄自己把玩 Kernel.js 過程。 寫在前頭">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:image" content="http://i.imgur.com/w0t5trZ.png">
+<meta property="article:published_time" content="2015-03-03T10:00:00.000Z">
+<meta property="article:modified_time" content="2023-02-28T00:38:03.843Z">
+<meta property="article:author" content="Donald Zhan">
+<meta property="article:tag" content="Javascript">
+<meta property="article:tag" content="Kernel.js">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://i.imgur.com/w0t5trZ.png">
+
+
+<link rel="canonical" href="http://dz1984.cc/articles/Play-KernelJS/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-TW","comments":true,"permalink":"http://dz1984.cc/articles/Play-KernelJS/","path":"articles/Play-KernelJS/","title":"初探 Kernel.js 記"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>初探 Kernel.js 記 | 1984年產物</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MXEK8ZCR3J"></script>
+  <script class="next-config" data-name="google_analytics" type="application/json">{"tracking_id":"G-MXEK8ZCR3J","only_pageview":false}</script>
+  <script src="/js/third-party/analytics/google-analytics.js"></script>
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">1984年產物</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li>
+        <li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li>
+        <li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags</a></li>
+        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a></li>
+        <li class="menu-item menu-item-quote"><a href="/quote" rel="section"><i class="fa fa-quote-right fa-fw"></i>呢喃</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="Searching..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AF%AB%E5%9C%A8%E5%89%8D%E9%A0%AD"><span class="nav-number">1.</span> <span class="nav-text">寫在前頭</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%B0%A1%E4%BB%8B"><span class="nav-number">2.</span> <span class="nav-text">簡介</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%BB%E8%A6%81%E6%A7%8B%E6%88%90%E5%85%83%E7%B4%A0"><span class="nav-number">2.1.</span> <span class="nav-text">主要構成元素</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%87%AA%E5%B7%B1%E5%8B%95%E6%89%8B%E5%81%9A%E7%AF%84%E4%BE%8B"><span class="nav-number">3.</span> <span class="nav-text">自己動手做範例</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%89%E5%80%8B%E6%A8%A1%E7%B5%84%E5%8A%9F%E8%83%BD"><span class="nav-number">3.1.</span> <span class="nav-text">三個模組功能</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%81%8B%E4%BD%9C%E5%8E%9F%E7%90%86"><span class="nav-number">3.2.</span> <span class="nav-text">運作原理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%A8%8B%E5%BC%8F%E7%A2%BC"><span class="nav-number">3.3.</span> <span class="nav-text">程式碼</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%B5%90%E8%AA%9E"><span class="nav-number">4.</span> <span class="nav-text">結語</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%83%E8%80%83%E8%B3%87%E6%96%99"><span class="nav-number">5.</span> <span class="nav-text">參考資料</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Donald Zhan"
+      src="/images/bio-photo.jpg">
+  <p class="site-author-name" itemprop="name">Donald Zhan</p>
+  <div class="site-description" itemprop="description">自己專屬個人網站，會放一些有關Coding的心得，或是寫寫抒發文</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">54</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">categories</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">56</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/dz1984" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;dz1984" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://twitter.com/donaldzhan" title="Twitter → https:&#x2F;&#x2F;twitter.com&#x2F;donaldzhan" rel="noopener" target="_blank"><i class="fab fa-twitter fa-fw"></i>Twitter</a>
+      </span>
+  </div>
+  <div class="cc-license site-overview-item animated" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="https://cdn.jsdelivr.net/npm/@creativecommons/vocabulary@2020.11.3/assets/license_badges/small/by.svg" alt="Creative Commons"></a>
+  </div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button" aria-label="Back to top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-TW">
+    <link itemprop="mainEntityOfPage" href="http://dz1984.cc/articles/Play-KernelJS/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/bio-photo.jpg">
+      <meta itemprop="name" content="Donald Zhan">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="1984年產物">
+      <meta itemprop="description" content="自己專屬個人網站，會放一些有關Coding的心得，或是寫寫抒發文">
+    </span>
+    
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="初探 Kernel.js 記 | 1984年產物">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          初探 Kernel.js 記
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2015-03-03 18:00:00" itemprop="dateCreated datePublished" datetime="2015-03-03T18:00:00+08:00">2015-03-03</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/articles/" itemprop="url" rel="index"><span itemprop="name">articles</span></a>
+        </span>
+    </span>
+
+  
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus: </span>
+    
+    <a title="disqus" href="/articles/Play-KernelJS/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="articles/Play-KernelJS/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <p>Nicholas Zakas 大神提出 Scalable Javascript architecutre 後，經由 Addy Osmani 大神不斷地推廣，對這架構非常著迷，所以~找了一些實作此架構的 JS ，一不小心就發現了 Kernel.js ，覺得它輕巧易懂，故寫一篇紀錄自己把玩 Kernel.js 過程。</p>
+<h2 id="寫在前頭"><a href="#寫在前頭" class="headerlink" title="寫在前頭"></a>寫在前頭</h2><span id="more"></span>
+<p>你可以從這篇文章得到：</p>
+<ul>
+<li>Kernel.js 簡介。</li>
+</ul>
+<p>無法得到：</p>
+<ul>
+<li>完整的 Scalable Javascript architecutre 原理。(建議可爬 Nicholas Zakas 和 Addy Osmani 兩位大神的文章)</li>
+</ul>
+<h2 id="簡介"><a href="#簡介" class="headerlink" title="簡介"></a>簡介</h2><p><a target="_blank" rel="noopener" href="http://alanlindsay.me/kerneljs/">Kernel.js</a> 是受到  Nicholas Zakas 大神在 scalable Javascript architecutre 演講中得到啟發，用來打造可擴展性的 Javascript 應用輕量化架構(大約 4k)，提供消息系統能讓你解耦合(decouple)及彈性方式建置程式。</p>
+<p>Kernel.js 並不是框架或是像 YUI 、Dojo 之類的 Library，而是用來連結框架的架構基礎。 Kernel.js 沒有像 underscore.js 提供底層的公用函式，也沒有像 jQuery 提供任何處理 DOM 工具，更沒有像 ExtJS 提供任何 widget。你會需要 Kernel.js 和其他 libraries (base library, widget library 等)，去建置一個複雜的網站應用程式。</p>
+<h3 id="主要構成元素"><a href="#主要構成元素" class="headerlink" title="主要構成元素"></a>主要構成元素</h3><ul>
+<li>Base Library</li>
+</ul>
+<p>隨意的使用基本程式庫(像是 jQuery 或 YUI ) 可處理瀏覽器規範和 ajax。</p>
+<ul>
+<li>Kernel</li>
+</ul>
+<p>抽象化 Base Library，管理物件生命週期。</p>
+<ul>
+<li>Hub</li>
+</ul>
+<p>其實 Hub 就是 message Bus ，協助 Module 之間訊息傳遞 ，可自行擴充 Hub  API。</p>
+<ul>
+<li>Module</li>
+</ul>
+<p>可以將商業邏輯分門別類放至 Module ，且 Module 之間不直接溝通，呈現低耦合 (lossely couple)。</p>
+<p><img src="http://i.imgur.com/w0t5trZ.png" alt="kernel architecture"></p>
+<p>Addy Osmani 在解釋 Scalable Javascript architecutre 架構時，提出一個飛機與空中交通管制中心的例子，飛機之間是沒有直接介面，他們都是透過空中交通管制中心，決定起飛和降落。Hub 就像空中交通管制中心，而 Modules 就像飛機。</p>
+<h2 id="自己動手做範例"><a href="#自己動手做範例" class="headerlink" title="自己動手做範例"></a>自己動手做範例</h2><p>假設想紀錄每次按下按鈕次數，且可手動決定要不要要產生 Log 紀錄，當然~你大可以利用 if-else 方式，把邏輯塞在一起，但若是複雜度增加時，程式碼會出現一大串的 if-else 區塊，故將重復使用邏輯皆模組化，並練習操作 Kernel.js 試著完成這個範例。</p>
+<p>定義三個獨立模組，分別是 Counter 、Status，以及 Log 。</p>
+<h3 id="三個模組功能"><a href="#三個模組功能" class="headerlink" title="三個模組功能"></a>三個模組功能</h3><ul>
+<li>Counter 模組</li>
+</ul>
+<p>顯示累積每次按下按鈕的次數。</p>
+<ul>
+<li>Status 模組</li>
+</ul>
+<p>接受狀態異動事件。</p>
+<ul>
+<li>Log 模組</li>
+</ul>
+<p>在 console 下顯示狀態紀錄。</p>
+<h3 id="運作原理"><a href="#運作原理" class="headerlink" title="運作原理"></a>運作原理</h3><p>一開始 Status 模組會等待點擊按鈕的事件被觸發，當收到觸發事件後，會透過 Hub 發佈訊息。</p>
+<p>這三個模組皆有 Listen 著 ‘status-update’ 事件，所以~當  Hub 發佈 ‘status-update’ 訊息時，各模組就會執行自己本分工作，另外~ Hub 會偷偷呼叫 updateLog 來開關 Log 模組， 若 Log 模組被停止，就不會和系統發生作用，直到 Log 模組又重新被啟動。</p>
+<h3 id="程式碼"><a href="#程式碼" class="headerlink" title="程式碼"></a>程式碼</h3><ul>
+<li><a target="_blank" rel="noopener" href="http://jsbin.com/sugoma/">JSBin - Example</a></li>
+<li><a target="_blank" rel="noopener" href="https://gist.github.com/dz1984/8de2ad277205383280fe">Gist</a></li>
+</ul>
+<h2 id="結語"><a href="#結語" class="headerlink" title="結語"></a>結語</h2><p>模組的好處，是可以將領域邏輯劃分清楚，每一個模組獨自負責自己任務，僅透過 Hub 來傳遞所需訊息，各模組之間不會發生打架情形，甚至不知道對方的存在，完全符合單一責任原則 (SRP) ，也可提高可重復用性。</p>
+<p>最後~引用心目中大神的話。</p>
+<pre><code>In a well-modularized program each module should be about one topic, so I can remain ignorant of anything I don&#39;t need to understand.  - Martin Fowler
+</code></pre><h2 id="參考資料"><a href="#參考資料" class="headerlink" title="參考資料"></a>參考資料</h2><ul>
+<li><a target="_blank" rel="noopener" href="http://www.slideshare.net/nzakas/scalable-javascript-application-architecture">Nicholas Zakas - Scalable JavaScript Application Architecture</a></li>
+<li><a target="_blank" rel="noopener" href="http://addyosmani.com/futureproofjs/">Addy Osmani - Future-proofing Your JavaScript Applications For Improved Scalability</a></li>
+<li><a target="_blank" rel="noopener" href="http://alanlindsay.me/kerneljs/">Kernel.js</a></li>
+<li><a target="_blank" rel="noopener" href="http://martinfowler.com/articles/refactoring-external-service.html">Refactoring code that accesses external services</a></li>
+</ul>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>Post author:  </strong>Donald Zhan
+  </li>
+  <li class="post-copyright-link">
+      <strong>Post link: </strong>
+      <a href="http://dz1984.cc/articles/Play-KernelJS/" title="初探 Kernel.js 記">http://dz1984.cc/articles/Play-KernelJS/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY</a> unless stating additionally.
+  </li>
+</ul>
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/Javascript/" rel="tag"># Javascript</a>
+              <a href="/tags/Kernel-js/" rel="tag"># Kernel.js</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/articles/Eager-Loading-Query-CustColumns/" rel="prev" title="Eager Loading 查詢自訂欄位">
+                  <i class="fa fa-chevron-left"></i> Eager Loading 查詢自訂欄位
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/articles/happy-learn-dos/" rel="next" title="一本書一個回憶">
+                  一本書一個回憶 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    
+  <div class="comments" id="disqus_thread">
+    <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+  </div>
+  
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="fa fa-laugh-wink"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Donald Zhan</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
+
+  
+<script src="https://cdn.jsdelivr.net/npm/hexo-generator-searchdb@1.4.0/dist/search.js" integrity="sha256-vXZMYLEqsROAXkEw93GGIvaB2ab+QW6w3+1ahD9nXXA=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+
+  
+
+
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">true</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","js":{"url":"https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js","integrity":"sha256-r+3itOMtGGjap0x+10hu6jW/gZCzxHsoKrOd7gyRSGY="}}</script>
+<script src="/js/third-party/math/mathjax.js"></script>
+
+
+<script class="next-config" data-name="disqus" type="application/json">{"enable":true,"shortname":"dz1984","count":true,"i18n":{"disqus":"disqus"}}</script>
+<script src="/js/third-party/comments/disqus.js"></script>
+
+</body>
+</html>

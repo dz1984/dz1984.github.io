@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.3.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/DOOM2_32.jpg">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/DOOM2_16.jpg">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0/css/all.min.css" integrity="sha256-jTIdiMuX/e3DGJUGwl3pKSxuc6YOuqtJYkM0bGQESA4=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"dz1984.cc","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.10.1","exturl":false,"sidebar":{"position":"right","display":"hide","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="這篇是以 MaxCDN 的分析平台為例，這平台每天大約會產生 8TB 多的 Log 原始資料，在尖峰時伺服器更是要承受每秒 200,000 個 Requset，在這樣持續成長下，將會面臨到一波波難題要克服，故必須要完成：  處理目前及未來增加流量 處理非結構性的Request資料 降低冗餘硬體設備規模 減少軟體層 讓客戶直接查詢">
+<meta property="og:type" content="article">
+<meta property="og:title" content="超譯MaxCDN的分析平台">
+<meta property="og:url" content="http://dz1984.cc/articles/Translate_MaxCDN/index.html">
+<meta property="og:site_name" content="1984年產物">
+<meta property="og:description" content="這篇是以 MaxCDN 的分析平台為例，這平台每天大約會產生 8TB 多的 Log 原始資料，在尖峰時伺服器更是要承受每秒 200,000 個 Requset，在這樣持續成長下，將會面臨到一波波難題要克服，故必須要完成：  處理目前及未來增加流量 處理非結構性的Request資料 降低冗餘硬體設備規模 減少軟體層 讓客戶直接查詢">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:image" content="http://i.imgur.com/dQ3Wjmd.jpg">
+<meta property="og:image" content="http://i.imgur.com/Ly6gv6M.jpg">
+<meta property="article:published_time" content="2014-07-15T09:35:00.000Z">
+<meta property="article:modified_time" content="2023-02-28T00:38:03.840Z">
+<meta property="article:author" content="Donald Zhan">
+<meta property="article:tag" content="Memo">
+<meta property="article:tag" content="Translate">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://i.imgur.com/dQ3Wjmd.jpg">
+
+
+<link rel="canonical" href="http://dz1984.cc/articles/Translate_MaxCDN/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-TW","comments":true,"permalink":"http://dz1984.cc/articles/Translate_MaxCDN/","path":"articles/Translate_MaxCDN/","title":"超譯MaxCDN的分析平台"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>超譯MaxCDN的分析平台 | 1984年產物</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MXEK8ZCR3J"></script>
+  <script class="next-config" data-name="google_analytics" type="application/json">{"tracking_id":"G-MXEK8ZCR3J","only_pageview":false}</script>
+  <script src="/js/third-party/analytics/google-analytics.js"></script>
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">1984年產物</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li>
+        <li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li>
+        <li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags</a></li>
+        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a></li>
+        <li class="menu-item menu-item-quote"><a href="/quote" rel="section"><i class="fa fa-quote-right fa-fw"></i>呢喃</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="Searching..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%B3%87%E6%96%99%E4%BE%86%E6%BA%90"><span class="nav-number">1.</span> <span class="nav-text">資料來源</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Donald Zhan"
+      src="/images/bio-photo.jpg">
+  <p class="site-author-name" itemprop="name">Donald Zhan</p>
+  <div class="site-description" itemprop="description">自己專屬個人網站，會放一些有關Coding的心得，或是寫寫抒發文</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">54</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">categories</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">56</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/dz1984" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;dz1984" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://twitter.com/donaldzhan" title="Twitter → https:&#x2F;&#x2F;twitter.com&#x2F;donaldzhan" rel="noopener" target="_blank"><i class="fab fa-twitter fa-fw"></i>Twitter</a>
+      </span>
+  </div>
+  <div class="cc-license site-overview-item animated" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="https://cdn.jsdelivr.net/npm/@creativecommons/vocabulary@2020.11.3/assets/license_badges/small/by.svg" alt="Creative Commons"></a>
+  </div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button" aria-label="Back to top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-TW">
+    <link itemprop="mainEntityOfPage" href="http://dz1984.cc/articles/Translate_MaxCDN/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/bio-photo.jpg">
+      <meta itemprop="name" content="Donald Zhan">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="1984年產物">
+      <meta itemprop="description" content="自己專屬個人網站，會放一些有關Coding的心得，或是寫寫抒發文">
+    </span>
+    
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="超譯MaxCDN的分析平台 | 1984年產物">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          超譯MaxCDN的分析平台
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2014-07-15 17:35:00" itemprop="dateCreated datePublished" datetime="2014-07-15T17:35:00+08:00">2014-07-15</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/articles/" itemprop="url" rel="index"><span itemprop="name">articles</span></a>
+        </span>
+    </span>
+
+  
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus: </span>
+    
+    <a title="disqus" href="/articles/Translate_MaxCDN/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="articles/Translate_MaxCDN/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <p>這篇是以 MaxCDN 的<a target="_blank" rel="noopener" href="http://blog.maxcdn.com/maxcdn-analytics-platform-debug-automate-like-boss/">分析平台</a>為例，這平台每天大約會產生 8TB 多的 Log 原始資料，在尖峰時伺服器更是要承受每秒 200,000 個 Requset，在這樣持續成長下，將會面臨到一波波難題要克服，故必須要完成：</p>
+<ul>
+<li>處理目前及未來增加流量</li>
+<li>處理非結構性的Request資料</li>
+<li>降低冗餘硬體設備規模</li>
+<li>減少軟體層</li>
+<li>讓客戶直接查詢</li>
+</ul>
+<span id="more"></span>
+<p>MaxCDN 工程師打算重新建置報表及分析平台，提供更多資訊給客戶做決策，像是強大API提供客戶存取 Log 資料，以及給非開發人員使用的 <a target="_blank" rel="noopener" href="https://cp.maxcdn.com/reporting/logs">Log Viewer</a> 。因為這樣特別的需求，MaxCDN 工程團隊使用夢幻工具打造出一個全新的報表環境(reporting stack)，其平台是以<a target="_blank" rel="noopener" href="http://www.mongodb.com/">MongoDB</a>強化版的 <a target="_blank" rel="noopener" href="http://www.tokutek.com/products/tokumx-for-mongodb/">TokuMX</a> 為基礎，比起 MongoDB 還更快速。</p>
+<p>為了更快速塞資料到 TokuMX ，就特別用Go寫成的代理人，Go 比起傳統語言在平行處理策略中，像是C++、Java等，能充分發揮出多核 CPUs 能力，寫出極速的應用程式。</p>
+<p>下面將進入重頭戲，要開始講點技術了！</p>
+<p>  <img src="http://i.imgur.com/dQ3Wjmd.jpg" alt="img"></p>
+<p>  為了防止發生任何故障，MaxCDN 多提供訊息層這一道防線，選擇使用輕鬆跟上傳入資料速度的 <a target="_blank" rel="noopener" href="http://redis.io/">Redis</a> ，來橋接 CDN 和資料庫叢集(database cluster)之間大量訊息佇例。</p>
+<p>在 API 層，需要開發處理龐大的併發(concurrency)報表請求及好維護平台，故選用超火紅以 <a target="_blank" rel="noopener" href="http://nodejs.org/">Node.js</a> 寫成的  <a target="_blank" rel="noopener" href="http://expressjs.com/">Expresss 框架</a> ，利用 Node.js 和 Express 組合為基礎，能輕鬆增加 API 功能，像是大量的正則表達式比對查詢請求。</p>
+<p>確保高品質備援和靈活性，在達拉斯數據中心設有20個分散點，提供異地備援報表和分析叢集，每台資料庫伺服器都是使用RAID10設定、SSD硬碟、記憶體提高到 128G 。</p>
+<p><img src="http://i.imgur.com/Ly6gv6M.jpg" alt="img"></p>
+<p>每當有請求(request)進來時，就直接放到訊息佇列處理，馬上記錄每筆請求並保存5天，最精華部份是資料會依照公司規模做排序,之後，預計能提供即時綜合統計給需求客戶。為了符合 MongoDB 規模設計，儲存層可依資料成長量做水平擴充，近來測試結果，現在硬體架構可承受每秒 600,000 即時事件請求。</p>
+<p>此解法最大問題是如何有效率接收每秒 200,000 請求及即時儲存，使用 Go 建置可擴充模型， 採用多核CPU搭配 64GB 記憶體優勢，快速處理 TokuMX/MongoDB 之間儲存，比原本設計是每秒處理 200,000 請求之目標，表現得更為.出色。</p>
+<p>(以下省略不譯)</p>
+<h1 id="資料來源"><a href="#資料來源" class="headerlink" title="資料來源"></a>資料來源</h1><ul>
+<li><a target="_blank" rel="noopener" href="http://blog.maxcdn.com/learned-stop-worrying-love-logs/">HOW WE BUILT OUR REAL-TIME ANALYTICS PLATFORM</a></li>
+</ul>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>Post author:  </strong>Donald Zhan
+  </li>
+  <li class="post-copyright-link">
+      <strong>Post link: </strong>
+      <a href="http://dz1984.cc/articles/Translate_MaxCDN/" title="超譯MaxCDN的分析平台">http://dz1984.cc/articles/Translate_MaxCDN/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY</a> unless stating additionally.
+  </li>
+</ul>
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/Memo/" rel="tag"># Memo</a>
+              <a href="/tags/Translate/" rel="tag"># Translate</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/articles/DIY_MBA_Sleeve/" rel="prev" title="自製 MBA 13 保護套">
+                  <i class="fa fa-chevron-left"></i> 自製 MBA 13 保護套
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/articles/Taipei_POP/" rel="next" title="天龍特公地製作過程">
+                  天龍特公地製作過程 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    
+  <div class="comments" id="disqus_thread">
+    <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+  </div>
+  
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="fa fa-laugh-wink"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Donald Zhan</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
+
+  
+<script src="https://cdn.jsdelivr.net/npm/hexo-generator-searchdb@1.4.0/dist/search.js" integrity="sha256-vXZMYLEqsROAXkEw93GGIvaB2ab+QW6w3+1ahD9nXXA=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+
+  
+
+
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">true</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","js":{"url":"https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js","integrity":"sha256-r+3itOMtGGjap0x+10hu6jW/gZCzxHsoKrOd7gyRSGY="}}</script>
+<script src="/js/third-party/math/mathjax.js"></script>
+
+
+<script class="next-config" data-name="disqus" type="application/json">{"enable":true,"shortname":"dz1984","count":true,"i18n":{"disqus":"disqus"}}</script>
+<script src="/js/third-party/comments/disqus.js"></script>
+
+</body>
+</html>

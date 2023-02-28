@@ -1,0 +1,1831 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>快快樂樂學 - Node.js</title>
+    <url>/articles/Slide-20130926/</url>
+    <content><![CDATA[<p><p class="codepen" data-height="300" data-default-tab="result" data-slug-hash="MWOxvGR" data-user="dz1984" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/dz1984/pen/MWOxvGR">
+  快快樂樂學 - RESTful Web Services</a> by Donald Zhan (<a href="https://codepen.io/dz1984">@dz1984</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p></p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>]]></content>
+      <categories>
+        <category>slides</category>
+      </categories>
+      <tags>
+        <tag>slides</tag>
+        <tag>Javascript</tag>
+        <tag>NodeJS</tag>
+        <tag>Express</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>快快樂樂學 - RESTful Web Services</title>
+    <url>/articles/Slide-20131031/</url>
+    <content><![CDATA[<p><p class="codepen" data-height="300" data-default-tab="result" data-slug-hash="LYOajxV" data-user="dz1984" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/dz1984/pen/LYOajxV">
+  Untitled</a> by Donald Zhan (<a href="https://codepen.io/dz1984">@dz1984</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p></p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>]]></content>
+      <categories>
+        <category>slides</category>
+      </categories>
+      <tags>
+        <tag>slides</tag>
+        <tag>Javascript</tag>
+        <tag>NodeJS</tag>
+        <tag>Express</tag>
+        <tag>RESTful</tag>
+        <tag>Web Services</tag>
+        <tag>OpenShift</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>資料科學家筆記</title>
+    <url>/articles/Data-Scientist-Memo/</url>
+    <content><![CDATA[<h2 id="成功資料科學家的三種主要能力"><a href="#成功資料科學家的三種主要能力" class="headerlink" title="成功資料科學家的三種主要能力"></a>成功資料科學家的三種主要能力</h2><ul>
+<li>解決問題能力</li>
+<li>溝通能力</li>
+<li>思想開放</li>
+</ul>
+<span id="more"></span>
+<h3 id="解決問題能力"><a href="#解決問題能力" class="headerlink" title="解決問題能力"></a>解決問題能力</h3><p>當然，資料科學家都具備解決問題能力，但優秀的資料科學家會花時間去瞭解，有那些問題需要被解決，解決方案如何創造價值，以及如何被應用和被誰使用。</p>
+<h3 id="溝通能力"><a href="#溝通能力" class="headerlink" title="溝通能力"></a>溝通能力</h3><p>一位溝通能力良好的資料科學家，會利用視覺化工具，有效地向非專業人士說明模型，使他們明白模型的價值之處。</p>
+<h3 id="思想開放"><a href="#思想開放" class="headerlink" title="思想開放"></a>思想開放</h3><p>想當一位成功資料科學家，就必須擁有一顆開放地大腦，能吸收各個領域中Domain-Knowledge，在建立模型時才能符合常識。</p>
+]]></content>
+      <categories>
+        <category>articles</category>
+      </categories>
+      <tags>
+        <tag>Data Scientist</tag>
+        <tag>Memo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>2014年12個大數據(Big Data)預言</title>
+    <url>/articles/BigData-Predictions-For-2014/</url>
+    <content><![CDATA[<h3 id="寫在前頭"><a href="#寫在前頭" class="headerlink" title="寫在前頭"></a>寫在前頭</h3><span id="more"></span>
+<p>這是從簡報取出文章，雖然字數不多，但我卻已經翻譯良久，品質還有待加強，若有錯誤或不順地方，麻煩請指正。</p>
+<p>原文網址：<a href="http://www.cio.com/slideshow/detail/132163">12 Big Data Predictions for 2014</a></p>
+<ul>
+<li>從這篇文章你可以得到：<ul>
+<li>很糟糕的翻譯文(練習中譯)</li>
+<li>有關Big Data未來動態</li>
+</ul>
+</li>
+<li>無法得到：<ul>
+<li>真實性，這是屬於預言性質內容，其真實性就請各位看倌看下去。</li>
+</ul>
+</li>
+</ul>
+<h3 id="預言1：人們停止說大數據，而去意會它"><a href="#預言1：人們停止說大數據，而去意會它" class="headerlink" title="預言1：人們停止說大數據，而去意會它"></a>預言1：人們停止說大數據，而去意會它</h3><p>在2014年，大數據誘人口號將會消退，反而成為臺面上賭注，在SaaS平台使用大數據分析，提供客戶成功管理(customer success management)，每個雲端應用供應商將發展出支援大數據原則的後端基礎設備。</p>
+<p><img src="/images/BigData_Predictions_For_2014/001.jpg" alt="People Stop Saying Big Data and Start Meaning It"></p>
+<h3 id="預言2：Hadoop從新奇事物轉移到關鍵"><a href="#預言2：Hadoop從新奇事物轉移到關鍵" class="headerlink" title="預言2：Hadoop從新奇事物轉移到關鍵"></a>預言2：Hadoop從新奇事物轉移到關鍵</h3><p>大數據技術不會只有雲端運算唯一的地方，在2014年，Hadoop將超越以批次數據處理和存儲基礎，轉移至通用計算基礎設備，將成為企業數據結構核心，這意謂著分析仍是大數據首要使用對象。</p>
+<p><img src="/images/BigData_Predictions_For_2014/002.jpg" alt="Hadoop Moves From Curiosity to Critical"></p>
+<h3 id="預言3：企業積極充份使用客戶數據"><a href="#預言3：企業積極充份使用客戶數據" class="headerlink" title="預言3：企業積極充份使用客戶數據"></a>預言3：企業積極充份使用客戶數據</h3><p>企業將會認真看待客戶與產品服務在線上互動時，所遺留下來的數位記錄(digital breadcrumb)，資料分析所提供整個公司的商業價值將凌駕於BI團隊。</p>
+<p><img src="/images/BigData_Predictions_For_2014/003.jpg" alt="Businesses Get Proactive by Leveraging Customer Data"></p>
+<h3 id="預言4：大數據將促成一場行銷大賽"><a href="#預言4：大數據將促成一場行銷大賽" class="headerlink" title="預言4：大數據將促成一場行銷大賽"></a>預言4：大數據將促成一場行銷大賽</h3><p>大數據分析應用於行銷目的上，2014年將扮演重要一年，影響廣告、促銷，及消費者行為，在世界杯(World Cup)和冬季奧運會(Winter Olympics)期間會有一波創新。</p>
+<p><img src="/images/BigData_Predictions_For_2014/004.jpg" alt="Big Data Brings Its &#39;A Game&#39; in Marketing"></p>
+<h3 id="預言5：有想法的分析師比資料科學家更重要"><a href="#預言5：有想法的分析師比資料科學家更重要" class="headerlink" title="預言5：有想法的分析師比資料科學家更重要"></a>預言5：有想法的分析師比資料科學家更重要</h3><p>在業務部門，授權於大數據分析的分析師，將變得比資料科學家(data scientists)更為重要，有公司預測，勢必會降低2014年資料科學家的高薪角色。</p>
+<p><img src="/images/BigData_Predictions_For_2014/005.jpg" alt="Modern Analysts Matter More Than Data Scientists"></p>
+<h3 id="預言6：物聯網-Internet-of-Things-將進化成Web物聯網-Web-of-Things"><a href="#預言6：物聯網-Internet-of-Things-將進化成Web物聯網-Web-of-Things" class="headerlink" title="預言6：物聯網(Internet of Things)將進化成Web物聯網(Web of Things)"></a>預言6：物聯網(Internet of Things)將進化成Web物聯網(Web of Things)</h3><p>IEEE專業協會認為2014年可以看到整合識別物件至資訊網路的物聯網(Internet of Things)，將讓位給Web物聯網(Web of Things)。Web物聯網(Web of Things)利用移動裝置優點和感測器特性，觀察和監測環境，以增加現實世界與網路之間相對應物的協調性。<br>智慧解決方案都必須能連結互聯，使物質世界與數位世界資源相互應，因此，Web物聯網將會產生大量與物質世界相關聯資料。</p>
+<p><img src="/images/BigData_Predictions_For_2014/006.jpg" alt="The Internet of Things Will Evolve into the Web of Things"></p>
+<h3 id="預言7：從大數據到極致數據-extreme-data"><a href="#預言7：從大數據到極致數據-extreme-data" class="headerlink" title="預言7：從大數據到極致數據(extreme data)"></a>預言7：從大數據到極致數據(extreme data)</h3><p>在2014年資料的3Vs(volume, velocity, variety)仍是指數成長，使大數據就像難以馴服的老虎，因此，需要更簡單的分析工具去充分使用超越3Vs的海量資料(data deluge)。科技尚未跟上訓練有素的資料科學家需要，以及從金融保險業公司，到行銷、醫療保健，及科學研究組織，能易於使用將收集數據轉換成有意義視野的工具需求。極致數據(extreme data)目前需要新的數據管理分析模式和方法，且會在2014年成為領導者。</p>
+<p><img src="/images/BigData_Predictions_For_2014/007.jpg" alt="From Big Data to Extreme Data"></p>
+<h3 id="預言8：R取代SAS成為主流"><a href="#預言8：R取代SAS成為主流" class="headerlink" title="預言8：R取代SAS成為主流"></a>預言8：R取代SAS成為主流</h3><p>專門為資料科學家進行統計分析的R程式語言，將會在2014年成為主流，擠掉SAS和SPSS。R語言已擁有超過200萬使用者，且還有300萬分析師找尋的最佳解決方案。</p>
+<p><img src="/images/BigData_Predictions_For_2014/008.jpg" alt="R Replaces Legacy SAS Solutions and Goes Mainstream"></p>
+<h3 id="預言9：Hadoop將成為強大的即時應用程式"><a href="#預言9：Hadoop將成為強大的即時應用程式" class="headerlink" title="預言9：Hadoop將成為強大的即時應用程式"></a>預言9：Hadoop將成為強大的即時應用程式</h3><p>未來一年將會看到爆發互動式應用程式，像是Web應用程式、手機應用程式，社交應用程式，建置在Hadoop平台且與人們即時互動，2014年將帶來即時大數據應用平台，不只是分析昨天數據，將要分析5分鐘前、1分鐘前的數據，有互動應用程式使決策更即時。</p>
+<p><img src="/images/BigData_Predictions_For_2014/009.jpg" alt="Hadoop Will Power Real-Time Tailored Applications"></p>
+<h3 id="預言10：Hadoop有足夠時間注入企業強心針"><a href="#預言10：Hadoop有足夠時間注入企業強心針" class="headerlink" title="預言10：Hadoop有足夠時間注入企業強心針"></a>預言10：Hadoop有足夠時間注入企業強心針</h3><p>雖然Hadoop是夢幻平台，但仍需要更多成果，在2014年，將會看到Hadoop技術發展成更加安全性、操作管理、資源管理，以及多點備援(multi-site replication)。</p>
+<p><img src="/images/BigData_Predictions_For_2014/010.jpg" alt="Time for Hadoop to Get Some Enterprise Hardening"></p>
+<h3 id="預言11：2014年底將會有NoSQL資料庫公司成功首次公開募股"><a href="#預言11：2014年底將會有NoSQL資料庫公司成功首次公開募股" class="headerlink" title="預言11：2014年底將會有NoSQL資料庫公司成功首次公開募股"></a>預言11：2014年底將會有NoSQL資料庫公司成功首次公開募股</h3><p>不斷成長的企業需求，其市場正在趨向更彈性、可擴展，及可負擔的數據管理解決方案(即分案和交易)，專為雲端運算和大數據時代。</p>
+<p><img src="/images/BigData_Predictions_For_2014/011.jpg" alt="One NoSQL Database Company Will Hold a Successful IPO by the End of 2014"></p>
+<h3 id="預言12：一個新的分析架構-Analytics-Stack-將會出現"><a href="#預言12：一個新的分析架構-Analytics-Stack-將會出現" class="headerlink" title="預言12：一個新的分析架構(Analytics Stack)將會出現"></a>預言12：一個新的分析架構(Analytics Stack)將會出現</h3><p>新的資料分析架構將會出現在2014年，新的資料庫解決方法、可分析、視覺化，將打亂傳統大型供應商，這些大型供應商會匆忙地拼湊出新的解決方案來響應。</p>
+<p><img src="/images/BigData_Predictions_For_2014/012.jpg" alt="A New Analytics Stack Will Emerge"></p>
+]]></content>
+      <categories>
+        <category>articles</category>
+      </categories>
+      <tags>
+        <tag>Big Data</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>運用3D深度感測器探討自然人機互動介面</title>
+    <url>/articles/3D-Sensor-NUI/</url>
+    <content><![CDATA[<h2 id="寫在前頭"><a href="#寫在前頭" class="headerlink" title="寫在前頭"></a>寫在前頭</h2><span id="more"></span>
+<p>今天在整理文件時，無意中發現去年讀研究方法作業，練習如何寫小論文(只寫前三章即可)，當時Kinect正紅，索性就想了這個主題來發揮，可惜因課業繁忙沒有把系統實作出來，真是<strong>殘念呀！(&gt;_&lt;)…</strong></p>
+<ul>
+<li>從這篇文章你可以得到：<ul>
+<li>自然人~妻~機介面初淺知識。</li>
+<li>3D深度感測器結合辨識系統基本輪廓。</li>
+</ul>
+</li>
+<li>無法得到：<ul>
+<li>因沒有完成實體作品，不會有任何程式碼，屬於嘴炮理論。</li>
+<li>結論。(完全是自己寫爽的)</li>
+</ul>
+</li>
+</ul>
+<h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>隨著數位化、資訊化及網路化之應用趨勢廣泛，逐漸從個人電腦延伸至行動電話、電視、家用遊戲機等消費性電子產品，導致有愈來愈多電子產品功能增加，操作方式也變為繁雜，從早期鍵盤輸入，到滑鼠、光筆、搖桿、數位板等輸入工具，使用者與電子產品之間仍產生一道鴻溝。因此，設計再精密的機器，若沒有考慮到使用者的需求，還是無法發揮其效用，故符合簡單、自然、友善、一致的人機互動模式，成為設計使用者介面的重要原則，良好的人機介面可以在使用初期減少學習成本，加快發揮系統效益，扮演介於使用者與機器之間溝通角色。</p>
+<h2 id="動機目的"><a href="#動機目的" class="headerlink" title="動機目的"></a>動機目的</h2><p>自然人機介面(Natural User Interface, NUI)是近年來人機互動介面趨勢，有別以往透圖形化介面，操作鍵盤、滑鼠…等，且使用者需先學習如何操作這些輸入設備及打字，才可以與內容達到互動效果。反觀 NUI 將依照使用者之身體語言操控裝置，如觸覺、視覺、聲音、手寫、移動…等，即可進行互動，在操作上更加直覺自然。</p>
+<p>嘗試使用 3D 深度感測器(3D Depth Sensors)，加入辨識人類肢體動作特徵之演算法及架構，應用於行動裝置與個人電腦或是筆記型電腦進行資料同步更新，改善以往人機介面操作程序，提升良好互動模式，希望此次研究能將自然人機介面融入於日常生活之中，讓用戶感受到機器不在是冰冷又呆版刻版印象。</p>
+<h2 id="自然人機介面"><a href="#自然人機介面" class="headerlink" title="自然人機介面"></a>自然人機介面</h2><p>首先，初步瞭解自然人機介面之涵意，引用 J.  Black 提出定義為「重覆利用已會技能直接與內容互動的使用者介面設計」，下列三項是針對定義再進一步解釋：</p>
+<ol>
+<li>介面設計：介面設計需事先妥善規劃考量，並注重使用者在內容和情境上互動是否合適。</li>
+<li>重覆利用已會的技能：從現實生活中的經驗，挖掘用戶能夠理解之操作模式，如觸摸、手勢、身體移動…等，除人類本能外，任何介面技術的互動方式，如 CLI(Command-Line Interface)、GUI(Graphic User Interface)，只要是以運用現有技能為重心，皆可融入於自然人機介面之中。</li>
+<li>直接與內容互動：直接操作內容為主要互動方式，而控制元件則為輔助項目，如Multi-Touching 技術直接在圖片上放大、縮小等指令，無頇再搭配任何按鈕元件。從定義中可以看出降低操作介面所帶來的學習成本，達到易於操作且相容特性，將會成為自然人機介面未來重要指標。</li>
+</ol>
+<h2 id="動作辨識"><a href="#動作辨識" class="headerlink" title="動作辨識"></a>動作辨識</h2><p>在動作辨識已有大量的研究論文可供參考，此次將運用星狀骨架的概念，進行研究運用，可以由陳宣勝發表「使用星狀骨架作人類動作自動辨識」這篇論文提出一套建構在隱藏式馬可夫模型的動作辨識方法，將引述論文部份摘要說明，此方法使用「星狀骨架來對人類的姿勢做出代表性的描述，此辨識方法將人的動作視為沿著時間的一連串星狀骨架，因此，表示人類動作的時間序列影像被轉換成特徵向量序列。接著，特徵向量序列必頇轉換成符號序列使得隱藏式馬可夫模型可以為動作建立模型，設計一本包含每一類動作星狀骨架的姿勢編碼書，並且為特徵向量定義距離來量測特徵向量間的相似度。姿勢序列中的每個特徵向量會和編碼書中的特徵向量做比對，並會被編碼成編碼書中與自己最為相似的特徵向量所代表的符號。因此時間序列的姿勢影像被轉換成符號序列。以隱藏式馬可夫模型為每種被辨識的動作建立模型。在訓練模型的階段，每個動作模型的參數皆最佳化以適當地描述訓練的符號序列。在動作辨識的階段，與測試符號序列最相配的動作模型即為所辨識出的動作。」</p>
+<p><img src="/images/3D_Sensor_NUI/sys_arch.png" alt="process"></p>
+<h2 id="系統架構"><a href="#系統架構" class="headerlink" title="系統架構"></a>系統架構</h2><p>此系統分別由來源設備(如行動裝置)、3D深度感測器與辨識系統，以及目標設備(如個人電腦或是筆記型電腦)等元件，三者所構成之間關係，如圖1所示。辨識系統主要負責由3D深度感測器取得肢體動作資訊，並搜尋相似的特徵向量，根據動作特徵決定所代表意義，去執行處理。</p>
+<p><img src="/images/3D_Sensor_NUI/process.png" alt="process"></p>
+<h2 id="操作流程"><a href="#操作流程" class="headerlink" title="操作流程"></a>操作流程</h2><p>肢體動作操控設計上，將導入自然人機介面原則，刪減繁複步驟，讓用戶感覺自然簡便，只要將行動裝置對準感測器，由感測器自行辨識對應之裝置型號及啟動連線程序，接著在來源設備上做一個抓取，並丟放至目標設備之手勢動作，當感測器辨識到此動作時，就會與目標設備進行資料同步更新，故不論是行動裝置上傳至個人電腦，或是從個人電腦下載到行動裝置等傳輸方向，皆透過簡單抓取、丟放之手勢即可完成資料同步程序。</p>
+<h2 id="參考文獻"><a href="#參考文獻" class="headerlink" title="參考文獻"></a>參考文獻</h2><ul>
+<li>Andrew D. Wilson (2010). Using a Depth Camera as a Touch Sensor. ITS 2010: Devices &amp; Algorithms, page 69-72</li>
+<li>陳治孙 (2003)。虛擬滑鼠：以視覺為基礎之手勢辨識。國立中山大學資訊工程學系論文</li>
+<li>顧正偉 (2005)。利用多觀察值型隱馬可夫模型進行人體動作辨識。國立交通大學資訊工程系碩士論文</li>
+<li>陳宣勝 (2006)。使用星狀骨架做人體辨識。國立交通大學資訊科學與工程研究所</li>
+<li>林宸生 (2008)。互動式電腦視覺系統應用於寓教於樂之大眾科學遊戲研究。逢甲大學自動控制工程研究所碩士論文</li>
+<li>李佳勳 (2002)。互動式媒體-以感官多模式探討數位設計環境中人機互動介面設計與應用實例。成功大學建築學系碩士論文</li>
+<li>方裕民（2003）。人與物的對話─互動介面設計理論與實務。台北市：田園城市文化事業有限公司</li>
+<li><a href="http://www.nuigroup.com/">NUI Group-Natural User Interface Group</a></li>
+<li><a href="http://openkinect.org/">OpenKinect–OpenKinect Project</a></li>
+<li><a href="http://www.openni.org/">OpenNI–OpenNI Organization</a></li>
+<li><a href="http://theclevermonkey.blogspot.com/2010/03/blakes-definition-of-nui.html">The iPad Entrepreneur - Blake’s Definition of NUI</a></li>
+<li><a href="http://nui.joshland.org/2010/04/nuis-reuse-existing-skills.html">DECONSTRUCTING THE NUI - NUIs reuse existing skills (updated NUI definition)</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>articles</category>
+      </categories>
+      <tags>
+        <tag>3D Sensor</tag>
+        <tag>NUI</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>RESTful in Action</title>
+    <url>/articles/RESTful_In_Action/</url>
+    <content><![CDATA[<h2 id="Summay"><a href="#Summay" class="headerlink" title="Summay"></a>Summay</h2><p>練習使用RESTful Web Servicet技術打造一個簡單書藉管理Web應用程式。</p>
+<h3 id="REST-amp-RESTFul-Web-Services"><a href="#REST-amp-RESTFul-Web-Services" class="headerlink" title="REST &amp; RESTFul Web Services"></a>REST &amp; RESTFul Web Services</h3><p>REST (Reprsentational State Transfer)是軟體構設計風格，並不是標準。RESTful Web Services是使用HTTP協定，並遵循REST原則的Web服務。</p>
+<h2 id=""><a href="#" class="headerlink" title=""></a><span id="more"></span></h2><h2 id="動手實作"><a href="#動手實作" class="headerlink" title="動手實作"></a>動手實作</h2><h3 id="修改package-json"><a href="#修改package-json" class="headerlink" title="修改package.json"></a>修改package.json</h3><p>這次實作會用到express、jade、mongoose等packages，另外，superagent和expect.js是用來測試時使用。</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">&#123;</span><br><span class="line">  <span class="string">&quot;name&quot;</span>: <span class="string">&quot;NodeJSTut&quot;</span>,</span><br><span class="line">  <span class="string">&quot;version&quot;</span>: <span class="string">&quot;0.0.1&quot;</span>,</span><br><span class="line">  <span class="string">&quot;description&quot;</span>: <span class="string">&quot;NodeJS Tutorial for RESTful&quot;</span>,</span><br><span class="line">  <span class="string">&quot;keywords&quot;</span>: [</span><br><span class="line">    <span class="string">&quot;OpenShift&quot;</span>,</span><br><span class="line">    <span class="string">&quot;Node.js&quot;</span>,</span><br><span class="line">    <span class="string">&quot;RESTful&quot;</span></span><br><span class="line">  ],</span><br><span class="line">  <span class="string">&quot;author&quot;</span>: &#123;</span><br><span class="line">    <span class="string">&quot;name&quot;</span>: <span class="string">&quot;DonaldIsFreak&quot;</span></span><br><span class="line">  &#125;,</span><br><span class="line"></span><br><span class="line">  <span class="string">&quot;engines&quot;</span>: &#123;</span><br><span class="line">    <span class="string">&quot;node&quot;</span>: <span class="string">&quot;&gt;= 0.10.x&quot;</span>,</span><br><span class="line">    <span class="string">&quot;npm&quot;</span>: <span class="string">&quot;&gt;= 1.0.0&quot;</span></span><br><span class="line">  &#125;,</span><br><span class="line"></span><br><span class="line">  <span class="string">&quot;dependencies&quot;</span>: &#123;</span><br><span class="line">        <span class="string">&quot;express&quot;</span> : <span class="string">&quot;3.3.8&quot;</span>,</span><br><span class="line">        <span class="string">&quot;jade&quot;</span> : <span class="string">&quot;*&quot;</span>,</span><br><span class="line">        <span class="string">&quot;mongoose&quot;</span> : <span class="string">&quot;&gt;=0.0.1&quot;</span></span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="string">&quot;devDependencies&quot;</span>: &#123;</span><br><span class="line">        <span class="string">&quot;superagent&quot;</span> : <span class="string">&quot;&gt;=0.15.0&quot;</span>,</span><br><span class="line">        <span class="string">&quot;expect.js&quot;</span>: <span class="string">&quot;&gt;=0.1.0&quot;</span></span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="string">&quot;bundleDependencies&quot;</span>: [],</span><br><span class="line"></span><br><span class="line">  <span class="string">&quot;private&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">  <span class="string">&quot;main&quot;</span>: <span class="string">&quot;server.js&quot;</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h3 id="MongoDB"><a href="#MongoDB" class="headerlink" title="MongoDB"></a>MongoDB</h3><p>先確定好MongoDB有安裝成功，建立Book Model，目前只有三個欄位，分別是title、isbn，以及description。 (_id是MongoDB自動產生)</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">var</span> mongoose = <span class="built_in">require</span>(<span class="string">&quot;mongoose&quot;</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> bookSchema = <span class="keyword">new</span> mongoose.<span class="title class_">Schema</span>(&#123;</span><br><span class="line">        title : <span class="title class_">String</span>,</span><br><span class="line">        isbn : <span class="title class_">String</span>,</span><br><span class="line">        <span class="attr">description</span>: <span class="title class_">String</span></span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="variable language_">module</span>.<span class="property">exports</span> = mongoose.<span class="title function_">model</span>(<span class="string">&#x27;Book&#x27;</span>,bookSchema);</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h3 id="RESTful-API規格"><a href="#RESTful-API規格" class="headerlink" title="RESTful API規格"></a>RESTful API規格</h3><div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:left">功能</th>
+<th style="text-align:left">URL</th>
+<th style="text-align:center">HTTP Method</th>
+<th style="text-align:center">Request</th>
+<th style="text-align:center">Response</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">新增</td>
+<td style="text-align:left">/books</td>
+<td style="text-align:center">POST</td>
+<td style="text-align:center">Book JSON</td>
+<td style="text-align:center">—</td>
+</tr>
+<tr>
+<td style="text-align:left">刪除</td>
+<td style="text-align:left">/books/:id</td>
+<td style="text-align:center">DELETE</td>
+<td style="text-align:center">—</td>
+<td style="text-align:center">—</td>
+</tr>
+<tr>
+<td style="text-align:left">修改</td>
+<td style="text-align:left">/books/:id</td>
+<td style="text-align:center">PUT</td>
+<td style="text-align:center">Book JSON</td>
+<td style="text-align:center">— </td>
+</tr>
+<tr>
+<td style="text-align:left">查詢</td>
+<td style="text-align:left">/books/:id</td>
+<td style="text-align:center">GET</td>
+<td style="text-align:center">—</td>
+<td style="text-align:center">Book JSON</td>
+</tr>
+<tr>
+<td style="text-align:left">列表</td>
+<td style="text-align:left">/books</td>
+<td style="text-align:center">GET</td>
+<td style="text-align:center">—</td>
+<td style="text-align:center">Book JSON</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="Express-Server"><a href="#Express-Server" class="headerlink" title="Express Server"></a>Express Server</h3><ul>
+<li>server.js</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">#!<span class="regexp">/bin/</span>env node</span><br><span class="line"><span class="keyword">var</span> express = <span class="built_in">require</span>(<span class="string">&#x27;express&#x27;</span>),</span><br><span class="line">    routes = <span class="built_in">require</span>(<span class="string">&#x27;./routes&#x27;</span>),</span><br><span class="line">    apis = <span class="built_in">require</span>(<span class="string">&#x27;./routes/api&#x27;</span>),</span><br><span class="line">    http = <span class="built_in">require</span>(<span class="string">&#x27;http&#x27;</span>),</span><br><span class="line">    path = <span class="built_in">require</span>(<span class="string">&#x27;path&#x27;</span>),</span><br><span class="line">    mongoose = <span class="built_in">require</span>(<span class="string">&#x27;mongoose&#x27;</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// connect MongoDB</span></span><br><span class="line">mongoose.<span class="title function_">connect</span>(process.<span class="property">env</span>.<span class="property">OPENSHIFT_MONGODB_DB_URL</span>+<span class="string">&#x27;nodejstut&#x27;</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> app = <span class="title function_">express</span>();</span><br><span class="line"></span><br><span class="line"><span class="comment">// all environments</span></span><br><span class="line">app.<span class="title function_">set</span>(<span class="string">&#x27;port&#x27;</span>, process.<span class="property">env</span>.<span class="property">OPENSHIFT_NODEJS_PORT</span> || <span class="number">8080</span>);</span><br><span class="line">app.<span class="title function_">set</span>(<span class="string">&#x27;ip&#x27;</span>,,process.<span class="property">env</span>.<span class="property">OPENSHIFT_NODEJS_IP</span> || <span class="string">&#x27;127.0.0.1&#x27;</span>);</span><br><span class="line">app.<span class="title function_">set</span>(<span class="string">&#x27;views&#x27;</span>, __dirname + <span class="string">&#x27;/views&#x27;</span>);</span><br><span class="line">app.<span class="title function_">set</span>(<span class="string">&#x27;view engine&#x27;</span>, <span class="string">&#x27;jade&#x27;</span>);</span><br><span class="line">app.<span class="title function_">use</span>(express.<span class="title function_">favicon</span>());</span><br><span class="line">app.<span class="title function_">use</span>(express.<span class="title function_">logger</span>(<span class="string">&#x27;dev&#x27;</span>));</span><br><span class="line">app.<span class="title function_">use</span>(express.<span class="title function_">cookieParser</span>());</span><br><span class="line">app.<span class="title function_">use</span>(express.<span class="title function_">bodyParser</span>());</span><br><span class="line">app.<span class="title function_">use</span>(express.<span class="title function_">methodOverride</span>());</span><br><span class="line">app.<span class="title function_">use</span>(app.<span class="property">router</span>);</span><br><span class="line">app.<span class="title function_">use</span>(express.<span class="title function_">static</span>(path.<span class="title function_">join</span>(__dirname, <span class="string">&#x27;public&#x27;</span>)));</span><br><span class="line"></span><br><span class="line"><span class="comment">// development only</span></span><br><span class="line"><span class="keyword">if</span> (<span class="string">&#x27;development&#x27;</span> == app.<span class="title function_">get</span>(<span class="string">&#x27;env&#x27;</span>)) &#123;</span><br><span class="line">  app.<span class="title function_">use</span>(express.<span class="title function_">errorHandler</span>());</span><br><span class="line"> &#125;</span><br><span class="line"></span><br><span class="line">http.<span class="title function_">createServer</span>(app).<span class="title function_">listen</span>(app.<span class="title function_">get</span>(<span class="string">&#x27;port&#x27;</span>),app.<span class="title function_">get</span>(<span class="string">&#x27;ip&#x27;</span>), <span class="keyword">function</span>(<span class="params"></span>)&#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;Express server listening on port &#x27;</span> + app.<span class="title function_">get</span>(<span class="string">&#x27;port&#x27;</span>));</span><br><span class="line">&#125;);</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>按照上面的RESTful API規格，主要負責MongoDB的CRUD。</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">app.<span class="title function_">all</span>(<span class="string">&#x27;/*&#x27;</span>,<span class="keyword">function</span>(<span class="params">req,res,next</span>)&#123;</span><br><span class="line">    res.<span class="title function_">header</span>(<span class="string">&#x27;Access-Control-Allow-Origin&#x27;</span>,<span class="string">&#x27;*&#x27;</span>);</span><br><span class="line">    res.<span class="title function_">header</span>(<span class="string">&#x27;Access-COntrol-Allow-Headers&#x27;</span>,<span class="string">&#x27;X-Requested-With&#x27;</span>);</span><br><span class="line">    <span class="title function_">next</span>();</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">app.<span class="title function_">get</span>(<span class="string">&#x27;/&#x27;</span>,routes.<span class="property">index</span>);</span><br><span class="line"></span><br><span class="line">app.<span class="title function_">get</span>(<span class="string">&#x27;/books&#x27;</span>,apis.<span class="property">findAll</span>);</span><br><span class="line">app.<span class="title function_">get</span>(<span class="string">&#x27;/books/:id&#x27;</span>,apis.<span class="property">findByID</span>);</span><br><span class="line">app.<span class="title function_">post</span>(<span class="string">&#x27;/books&#x27;</span>,apis.<span class="property">post</span>);</span><br><span class="line">app.<span class="title function_">put</span>(<span class="string">&#x27;/books/:id&#x27;</span>,apis.<span class="property">updates</span>);</span><br><span class="line">app.<span class="title function_">del</span>(<span class="string">&#x27;/books/:id&#x27;</span>,apis.<span class="property">removeByID</span>);</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>routes/api.js</p>
+<ul>
+<li><p><code>GET /books</code>傳回全部Book JSON。</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="built_in">exports</span>.<span class="property">findAll</span> = <span class="keyword">function</span>(<span class="params">req,res,next</span>)&#123;</span><br><span class="line">        <span class="title class_">Book</span>.<span class="title function_">find</span>(<span class="keyword">function</span>(<span class="params">err,books</span>)&#123;</span><br><span class="line">                res.<span class="title function_">send</span>(&#123;<span class="attr">book</span>:books&#125;);</span><br><span class="line">        &#125;);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"> </span><br></pre></td></tr></table></figure>
+</li>
+<li><p><code>GET /books/:id</code>以id為查詢條件，傳回單筆Book JSON。</p>
+</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="built_in">exports</span>.<span class="property">findByID</span> = <span class="keyword">function</span>(<span class="params">req,res,next</span>)&#123;</span><br><span class="line">        <span class="title class_">Book</span>.<span class="title function_">findOne</span>(&#123;<span class="attr">_id</span>:req.<span class="property">params</span>.<span class="property">id</span>&#125;,<span class="keyword">function</span>(<span class="params">err,book</span>)&#123;</span><br><span class="line">                res.<span class="title function_">send</span>(&#123;<span class="attr">book</span>:book&#125;);</span><br><span class="line">        &#125;);</span><br><span class="line">&#125;;</span><br><span class="line"> </span><br></pre></td></tr></table></figure>
+<ul>
+<li><code>POST /books</code>取得Book資料後寫入MongoDB。</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">   </span><br><span class="line"><span class="built_in">exports</span>.<span class="property">post</span> = <span class="keyword">function</span>(<span class="params">req,res</span>)&#123;</span><br><span class="line">        <span class="keyword">var</span> book = <span class="keyword">new</span> <span class="title class_">Book</span>(&#123;<span class="attr">title</span>:req.<span class="property">body</span>.<span class="property">book</span>.<span class="property">title</span>,<span class="attr">isbn</span>:req.<span class="property">body</span>.<span class="property">book</span>.<span class="property">isbn</span>,<span class="attr">description</span>:req.<span class="property">body</span>.<span class="property">book</span>.<span class="property">description</span>&#125;);</span><br><span class="line">        book.<span class="title function_">save</span>(<span class="keyword">function</span>(<span class="params">err,book</span>)&#123;</span><br><span class="line">                res.<span class="title function_">send</span>(&#123;<span class="attr">book</span>:book&#125;);</span><br><span class="line">        &#125;);</span><br><span class="line">&#125;;</span><br><span class="line"> </span><br></pre></td></tr></table></figure>
+<ul>
+<li><code>PUT /books/:id</code>修改:id的Book資料 。</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">   </span><br><span class="line"><span class="built_in">exports</span>.<span class="property">updates</span> = <span class="keyword">function</span>(<span class="params">req,res,next</span>)&#123;</span><br><span class="line">        <span class="title class_">Book</span>.<span class="title function_">update</span>(&#123;<span class="attr">_id</span>:req.<span class="property">params</span>.<span class="property">id</span>&#125;,&#123;<span class="attr">$set</span>:&#123;<span class="attr">description</span>:req.<span class="property">body</span>.<span class="property">book</span>.<span class="property">description</span>&#125;&#125;,<span class="keyword">function</span>(<span class="params">err,numberAffected,raw</span>)&#123;</span><br><span class="line">                <span class="keyword">if</span> (err)</span><br><span class="line">                        <span class="variable language_">console</span>.<span class="title function_">log</span>(err);</span><br><span class="line">                res.<span class="title function_">send</span>(<span class="number">200</span>);</span><br><span class="line">        &#125;);</span><br><span class="line">&#125;;</span><br><span class="line"> </span><br></pre></td></tr></table></figure>
+<ul>
+<li><p><code>DELETE /books/:id</code>刪除:id的Book資料</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="built_in">exports</span>.<span class="property">removeByID</span> = <span class="keyword">function</span>(<span class="params">req,res,next</span>)&#123;</span><br><span class="line">        <span class="title class_">Book</span>.<span class="title function_">remove</span>(&#123;<span class="attr">_id</span>:req.<span class="property">params</span>.<span class="property">id</span>&#125;,<span class="keyword">function</span>(<span class="params">err</span>)&#123;</span><br><span class="line">                <span class="keyword">if</span> (err)</span><br><span class="line">                        <span class="title function_">next</span>(err);</span><br><span class="line">        res.<span class="title function_">send</span>(<span class="number">200</span>);</span><br><span class="line">        &#125;);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>articles</category>
+      </categories>
+      <tags>
+        <tag>NodeJS</tag>
+        <tag>RESTful</tag>
+        <tag>MongoDB</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>昨日世界：找回文明新命脈</title>
+    <url>/articles/The-World-Until-Yesterday/</url>
+    <content><![CDATA[<p>戴蒙大叔繼「槍炮、病菌與鋼鐵」及「大崩壞」之後，又出新作「昨日世界」。</p>
+<p>或許這本書太過沉重，導致鮮少有人走去翻閱，一邊看書一邊偷偷觀察，發現平均每1.5小時，會有一位路人甲翻閱(真正拿起來用心欣賞)，在一定時間內，發生讀者翻閱的可能性，心中浮現泊松分配定理。</p>
+<span id="more"></span>
+<p>泊松分配即X在一段期間或空間事件發生次數，且事件發生滿足泊松隨機實驗特性。</p>
+<p>泊松隨機實驗之四個特性：</p>
+<ol>
+<li>在一連續區間與另一區間發生事件個數是獨立的。</li>
+<li>連續區間發生事件的期望值與區間大小成比例。</li>
+<li>在很短的區間內會發生1個或0個事件。</li>
+<li>隨機變數X定義為一段連續區間內事件發生次數。</li>
+</ol>
+<p>分配公式：</p>
+<script type="math/tex; mode=display">f(x)=\frac{\lambda\^xe^{-\lambda}}{x!} x=0,1,2,...,\infty</script><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Poisson distribution</span></span><br><span class="line">f = <span class="keyword">lambda</span> la,x: ((la**x)*(math.exp(<span class="number">1</span>)**(-la)))/math.factorial(x);</span><br><span class="line"></span><br><span class="line"><span class="comment"># 平均每1.5小時就有一人</span></span><br><span class="line">f(<span class="number">8.0</span>,<span class="number">3</span>) <span class="comment"># 0.02862614424768102</span></span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>articles</category>
+      </categories>
+      <tags>
+        <tag>Book</tag>
+        <tag>Python</tag>
+        <tag>統計</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>大數據分析A－Z縮寫用詞</title>
+    <url>/articles/BDA-Acronyms/</url>
+    <content><![CDATA[<p>慢慢整理出在「資料科學」領域用到的縮寫。</p>
+<span id="more"></span>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">AQL - Annotation Query Language</span><br><span class="line">AOSD - Aspect-Oriented Software Development</span><br><span class="line">ACID - Atomicity, Consistency, Isolation and Durability</span><br><span class="line">BDA - Big Data Analytics</span><br><span class="line">CQL - Cypher Query Language</span><br><span class="line">CQL - Cassandra Query Language</span><br><span class="line">CQL - Contextual/Common Query Language</span><br><span class="line">COTS - Commodity off-the-shelf</span><br><span class="line">CART - Classification and Regression Trees</span><br><span class="line">CCA - Canonical Correlational Analysis</span><br><span class="line">CEP - Complex Event Processing</span><br><span class="line">DAD - Discover, Access, Distill</span><br><span class="line">3DM - Data Driven Decision Making</span><br><span class="line">DHSL - Distributed Hadoop Storage Layer</span><br><span class="line">DAG - Directed Acyclic Graph</span><br><span class="line">EDA - Exploratory Data Analysis, Event Driven Architeture</span><br><span class="line">ECL - Enterprise Control Language</span><br><span class="line">EPN - Event Processing Nodes</span><br><span class="line">FUSE - Filesystem in Userspace</span><br><span class="line">GEOFF - Graph Serialization Format</span><br><span class="line">HPCC - High Performance Computing Cluster</span><br><span class="line">HPIL - Hadoop Physical Infrastruture Layer</span><br><span class="line">HAR - Hadoop Archive</span><br><span class="line">IDA - Initial Data Analysis</span><br><span class="line">JSON - JavaScriptObjectNotation Query Language</span><br><span class="line">JAQL - JSON Query Language </span><br><span class="line">JSON - JavaScriptObjectNotation Query Language</span><br><span class="line">KFS - Kosmos File System</span><br><span class="line">LZO - Lempel–Ziv–Oberhumer</span><br><span class="line">MDM - Master Data Management</span><br><span class="line">NLP - Natural Language Processing</span><br><span class="line">OLAP - Online Analytical Processing</span><br><span class="line">OLTP - Online Transactional Processing</span><br><span class="line">PMML - Predictive Model Markup Language</span><br><span class="line">Q - &#123;pending, please share if you have some thing&#125;</span><br><span class="line">RDD - Resilient Distributed Database</span><br><span class="line">SOA - Service Oriented Architeture</span><br><span class="line">S4 - Simple Scalable Streaming System</span><br><span class="line">TDA - Topological Data Analysis</span><br><span class="line">UIMA - Unstructured Information Management Architecture</span><br><span class="line">UDAF - USer Defined Aggregate Function</span><br><span class="line">UDTF - User Defined Tablegenerating Function</span><br><span class="line">VC - Vapnik Chervonekis Dimension</span><br><span class="line">W3C - World Wide Web Consortium</span><br><span class="line">XML - Extensible Markup Language</span><br><span class="line">YARN - Yet Another Resource Manager</span><br><span class="line">ZFS - Zettabyte File System by Sun Mircosystem</span><br></pre></td></tr></table></figure>
+<h2 id="資料來源"><a href="#資料來源" class="headerlink" title="資料來源"></a>資料來源</h2><ul>
+<li><a href="http://www.datasciencecentral.com/profiles/blogs/acronyms-of-big-data-analytics-from-a-to-z?xg_source=activity">Acronyms of Big Data Analytics from A to Z !</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>articles</category>
+      </categories>
+      <tags>
+        <tag>Memo</tag>
+        <tag>Big Data</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>自製 MBA 13 保護套</title>
+    <url>/articles/DIY_MBA_Sleeve/</url>
+    <content><![CDATA[<p>今年入手一台MBA 13”，但一直都沒有喜歡的內袋包，自從在PTT看到<a href="http://www.ptt.cc/bbs/MAC/M.1401615074.A.AB1.html">自製macbook pro文件型內袋</a>這篇，就決定自己也來弄一個。昨天就殺去台北車站的光南，防震袋好買，不過~就是找不到封口用的繩子，索性就換個替代品「魔鬼氈」，材料費只要 40元，作法一樣超簡單方便，不用20分鐘就完成，有興趣也可以跟著弄一個吧！ </p>
+<blockquote>
+<p>Just For Fun :D</p>
+</blockquote>
+<span id="more"></span>
+<h2 id="準備材料："><a href="#準備材料：" class="headerlink" title="準備材料："></a>準備材料：</h2><ul>
+<li>防震袋 (350*250) 1 個</li>
+<li>粘扣帶 (2.5*30cm) 1 個  </li>
+</ul>
+<p><img src="http://i.imgur.com/Y8AdVMh.jpg" alt=""></p>
+<h2 id="開始動工"><a href="#開始動工" class="headerlink" title="開始動工"></a>開始動工</h2><ol>
+<li><p>粘扣帶是30公分，會比防震袋多出5公分出來，所以~要剪裁剛好的長度。</p>
+<p> <img src="http://i.imgur.com/vrK6st9.jpg" alt=""></p>
+<p> <img src="http://i.imgur.com/HnOjOPt.jpg" alt=""></p>
+</li>
+<li><p>撕開封口背膠，貼上一條粘扣帶。</p>
+<p> <img src="http://i.imgur.com/0yKHxLv.jpg" alt=""></p>
+<p> <img src="http://i.imgur.com/uUVnSvQ.jpg" alt=""></p>
+</li>
+<li><p>貼上另外一條粘扣帶，即完成。(建議可以把MBA放進去，抓出大概要貼的位置)。</p>
+<p> <img src="http://i.imgur.com/62khBvA.jpg" alt=""></p>
+</li>
+</ol>
+<h2 id="完成品"><a href="#完成品" class="headerlink" title="完成品"></a>完成品</h2><p><img src="http://i.imgur.com/XGBUx2a.jpg" alt=""></p>
+<h2 id="結語"><a href="#結語" class="headerlink" title="結語"></a>結語</h2><p>封口繩子改成魔鬼氈，除了方便製作後，在封口時，不用繞線動作，只須輕輕壓一下就行，而且封口處是平滑，沒有任何凸起物。另外，自製防震袋，也可以在封面貼上個性貼紙，或是自己畫些東西，增加個人特色。</p>
+]]></content>
+      <categories>
+        <category>articles</category>
+      </categories>
+      <tags>
+        <tag>Memo</tag>
+        <tag>DIY</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>超譯MaxCDN的分析平台</title>
+    <url>/articles/Translate_MaxCDN/</url>
+    <content><![CDATA[<p>這篇是以 MaxCDN 的<a href="http://blog.maxcdn.com/maxcdn-analytics-platform-debug-automate-like-boss/">分析平台</a>為例，這平台每天大約會產生 8TB 多的 Log 原始資料，在尖峰時伺服器更是要承受每秒 200,000 個 Requset，在這樣持續成長下，將會面臨到一波波難題要克服，故必須要完成：</p>
+<ul>
+<li>處理目前及未來增加流量</li>
+<li>處理非結構性的Request資料</li>
+<li>降低冗餘硬體設備規模</li>
+<li>減少軟體層</li>
+<li>讓客戶直接查詢</li>
+</ul>
+<span id="more"></span>
+<p>MaxCDN 工程師打算重新建置報表及分析平台，提供更多資訊給客戶做決策，像是強大API提供客戶存取 Log 資料，以及給非開發人員使用的 <a href="https://cp.maxcdn.com/reporting/logs">Log Viewer</a> 。因為這樣特別的需求，MaxCDN 工程團隊使用夢幻工具打造出一個全新的報表環境(reporting stack)，其平台是以<a href="http://www.mongodb.com/">MongoDB</a>強化版的 <a href="http://www.tokutek.com/products/tokumx-for-mongodb/">TokuMX</a> 為基礎，比起 MongoDB 還更快速。</p>
+<p>為了更快速塞資料到 TokuMX ，就特別用Go寫成的代理人，Go 比起傳統語言在平行處理策略中，像是C++、Java等，能充分發揮出多核 CPUs 能力，寫出極速的應用程式。</p>
+<p>下面將進入重頭戲，要開始講點技術了！</p>
+<p>  <img src="http://i.imgur.com/dQ3Wjmd.jpg" alt="img"></p>
+<p>  為了防止發生任何故障，MaxCDN 多提供訊息層這一道防線，選擇使用輕鬆跟上傳入資料速度的 <a href="http://redis.io/">Redis</a> ，來橋接 CDN 和資料庫叢集(database cluster)之間大量訊息佇例。</p>
+<p>在 API 層，需要開發處理龐大的併發(concurrency)報表請求及好維護平台，故選用超火紅以 <a href="http://nodejs.org/">Node.js</a> 寫成的  <a href="http://expressjs.com/">Expresss 框架</a> ，利用 Node.js 和 Express 組合為基礎，能輕鬆增加 API 功能，像是大量的正則表達式比對查詢請求。</p>
+<p>確保高品質備援和靈活性，在達拉斯數據中心設有20個分散點，提供異地備援報表和分析叢集，每台資料庫伺服器都是使用RAID10設定、SSD硬碟、記憶體提高到 128G 。</p>
+<p><img src="http://i.imgur.com/Ly6gv6M.jpg" alt="img"></p>
+<p>每當有請求(request)進來時，就直接放到訊息佇列處理，馬上記錄每筆請求並保存5天，最精華部份是資料會依照公司規模做排序,之後，預計能提供即時綜合統計給需求客戶。為了符合 MongoDB 規模設計，儲存層可依資料成長量做水平擴充，近來測試結果，現在硬體架構可承受每秒 600,000 即時事件請求。</p>
+<p>此解法最大問題是如何有效率接收每秒 200,000 請求及即時儲存，使用 Go 建置可擴充模型， 採用多核CPU搭配 64GB 記憶體優勢，快速處理 TokuMX/MongoDB 之間儲存，比原本設計是每秒處理 200,000 請求之目標，表現得更為.出色。</p>
+<p>(以下省略不譯)</p>
+<h1 id="資料來源"><a href="#資料來源" class="headerlink" title="資料來源"></a>資料來源</h1><ul>
+<li><a href="http://blog.maxcdn.com/learned-stop-worrying-love-logs/">HOW WE BUILT OUR REAL-TIME ANALYTICS PLATFORM</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>articles</category>
+      </categories>
+      <tags>
+        <tag>Memo</tag>
+        <tag>Translate</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>天龍特公地製作過程</title>
+    <url>/articles/Taipei_POP/</url>
+    <content><![CDATA[<p><a href="http://g0v.github.io/POPonFire/">天龍特公地</a>是<a href="http://hackfoldr.org/POPonFire/">公有地大行動</a>的子項目之一，主要是因為獲得一份野生並帶點神秘色彩資料，裡面記載臺北市區全部公有可建築空地，其資料是如此無比珍貴，卻因為是<code>CSV</code>格式，難以讓人閱讀，就萌生做成 Web 版，提供大家方便使用，正是此計畫用意。</p>
+<span id="more"></span>
+<h3 id="Google-Maps-API"><a href="#Google-Maps-API" class="headerlink" title="Google Maps API"></a>Google Maps API</h3><p>在 2014 年三月多，Google Maps API (v3) 開始支援 GeoJSON 功能<sup><a href="#footer01">1</a></sup>，方便在 Google 地圖存取 GeoJSON 資料，<a href="">GeoJSON</a> 是目前火紅地理資訊的開放標準資料格式，官方定義：</p>
+<blockquote>
+<p>GeoJSON is a format for encoding a variety of geographic data structures. A GeoJSON object may represent a geometry, a feature, or a collection of features. GeoJSON supports the following geometry types: Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygon, and GeometryCollection. Features in GeoJSON contain a geometry object and additional properties, and a feature collection represents a list of features.</p>
+</blockquote>
+<p>先來研究Google Maps API 提供範例：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> map;</span><br><span class="line"><span class="keyword">function</span> <span class="title function_">initialize</span>(<span class="params"></span>) &#123;</span><br><span class="line">  <span class="comment">// Create a simple map.</span></span><br><span class="line">  map = <span class="keyword">new</span> google.<span class="property">maps</span>.<span class="title class_">Map</span>(<span class="variable language_">document</span>.<span class="title function_">getElementById</span>(<span class="string">&#x27;map-canvas&#x27;</span>), &#123;</span><br><span class="line">    <span class="attr">zoom</span>: <span class="number">4</span>,</span><br><span class="line">    <span class="attr">center</span>: &#123;<span class="attr">lat</span>: -<span class="number">28</span>, <span class="attr">lng</span>: <span class="number">137.883</span>&#125;</span><br><span class="line">  &#125;);</span><br><span class="line"></span><br><span class="line">  <span class="comment">// Load a GeoJSON from the same server as our demo.</span></span><br><span class="line">  map.<span class="property">data</span>.<span class="title function_">loadGeoJson</span>(<span class="string">&#x27;https://storage.googleapis.com/maps-devrel/google.json&#x27;</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">google.<span class="property">maps</span>.<span class="property">event</span>.<span class="title function_">addDomListener</span>(<span class="variable language_">window</span>, <span class="string">&#x27;load&#x27;</span>, initialize);</span><br></pre></td></tr></table></figure>
+<p>弄一張地圖出來，把GeoJSON餵給它，就完成了！ <em>(謎之音：啥！就這麼簡單…)</em></p>
+<p>既然，Google Maps API 在套 GeoJSON 那麼方便，那就直接實作吧！</p>
+<h3 id="準備動作"><a href="#準備動作" class="headerlink" title="準備動作"></a>準備動作</h3><ul>
+<li>GeoJSON</li>
+</ul>
+<p>GeoJSON 從那裡來？ 首先，要感謝 <a href="https://github.com/ronnywang">@runnywang</a> 把零時資料中心的<a href="http://data.g0v.tw/dataset/70">神秘資料</a>轉成GeoJSON<sup><a href="#footer02">2</a></sup> ，然後，我又弄了一個 API ，如下所示： </p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">/api/taipei/:area</span><br><span class="line"></span><br><span class="line">area - 北市各區名。 Ex: 中山區</span><br></pre></td></tr></table></figure>
+<p>專門吐臺北市各區 GeoJSON 資料，有了這些後，基本上，我可以無痛地，隨便將一個區 GeoJSON 打在地圖上。</p>
+<ul>
+<li>Google Maps</li>
+</ul>
+<p>為了讓地圖更好看，所以~決定加點顏色，現在來看看 Google Maps API 上，另一個範例：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> map;</span><br><span class="line"><span class="keyword">function</span> <span class="title function_">initialize</span>(<span class="params"></span>) &#123;</span><br><span class="line">  map = <span class="keyword">new</span> google.<span class="property">maps</span>.<span class="title class_">Map</span>(<span class="variable language_">document</span>.<span class="title function_">getElementById</span>(<span class="string">&#x27;map-canvas&#x27;</span>), &#123;</span><br><span class="line">    <span class="attr">zoom</span>: <span class="number">4</span>,</span><br><span class="line">    <span class="attr">center</span>: &#123;<span class="attr">lat</span>: -<span class="number">28</span>, <span class="attr">lng</span>: <span class="number">137.883</span>&#125;</span><br><span class="line">  &#125;);</span><br><span class="line"></span><br><span class="line">  <span class="comment">// Load GeoJSON.</span></span><br><span class="line">  map.<span class="property">data</span>.<span class="title function_">loadGeoJson</span>(<span class="string">&#x27;https://storage.googleapis.com/maps-devrel/google.json&#x27;</span>);</span><br><span class="line"></span><br><span class="line">  <span class="comment">// Set the stroke width, and fill color for each polygon</span></span><br><span class="line">  <span class="keyword">var</span> featureStyle = &#123;</span><br><span class="line">    <span class="attr">fillColor</span>: <span class="string">&#x27;green&#x27;</span>,</span><br><span class="line">    <span class="attr">strokeWeight</span>: <span class="number">1</span></span><br><span class="line">  &#125;</span><br><span class="line">  map.<span class="property">data</span>.<span class="title function_">setStyle</span>(featureStyle);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">google.<span class="property">maps</span>.<span class="property">event</span>.<span class="title function_">addDomListener</span>(<span class="variable language_">window</span>, <span class="string">&#x27;load&#x27;</span>, initialize);</span><br></pre></td></tr></table></figure>
+<p>跟上一個範例的程式碼差不多，不過~這次多設定 <code>featureStyle</code> ，這個多邊形瞬間多了一道顏色。<br>接著，我又想讓使用者，按下多邊形後，會出現這塊公有地資訊，所以~我又找了一個處理事件的範例來看。</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> map;</span><br><span class="line"><span class="keyword">function</span> <span class="title function_">initialize</span>(<span class="params"></span>) &#123;</span><br><span class="line">  map = <span class="keyword">new</span> google.<span class="property">maps</span>.<span class="title class_">Map</span>(<span class="variable language_">document</span>.<span class="title function_">getElementById</span>(<span class="string">&#x27;map-canvas&#x27;</span>), &#123;</span><br><span class="line">    <span class="attr">zoom</span>: <span class="number">4</span>,</span><br><span class="line">    <span class="attr">center</span>: &#123;<span class="attr">lat</span>: -<span class="number">28</span>, <span class="attr">lng</span>: <span class="number">137.883</span>&#125;</span><br><span class="line">  &#125;);</span><br><span class="line"></span><br><span class="line">  <span class="comment">// Load GeoJSON.</span></span><br><span class="line">  map.<span class="property">data</span>.<span class="title function_">loadGeoJson</span>(<span class="string">&#x27;https://storage.googleapis.com/maps-devrel/google.json&#x27;</span>);</span><br><span class="line"></span><br><span class="line">  <span class="comment">// Add some style.</span></span><br><span class="line">  map.<span class="property">data</span>.<span class="title function_">setStyle</span>(<span class="keyword">function</span>(<span class="params">feature</span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="comment">/** <span class="doctag">@type</span> &#123;<span class="type">google.maps.Data.StyleOptions</span>&#125; */</span>(&#123;</span><br><span class="line">      <span class="attr">fillColor</span>: feature.<span class="title function_">getProperty</span>(<span class="string">&#x27;color&#x27;</span>),</span><br><span class="line">      <span class="attr">strokeWeight</span>: <span class="number">1</span></span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;);</span><br><span class="line"></span><br><span class="line">  <span class="comment">// Set mouseover event for each feature.</span></span><br><span class="line">  map.<span class="property">data</span>.<span class="title function_">addListener</span>(<span class="string">&#x27;mouseover&#x27;</span>, <span class="keyword">function</span>(<span class="params">event</span>) &#123;</span><br><span class="line">    <span class="variable language_">document</span>.<span class="title function_">getElementById</span>(<span class="string">&#x27;info-box&#x27;</span>).<span class="property">textContent</span> =</span><br><span class="line">        event.<span class="property">feature</span>.<span class="title function_">getProperty</span>(<span class="string">&#x27;letter&#x27;</span>);</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">google.<span class="property">maps</span>.<span class="property">event</span>.<span class="title function_">addDomListener</span>(<span class="variable language_">window</span>, <span class="string">&#x27;load&#x27;</span>, initialize);</span><br></pre></td></tr></table></figure>
+<h3 id="開始拼裝"><a href="#開始拼裝" class="headerlink" title="開始拼裝"></a>開始拼裝</h3><p>進入拼裝程序，<a href="http://bit.ly/UTJm6k">部份程式碼</a>是將上面那些東西全部串起來結果，其流程是接收到一個臺北市區名，就向 API 要這區的 GeoJSON 資料，取得後就利用 Google Maps API 載入 GeoJSON，並顯示以該區為中心的地圖，在幫各個多邊形加點顏色及事件處理，好讓使用者按下去時，就能出現資訊。若完整程式碼有興趣，歡迎到 <a href="http://codepen.io/dz1984/pen/zLgjr/">CodePen</a> 上，就能看全部東西。</p>
+<h3 id="結語"><a href="#結語" class="headerlink" title="結語"></a>結語</h3><p>你/妳知道嗎？我們台灣的公有土地總量逐年下降，即私有化，以及許多公有土地開發的公共監理機制未盡完備，而淪為地產炒作標的，故公有地大行動的出發點，是<strong>公有土地資訊，全民都有知的權利</strong>，希望能藉由這個子計畫項目，可以喚起公民對公有地的認知。</p>
+<blockquote>
+<p>請大家一起來關注屬於你、我、他、她，大家所擁有的土地。</p>
+</blockquote>
+<p>最後，<a href="http://g0v.github.io/POPonFire/">天龍特公地</a>這份成果為<a href="http://hackfoldr.org/POPonFire/">公有地大行動</a>團隊共同享有。</p>
+<h4 id="參考資料"><a href="#參考資料" class="headerlink" title="參考資料"></a>參考資料</h4><ul>
+<li><a href="http://geojson.org">GeoJSON</a></li>
+<li><a href="https://developers.google.com/maps/documentation/javascript/examples/layer-data-simple?hl=zh-tw">Data layer: Loading GeoJSON</a></li>
+<li><a href="https://developers.google.com/maps/documentation/javascript/examples/layer-data-style?hl=zh-tw">Data layer: Styling</a></li>
+<li><a href="https://developers.google.com/maps/documentation/javascript/examples/layer-data-event?hl=zh-tw">Data layer: Event Handling</a></li>
+</ul>
+<h4 id="備註"><a href="#備註" class="headerlink" title="備註"></a>備註</h4><ol>
+<li><a name='footer01'></a> <a href="http://bit.ly/1pPVFsU">Google Geo Developers Blog - Maps made easier: GeoJSON in the JavaScript Maps API</a></li>
+<li><a name='footer02'></a> <a href="http://bit.ly/1maOdY9">g0v-data/POP-data</a></li>
+</ol>
+]]></content>
+      <categories>
+        <category>articles</category>
+      </categories>
+      <tags>
+        <tag>GeoJSON</tag>
+        <tag>公有地大行動</tag>
+        <tag>Google Maps API</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>ds-cache</title>
+    <url>/articles/ds_cache/</url>
+    <content><![CDATA[<h2 id="目的"><a href="#目的" class="headerlink" title="目的"></a>目的</h2><p><a href="http://bit.ly/1o4Qm7X">ds-cache</a> 提供簡單的 LRU (Least Recently Used) Cache 機制，並以 JSON 字串讀寫檔案，Cache 緩衝區大小即是設定檔案限制容量，當加入資料發現已超過設定檔案限制容量時，則會開始使用 LRU 演算法釋放所需空間。 </p>
+<span id="more"></span>
+<h2 id="LRU-Cache-Algorithm"><a href="#LRU-Cache-Algorithm" class="headerlink" title="LRU Cache Algorithm"></a>LRU Cache Algorithm</h2><p>Cache 設計用意，是用來緩衝兩種不同讀寫速率之暫存空間，因 Cache 空間有限，故需要一套存放資料的管理機制，來解決 Cache 塞不下的冏境！ 在  <a href="http://en.wikipedia.org/wiki/Cache_algorithms">Wiki  - Cache Algorithm</a> 有詳細介紹幾種 Cache 讀寫管理演算法，其中 LRU 演算法最常被使用，核心原理如同字面意思一樣容易瞭解，即是替換最久沒被使用的 Cache 內容，因最近被使用到資料，比起已經閒置一段時間資料，能被重新使用機率較大，故很適合套用於暫存熱門查詢結果情境。 </p>
+<h2 id="介紹"><a href="#介紹" class="headerlink" title="介紹"></a>介紹</h2><p>ds-cache 程式碼簡短容易瞭解，原因除了是由 coffeescript 撰寫外，最主要是因為 <strong>功能並沒有很多。 :D</strong></p>
+<p>雖然~ ds-cache 很陽春，但還是可以講一下實作 LRU 概念， 典型 LRU 是用 <code>hash map + doubly linked list</code> 來完成，因 NodeJS 語言特性，可以不需要使用 doubly linked list 來增加複雜度，改採用 Array 物件取代，ds-cache 會用到一個陣列和一個 Object 來當 hashmap ，在程式碼可以看到這兩個變數，分別是  _queue 和 _cache 。  _queue 作用是記錄現在所有儲放在 Cache 資料的 Key 值，存放順序代表資料使用頻率，越是後面資料越是不常使用，若 Cache 資料有異動時，同時會更新 _queue 陣列順序，另外， _cache 作用是依照 Key 值，快速取得內容，這便是 hashmap 好處，下面會解釋 Cache 異動時， _queue 和 _cache 兩者變化關係。</p>
+<ul>
+<li><strong>新增資料</strong></li>
+</ul>
+<p>先判斷 Cache 是否已經全滿，若全滿就要清除一塊可儲放空間出來，作法是從 _queue 陣列由後往前抓 Key 值，在一一刪除在 _cache 對應資料，就是從最久沒使用的空間開始清理，清到足夠能放進這筆資料。空間釋放完畢後，接著  將這筆 Key 值放置 _queue 最前面，而 _cache 則加入這筆資料；若是空間足夠就不用清理，直接放入資料，同時異動 _queue 和 _cache。</p>
+<ul>
+<li><strong>取出資料</strong>  </li>
+</ul>
+<p>依 Key 值尋找資料，如果沒有這筆就傳回 null 值； 若有找到就傳回資料，同時在 _queue 陣列，將這筆 Key 值移動到最前面，表示它是最近才被使用。</p>
+<h2 id="API"><a href="#API" class="headerlink" title="API"></a>API</h2><ul>
+<li><p><strong>clear(key) - </strong>依 Key 值清除 Cache ，若 Key 為空值，就全部清除 Cache。</p>
+</li>
+<li><p><strong>save() - </strong>將 Cache 轉成 JSON 字串後，寫入檔案，若啟用<code>auto_save</code> ，則可以不用在手動 save。</p>
+</li>
+<li><p><strong>load() - </strong>從檔案讀取 JSON 字串後，轉成 Cache。 </p>
+</li>
+<li><p><strong>size() - </strong> 傳回存放在 Cache 資料數量。</p>
+</li>
+<li><p><strong>content() - </strong>傳回 Cache JSON 字串。</p>
+</li>
+</ul>
+<h2 id="安裝"><a href="#安裝" class="headerlink" title="安裝"></a>安裝</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ npm i ds-cache</span><br></pre></td></tr></table></figure>
+<h2 id="範例"><a href="#範例" class="headerlink" title="範例"></a>範例</h2><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> <span class="title class_">Cache</span> = <span class="built_in">require</span>(<span class="string">&quot;ds-cache&quot;</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// initial cache instance</span></span><br><span class="line"><span class="keyword">var</span> cache = <span class="keyword">new</span> <span class="title class_">Cache</span>(</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="attr">limitbytes</span>: <span class="string">&#x27;2M&#x27;</span>,  <span class="comment">// limit file size</span></span><br><span class="line">        <span class="attr">autosave</span>:  <span class="literal">true</span>,</span><br><span class="line">        <span class="attr">filename</span>: <span class="string">&#x27;dscache.json&#x27;</span></span><br><span class="line">    &#125;</span><br><span class="line"> );</span><br><span class="line">    </span><br><span class="line"><span class="comment">// add a data</span></span><br><span class="line">cache.<span class="title function_">set</span>(<span class="string">&#x27;name&#x27;</span>, <span class="string">&#x27;Donald&#x27;</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// get value via key</span></span><br><span class="line">cache.<span class="title function_">get</span>(<span class="string">&#x27;name&#x27;</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// clear  data via key</span></span><br><span class="line">cache.<span class="title function_">clear</span>(<span class="string">&#x27;name&#x27;</span>);</span><br><span class="line">   </span><br><span class="line"><span class="comment">// clear all data</span></span><br><span class="line">cache.<span class="title function_">clear</span>()</span><br></pre></td></tr></table></figure>
+<h2 id="結語"><a href="#結語" class="headerlink" title="結語"></a>結語</h2><p>起初為什麼會想要開發這個 Cache 機制呢？ 首先，我去找幾個以儲存為 JSON 檔案的 Cache 套件，但沒有一個是以 JSON 檔案大小為 Cache 緩衝區長度限制，所以~才會自己去勾出一個這樣東西。其次，是想在查詢後，將每一筆結果保存下來，但不是永久性保留下來，而是給它一個保存期限，故選擇使用 LRU 演算法來完成是在好不過。</p>
+<p>為何不使用 <a href="http://memcached.org">memcached</a>、<a href="http://redis.io">Redis</a> 等成熟技術？ 理由是如果專案規模不大，並不需要使用到這種等級，ds-cache 會很適用，單純的檔案讀寫及 JSON 處理，沒有額外負擔處理，這是 ds-cache 好處。</p>
+<p>最後，希望這個小東西能對你有幫助。 XD</p>
+<h2 id="參考資料"><a href="#參考資料" class="headerlink" title="參考資料"></a>參考資料</h2><h3 id="文件"><a href="#文件" class="headerlink" title="文件"></a>文件</h3><ul>
+<li><a href="http://en.wikipedia.org/wiki/Cache_algorithms">Wiki  - Cache Algorithm</a></li>
+<li><a href="http://www.infoq.com/cn/articles/built-cache-management-module-in-nodejs">InfoQ - 在Node.js中搭建缓存管理模块</a></li>
+<li><a href="http://jimliu.net/2014/05/13/lru-cache/">LRU缓存置换算法 | Jim Liu’s Blog</a></li>
+<li><a href="http://blog.csdn.net/hexinuaa/article/details/6630384">如何设计一个LRU Cache？ - hexinuaa的专栏 - 博客频道 - CSDN.NET</a></li>
+</ul>
+<h3 id="Github"><a href="#Github" class="headerlink" title="Github"></a>Github</h3><ul>
+<li><a href="https://github.com/hh54188/Node-Simple-Cache">hh54188/Node-Simple-Cache</a></li>
+<li><a href="https://github.com/isaacs/node-lru-cache">isaacs/node-lru-cache</a></li>
+<li><a href="https://github.com/sakren/node-cache-storage">sakren/node-cache-storage</a></li>
+</ul>
+<h3 id="Gist"><a href="#Gist" class="headerlink" title="Gist"></a>Gist</h3><ul>
+<li><a href="https://gist.github.com/jeroenransijn/4132586">jeroenransijn/Cache.coffee</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>articles</category>
+      </categories>
+      <tags>
+        <tag>Javascript</tag>
+        <tag>Cache</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>發揮 3% 的工人智慧</title>
+    <url>/articles/Slide-20140905/</url>
+    <content><![CDATA[<p><p class="codepen" data-height="300" data-default-tab="result" data-slug-hash="ZEaPJRN" data-user="dz1984" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/dz1984/pen/ZEaPJRN">
+  快快樂樂學 - Node.js</a> by Donald Zhan (<a href="https://codepen.io/dz1984">@dz1984</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p></p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>]]></content>
+      <categories>
+        <category>slides</category>
+      </categories>
+      <tags>
+        <tag>slides</tag>
+        <tag>BPN</tag>
+        <tag>Unity3D</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>影響我的十本書</title>
+    <url>/articles/Ten-Books/</url>
+    <content><![CDATA[<p>最近，在 PTT、FB、Plurk 發起的一個活動，自己平常也喜歡閱讀，這邊就挑選十本值得在回味品嘗的好書。</p>
+<span id="more"></span>
+<ul>
+<li><strong>平面國 (Flatland: A Romance of Many Dimensions) Edwin Abbott Abbott</strong></li>
+</ul>
+<p>這本書有趣地方，是利用二維形狀來定義社會階級制度，以及描述穿梭多維空間的特殊經歷。</p>
+<ul>
+<li><strong>穿梭超時空－十度空間科學奇航(Hperspace: A Scientific Odyssey Throug Parallel Universe, Time Warps, and the 10th Dimentison) Michio Kaku</strong></li>
+</ul>
+<p>本身是位時空迷，若用這本書幫時空迷補充知識，最好不過了！</p>
+<ul>
+<li><strong>1984(Nineteen Eighty-Four) George Orwell</strong></li>
+</ul>
+<p>這書實在太有名了！網路上介紹文已經多不勝數，總之，這生一定要拜讀的…</p>
+<ul>
+<li><strong>桃源二村(Walden Two) B.F. Skinner</strong></li>
+</ul>
+<p>此書是由行為心理學大佬所著，敘述如何藉由調教行為方式，建立一個平等理想社區空間。然而，在這個理想國度裡的一切，也正是我嚮往的。</p>
+<ul>
+<li><strong>人這種動物(The human animal) Desmond Morris</strong></li>
+</ul>
+<p>很喜歡這本課外讀物，與其利用神秘力量，讓人與人之間產生和諧共振，還不如拿起望遠鏡，好好觀察這群優越靈長類的行為模式，到底有什麼共同行為特徵。</p>
+<ul>
+<li><strong>連結(Nexus) Mark Buchanan</strong></li>
+</ul>
+<p>這本書主題就是圍繞著連結，不只是人與人之間的連結關係，而是探討為何為產生連結、如何去連結、在什麼地方連結、什麼時間連結、連結後及有何改變等內容，可以當作瞭解社會學入門書之一，另外，作者的「隱藏的邏輯」，也是很推薦閱讀。</p>
+<ul>
+<li><strong>自私的基因(The Selfish Gene) Richard Dawkins</strong></li>
+</ul>
+<p>此書是以基因為核心單位，而生物個體只不過是它一個載具，在通過生物個體不斷決策行為，來達到基因演化過程，故可以用基因選擇採用優勢的演化程序，來合理化人類各種行為。(個人亂解讀：將一切原罪都推給基因就行了！)</p>
+<ul>
+<li><strong>狼圖騰 姜戎</strong></li>
+</ul>
+<p>在描述靜態和動態自然場景時，許多細節觀察入微，讓讀者能身入其境，非常深刻，並使用擬人化方式，幫動物加入大量情緒動作，十分逼真生動，尤其是人與動物之間互動情感時，特別細膩有趣。這整個故事，最核心精神是對環境的反思。</p>
+<ul>
+<li><strong>將宛 諸葛亮</strong></li>
+</ul>
+<p>這本書是收錄諸葛亮在選材、用材、領導風格的各種心得，雖然~內容有點歷史，但十分經典受用，一樣適合套入的現今組織管理。</p>
+<ul>
+<li><strong>菜根譚 洪應明</strong></li>
+</ul>
+<p>這本書的價值，只有反覆閱讀和反覆體驗，才能瞭解。</p>
+]]></content>
+      <categories>
+        <category>articles</category>
+      </categories>
+      <tags>
+        <tag>Book</tag>
+        <tag>reading</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Google APIs via NodeJS</title>
+    <url>/articles/Google-APIs-via-NodeJS/</url>
+    <content><![CDATA[<h2 id="寫在前頭"><a href="#寫在前頭" class="headerlink" title="寫在前頭"></a>寫在前頭</h2><p>之前，實作 <strong>天龍特公地</strong> 專案時，接觸到 Google API 連到 Fusion Tables 的經驗，這篇隨手筆記存放有點久，現在才拿出來當 Blog 的新文章。 XD</p>
+<p>想想 Fusion Tables 挺適合在小專案，但如果專案開始長大，就顯得有點不足，故 <strong>天龍特公地</strong> 即將以 PostgreSQL 為 DB，以應付越來越多擴展性功能。</p>
+<h2 id="Google-APIs"><a href="#Google-APIs" class="headerlink" title="Google APIs"></a>Google APIs</h2><p><strong>建立專案</strong></p>
+<p>先到 <a href="https://console.developers.google.com/project">Google Developers Console</a> 建立新專案。 </p>
+<p><img src="http://i.imgur.com/10GICZK.png" alt=""></p>
+<p><strong>開啟 API</strong></p>
+<p>啟動想使用的 API  ，這邊以 <a href="https://developers.google.com/fusiontables/?csw=1">Google Fusion Tables APIs </a> 為例子。</p>
+<p><img src="http://i.imgur.com/T94oPB4.png" alt=""></p>
+<p><strong>產生憑證</strong></p>
+<p>這邊是以 <strong>瀏覽器金鑰</strong> 為例子。</p>
+<ul>
+<li>按下 <strong>建立新的金鑰 </strong>按鈕後<strong>，</strong>在選擇按下<strong> 瀏覽器金鑰  </strong>按鈕。</li>
+</ul>
+<p><img src="http://i.imgur.com/Im8jyvv.png" alt=""></p>
+<ul>
+<li>可以不填寫中介網址，按下 <strong>建立</strong> 按鈕，即會產生一組  <strong>API 金鑰。</strong>  </li>
+</ul>
+<p><img src="http://i.imgur.com/INetjjp.png" alt=""></p>
+<ul>
+<li>記住這組金鑰，等等會用到。</li>
+</ul>
+<p><img src="http://i.imgur.com/nUz4SFO.png" alt=""></p>
+<p><strong>如何練習 Google APIs？</strong></p>
+<p>Google APIs  琳瑯滿目，常常不知道要怎麼用，又懶得爬文，沒關係！ Google 很搭心，可以直接用  <a href="https://developers.google.com/apis-explorer/">APIs Expoloer</a> 把玩每個 APIs ， Try 遍每個 APis 提供的 Method。</p>
+<h2 id="Fusion-Table"><a href="#Fusion-Table" class="headerlink" title="Fusion Table"></a>Fusion Table</h2><p><strong>新增 Fusion Table</strong></p>
+<ul>
+<li>Google Drive 連結 Fusion Table 。</li>
+</ul>
+<p><img src="http://i.imgur.com/KGHjSDN.png" alt=""></p>
+<p><img src="http://i.imgur.com/AVizYpP.png" alt=""></p>
+<ul>
+<li>在 Google Drive 建立 <strong>空白 Fusion Table</strong> 。</li>
+</ul>
+<p><img src="http://i.imgur.com/DrjIeLC.png" alt=""></p>
+<p><strong>設定存取權限</strong></p>
+<ul>
+<li>將權限設定成 <strong>Public </strong>。 ( Fusion Table API 無法操作 Private 權限) </li>
+</ul>
+<p><img src="http://i.imgur.com/G2L3KK6.png" alt=""></p>
+<p><strong>取得 Table ID</strong></p>
+<ul>
+<li>按下 <strong>File</strong> -&gt; <strong>About this table</strong> ，取得 <strong>Table ID</strong>， 當然也可以從 URL 得知 ( docid 後面一大串東西)。</li>
+</ul>
+<p><img src="http://i.imgur.com/KykU7qS.png" alt=""></p>
+<h2 id="NodeJS"><a href="#NodeJS" class="headerlink" title="NodeJS"></a>NodeJS</h2><p><strong>專為 NodeJS 打造的 Google APIs  Client</strong></p>
+<p>可以參考  <a href="https://github.com/google/google-api-nodejs-client/">Google/google-api-nodejs-client</a> ，裡面有很完整的安裝說明及<a href="https://github.com/google/google-api-nodejs-client/tree/master/examples">範例</a>。</p>
+<p><strong>小踹  Fusion Tables Query</strong></p>
+<p>目的只能先 Try sql 語法，還不用動真格寫扣，可以利用 APIs Exploer 平台的 <a href="https://developers.google.com/apis-explorer/#p/fusiontables/v1/fusiontables.query.sql">fusiontables.query.sql</a> 來踹踹看。</p>
+<ul>
+<li>直接就丟 SQL Script： <code>SELECT * FROM YOUR_TABLE_ID</code>  ，接著就  <strong>Execute </strong>。 ( 記得把<em> YOUR_TABLE_ID</em> 替換成你剛剛準備的新 Fusion Table ID )</li>
+</ul>
+<p><img src="http://i.imgur.com/U6CJu35.png" alt=""></p>
+<ul>
+<li>執行後，可以看到花費時間、Request ，以及  Response 結果，別得不管了！ 只要看到 <strong>rows</strong> 關鍵字，這裡面的東西才是我們要，另外，在看看 <strong>query?</strong> 後面一拖拉庫的東西，用了 <em>sql </em>和 <em>key</em> 兩個參數，這是不是在告訴我們一件事，執行 API 時，記得下參數。</li>
+</ul>
+<p><img src="http://i.imgur.com/qxJ0AhU.png" alt=""></p>
+<p><strong>動手踹 <s>共 </s>扣</strong></p>
+<p>看完 <a href="https://github.com/google/google-api-nodejs-client/">Google/google-api-nodejs-client</a> 的<a href="https://github.com/google/google-api-nodejs-client/blob/master/README.md"> README.md </a>，就可以抓到這工具大致用法，那就寫扣去…</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> google = <span class="built_in">require</span>(<span class="string">&#x27;googleapis&#x27;</span>);</span><br><span class="line"><span class="keyword">var</span> fusiontables = google.<span class="title function_">fusiontables</span>(<span class="string">&#x27;v1&#x27;</span>);</span><br><span class="line"> <span class="comment">// 從上面步驟得知 YOUR_API_KEY 和 YOUR_TABLE_ID </span></span><br><span class="line"><span class="keyword">var</span> <span class="variable constant_">API_KEY</span> = <span class="string">&#x27;YOUR_API_KEY&#x27;</span>;</span><br><span class="line"><span class="keyword">var</span> <span class="variable constant_">TABLEID</span> = <span class="string">&#x27;YOUR_TABLE_ID&#x27;</span>;</span><br><span class="line"><span class="keyword">var</span> <span class="variable constant_">SQLSCRIPT</span> = <span class="string">&#x27;SELECT * FROM &#x27;</span> + <span class="variable constant_">TABLEID</span>;</span><br><span class="line"><span class="keyword">var</span> params = &#123;</span><br><span class="line">        <span class="string">&#x27;sql&#x27;</span>: query,</span><br><span class="line">        <span class="string">&#x27;key&#x27;</span>: <span class="variable constant_">API_KEY</span></span><br><span class="line">&#125;;</span><br><span class="line">fusiontables.<span class="property">query</span>.<span class="title function_">sqlGet</span>(params, <span class="keyword">function</span>(<span class="params">err, result</span>) &#123;</span><br><span class="line">    <span class="keyword">if</span> (err) &#123;</span><br><span class="line">        <span class="variable language_">console</span>.<span class="title function_">log</span>(err);</span><br><span class="line">   &#125;</span><br><span class="line">   </span><br><span class="line">   <span class="keyword">var</span> rows = result.<span class="property">rows</span>;</span><br><span class="line">   </span><br><span class="line">   <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;ok&#x27;</span>);  </span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>      
+]]></content>
+      <categories>
+        <category>articles</category>
+      </categories>
+      <tags>
+        <tag>Javascript</tag>
+        <tag>NodeJS</tag>
+        <tag>GeoJSON</tag>
+        <tag>Google API</tag>
+        <tag>Fusion Table</tag>
+        <tag>天龍特公地</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>TinyMCE 限制部份功能</title>
+    <url>/articles/TinyMCE-Disable/</url>
+    <content><![CDATA[<p>TinyMCE (Tiny Moxiecode Content Editor) 是一款非常熱門的輕量級的所見即所得編輯器，提供許多佈景主題與面板，以及各種類型的外掛模組，並且支援多語系翻譯套件，更多資訊可參考 <a href="http://www.tinymce.com/wiki.php">TinyMCE 官方說明文件</a>。</p>
+<h2 id="寫在前頭"><a href="#寫在前頭" class="headerlink" title="寫在前頭"></a>寫在前頭</h2><p>你可以從這篇文章得到：</p>
+<ul>
+<li>如何限制編輯器上部份功能。</li>
+</ul>
+<p>無法得到：</p>
+<ul>
+<li>TinyMCE 操作教學。</li>
+<li>TinyMCE 核心詳解。</li>
+</ul>
+<h2 id="解法過程"><a href="#解法過程" class="headerlink" title="解法過程"></a>解法過程</h2><p>在 <a href="http://www.tinymce.com/wiki.php/Configuration">Configuration</a> 說明文件發現 <code>setup callback</code> 能拿到 <strong>TinyMCE.Editor</strong> 物件，從範例中得知，<code>setup</code> 函式是用來設定一些處理編輯器的事件觸發程式碼。</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">tinymce.<span class="title function_">init</span>(&#123;</span><br><span class="line">  <span class="attr">selector</span>: <span class="string">&#x27;textarea&#x27;</span>,</span><br><span class="line">  <span class="attr">setup</span>: <span class="keyword">function</span>(<span class="params">editor</span>) &#123;</span><br><span class="line">    editor.<span class="title function_">on</span>(<span class="string">&#x27;click&#x27;</span>, <span class="keyword">function</span>(<span class="params">event</span>) &#123;     </span><br><span class="line">      <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;Click&#x27;</span>);</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<p>接著要找出適合事件來處理，這時爬一下文件，可以從 <a href="http://www.tinymce.com/wiki.php/api4:class.tinymce.Editor">tinymce.Editer</a>　下手，果然~在 <strong>Events</strong> 段落列出編輯器的所有事件，這次目的是要做限制，自然很容易聯想到 <strong>BeforeExecCommand</strong> 事件，只要在執行指令之前擋住不處理即可，看到下面程式碼，當觸發到 <strong>BeforeExecCommand</strong> 時，馬上傳回 false，然後~編輯器就什麼功能也都不能用了！ </p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">tinymce.<span class="title function_">init</span>(&#123;</span><br><span class="line">  <span class="attr">selector</span>: <span class="string">&#x27;textarea&#x27;</span>,</span><br><span class="line">  <span class="attr">setup</span>: <span class="keyword">function</span>(<span class="params">editor</span>) &#123;</span><br><span class="line">    editor.<span class="title function_">on</span>(<span class="string">&#x27;BeforeExecCommand&#x27;</span>, <span class="keyword">function</span>(<span class="params">event</span>) &#123;     </span><br><span class="line">      <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<p>基本上，上面那一步驟，已經做到限制功能目標，但若只想做到部份限制，就須加入一些判斷條件來篩選，那開始把焦點移到 <a href="http://www.tinymce.com/wiki.php/api4:class.tinymce.CommandEvent">tinymce.CommandEvent</a> 身上，看看有什麼可以用的，找到 <code>CommandEvent</code>有三個屬性很可疑，趕緊秀出來看。</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">tinymce.<span class="title function_">init</span>(&#123;</span><br><span class="line">  <span class="attr">selector</span>: <span class="string">&#x27;textarea&#x27;</span>,</span><br><span class="line">  <span class="attr">setup</span>: <span class="keyword">function</span>(<span class="params">editor</span>) &#123;</span><br><span class="line">    editor.<span class="title function_">on</span>(<span class="string">&#x27;BeforeExecCommand&#x27;</span>, <span class="keyword">function</span>(<span class="params">event</span>) &#123;</span><br><span class="line">      <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;Command:&#x27;</span>+event.<span class="property">command</span>);</span><br><span class="line">      <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;Type:&#x27;</span> + event.<span class="property">type</span>);</span><br><span class="line">      <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;Value:&#x27;</span> + event.<span class="property">value</span>);</span><br><span class="line">      <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<p>玩一下上面的程式碼後，發現在 Toolbar 按下 <strong>粗體</strong> 和在 <code>Format</code> 選單按下 <strong>粗體</strong> ，居然會出現不同的 <code>command</code> 名稱，分別是 <code>mceToggleFormat</code> 和 <code>Bold</code> ，還有從選單按下 <strong>粗體</strong> 和用快速鍵(Ctrl+B) ，也會出現不同的 <code>value</code>，分別是 <code>undefined</code> 和 <code>null</code> ，從這些差異可以開始加入限制條件，弄一個完全禁用 <strong>粗體</strong>　的編輯器。</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">tinymce.<span class="title function_">init</span>(&#123;</span><br><span class="line">  <span class="attr">selector</span>: <span class="string">&#x27;textarea&#x27;</span>,</span><br><span class="line">  <span class="attr">setup</span>: <span class="keyword">function</span>(<span class="params">editor</span>) &#123;</span><br><span class="line">    editor.<span class="title function_">on</span>(<span class="string">&#x27;BeforeExecCommand&#x27;</span>, <span class="keyword">function</span>(<span class="params">event</span>) &#123;</span><br><span class="line">      <span class="keyword">var</span> isDisable = (event.<span class="property">command</span> === <span class="string">&#x27;Bold&#x27;</span>) || (event.<span class="property">command</span> === <span class="string">&#x27;mceToggleFormat&#x27;</span> &amp;&amp; event.<span class="property">value</span> === <span class="string">&#x27;bold&#x27;</span>);</span><br><span class="line">      <span class="keyword">if</span> (isDisable) &#123;</span><br><span class="line">        <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;disable&#x27;</span>);</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<h2 id="結語"><a href="#結語" class="headerlink" title="結語"></a>結語</h2><p>結語還真沒什麼好寫的…</p>
+<p>Have Fun! XD</p>
+<h2 id="參考資料"><a href="#參考資料" class="headerlink" title="參考資料"></a>參考資料</h2><ul>
+<li><a href="http://www.tinymce.com/wiki.php/api4:index">TinyMCE API 4.x</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>articles</category>
+      </categories>
+      <tags>
+        <tag>Javascript</tag>
+        <tag>TinyMCE</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Crawl via Docker</title>
+    <url>/articles/Crawl-via-Docker/</url>
+    <content><![CDATA[<h2 id="寫在前頭"><a href="#寫在前頭" class="headerlink" title="寫在前頭"></a>寫在前頭</h2><span id="more"></span>
+<p>近來，想嘗試在 CentOS 7 x86_64 安裝 Scrapy 卻一直受挫，原因是 lxml 無法順利編譯，一些該裝套件（libxml2、libxslt、libxslt-devel 也沒少裝，可以試的方法也都試過，耗了許多寶貴時間，最後，宣告失敗。</p>
+<p>根據以往經驗是在 Ubuntu 上安裝，過程簡單且順利，還順便做了 Vagrant File，其實我大可以在繼續用 Vagrant 方式執行爬蟲，但這次我是使用 DigitalOcean 陽春機，記憶體只有 512 MB，實在不想為了爬個資料就建一個笨重 VM，來拖累整體資源，讓人於心不忍呀！</p>
+<p>有鑑於此，我改採用輕量級的 <strong>Docker</strong> 來執行爬蟲工作，解題過程如下：</p>
+<h2 id="安裝-Docker"><a href="#安裝-Docker" class="headerlink" title="安裝 Docker"></a>安裝 Docker</h2><p>在 CentOS 7 安裝 Docker 很容易，直接使用 <code>yum install</code> 即可，值得一提是 CentOS 7 的 firewalld 防火牆與 Docker 會小打架， firewalld 啟動或重新啟動時，會移除 <code>DOCKER</code> 防火牆設定，所以~啟動或重啟 firewalld 時，記得要在打開 Docker。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ sudo yum install docker</span><br></pre></td></tr></table></figure>
+<h2 id="Dockerfile"><a href="#Dockerfile" class="headerlink" title="Dockerfile"></a>Dockerfile</h2><p>現在需要一個能跑 Scrapy 的爬蟲環境，既然 Ubuntu 安裝容易，就拿原生 Ubuntu 作為 Image OS，在安裝 Scrapy 以及爬蟲程式，這邊是以 eia_crawler 為例子。 </p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Dockerfile for eia_crawler project </span></span><br><span class="line"> </span><br><span class="line">FROM ubuntu:precise</span><br><span class="line">MAINTAINER Donald Zhan &lt;donald.zhan1984@gmail.com&gt;</span><br><span class="line"> </span><br><span class="line"><span class="comment"># Add necessary respnsitory</span></span><br><span class="line">RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 627220E7</span><br><span class="line">RUN <span class="built_in">echo</span> <span class="string">&#x27;deb http://archive.scrapy.org/ubuntu scrapy main&#x27;</span> &gt; /etc/apt/sources.list.d/scrapy.list</span><br><span class="line"> </span><br><span class="line"><span class="comment"># Install scrapy</span></span><br><span class="line">RUN apt-get update -qq  </span><br><span class="line">RUN apt-get -y install scrapy-0.22 git</span><br><span class="line"> </span><br><span class="line"><span class="comment"># Clone eia_crawler project</span></span><br><span class="line">RUN git <span class="built_in">clone</span> https://github.com/dz1984/eia_crawler.git /home/eia_cralwer</span><br><span class="line"> </span><br><span class="line"><span class="comment"># Seting Default Work Directory</span></span><br><span class="line">WORKDIR /home/eia_cralwer</span><br></pre></td></tr></table></figure>
+<h2 id="Docker-Container"><a href="#Docker-Container" class="headerlink" title="Docker Container"></a>Docker Container</h2><p>定義好後，就建立一個 Image，並召喚一個 Docker Container 在背景執行它。另外，要小心地方，是每次執行一個 Container 都會是一個乾淨的 Image 環境，所以~執行結束後，還得想個法子把結果拿回來，這邊是用 Volumn 方式，將檔案 Copy 回來。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ sudo docker build -t eia-crawler .</span><br><span class="line"></span><br><span class="line">$ sudo docker run -d -v $(<span class="built_in">pwd</span>)/data:/data eia-crawler bash -c <span class="string">&quot;scrapy crawl lists &amp;&amp; scrapy crawl details &amp;&amp; cp -r results/ /data&quot;</span></span><br></pre></td></tr></table></figure>
+<h2 id="結語"><a href="#結語" class="headerlink" title="結語"></a>結語</h2><p>使用 Docker 好處是不用為了爬資料而建立一個 VM，少了開機程序，所耗資源相對少很多，速度明顯變快，難怪 Docker 會如此火紅，有機會在寫一些 Docker 內容。</p>
+<h2 id="參考資料"><a href="#參考資料" class="headerlink" title="參考資料"></a>參考資料</h2><ul>
+<li><a href="https://www.docker.com">Docker</a></li>
+<li><a href="https://docs.docker.com/installation/centos/">Installing Docker - CentOS 7</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>articles</category>
+      </categories>
+      <tags>
+        <tag>Docker</tag>
+        <tag>eia_crawler</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Eager Loading 查詢自訂欄位</title>
+    <url>/articles/Eager-Loading-Query-CustColumns/</url>
+    <content><![CDATA[<p>這篇是紀錄實作 <a href="http://9d8.tw">9d8TW</a> 專案時，因對 Laravel 的 Eloquent ORM 不熟悉，所遭遇到問題後，自行找解答的過程。</p>
+<h2 id="寫在前頭"><a href="#寫在前頭" class="headerlink" title="寫在前頭"></a>寫在前頭</h2><span id="more"></span>
+<p>你可以從這篇文章得到：</p>
+<ul>
+<li>一位 Laravel 初心者，找解答的心路歷程！</li>
+</ul>
+<p>無法得到：</p>
+<ul>
+<li>完整的 Eager Loading 原理！</li>
+</ul>
+<h2 id="發現問題"><a href="#發現問題" class="headerlink" title="發現問題"></a>發現問題</h2><p>在 9d8TW 專案，有兩張資料表，分別是 pulls 和 confides，資料表關係是一對多，其中 confides.pull_id 是 FK ，有一個需求是找出全部資料。</p>
+<ul>
+<li>一般版本</li>
+</ul>
+<p>其實，這個用一般版就可以搞定，但是~我要用 JSON 丟回結果，不需要給太多欄位。</p>
+<figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="comment">// models/Pull.php</span></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Pull</span> <span class="keyword">extends</span> <span class="title">Eloquent</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">confides</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="variable language_">$this</span>-&gt;<span class="title function_ invoke__">hasMany</span>(<span class="string">&#x27;Confide&#x27;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="comment">// controllers/PullController.php</span></span><br><span class="line"></span><br><span class="line"><span class="variable">$pulls</span> = <span class="title class_">Pull</span>::<span class="title function_ invoke__">with</span>(<span class="string">&#x27;confides&#x27;</span>)</span><br><span class="line">        -&gt;<span class="title function_ invoke__">get</span>();</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<ul>
+<li>錯誤版本</li>
+</ul>
+<p>然後~我就做了錯誤版出來，這版結果是 confides 完全沒串到資料，但我確定 DB 是有資料。</p>
+<figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="comment">// models/Pull.php</span></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Pull</span> <span class="keyword">extends</span> <span class="title">Eloquent</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">confides</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="variable language_">$this</span>-&gt;<span class="title function_ invoke__">hasMany</span>(<span class="string">&#x27;Confide&#x27;</span>)</span><br><span class="line">                -&gt;<span class="title function_ invoke__">select</span>(<span class="keyword">array</span>(<span class="string">&#x27;content&#x27;</span>));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="comment">// controllers/PullController.php</span></span><br><span class="line"></span><br><span class="line"><span class="variable">$pulls</span> = <span class="title class_">Pull</span>::<span class="title function_ invoke__">with</span>(<span class="string">&#x27;confides&#x27;</span>)</span><br><span class="line">        -&gt;<span class="title function_ invoke__">get</span>(<span class="keyword">array</span>(<span class="string">&#x27;lat&#x27;</span>,<span class="string">&#x27;lng&#x27;</span>,<span class="string">&#x27;address&#x27;</span>));</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h2 id="如何解決"><a href="#如何解決" class="headerlink" title="如何解決"></a>如何解決</h2><ul>
+<li>Dump SQL Script</li>
+</ul>
+<p>我試著用 <code>dd(DB::getQueryLog())</code> 把 SQL Script 抓出來看看，發現和我想的不一樣，它不是用 Join 方式處理。</p>
+<ul>
+<li>找出原因 </li>
+</ul>
+<p>趕緊到官網找 <a href="http://laravel.com/docs/4.2/eloquent#eager-loading">Laravel - Eager Loading</a> 文件研究，才知道 Eager Loading 的 <code>with</code> 拆成兩條查詢，而且~我因為自訂欄位，少給 <code>id</code> 才會發生在查詢 condfids 時，都傳成 NULL 為參數，導致沒有 confides 資料。  </p>
+<ul>
+<li>修改程式</li>
+</ul>
+<p>缺 <code>id</code> 就給 <code>id</code>。<br><figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="comment">// models/Pull.php</span></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Pull</span> <span class="keyword">extends</span> <span class="title">Eloquent</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">confides</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="variable language_">$this</span>-&gt;<span class="title function_ invoke__">hasMany</span>(<span class="string">&#x27;Confide&#x27;</span>)</span><br><span class="line">                    -&gt;<span class="title function_ invoke__">select</span>(<span class="keyword">array</span>(<span class="string">&#x27;pull_id&#x27;</span>,<span class="string">&#x27;content&#x27;</span>));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure></p>
+<figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="comment">// controllers/PullController.php</span></span><br><span class="line"></span><br><span class="line"><span class="variable">$pulls</span> = <span class="title class_">Pull</span>::<span class="title function_ invoke__">with</span>(<span class="string">&#x27;confides&#x27;</span>)</span><br><span class="line">        -&gt;<span class="title function_ invoke__">get</span>(<span class="keyword">array</span>(<span class="string">&#x27;id&#x27;</span>,<span class="string">&#x27;lat&#x27;</span>,<span class="string">&#x27;lng&#x27;</span>,<span class="string">&#x27;address&#x27;</span>));</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h2 id="結語"><a href="#結語" class="headerlink" title="結語"></a>結語</h2><p>原來~我一直以為是用 Join 在處理，經過這次重新認識 Eager Loading ，看來是自己文件沒讀通，才發生這種烏龍事！ XD</p>
+<h2 id="參考資料"><a href="#參考資料" class="headerlink" title="參考資料"></a>參考資料</h2><ul>
+<li><a href="http://laravel.com/docs/4.2/eloquent#eager-loading">Laravel - Eager Loading</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>articles</category>
+      </categories>
+      <tags>
+        <tag>PHP</tag>
+        <tag>Laravel</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>初探 Kernel.js 記</title>
+    <url>/articles/Play-KernelJS/</url>
+    <content><![CDATA[<p>Nicholas Zakas 大神提出 Scalable Javascript architecutre 後，經由 Addy Osmani 大神不斷地推廣，對這架構非常著迷，所以~找了一些實作此架構的 JS ，一不小心就發現了 Kernel.js ，覺得它輕巧易懂，故寫一篇紀錄自己把玩 Kernel.js 過程。</p>
+<h2 id="寫在前頭"><a href="#寫在前頭" class="headerlink" title="寫在前頭"></a>寫在前頭</h2><span id="more"></span>
+<p>你可以從這篇文章得到：</p>
+<ul>
+<li>Kernel.js 簡介。</li>
+</ul>
+<p>無法得到：</p>
+<ul>
+<li>完整的 Scalable Javascript architecutre 原理。(建議可爬 Nicholas Zakas 和 Addy Osmani 兩位大神的文章)</li>
+</ul>
+<h2 id="簡介"><a href="#簡介" class="headerlink" title="簡介"></a>簡介</h2><p><a href="http://alanlindsay.me/kerneljs/">Kernel.js</a> 是受到  Nicholas Zakas 大神在 scalable Javascript architecutre 演講中得到啟發，用來打造可擴展性的 Javascript 應用輕量化架構(大約 4k)，提供消息系統能讓你解耦合(decouple)及彈性方式建置程式。</p>
+<p>Kernel.js 並不是框架或是像 YUI 、Dojo 之類的 Library，而是用來連結框架的架構基礎。 Kernel.js 沒有像 underscore.js 提供底層的公用函式，也沒有像 jQuery 提供任何處理 DOM 工具，更沒有像 ExtJS 提供任何 widget。你會需要 Kernel.js 和其他 libraries (base library, widget library 等)，去建置一個複雜的網站應用程式。</p>
+<h3 id="主要構成元素"><a href="#主要構成元素" class="headerlink" title="主要構成元素"></a>主要構成元素</h3><ul>
+<li>Base Library</li>
+</ul>
+<p>隨意的使用基本程式庫(像是 jQuery 或 YUI ) 可處理瀏覽器規範和 ajax。</p>
+<ul>
+<li>Kernel</li>
+</ul>
+<p>抽象化 Base Library，管理物件生命週期。</p>
+<ul>
+<li>Hub</li>
+</ul>
+<p>其實 Hub 就是 message Bus ，協助 Module 之間訊息傳遞 ，可自行擴充 Hub  API。</p>
+<ul>
+<li>Module</li>
+</ul>
+<p>可以將商業邏輯分門別類放至 Module ，且 Module 之間不直接溝通，呈現低耦合 (lossely couple)。</p>
+<p><img src="http://i.imgur.com/w0t5trZ.png" alt="kernel architecture"></p>
+<p>Addy Osmani 在解釋 Scalable Javascript architecutre 架構時，提出一個飛機與空中交通管制中心的例子，飛機之間是沒有直接介面，他們都是透過空中交通管制中心，決定起飛和降落。Hub 就像空中交通管制中心，而 Modules 就像飛機。</p>
+<h2 id="自己動手做範例"><a href="#自己動手做範例" class="headerlink" title="自己動手做範例"></a>自己動手做範例</h2><p>假設想紀錄每次按下按鈕次數，且可手動決定要不要要產生 Log 紀錄，當然~你大可以利用 if-else 方式，把邏輯塞在一起，但若是複雜度增加時，程式碼會出現一大串的 if-else 區塊，故將重復使用邏輯皆模組化，並練習操作 Kernel.js 試著完成這個範例。</p>
+<p>定義三個獨立模組，分別是 Counter 、Status，以及 Log 。</p>
+<h3 id="三個模組功能"><a href="#三個模組功能" class="headerlink" title="三個模組功能"></a>三個模組功能</h3><ul>
+<li>Counter 模組</li>
+</ul>
+<p>顯示累積每次按下按鈕的次數。</p>
+<ul>
+<li>Status 模組</li>
+</ul>
+<p>接受狀態異動事件。</p>
+<ul>
+<li>Log 模組</li>
+</ul>
+<p>在 console 下顯示狀態紀錄。</p>
+<h3 id="運作原理"><a href="#運作原理" class="headerlink" title="運作原理"></a>運作原理</h3><p>一開始 Status 模組會等待點擊按鈕的事件被觸發，當收到觸發事件後，會透過 Hub 發佈訊息。</p>
+<p>這三個模組皆有 Listen 著 ‘status-update’ 事件，所以~當  Hub 發佈 ‘status-update’ 訊息時，各模組就會執行自己本分工作，另外~ Hub 會偷偷呼叫 updateLog 來開關 Log 模組， 若 Log 模組被停止，就不會和系統發生作用，直到 Log 模組又重新被啟動。</p>
+<h3 id="程式碼"><a href="#程式碼" class="headerlink" title="程式碼"></a>程式碼</h3><ul>
+<li><a href="http://jsbin.com/sugoma/">JSBin - Example</a></li>
+<li><a href="https://gist.github.com/dz1984/8de2ad277205383280fe">Gist</a></li>
+</ul>
+<h2 id="結語"><a href="#結語" class="headerlink" title="結語"></a>結語</h2><p>模組的好處，是可以將領域邏輯劃分清楚，每一個模組獨自負責自己任務，僅透過 Hub 來傳遞所需訊息，各模組之間不會發生打架情形，甚至不知道對方的存在，完全符合單一責任原則 (SRP) ，也可提高可重復用性。</p>
+<p>最後~引用心目中大神的話。</p>
+<pre><code>In a well-modularized program each module should be about one topic, so I can remain ignorant of anything I don&#39;t need to understand.  - Martin Fowler
+</code></pre><h2 id="參考資料"><a href="#參考資料" class="headerlink" title="參考資料"></a>參考資料</h2><ul>
+<li><a href="http://www.slideshare.net/nzakas/scalable-javascript-application-architecture">Nicholas Zakas - Scalable JavaScript Application Architecture</a></li>
+<li><a href="http://addyosmani.com/futureproofjs/">Addy Osmani - Future-proofing Your JavaScript Applications For Improved Scalability</a></li>
+<li><a href="http://alanlindsay.me/kerneljs/">Kernel.js</a></li>
+<li><a href="http://martinfowler.com/articles/refactoring-external-service.html">Refactoring code that accesses external services</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>articles</category>
+      </categories>
+      <tags>
+        <tag>Javascript</tag>
+        <tag>Kernel.js</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>重構 9d8.tw 的 JS</title>
+    <url>/articles/9d8-tw-refactor/</url>
+    <content><![CDATA[<p><img src="/images/9d8tw/logo.png" alt=""></p>
+<p>這篇心得文躺在 Hackpad.com 已經有三個多月，期間斷斷續續地填加內容，使得語句沒辦法一氣呵成，文末也是草率結尾，像是一篇未完待續的殘章，希望有時間能在豐富本文。</p>
+<h1 id="寫在前頭"><a href="#寫在前頭" class="headerlink" title="寫在前頭"></a>寫在前頭</h1><span id="more"></span>
+<p>你可以從這裡面得到：</p>
+<ul>
+<li>知道 9d8.tw 是什麼東西。</li>
+</ul>
+<p>無法得到：</p>
+<ul>
+<li>Google API 用法，雖然~這專案依賴於 Google Map API ，像是搜尋、地標、經緯度轉地址等功能，但這不是重構項目，就暫時先略過。</li>
+</ul>
+<h1 id="揪地霸-9d8-tw"><a href="#揪地霸-9d8-tw" class="headerlink" title="揪地霸 (9d8.tw)"></a>揪地霸 (9d8.tw)</h1><p>9d8.tw 主要功能，是在 Google Map 上顯示出帶有拳頭圖示的「地霸」紀錄，每筆紀錄都保留著每位善男信女，向土地公公傾訴的內心話 ，所以，若是有哪位善男信女想傾訴那位「地霸」不當行徑，只需在地圖上一點，就會開啟真心話留言板，上面會標示著地址，中間則可供傾訴或指證事實，按下儲存後，就可在地圖上看到新的拳頭圖示。</p>
+<h1 id="Mockup-畫面"><a href="#Mockup-畫面" class="headerlink" title="Mockup 畫面"></a>Mockup 畫面</h1><ul>
+<li>地圖上面提供 Google 位址搜尋功能，可精準尋找出地霸所侵占之公有地，而地圖標記 “拳頭” 圖示為熱心民眾舉報之紀錄，若在地圖上點選任意一處，就能向土地公傾訴您的心聲！</li>
+</ul>
+<p><img src="/images/9d8tw/mockup_1.png" alt=""></p>
+<ul>
+<li>輸入您的心聲給土地公公聽！</li>
+</ul>
+<p><img src="/images/9d8tw/mockup_2.png" alt=""></p>
+<ul>
+<li>地圖上會出現剛新增心聲。</li>
+</ul>
+<p><img src="/images/9d8tw/mockup_3.png" alt=""></p>
+<h1 id="後端-API"><a href="#後端-API" class="headerlink" title="後端 API"></a>後端 API</h1><p>9d8.tw 後端僅提供兩個 API 功能：</p>
+<ul>
+<li>GET /all 是接收前端傳來一個限制範圍的經緯度參數，從資料庫取得此範圍內所有紀錄。</li>
+<li>GET /add 是將前端傳來內容，新增一筆紀錄至資料庫。</li>
+</ul>
+<p>從上述所言，清楚知道 JS 部份，是負責將後端提供功能與地圖作大量互動。</p>
+<h1 id="前端-JS-重構前"><a href="#前端-JS-重構前" class="headerlink" title="前端 JS 重構前"></a>前端 JS 重構前</h1><p>接下來，在進行 JS 解說，直接來看程式碼，有幾個大的項目，像是：</p>
+<h2 id="Google-地圖事件處理器"><a href="#Google-地圖事件處理器" class="headerlink" title="Google 地圖事件處理器"></a>Google 地圖事件處理器</h2><ul>
+<li>Titles 載入事件</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">google.<span class="property">maps</span>.<span class="property">event</span>.<span class="title function_">addListener</span>(map, <span class="string">&#x27;tilesloaded&#x27;</span>, <span class="keyword">function</span>(<span class="params">event</span>)&#123;    </span><br><span class="line">    <span class="keyword">var</span> bounds = map.<span class="title function_">getBounds</span>();</span><br><span class="line">    <span class="comment">// load all pull json dataset between this bound and place marker</span></span><br><span class="line">    <span class="title function_">placeBoundPullMarker</span>(map,bounds);        </span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<p>當 Google Map 有 Title 移動時，意味著地標也要重新整理，從程式碼可以看到先從 google.maps.Map 物件取得現在範圍值，然後~丟到 <code>placeBoundPullMarker</code> 函式去，這函式在幹嘛呢？讓我們看下去。</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> placeBoundPullMarker = <span class="keyword">function</span>(<span class="params">map, bounds</span>) &#123;</span><br><span class="line"></span><br><span class="line">    $.<span class="title function_">ajax</span>(<span class="string">&#x27;pull/all&#x27;</span>,</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="attr">data</span>: &#123;</span><br><span class="line">                <span class="string">&#x27;bounds&#x27;</span>: bounds.<span class="title function_">toUrlValue</span>()</span><br><span class="line">            &#125;,</span><br><span class="line">            <span class="attr">dataType</span>: <span class="string">&#x27;JSON&#x27;</span>,</span><br><span class="line">            <span class="attr">success</span>: <span class="keyword">function</span>(<span class="params">responseJson</span>)&#123;</span><br><span class="line">                <span class="keyword">if</span> (responseJson.<span class="property">status</span> === <span class="string">&#x27;OK&#x27;</span>) &#123;</span><br><span class="line">                    <span class="keyword">var</span> pullJsonList = responseJson.<span class="property">pulls</span>;</span><br><span class="line"></span><br><span class="line">                    pullJsonList.<span class="title function_">forEach</span>(<span class="keyword">function</span>(<span class="params">pullJson</span>)&#123;</span><br><span class="line">       </span><br><span class="line">                        <span class="keyword">var</span> marker = <span class="keyword">new</span> <span class="title class_">Pull</span>.<span class="title class_">Marker</span>(</span><br><span class="line">                            &#123;</span><br><span class="line">                                <span class="attr">map</span>: map, </span><br><span class="line">                                <span class="attr">latLng</span>: <span class="keyword">new</span> google.<span class="property">maps</span>.<span class="title class_">LatLng</span>(pullJson.<span class="property">lat</span>, pullJson.<span class="property">lng</span>),</span><br><span class="line">                                <span class="attr">id</span>: pullJson.<span class="property">id</span>,</span><br><span class="line">                                <span class="attr">addr</span>:  pullJson.<span class="property">address</span>,</span><br><span class="line">                                <span class="attr">confides</span>: pullJson.<span class="property">confides</span>,               </span><br><span class="line">                            &#125;</span><br><span class="line">                        );</span><br><span class="line"></span><br><span class="line">                        marker.<span class="title function_">addDefaultClickCallback</span>(panel);</span><br><span class="line">                        </span><br><span class="line">                        marker.<span class="title function_">placeIt</span>(<span class="literal">false</span>);</span><br><span class="line">                    &#125;);</span><br><span class="line">            &#125; <span class="comment">// end success</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;); <span class="comment">// end ajax</span></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<p><code>placeBoundPullMarker</code> 函式主要工作，是從後端 /all API 取得資料後，一筆一筆地包成 Pull.Marker 類別，並加上 Click callback func ，接著在地圖上插上拳頭圖示。</p>
+<ul>
+<li>點擊地圖事件</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">google.<span class="property">maps</span>.<span class="property">event</span>.<span class="title function_">addListener</span>(map, <span class="string">&#x27;click&#x27;</span>, <span class="keyword">function</span>(<span class="params">event</span>) &#123;</span><br><span class="line">    <span class="keyword">var</span> newPullMarker = <span class="keyword">new</span> <span class="title class_">Pull</span>.<span class="title class_">Marker</span>(&#123;<span class="attr">map</span>: map, <span class="attr">latLng</span>: event.<span class="property">latLng</span>&#125;);</span><br><span class="line">    </span><br><span class="line">    panel.<span class="title function_">open</span>(newPullMarker);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<p>另外，Click 地圖這個重要事件也要處理，將建立 Pull.Marker 物件，並傳入 Google Map 物件及點擊地圖之經緯度，交由 Pull.Panel 來開啟它。</p>
+<h2 id="Pull-Module"><a href="#Pull-Module" class="headerlink" title="Pull Module"></a>Pull Module</h2><p>有兩個主要 Panel 和 Marker 兩個類別，Panel 是真心話留言板 UI 操作，Marker 是保存每個地標資訊的 Model。</p>
+<p><a href="https://github.com/dz1984/9d8TW/blob/a786511a545da99796fabf189ae1d0340e35c0cd/public/js/pull.js">重構前 - 程式碼</a></p>
+<ul>
+<li>Marker 類別</li>
+</ul>
+<p>屬性一覽：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">map - google.maps.Map 物件</span><br><span class="line">latLng - 地標的經緯度</span><br><span class="line">id - 編號</span><br><span class="line">addr - 地標地址</span><br><span class="line">content - 傾訴內容</span><br><span class="line">marker - google.maps.Marker 物件</span><br><span class="line">condifes - 所有傾訴內容列表</span><br><span class="line">clickCallback - Click callback 函式列表</span><br></pre></td></tr></table></figure>
+<p>從程式碼，可以看出來有大量的 getter/setter 函式，只有兩個 method  較為有作用， getAddress() 是透過 Google Geo 工具負責將經緯度轉成可讀性高的地址，並保留成屬性；而 placeIt() 則是在地圖上插入一地標，並加入 Click callback，有看到上面 DefaultCallback 中的  <code>panel.open(this);</code> ，是將 Marker 物件傳至 Panel 裡，當地標被點擊時，會開啟真心話留言板。</p>
+<ul>
+<li>Panel 類別</li>
+</ul>
+<p>建構式充滿好多 jqXXXX 的東西，說穿這類別，其實是處理 UI 部份的工作，先看 <code>open</code> 函式，可看到 Panel 會先把 Marker 物件的屬性，偷偷放到自己的 Web Container 裡作初始化動作，所以~當真心話留言板一打開，就能看到之前的匿名留言內容。</p>
+<p> 真心話留言板打開後，便等待 儲存 和 取消 兩個按鈕事件釋發，若按下 取消，就呼叫 Panel 的 reset() ，並隱藏起來；若是 儲存，就會利用 Ajax 方式，呼叫 /add API 寫入資料庫，並將新增地標顯示在地圖上。</p>
+<p> Panel 類別非常混亂，一下要處理邏輯，一下又要處理 UI 內容。</p>
+<blockquote>
+<p>總之，9d8.tw 只需要 Model 和 View 就能搞定前端工作。</p>
+</blockquote>
+<h1 id="前端-JS-重構後"><a href="#前端-JS-重構後" class="headerlink" title="前端 JS 重構後"></a>前端 JS 重構後</h1><p><a href="https://github.com/dz1984/9d8TW/blob/4901ba1b3c4e36daadb73b884c77c2a2e0a76e22/public/js/pull.js">重構後 - 程式碼</a></p>
+<p>挑選一個老牌子的 JS Library - BackboneJS 來重構 Pull Module 的兩個類別，順便一提，我把 Marker 名稱改成 Fist (拳頭)，這名字更貼切地霸風格。</p>
+<p>重構後，可以看到 Pull 是繼承 Backbone.View ，而 Fist 繼承 Backbone.Model ，在邏輯上沒有任何改變，但寫法上較直覺，且容易維護，少了很多冗餘的程式碼，原本用 jqXXXX 方式，初始化 Web Element 內容，現在~是用 template 方式。</p>
+]]></content>
+      <categories>
+        <category>articles</category>
+      </categories>
+      <tags>
+        <tag>9d8.tw</tag>
+        <tag>Backbone.js</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>在 Underscore Template 上完成 foreach</title>
+    <url>/articles/underscore-foreach/</url>
+    <content><![CDATA[<p>簡單來說是使用 Subview 方式來解決，原理是逐一產生子樣版內容，然後~拼出完成的主要內容。</p>
+<p>細節如下：</p>
+<span id="more"></span>
+<ul>
+<li>JS 部份</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">var</span> data = &#123;<span class="attr">land_info</span>:[&#123;<span class="attr">k</span>: <span class="string">&#x27;k1&#x27;</span>, <span class="attr">v</span>:<span class="string">&#x27;v1&#x27;</span>&#125;,&#123;<span class="attr">k</span>:<span class="string">&#x27;k2&#x27;</span>,<span class="attr">v</span>:<span class="string">&#x27;v2&#x27;</span>&#125;]&#125;;</span><br><span class="line"><span class="keyword">var</span> content_compiled = _.<span class="title function_">template</span>($(<span class="string">&#x27;#content-tpl&#x27;</span>).<span class="title function_">html</span>());</span><br><span class="line"><span class="keyword">var</span> content = <span class="title function_">content_compiled</span>(data);</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(content);</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<ul>
+<li>主樣版內容</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">&quot;text/template&quot;</span> <span class="attr">id</span>=<span class="string">&quot;content-tpl&quot;</span>&gt;</span><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript">&lt;table&gt;</span></span><br><span class="line"><span class="language-javascript"> &lt;%=_.<span class="title function_">reduce</span>(land_info,<span class="keyword">function</span>(<span class="params">content, land</span>)&#123;</span></span><br><span class="line"><span class="language-javascript">   <span class="keyword">var</span> content_compiled = _.<span class="title function_">template</span>($(<span class="string">&#x27;#item-tpl&#x27;</span>).<span class="title function_">html</span>());</span></span><br><span class="line"><span class="language-javascript">   <span class="keyword">var</span> land_content = <span class="title function_">content_compiled</span>(&#123;<span class="attr">land</span>:land&#125;);</span></span><br><span class="line"><span class="language-javascript">   <span class="keyword">return</span> content+land_content;</span></span><br><span class="line"><span class="language-javascript"> &#125;,<span class="string">&quot;&quot;</span>)%&gt;</span></span><br><span class="line"><span class="language-javascript">&lt;/table&gt;</span></span><br><span class="line"><span class="language-javascript"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<ul>
+<li>子樣版內容</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">&quot;text/template&quot;</span> <span class="attr">id</span>=<span class="string">&quot;item-tpl&quot;</span>&gt;</span><span class="language-handlebars"><span class="language-xml"></span></span></span><br><span class="line"><span class="language-xml"><span class="language-handlebars">    <span class="tag">&lt;<span class="name">tr</span>&gt;</span></span></span></span><br><span class="line"><span class="language-xml"><span class="language-handlebars">        <span class="tag">&lt;<span class="name">td</span>&gt;</span>&lt;%=land.k%&gt;<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span></span></span><br><span class="line"><span class="language-xml"><span class="language-handlebars">        <span class="tag">&lt;<span class="name">td</span>&gt;</span>&lt;%=land.v%&gt;<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span></span></span><br><span class="line"><span class="language-xml"><span class="language-handlebars">    <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span></span></span><br><span class="line"><span class="language-xml"><span class="language-handlebars"></span></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>articles</category>
+      </categories>
+      <tags>
+        <tag>Memo</tag>
+        <tag>underscore</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>一本書一個回憶</title>
+    <url>/articles/happy-learn-dos/</url>
+    <content><![CDATA[<p><img src="/images/dos/dos.jpg" alt=""></p>
+<p>第一本接觸的電腦書籍，也是最值得回憶的一本。</p>
+<span id="more"></span>
+<p>清晰記得自己剛升上國小五年級，家庭添購了一台等級為 586 桌上型電腦，那時可算是先進設備，在這樣規格下，作業系統仍是以 DOS 6.2 為主流，同時存在著 Windows 3.1 的過渡期。</p>
+<p>對一位剛接觸到電腦的小朋友，自然不知道什麼是作業系統？ 什麼是 DOS？ 什麼是 Windows？</p>
+<p>每次電腦一開機，螢幕總是先快速閃過一大堆雜亂又動人訊息，接著便進入到一片死寂的黑色畫面，僅僅出現幾個英文字母和符號。看著這神祕符號，令我既好奇又無奈，好奇一個叫作電腦的鐵盒子，想必應該是比我還聰明的，比我還會思考，說不定可以解決任何疑難雜症，最好能幫忙寫功課；無奈自己面對著這隻不吭聲怪物，打也不是，罵也不是，真是束手無策，腦中浮出許多大大小小問題，也都只能擱在心頭裡。</p>
+<p>碰巧，附近新開了一間書局，有天下課和朋友相約到書局去逛逛，不經意翻到「快快樂樂學 DOS」這本書，一看不得了，裡面全是介紹如何讓鐵盒子動起來的指令。當下打從心底便知道，這本書正是我想要的。</p>
+<p>在那之後，有連續好幾天，出了校門不急著回家，一路衝到書局，狠狠地翻閱這本書，並找出一些好玩指令默默地記下，回家後便將腦海中指令，一股勁地往鍵盤上敲打，螢幕也霹靂趴啦地回應我，看似一場精采絕倫地辯論比賽，一來一往地攻防。</p>
+<p>然而，我對這本書著迷了！</p>
+<p>當雙手捧著它時，開始擔心…</p>
+<p>深怕明天在來時，它不在熟悉位置，有人早先一步把它捧在手心上。</p>
+<p>深怕明天在來時，它不在熟悉位置，心裡知道它不會在回來。</p>
+<p>突然想把它佔為己有，打算花新台幣讓它下架。</p>
+<p>但價格對一位每天零用錢只有十元的小學生而言，好像不是那麼親民近人，有個念頭一閃，應該試著拉金主老媽投資買書，遊說過程十分輕鬆容易，顯然老媽被我對電腦的熱誠所感動，爽口地答應明天陪我去購買。</p>
+<p>永遠記得那日之後，「快快樂樂學 DOS」 一書就常常伴隨於身邊，縱使早已不使用 DOS ，仍然可以在我的眾多電腦相關書籍中找到它，這本書悄悄地從實用性退居為紀念性，靜靜地擺放在書櫃裡。</p>
+<p>一本書一個回憶！</p>
+]]></content>
+      <categories>
+        <category>articles</category>
+      </categories>
+      <tags>
+        <tag>Book</tag>
+        <tag>心情</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>反省</title>
+    <url>/articles/review-by-myself/</url>
+    <content><![CDATA[<p>誠實地看待自己對未來的迷失… </p>
+<p>之前，問過自己是否因膽怯而停止前進，因害怕而一直躲藏於舒適區，左思右想地思量這件事，結論是我確實害怕，完全沒有頭緒。</p>
+<p>但自己又不肯去找解決方案，坐在原地，期盼答案從天而降，彷彿世人不肯努力，只等待救世主出現，這便是失敗主義者最明顯特徵。</p>
+<p>我要阻止失敗主義精神在身上蔓延，憑藉僅存鬥志，試著為自己找出口，不習慣失敗的我，卻淪為失敗主義的傳教士，那是一件多麼諷刺的事情。</p>
+<p>唯有不斷地告誡自己，努力游才能免於沉入海底，精神激勵完，還是得拿出具體行動方案搭配，才不致淪為口號。</p>
+]]></content>
+      <categories>
+        <category>articles</category>
+      </categories>
+      <tags>
+        <tag>心情</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>去人欲</title>
+    <url>/articles/remove-humanity/</url>
+    <content><![CDATA[<p>要做到「觀自在」真是一件困難事情，情緒很容易被牽著走，受到一點擾動便產生極大波漣，原來這些情緒是為了保護自己免於傷害，但現在卻成為負擔，佛家把它們視為「障」，難道要完全去除人性才能成佛嗎？若完成移除人性後，人在這世上還容得下嗎？因為在人世間已無人性，便在也無法與人有互動，這樣說法是否太極端，佛也會入世幫助他人，可見佛並未捨棄人性，並非像理學那樣「存天理，去人欲」。</p>
+]]></content>
+      <categories>
+        <category>articles</category>
+      </categories>
+      <tags>
+        <tag>心情</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>我讀叔本華的感想</title>
+    <url>/articles/schopenhauer/</url>
+    <content><![CDATA[<p>叔本華的高傲與孤僻，真令人無法恭維，可能是我不瞭解那年代的時空背景，所以才不能接受，或許在那種環境下，他已經十分委婉地表達，我不能用現在的觀念去批評他，這對他才是公平的。</p>
+<p>我認為他對人性是採負面且真實地刻劃出來，然而，他對這種人性的態度是遠離它，使自己免於受到傷害，看似消極實為積極。</p>
+<p>首先，我們無法也沒有權力去改造別人，使他變成我們心目中所計劃的那樣，這對他來說是殘酷的，無法按照自我意識發展的人是非常不幸，值得大家的同情與憐愛，其次，雖然無法去改變他人，但能調整自己的思維與行動，進而成為自己所想的那樣，總結這二點，可以得出叔本華在面對這無力扭轉人性負面的局面時，他選擇朝自我最大舒適調整，使自己能與這世界保持恰當連結，不致於過份脫節。</p>
+]]></content>
+      <categories>
+        <category>articles</category>
+      </categories>
+      <tags>
+        <tag>Book</tag>
+        <tag>心情</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>2015年回顧書單,列十本特別喜歡的書</title>
+    <url>/articles/Ten-Books-on-2015/</url>
+    <content><![CDATA[<p>參加 ptt.cc Book 版的回顧活動，想和大家分享 2015 年鐘愛的書(有些書不見得都是 2015 年出版)，以及為什麼會想讀它。</p>
+<span id="more"></span>
+<ul>
+<li>城堡 2014/06/05 漫步文化</li>
+</ul>
+<p>這是第一次接觸卡夫卡的作品，真是有點相見恨晚呀！</p>
+<p>讀這本書時，被裡面的荒謬與衝突，搞得十分混亂，同時也被逗得不斷地發笑。</p>
+<ul>
+<li>人類大歷史：從野獸到扮演上帝 2014/08/27 天下文化</li>
+</ul>
+<p>與「人類的故事」，同為最喜歡和易於接受的世界歷史書。</p>
+<p>這本用筆詼諧有趣，內容結構有系統化，不生硬地述說故事。</p>
+<ul>
+<li>查拉圖斯特拉如是說 2014/09/11 大家出版社</li>
+</ul>
+<p>這本書相信大家應該不陌生，偏偏喜歡錢春綺的版本，是因為增加許多註解，便於閱讀理解。</p>
+<ul>
+<li>蒲公英女孩 2014/10/01 寶瓶文化</li>
+</ul>
+<p>看了日劇「古書堂事件手帖」後，才去追這本書來讀，科幻結合愛情也可以很浪漫！</p>
+<ul>
+<li>從0到1：打開世界運作的未知祕密，在意想不到之處發現價值 2014/10/07 天下雜誌</li>
+</ul>
+<p>因有創業動機而拜讀此書，聽取別人的經驗之談。</p>
+<ul>
+<li>人生的智慧 2014/12/01 新雨</li>
+</ul>
+<p>在書局翻著翻著，就深深被吸引住，對於叔本華的高傲與孤僻，真令人無法恭維。</p>
+<ul>
+<li>哲學大師寫給每個人的政治思考課 2015/01/08 漫遊者文化</li>
+</ul>
+<p>這本可充當社會學的入門書來看，作者在書中提出很多問題，值得省思。</p>
+<ul>
+<li>平行宇宙：穿越創世、高維空間和宇宙未來之旅 2015/04/01 暖暖書屋</li>
+</ul>
+<p>覺得加來道雄上一本「穿梭超時空」寫得很有趣容易理解，這本也就跟著買了！</p>
+<p>但別問我讀了什麼，因為~還真得沒看懂，打算找個時間在重新看一遍。</p>
+<ul>
+<li>我在地球的日子 2015/08/04 春天</li>
+</ul>
+<p>一本趣味十足的小說，作者想像力豐富，活像是外星人寫的日記。</p>
+<ul>
+<li>功效論：在中國與西方思維之間(2版) 2015/09/25 五南 </li>
+</ul>
+<p>談論如何看待在政治、軍事、外交獲得最大功效，可惜是一本是純理論內容。</p>
+<p>有點深！看得頭昏腦漲，要不是作者亂寫加上譯者超譯，不然~就是自己的程度還不足以參透！客觀來說，應該是後者！</p>
+]]></content>
+      <categories>
+        <category>articles</category>
+      </categories>
+      <tags>
+        <tag>Book</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>嗜血的命</title>
+    <url>/articles/Bloodthirsty-Life/</url>
+    <content><![CDATA[<p>聞到熱血沸騰的氣味，已經失去理性。</p>
+<p>嗜血是我的本性，縱使前面困難重重，也要一步步向你靠近；<br>嗜血是我的天命，縱使冒著生命危險，也要一口口把你吸乾。</p>
+<p>請不要覺得我很殘暴，因為~<br><span id="more"></span></p>
+<p>打從出生到現在，都是如此狂妄又貪婪地暢飲著，這是我賴以為生的工作，以此為榮，也以此為樂。</p>
+<p>或許是造物者，設計上出了點瑕疵，又或者是造物者，對我開個小玩笑。</p>
+<p>聞著熱血沸騰的氣味，早已無法自我了！</p>
+<p>你無視我，但我注視著你；我朝你步步逼近，但你無動於衷。</p>
+<p>當你我僅只一步之遙，你不以為意地看了我一眼，隨後便轉過頭去，繼續忙著自己的事情，完全不顧忌我，我沒有因此生惱，反而坦蕩蕩地貼到你身上去，我想那處一定是洶湧澎湃的動脈，因為我聞得出來。</p>
+<p>對你我毫不客氣，拔出利器，刺入肉裡，張口吸吮，三個動作一氣呵成，熟練且無半點停滯，血才剛入喉，你冷不防地施展如來神掌，草草結束我的生命，但我從不後悔，也不曾怪過誰，因為~這是我天生嗜血的命。</p>
+]]></content>
+      <categories>
+        <category>articles</category>
+      </categories>
+      <tags>
+        <tag>創作</tag>
+        <tag>微寫作</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>醒悟</title>
+    <url>/articles/Wakeup/</url>
+    <content><![CDATA[<p>當眼睛有物遮蔽時，所能見的僅是遮蔽物，視野極其狹小，而無法自知自覺，索性以管窺天，四周美景形同虛空，甚至連危險也視而不見，舉個上班車潮為例子，觀察到上班族或是「孝子」載子女上下課，由於時間的因素，不免橫衝直撞，以機車族最為兇猛有力，敢逆向行駛，不時為躲避來車，便急於切回原車道，往往這個「急」字，就容易釀成大禍，常常造成後方來不及剎車，自身因此受傷，嚴重可是會背上刑責，為何要這般鋌而走險呢？是趕時間遮蔽了他們雙眼，為了搶快而犯傻，故佛家云：「眾生迷而不悟」，迷戀而不知醒悟，為了眼前事物，已不管自身生死大事。反觀自己不禁想問：「我有醒悟了嗎？」</p>
+]]></content>
+      <categories>
+        <category>articles</category>
+      </categories>
+      <tags>
+        <tag>心情</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>舊說新寫</title>
+    <url>/articles/A-new-story/</url>
+    <content><![CDATA[<p>淡淡茶香，隨著白煙冉冉而旋升；朱紅眉批，整齊堆疊於黃頁上頭。知縣大人端坐桌前，正為書中大片留白處，增添數個紅通通的方塊，緩緩落筆後，嘴中喃喃自語，像似細聲呼喚剛誕生的文字，雙眼微微露出滿意神態，連日處理龐大繁瑣公務，身心早已俱疲不堪，難得此時有片刻安寧，心中嘆道：「世上能品茶讀書是何等快事」。</p>
+<p>舉杯想喝口上等好茶來犒賞自己時，便聽到外頭有人大聲嚷嚷。</p>
+<p>「大人！不好了！不好了！出事了！」，府上管家一邊喊叫，一邊急急忙忙衝進書房。</p>
+<span id="more"></span>
+<p>知縣皺一皺眉頭問說：「何事驚慌？慢慢道來。」</p>
+<p>管家上氣不接下氣地說：「撞…，李三撞邪了！」</p>
+<p>知縣眉心深鎖，一臉狐疑地唸說：「撞邪？」</p>
+<p>「對！是撞邪！李三今早還好好的，剛才帳房先生說有急事喚他去，不知怎麼回事，動身快走沒幾步，突然發狂似的，一會對著自己的胸口又打又捶，一會拚命地往臉頰呼巴掌，口中唸唸有詞，叫也叫不應。」</p>
+<p>「咦！都唸些什麼？」</p>
+<p>「聽李三是這麼說，『我雖然是不得意的死去，但好歹也是地方紳士，你這傢伙算什麼東西，如此傲慢，擋住我去路不說，還朝我猛撞，今天非得好好教訓你，叫你今後還敢不敢』，說完便打起自己，這般來來去去，不知啥回事，大人！您快去看看！」</p>
+<p>知縣心知事態不妙，便隨管家前往，一看發現原本敦厚老實的李三，現下面目猙獰，不斷大聲叫罵，雙手捶胸呼頰。</p>
+<p>知縣上前，對著李三徐徐地說：「先生何苦為難此人呢？」</p>
+<p>李三瞟了一眼，問說：「你是何許人也？這沒你的事！」</p>
+<p>「我乃七品知縣，同是此人之主子，今見異狀，特來調解。」</p>
+<p>「好呀！來了位大人，就請你來評評理。這小子走路冒冒失失的，沒瞧見我在後院散步，迎面一頭撞上。嘿！這小子啥話也沒說，人就走了！小伙子不知禮又沒人教，這便由我來教。」</p>
+<p>「先生請聽我一言，自古陰陽兩地，互不侵犯，先生若是在光天化日之下現身，按理而言，是不適宜，若是先生隱而未現，先生可看見此人，但此人卻無法看見先生，試問又該如何閃避呢？」</p>
+<p>李三聽聞後呆住不動，便全身一軟倒地而睡，過了一會兒，悠悠醒轉，張眼看了四周，驚疑問說：「剛發生了什麼事？怎麼全圍著我？」，看看自己又問：「我怎麼渾身是傷？」</p>
+<p>P.S. 此篇是從《閱微草堂筆記．姑妄聽之一》之「馮府史僕」改寫而成，透過白話語氣，並加點描述讓情節更加流暢，主要是用來練習自己說故事能力。</p>
+]]></content>
+      <categories>
+        <category>articles</category>
+      </categories>
+      <tags>
+        <tag>創作</tag>
+        <tag>微寫作</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Lumen + Backbone.js (一)</title>
+    <url>/articles/lumen-backbone-1/</url>
+    <content><![CDATA[<p>這篇殘文擺在 Hackpad.com 很久，快有六個月了！ 都到現還沒完成，暫且先放上一部份 (後端)，記錄 Lumen 剛釋出時，自己動手踹踹看的心得，由 Lumen 處理後端東西，前端呢？ 還是交給最愛的 Backbone 。 </p>
+<h1 id="寫在前頭"><a href="#寫在前頭" class="headerlink" title="寫在前頭"></a>寫在前頭</h1><span id="more"></span>
+<p>你可以從這裡面得到：</p>
+<ul>
+<li>Lumen 與 Backbone 搭配的陽春起手式。</li>
+</ul>
+<p>無法得到：</p>
+<ul>
+<li>Lumen 完整介紹及操作。</li>
+</ul>
+<h1 id="Lumen"><a href="#Lumen" class="headerlink" title="Lumen"></a>Lumen</h1><p>Lumen 是從 Laravel 切割出來的 micro-framework，並非用來取代 Laravel，基本上 Lumen 有很多元件仍來自於 Lavavel，主要適用於 Micro Service 和 RESTFul API ，最大賣點是速度。</p>
+<p>補充 Taylor Otwell 有一段測試影片：</p>
+<iframe width="420" height="315" src="https://www.youtube.com/embed/WqRpa_5m7h4" frameborder="0" allowfullscreen></iframe>
+
+<p>測試結果是…</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Silex: 950 requests per second</span><br><span class="line">Slim: 1250 requests per second</span><br><span class="line">Lumen: 1700 requests per second</span><br></pre></td></tr></table></figure>
+<h1 id="動手實作"><a href="#動手實作" class="headerlink" title="動手實作"></a>動手實作</h1><ul>
+<li>lumen 安裝工具 </li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">composer global require <span class="string">&quot;laravel/lumen-installer=~1.0&quot;</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>建立新的專案</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">lumen new booklib</span><br></pre></td></tr></table></figure>
+<ul>
+<li>環境設定檔，設定 DB 帳密</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cp</span> .env.example .<span class="built_in">env</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>移除 bootstrap/app.php 的註解</li>
+</ul>
+<figure class="highlight php"><table><tr><td class="code"><pre><span class="line"> </span><br><span class="line"><span class="title class_">Dotenv</span>::<span class="title function_ invoke__">load</span>(<span class="keyword">__DIR__</span>.<span class="string">&#x27;/../&#x27;</span>);</span><br><span class="line"><span class="variable">$app</span>-&gt;<span class="title function_ invoke__">withFacades</span>();</span><br><span class="line"></span><br><span class="line"><span class="variable">$app</span>-&gt;<span class="title function_ invoke__">withEloquent</span>();</span><br></pre></td></tr></table></figure>
+<ul>
+<li>啟動 server</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">php artisan serve</span><br></pre></td></tr></table></figure>
+<ul>
+<li>建立 Database</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">php artisan make database</span><br></pre></td></tr></table></figure>
+<ul>
+<li>加入 database 至 classmap，並更新 composer.json 。</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">...</span><br><span class="line"><span class="string">&quot;classmap&quot;</span>: [</span><br><span class="line">    <span class="string">&quot;database/&quot;</span></span><br><span class="line">]</span><br><span class="line">...</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">composer dump-autoload</span><br></pre></td></tr></table></figure>
+<ul>
+<li>建立 Books Table</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">php artisan make:migration create_books_table --create=books</span><br></pre></td></tr></table></figure>
+<ul>
+<li>增加 Books Table 欄位</li>
+</ul>
+<figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="variable">$table</span>-&gt;<span class="title function_ invoke__">increments</span>(<span class="string">&#x27;id&#x27;</span>);</span><br><span class="line"><span class="variable">$table</span>-&gt;<span class="keyword">string</span>(<span class="string">&#x27;coverImage&#x27;</span>);</span><br><span class="line"><span class="variable">$table</span>-&gt;<span class="keyword">string</span>(<span class="string">&#x27;title&#x27;</span>);</span><br><span class="line"><span class="variable">$table</span>-&gt;<span class="keyword">string</span>(<span class="string">&#x27;author&#x27;</span>);</span><br><span class="line"><span class="variable">$table</span>-&gt;<span class="keyword">string</span>(<span class="string">&#x27;releaseDate&#x27;</span>);</span><br></pre></td></tr></table></figure>
+<ul>
+<li>migrate</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">php artisan migrate</span><br></pre></td></tr></table></figure>
+<ul>
+<li>在 app 資料夾下，新增 Book Model 檔案</li>
+</ul>
+<figure class="highlight php"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="meta">&lt;?php</span> <span class="keyword">namespace</span> <span class="title class_">App</span>;</span><br><span class="line"><span class="keyword">use</span> <span class="title">Illuminate</span>\<span class="title">Database</span>\<span class="title">Eloquent</span>\<span class="title">Model</span>;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Book</span> <span class="keyword">extends</span> <span class="title">Model</span> </span>&#123;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1 id="後台-RESTFul-API"><a href="#後台-RESTFul-API" class="headerlink" title="後台 RESTFul API"></a>後台 RESTFul API</h1><ul>
+<li>建立 resource 資料夾</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">php artisan make resources</span><br></pre></td></tr></table></figure>
+<ul>
+<li>在 resources\views 資料夾，加入 index.blade.php 檔案。</li>
+</ul>
+<p>PHP 基本上是不大產生頁面內容，而把大部份的工作都交給 JS 處理，最主要是這一段：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;books&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">form</span> <span class="attr">id</span>=<span class="string">&quot;addBook&quot;</span> <span class="attr">action</span>=<span class="string">&quot;#&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">&quot;coverImage&quot;</span>&gt;</span>封面圖檔: <span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">input</span> <span class="attr">id</span>=<span class="string">&quot;coverImage&quot;</span> <span class="attr">type</span>=<span class="string">&quot;file&quot;</span> /&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">&quot;title&quot;</span>&gt;</span>書名: <span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">input</span> <span class="attr">id</span>=<span class="string">&quot;title&quot;</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span> /&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">&quot;author&quot;</span>&gt;</span>作者: <span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">input</span> <span class="attr">id</span>=<span class="string">&quot;author&quot;</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span> /&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">&quot;releaseDate&quot;</span>&gt;</span>出版日期: <span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">input</span> <span class="attr">id</span>=<span class="string">&quot;releaseDate&quot;</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span> /&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">&quot;keywords&quot;</span>&gt;</span>關鍵字: <span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">input</span> <span class="attr">id</span>=<span class="string">&quot;keywords&quot;</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span> /&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">button</span> <span class="attr">id</span>=<span class="string">&quot;add&quot;</span>&gt;</span>增加<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>app\Http\routes.php</li>
+</ul>
+<p>接下來是 Book Model 的 CRUD 時間。</p>
+<figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="variable">$app</span>-&gt;<span class="title function_ invoke__">get</span>(<span class="string">&#x27;books&#x27;</span>, function() </span><br><span class="line">&#123;</span><br><span class="line">    <span class="variable">$books</span> = <span class="title class_">Book</span>::<span class="title function_ invoke__">all</span>();</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="title function_ invoke__">response</span>()-&gt;<span class="title function_ invoke__">json</span>(<span class="variable">$books</span>);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="variable">$app</span>-&gt;<span class="title function_ invoke__">get</span>(<span class="string">&#x27;books/&#123;id&#125;&#x27;</span>, function(<span class="variable">$id</span>)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="variable">$book</span> = <span class="title class_">Book</span>::<span class="title function_ invoke__">find</span>(<span class="variable">$id</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="title function_ invoke__">response</span>()-&gt;<span class="title function_ invoke__">json</span>(<span class="variable">$book</span>);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="variable">$app</span>-&gt;<span class="title function_ invoke__">post</span>(<span class="string">&#x27;books&#x27;</span>, function() </span><br><span class="line">&#123;</span><br><span class="line">    <span class="variable">$target_path</span> = <span class="string">&#x27;upload/images/&#x27;</span>;</span><br><span class="line">    <span class="variable">$book</span> = <span class="keyword">new</span> <span class="title class_">Book</span>;</span><br><span class="line">    <span class="comment">// TODO : move the upload file to images folder</span></span><br><span class="line">    <span class="variable">$file_name</span> = <span class="title function_ invoke__">md5</span>(<span class="title function_ invoke__">rand</span>());</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> (<span class="title class_">Request</span>::<span class="title function_ invoke__">hasFile</span>(<span class="string">&#x27;coverImage&#x27;</span>)) &#123;</span><br><span class="line">        <span class="variable">$upload_file</span> = <span class="title class_">Request</span>::<span class="title function_ invoke__">file</span>(<span class="string">&#x27;coverImage&#x27;</span>);</span><br><span class="line">        <span class="variable">$ext_file_name</span> = <span class="variable">$upload_file</span>-&gt;<span class="title function_ invoke__">getClientOriginalExtension</span>();</span><br><span class="line">        <span class="variable">$file_name</span> = <span class="string">&quot;<span class="subst">$file_name</span>.<span class="subst">$ext_file_name</span>&quot;</span> ;</span><br><span class="line"></span><br><span class="line">        <span class="variable">$upload_file</span>-&gt;<span class="title function_ invoke__">move</span>(<span class="variable">$target_path</span>,<span class="variable">$file_name</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="variable">$book</span>-&gt;coverImage = <span class="variable">$target_path</span>.<span class="variable">$file_name</span>;</span><br><span class="line">    <span class="variable">$book</span>-&gt;title = <span class="title class_">Request</span>::<span class="title function_ invoke__">input</span>(<span class="string">&#x27;title&#x27;</span>);</span><br><span class="line">    <span class="variable">$book</span>-&gt;author = <span class="title class_">Request</span>::<span class="title function_ invoke__">input</span>(<span class="string">&#x27;author&#x27;</span>);</span><br><span class="line">    <span class="variable">$book</span>-&gt;releaseDate = <span class="title class_">Request</span>::<span class="title function_ invoke__">input</span>(<span class="string">&#x27;releaseDate&#x27;</span>);</span><br><span class="line"></span><br><span class="line">    <span class="variable">$book</span>-&gt;<span class="title function_ invoke__">save</span>();</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="title function_ invoke__">response</span>()-&gt;<span class="title function_ invoke__">json</span>(<span class="variable">$book</span>);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="variable">$app</span>-&gt;<span class="title function_ invoke__">put</span>(<span class="string">&#x27;books/&#123;id&#125;&#x27;</span>, function(<span class="variable">$id</span>)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="variable">$book</span> = <span class="title class_">Book</span>::<span class="title function_ invoke__">find</span>(<span class="variable">$id</span>);</span><br><span class="line"></span><br><span class="line">    <span class="variable">$book</span>-&gt;title = <span class="title class_">Request</span>::<span class="title function_ invoke__">input</span>(<span class="string">&#x27;title&#x27;</span>);</span><br><span class="line">    <span class="variable">$book</span>-&gt;author = <span class="title class_">Request</span>::<span class="title function_ invoke__">input</span>(<span class="string">&#x27;author&#x27;</span>);</span><br><span class="line">    <span class="variable">$book</span>-&gt;releaseDate = <span class="title class_">Request</span>::<span class="title function_ invoke__">input</span>(<span class="string">&#x27;releaseDate&#x27;</span>);</span><br><span class="line"></span><br><span class="line">    <span class="variable">$book</span>-&gt;<span class="title function_ invoke__">save</span>();</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="title function_ invoke__">response</span>()-&gt;<span class="title function_ invoke__">json</span>(<span class="variable">$book</span>);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="variable">$app</span>-&gt;<span class="title function_ invoke__">delete</span>(<span class="string">&#x27;books/&#123;id&#125;&#x27;</span>, function(<span class="variable">$id</span>)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="variable">$book</span> = <span class="title class_">Book</span>::<span class="title function_ invoke__">find</span>(<span class="variable">$id</span>);</span><br><span class="line"></span><br><span class="line">    <span class="variable">$book</span>-&gt;<span class="title function_ invoke__">delete</span>();</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="string">&#x27;&#x27;</span>;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<p>下一篇將會介紹 Backbone 的部份。</p>
+]]></content>
+      <categories>
+        <category>articles</category>
+      </categories>
+      <tags>
+        <tag>PHP</tag>
+        <tag>Backbone.js</tag>
+        <tag>Lumen</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Haskell AMP</title>
+    <url>/articles/Haskell-AMP/</url>
+    <content><![CDATA[<p>在拜讀<a href="http://learnyouahaskell.com">《Learn You a Haskell for Great Good!》</a>一書中，介紹 Monad 定義時，提到可以不用下 Applicative 的類別約束，那是因為此書範例仍停留在 <code>GHC 6.8.2</code> 版本，但資訊界可是日新月異，在這推陳出新的時代，早已行不通了！</p>
+<span id="more"></span>
+<p>現在來看一下失敗案例：</p>
+<figure class="highlight haskell"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">data</span> <span class="type">Maybe&#x27;</span> a = <span class="type">Nothing&#x27;</span> | <span class="type">Just&#x27;</span> a <span class="keyword">deriving</span>(<span class="type">Show</span>)</span></span><br><span class="line"><span class="class"></span></span><br><span class="line"><span class="class"><span class="keyword">instance</span> <span class="type">Functor</span> <span class="type">Maybe&#x27;</span> <span class="keyword">where</span></span></span><br><span class="line">    fmap _ <span class="type">Nothing&#x27;</span>  = <span class="type">Nothing&#x27;</span></span><br><span class="line">    fmap f (<span class="type">Just&#x27;</span> x) = <span class="type">Just&#x27;</span> (f x)</span><br><span class="line"><span class="class"></span></span><br><span class="line"><span class="class"><span class="keyword">instance</span> <span class="type">Monad</span> <span class="type">Maybe&#x27;</span> <span class="keyword">where</span></span></span><br><span class="line">    return x = <span class="type">Just&#x27;</span> x</span><br><span class="line">    <span class="type">Nothing&#x27;</span> &gt;&gt;= _ = <span class="type">Nothing&#x27;</span></span><br><span class="line">    (<span class="type">Just&#x27;</span> x) &gt;&gt;= f = (f x)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>按書中方式，定義 Monad 時不去繼承 Applicative，將無法編譯成功，出現下列錯誤訊息：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">foo.hs:10:10: error:</span><br><span class="line">    • No instance <span class="keyword">for</span> (Applicative Maybe<span class="string">&#x27;)</span></span><br><span class="line"><span class="string">        arising from the superclasses of an instance declaration</span></span><br><span class="line"><span class="string">    • In the instance declaration for ‘Monad Maybe&#x27;</span>’</span><br><span class="line">Failed, modules loaded: none.</span><br></pre></td></tr></table></figure>
+<p>根據 <a href="https://wiki.haskell.org/Functor-Applicative-Monad_Proposal">Functor-Applicative-Monad Proposal</a> ，原來早在 <code>GHC 7.10</code> 已接受此提議，所以改成一定要宣告 Applicative ，而且 Monad 的 <code>return</code> 已經被 Applicative 的 <code>pure</code> 取代，可以不用寫了！</p>
+<p>這本書已經有點年紀，顯得需要與時並進的地方。</p>
+]]></content>
+      <tags>
+        <tag>Haskell</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>想一個故事</title>
+    <url>/articles/Think-a-story/</url>
+    <content><![CDATA[<p>八點三十分，圖書館大門準時開啟，緩緩朝自修室邁去，踩著似曾相識的路線，帶領我坐在熟悉位置上，攤開厚厚的書，眼神若即若離地，盯著昨天沒看完的章節。</p>
+<p>八點三十五分，轉過頭，小聲問著坐在左手邊的男子，「你在幹嘛？」。</p>
+<p>男子向我瞟了一眼，徐徐地吐出「看書啊！」，我的雙眼迅速映入一付明知故問表情。</p>
+<span id="more"></span>
+<p>我硬著頭皮，又說：「問你喔！想用五六百字，寫個故事，內容是有關一個人如何去構思故事的過程，你覺得要怎麼寫比較好？」，好奇地等待著，期盼能聽到什麼有趣意見。</p>
+<p>「關我屁事喔！不知道啦！」，頓時，覺得有股冷冰冰的空氣，從耳朵狠狠鑽入，一路衝向心窩，企圖把所有火熱的東西都降至最低點。</p>
+<p>「拜託！幫個忙嘛！隨便給點什麼建議」，獻上最大誠意，厚著臉皮再問一次，卻換回少了一對黑珠子的眼神。</p>
+<p>「求你啦！」，不停地央求著，語調是一次比一次更客氣。</p>
+<p>在輪番拜託攻勢下，男子勉為其難說：「好吧！我覺得…」，心想：「終於肯搭理我」，心裡自然是一片歡天喜地，就這樣我倆一來一往討論了起來。</p>
+<p>「喂！覺得你們聊得那個故事還不錯啊！你該不會不想寫吧！」，八點四十五分，坐在右手邊男子，疑惑地問著我。</p>
+<p>「要啦！正打算動筆寫」，心中有了底之後，回答得是既肯定又暢快。</p>
+<p>「早幫你寫好了！」，若不是說話的人，滿臉認真地看著我說，一定會讓人覺得這是句玩笑話。</p>
+<p>「什麼時候寫的？」</p>
+<p>「剛剛啊！你們邊說，我就邊幫忙紀錄囉！」，才剛卸下問號臉譜，這會兒我又戴上驚訝面具。</p>
+<p>「給你」，男子往我桌上扔了一本筆記簿。</p>
+<p>「砰！」，耳邊突然傳來一聲巨響。</p>
+<p>嚇得我差點從椅子上彈起，等回過神來，兩側早已空無一人，抓起手機一看，顯示時間是八點四十六分，低頭望著筆記簿裡滿滿文字，正是我想說的故事。</p>
+]]></content>
+      <categories>
+        <category>articles</category>
+      </categories>
+      <tags>
+        <tag>創作</tag>
+        <tag>微寫作</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>學習 Haskell 的十本好書(上)</title>
+    <url>/articles/Top-Ten-Books-To-Learn-Haskell-Part1/</url>
+    <content><![CDATA[<p>學習 Haskell 是條漫長又艱辛的道路，在學習過程中，隨身總會攜帶著幾本，可以應付不同時期需求的讀物，已經有人列出十本於不同領域和層次的書藉，試著翻譯 <a href="http://whatpixel.com/best-haskell-books/">Top 10 Books To Learn Haskell Programming</a> 這篇文章。</p>
+<p>進入正文吧！</p>
+<span id="more"></span>
+<hr>
+<p>函數編程有趣地方，是能夠快速成型以及擴展新想法，但對毫無經驗新手而言，不容易去學習。剛開始使用程序編程的知識去開發很容易，可是一旦轉換到函數編程，便會發現更多樂趣。</p>
+<p>Haskell 是個好玩的函數程式語言，如果你用心學習，保證將會感受到 Haskell 的威力。該從那裡開始呢？這篇文章會列出十本學習 Haskell 的好書，含蓋初學到進階，符合各階段對象的需要。</p>
+<h1 id="Real-World-Haskell"><a href="#Real-World-Haskell" class="headerlink" title="Real World Haskell"></a>Real World Haskell</h1><p><img src="/images/2017/05/real_world_haskell.jpg" alt="Real World Haskell"></p>
+<p>這或許是我見過以來，最終級的學習手冊。從2008年發佈第一版，到現在整本已超過700多頁的入門教學和新手指南。 <a href="https://www.amazon.com/gp/product/0596514980/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;tag=whatpixel-20&amp;camp=1789&amp;creative=9325&amp;linkCode=as2&amp;creativeASIN=0596514980&amp;linkId=8ab7948167a4db4ab54bec1dd1444eee">Real World Haskell</a> 會帶領你透過函數編程，按步就班地完成各種實際練習，來指引你前進，不僅是學習如何寫 Haskell 程式，還學會如何像函數程式師思考，建置 Haskell 應用程式的方法，既可以完全當個初學者，又可以遊走於實用知識，不過你須大致瞭解一些編程概念，像是變數、函數，以及類型等。</p>
+<p>由於這本書太豐富，你會從正規化表達式到網路編程和 web/desktop 應用開發，每一樣都學一點，這無疑是無廢話學 Haskell 的最佳入門指南。</p>
+<blockquote>
+<p>譯者注：線上閱讀 Real World Haskell。 <strong><a href="http://book.realworldhaskell.org/read/">英文版</a></strong>、 <strong><a href="http://cnhaskell.com">中文版</a></strong></p>
+</blockquote>
+<h1 id="Learn-You-a-Haskell-for-Great-Good"><a href="#Learn-You-a-Haskell-for-Great-Good" class="headerlink" title="Learn You a Haskell for Great Good!"></a>Learn You a Haskell for Great Good!</h1><p><img src="/images/2017/05/learn_you_a_haskell_good.jpg" alt="Learn You a Haskell for Greet Good!"></p>
+<p>也許在函數編程的書海中，你會發現這本是最好的 Haskell 入門書。作者巧妙運用插圖和喜劇幽默，打造出一個愉快的讀物，寫作風格非常平易近人，並以一種開玩笑的教學方式引入 Haskell 概念。</p>
+<p>Haskell 零基礎以 <a href="https://www.amazon.com/gp/product/1593272839/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;tag=whatpixel-20&amp;camp=1789&amp;creative=9325&amp;linkCode=as2&amp;creativeASIN=1593272839&amp;linkId=7db0e37edf48c8d2915cc0f002feb912">Learn You a Haskell for Great Good!</a> 為開始，帶你走訪每個重點特色，最後會學習從無開始建置自己的類型類和模組。有一些命式式/程序式編程知識可以加快協助你閱讀這本書，若沒有任何編程知識的人也適合，只是花的時間會比別人長。</p>
+<p>搞笑天性、超棒插圖，以及逗趣幽默的流行對話文化，我可是這本書的大粉絲。全書 360頁，實際上它把學習 Haskell 變成有趣的冒險。</p>
+<blockquote>
+<p>譯者注：線上閱讀 Learn You a Haskell for Great Good!。 <strong><a href="http://learnyouahaskell.com/chapters">英文版</a></strong>、 <strong><a href="https://www.gitbook.com/book/mno2/learnyouahaskell-zh/details">中文版</a></strong></p>
+</blockquote>
+<h1 id="Haskell-The-Craft-of-Functional-Programming"><a href="#Haskell-The-Craft-of-Functional-Programming" class="headerlink" title="Haskell: The Craft of Functional Programming"></a>Haskell: The Craft of Functional Programming</h1><p><img src="/images/2017/05/haskell_craft_functional_programming.jpg" alt="Haskell: The Craft of Functional Programming"></p>
+<p>函數編程不是一個容易進入主題，Haskell 剛開始可能會很複雜，除非有良好的學習資料。<a href="https://www.amazon.com/gp/product/0201882957/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;tag=whatpixel-20&amp;camp=1789&amp;creative=9325&amp;linkCode=as2&amp;creativeASIN=0201882957&amp;linkId=3041aec3df4509a9a9ce355e0739e91e">Haskell: The Craft of Functional Programming</a> 目前第三版手冊已達600多頁，我認為這本是最佳的函數編程入門書，從基礎帶到進階，裡面很多應用是需要有堅韌不拔精神才能克服，也許要要花上幾個月，甚至是幾年，才能完全瞭解 Haskell，特別喜歡這本書的原因是從最基本開始教函數編程。</p>
+<p>你可以在毫無預備知識下讀這本書，隨手翻翻就好了，但要注意，這會耗上專門的學習時間和令人非常受挫的挑戰部份。</p>
+<h1 id="Beginning-Haskell-A-Project-Based-Approach"><a href="#Beginning-Haskell-A-Project-Based-Approach" class="headerlink" title="Beginning Haskell: A Project-Based Approach"></a>Beginning Haskell: A Project-Based Approach</h1><p><img src="/images/2017/05/beginning_haskell_project_approach.jpg" alt="Beginning Haskell: A Project-Based Approach"></p>
+<p>從實作專案中學習，可以讓人瞭解 Haskell 在現實世界環境如何運作，<a href="https://www.amazon.com/gp/product/1430262508/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;tag=whatpixel-20&amp;camp=1789&amp;creative=9325&amp;linkCode=as2&amp;creativeASIN=1430262508&amp;linkId=ba41a905e8ea319ba0a0872412a323e2">Beginning Haskell: A Project-Based Approach</a> 將 Haskell 分成一小步一小步合理的學習過程，依然會學到所有的理論概念，像是 arrows 和 monoids ，不過是以實用性方式來學習，就算是 Haskell 零經驗的人打開此書，一樣能學到良好的函數編程知識。</p>
+<p>你可以任意選擇三大主流作業系統的 IDE，作者採用部份熟悉的編程概念，雖然不太可能有人會拿 Haskell 作為第一個學習的語言。</p>
+<p>雖然這本書步調確實快，但我強烈推薦給已有函數或程序編程知識，並想從專案練習中，學習 Haskell 的任何人。</p>
+<h1 id="Thinking-Functionally-with-Haskell"><a href="#Thinking-Functionally-with-Haskell" class="headerlink" title="Thinking Functionally with Haskell"></a>Thinking Functionally with Haskell</h1><p><img src="/images/2017/05/thinking_functionally_haskell.jpg" alt="Thinking Functionally with Haskell"></p>
+<p><a href="https://www.amazon.com/gp/product/1107452643/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;tag=whatpixel-20&amp;camp=1789&amp;creative=9325&amp;linkCode=as2&amp;creativeASIN=1107452643&amp;linkId=ed2e1add1b1fc1b77c8d930cc24f82fb">Thinking Functionally with Haskell</a> 是另一本介紹熱切地學生進入 Haskell 世界的函數編程書，學習如何用正確的數學模型方式來撰寫函數程式碼，有超過 100 多種不同的練習題，可以學到所有開發 Haskell 的細節，你會建置一個很棒的解數獨器和方程式運算。</p>
+<p>實用的範例有利於加強作業流程中的好習慣，這本教科書是針對大學生，但也適用於任何想坐下來好好研究 Haskell 的人。</p>
+<p>(未完待續)</p>
+]]></content>
+      <tags>
+        <tag>Haskell</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>練習寫 Brainfuck Interpreter</title>
+    <url>/articles/BF-Im-late/</url>
+    <content><![CDATA[<p><strong> Brainfuck，我來晚了！ </strong><br><strong> Brainfuck，我來晚了！ </strong><br><strong> Brainfuck，我來晚了！ </strong></p>
+<p>很重要，所以~我講了三次…</p>
+<span id="more"></span>
+<h1 id="寫在前頭："><a href="#寫在前頭：" class="headerlink" title="寫在前頭："></a>寫在前頭：</h1><hr>
+<p>可以從這篇文章得到：</p>
+<ul>
+<li>一個簡單的 Brainfuck Interpreter。</li>
+</ul>
+<p>無法得到：</p>
+<ul>
+<li>Brainfuck 完整介紹及更進階的版本。</li>
+</ul>
+<h1 id="到底-Brainfuck-是什麼東西？"><a href="#到底-Brainfuck-是什麼東西？" class="headerlink" title="到底 Brainfuck 是什麼東西？"></a>到底 Brainfuck 是什麼東西？</h1><hr>
+<p><a href="https://zh.wikipedia.org/wiki/Brainfuck">Wiki</a> 提供了你所有需要的資訊。</p>
+<p>簡單來說，它是一個簡單又難讀懂的 <strong>程式語言</strong>，可以跑在一個簡單的機器模型上，其模型必須具有指令指標、初始化為零的陣列(3000 位元組)、可移動的資料指標(指標初始指向陣列第一個位元組)，以及輸入輸出等功能，故用 Brainfuck 確實可以完成一些小型的計算工作。</p>
+<p>Brainfuck 簡單到只有八個基本指令： <code>&gt; &lt; + - . , [ ]</code> ，分別是大於、小於、加號、減號、句號、逗號、左括號、右括號。</p>
+<p>沒錯，就這八個特殊符號而已，也正因為全是特殊符號，才搞得程式碼十分難看不易理解。</p>
+<p>整理 Wiki 上面的東西，得到下面表格：</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>指令</th>
+<th>含義</th>
+<th>用 C 表示</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&gt;</td>
+<td>資料指標往右移</td>
+<td>++ptr;</td>
+</tr>
+<tr>
+<td>&lt;</td>
+<td>資料指標往左移</td>
+<td>—ptr;</td>
+</tr>
+<tr>
+<td>+</td>
+<td>資料指標指向的位元組值加一</td>
+<td>++*ptr;</td>
+</tr>
+<tr>
+<td>-</td>
+<td>資料指標指向的位元組值減一</td>
+<td>—*ptr;</td>
+</tr>
+<tr>
+<td>.</td>
+<td>輸出資料指標指向的內容(ASCII碼)</td>
+<td>putchar(*ptr);</td>
+</tr>
+<tr>
+<td>,</td>
+<td>輸入內容到資料指標指向的單元(ASCII碼)</td>
+<td>*ptr=getchar();</td>
+</tr>
+<tr>
+<td>[</td>
+<td>如果資料指標指向的內容為零時，指令指標向後移到對應 <strong><code>&quot;]&quot;</code></strong> 後面的指令</td>
+<td>while (*ptr) {</td>
+</tr>
+<tr>
+<td>]</td>
+<td>如果資料指標指向的內容不為零時，指令指標向前移到對應 <strong><code>&quot;[&quot;</code></strong> 後面的指令</td>
+<td>}</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h1 id="動手實作"><a href="#動手實作" class="headerlink" title="動手實作"></a>動手實作</h1><hr>
+<p>哇！Wiki 上面的解釋，已經完成一大半了！看來用 C 編寫，滿直覺又簡易，索性就直接用 C 來寫一個吧！</p>
+<ul>
+<li>程式碼：<a href="https://gist.github.com/dz1984/05e4c6cc6e72c563fd4e7af03718734f">Brainfuck interpreter in C</a> </li>
+</ul>
+<p>最近，正在玩 Scheme，也試著改寫出一版，很可惜的地方是感覺從 C 硬轉的，完全沒有 FP 的味道！</p>
+<ul>
+<li>程式碼：<a href="https://gist.github.com/dz1984/f3716589bdc98fddaf6b9474239ba443">Brainfuck interpreter in Scheme</a></li>
+</ul>
+<h1 id="結語"><a href="#結語" class="headerlink" title="結語"></a>結語</h1><hr>
+<p>Brainfuck 是一個很有趣的程式語言，因為~指令少又簡單，故很適合當作練習實作 Interpreter 的題目，網路上有人擴充語法，還寫了編譯器，甚至寫了很多好玩 Brainfuck 程式碼，使這個類似玩具的程式語言更加豐富精采。</p>
+<p>TODO: 接下來可以練習加入讀檔，或是什麼好玩的指令。</p>
+]]></content>
+      <tags>
+        <tag>Brainfuck</tag>
+        <tag>Scheme</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>項上飾品</title>
+    <url>/articles/My-Head/</url>
+    <content><![CDATA[<p>無法解析文字的雙眼，空氣暢行無阻的耳朵，喘息若有若無的鼻子，英雄無武之地的舌頭，關起思考之門的大腦，痛苦呀！</p>
+<span id="more"></span>
+<p>端坐於書前，內寂外靜地假想入定，唯一能做的，便是行注目禮，期盼書本能奇蹟似地浮出點什麼指示，好叫我一掃滿天的問號，否則今晚將帶著困惑入眠，明天呢？不說了！</p>
+<p>我這大腦像足是在公家機關單位討生活的，不管當下有沒有人，事情處理完沒，時間一到，它大爺便無罣無礙地準時打卡下班，只懂得坐領乾薪，絕對是第一個裁員對象，偏偏是裁不得也說不得的角色，無奈呀！</p>
+<p>罷了！罷了！該佇在那的東西，就好好地擱在那兒，姑且不論是否有功能，效用如何，權宜當作是一件裝飾品吧！若不放著擺出來，這不是怪嚇人的嘛！</p>
+]]></content>
+      <categories>
+        <category>articles</category>
+      </categories>
+      <tags>
+        <tag>創作</tag>
+        <tag>微寫作</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>金剛經隨筆備忘</title>
+    <url>/articles/Diamond-Sutra-Memo/</url>
+    <content><![CDATA[<p>這篇隨筆短文是記錄於 2016/09/08 的記事本裡，應是那時看金剛經所得知悟，現在才重新打字發文，其實~記事本有些短文，都是內心自省，或是事物感悟之類，會慢慢地放上來。</p>
+<span id="more"></span>
+<p>金剛經有很多先立後破的句子，像是「所說身相，即非身相」、「所謂佛、法者，即非佛、法」，這些句子先設立出一個具體能描述的東西，然後在捨棄不執著於上面，以此作為超越的概念，其道理就像是跳障礙比賽一樣，佛先明確指出有個東西阻礙著你，此障礙原本就存在，只是你沒去注意到，經由佛一指出，你才發現到，這反而使你忘記看著前方，專注於障礙物，此時佛便提醒你，那障礙物是你應該跨越過去的項目，畢竟那不是重點，它正是你要超越的對象，一個必經、過渡的地方，故先立是為了「指出」，後破是為了「超越」，「應無所住」便是讓你有流動、不執著，才能解脫。</p>
+]]></content>
+      <tags>
+        <tag>Memo</tag>
+        <tag>金剛經</tag>
+        <tag>佛學</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>重新思考慈悲</title>
+    <url>/articles/rethink-mercy/</url>
+    <content><![CDATA[<p>這篇隨筆短文是記錄於 2016/09/29 的記事本裡。</p>
+<span id="more"></span>
+<p>講講「慈悲」二字，拆開二字來看，孔穎達．正義：「慈謂愛之深也。」，慈可以解讀成一種深篤的愛，是一種付出、給予的大愛，而男女之間是情愛，不屬於慈的範圍，推崇父母對子女的愛，甚至推廣到個人對團體、社會，屬於博愛；悲不單單是用來描述情緒，從佛學角度來看，是拔除眾生的「苦」，故慈是予愛，悲是拔苦，然而慈悲正是菩薩道最核心的態度，正是我所迷失的感覺，太執我，以至於忘記慈悲心是長怎樣，不懂得知恩、感恩、報恩，太在乎自己感覺，而忽略其他人感受；太追求個人利益，而漠視他人痛苦，種種跡象，使自己越活越不得意，格局、視野是愈來愈狹小，逼得自己都喘不過氣來，所幸能找到一塊浮本，不求能到彼岸，只求不下沉。惕之！</p>
+]]></content>
+      <tags>
+        <tag>佛學</tag>
+        <tag>反思</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>反思資本主義</title>
+    <url>/articles/rethink-capitalism/</url>
+    <content><![CDATA[<p>這篇隨筆短文是記錄於 2016/09/26 的記事本裡。</p>
+<span id="more"></span>
+<p>資本主義的核心動力是「貪婪」，沒錯！我就是想攻擊它，資本主義須仰賴於大量地消費，才能帶動整個經濟市場，努力製造需求，縱使消費者的需求並不強烈時，一些貪婪商人，便開始灌輸消費主義口號，以消費方式來填補心靈上的空虛及無力，使得人們是越來越重視物質，被外在的形形色色給牽絆著，擁有物質變多，使自己無暇照應內心的自己，可惜！以自身經驗為例，當工作時，每日朝九晚五，下班後，身心俱疲，所剩餘給自己的時間，十分匱乏，故會以購物或做些具有刺激性事情，來彌補心靈短缺，以這種消遣方式來治標，久了便需要更大刺激才能填滿，心靈仍有個破洞，必須持續地貪婪，才會稍稍掩蓋住，但這缺口依然沒有消失過，回到資本主義這話題，市場是這種型態，而人心也是這種樣子，兩者須互相搭配才可以發揮出如此威力，惡劣地貪婪，實際上是加速偷取大自然的能量，過度消費和浪費，皆是一把利刃，可以深深地傷害大自然，有些學者開始反思資本主義，對生態的影響，這是個值得重視的課題，一個長時間觀察和準修的功課。</p>
+]]></content>
+      <tags>
+        <tag>反思</tag>
+        <tag>資本主義</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>墨子學習心得</title>
+    <url>/articles/Study-Memo-of-Mozi/</url>
+    <content><![CDATA[<p>墨子．親士篇 原文：</p>
+<pre>
+今有五錐，此其銛，銛者必先挫。
+有五刀，此其錯，錯者必先靡，是以甘井近竭，招木近伐，靈龜近灼，神蛇近暴。
+是故比干之殪，其抗也；孟賁之殺，其勇也；西施之沈，其美也；吳起之裂，其事也。
+故彼人者，寡不死其所長，故曰：「太盛難守也。」
+</pre>
+
+<span id="more"></span>
+<p>這篇解釋「太盛難守」，舉了錐、刀、井、木、龜、蛇等器具和生物為例子，後面又提到幾則歷史人物事件加以補充，包括比干、孟賁、西施、吳起，這幾號人物到底有什麼值得讓墨子挑出來講呢？我將收集一些資料，並逐條整理，加以分析這些例證，是否有充足立場可以合理化，如何確切評估例證合不合理呢？我採用方法是，從墨子所舉出的例證中，能否用「太盛難守」來解釋，以此標準來歸類合理與不合理之例證，基本上都沒有偽證問題，因為全有歷史記載，暫不討論歷史上的真假，那留給歷史學者去考證，故我先都假設，凡是有歷史記載之人事時地物，皆視為真的，由此才能展開一連串探討例證是否合理的工作。</p>
+<h1 id="第一號人物：比干"><a href="#第一號人物：比干" class="headerlink" title="第一號人物：比干"></a>第一號人物：比干</h1><hr>
+<p>殷商沫邑人，是商紂的丞相，並列為紂王三大忠臣之一。其有名的歷史事件是「比干挖心」，故事是這樣的，在殷商末期，歷史中，每個朝代的末期，都有一個暴政的領導人物，他們都背負著惡名，總有數不盡的壞事，或許是歷史學家的陰謀，好讓新的朝代，可以名正言順地取代之。中國古代，最喜歡講「名正言順」，若沒有一個偉大理想，像是除魔衛道之類的，是很難推翻舊有朝代，很容易被貼上謀朝篡位的罵名，扯遠了！回過頭來看殷商末期，紂王荒淫無度，國勢危殆，比干就向紂王進諫，這時比干完全發揮出忠臣作用，紂王當然聽不下這些刺耳的諫言，不然就不會亡國了！根據史記．本紀殷本紀，記載：「比干直言諫紂，紂怒曰：『吾聞聖人之心有七竅，信有諸乎？』乃遂殺王子比干，刳視其心。」沒錯！比干是死於紂王的好奇心(誤)，紂王想殺一人，何患無詞，但用了這樣的手法，就算是聖人也都死了！有何屁用？墨子以此例，說：「比干之殪，其抗也」(殪，死也；抗，直也)，通常給昏君太多諫言都是無意義的，而比干只是扮演好他的角色，稱不上是「太盛」，故墨子舉此例過於牽強，不近乎合理。</p>
+<h1 id="第二號人物：孟賁"><a href="#第二號人物：孟賁" class="headerlink" title="第二號人物：孟賁"></a>第二號人物：孟賁</h1><hr>
+<p>戰國時期末衛國勇士，沒錯！你沒看錯，是戰國時期末的人，這時墨子應該仙遊去了！難道，墨子可以未卜先知，或是有穿越時空能力嗎？合理懷疑，應該是有後人誤植進去，也不能說是誤植，算是墨子後生門人協助舉例。好！繼續來看孟賁的故事，此號小人物在史書上，僅佔上一小塊篇幅(畢竟人家也是名留青史)，記載他力大無窮，不怕虎、不怕龍的，有次秦武王揪他一起舉鼎，比比看誰的力氣較大，比著比著，後來秦武王卻比掛了！也許是超過身體負荷範圍，這最高領導者被弄掛了！事態可嚴重，總要找個人出來負責吧！否則事情沒辦法收尾，眼前孟賁是最佳(倒楣)的人選，後來孟賁被株連九族，以悲劇落幕。墨子就說：「孟賁之殺，其勇也」，真是太過於勇猛，搞得人人都想挑戰他，害得挑戰者比不過，甚至賠上性命，若是尋常老百姓，自己無能比死，也就認了！偏偏這次挑戰者是帝王之家，還是個在位者，一個朝代的大當家，這事能小嗎？真是太盛了！也太衝了！此例很合理，任誰都想當 No.1 ，尤其是天下之子，萬人之上的領導人物，說什麼也要和力氣是天下第一大的人比一比，誰知孟賁不肯收手，活活地把秦武王給累死，誰都怪孟賁太勇猛，不知退讓。</p>
+<h1 id="第三號人物：西施"><a href="#第三號人物：西施" class="headerlink" title="第三號人物：西施"></a>第三號人物：西施</h1><hr>
+<p>春秋末期的大正妹，故有中國古代四大美人的封號「沉魚」。自古紅顏多薄命，所以~古代正妹都死得早，而且滅國前，總是會出現絕色美女，迷惑領導者，所以~正妹都背負了這樣的臭名，西施也不例外！故事是越王勾踐有心要弄垮吳王夫差，就打出美人牌，西施便是其中之一的好牌，劇情當然是吳王中招了！開始不理政事，每日每夜只和西施玩樂，沉迷於美色，勾踐看時機成熟，便趁虛而入，一舉攻滅吳國，事成後，勾踐本有意收納西施的，但勾踐他老婆那肯呀！深怕自己美貌比不上西施會失寵，未來的日子便不好過，趕緊就把西施裝進麻布袋，一口氣丟到江裡去(真是糟蹋)，西施就這樣被殺人滅口，結束了大好青春。墨子說：「西施之沉，其美也」，西施的美遭來忌妒與排擠，但容貌這等事，卻不是自己所能控制(整型或自我毀容不列入考慮)，故西施之美，實非自己能力所及，但卻符合太盛的條件，故也算是合理。</p>
+<h1 id="最後一位壓軸人物：吳起"><a href="#最後一位壓軸人物：吳起" class="headerlink" title="最後一位壓軸人物：吳起"></a>最後一位壓軸人物：吳起</h1><hr>
+<p>戰國時期初，衛國左氏，是著名兵家代表人物，同時又是軍事家、政治家、改革家，吳子兵法便是他老人家的著作，這樣了不起的人物，又有什麼故事呢？他的生平就不多言，有太多豐功偉業、大大小小的戰事可以講，我們就直接進入他到楚國後，開始搞一些改革變法之類的事情說起吧！改革是件苦差事，弄個不好是會腥風血雨、血流成河的。這次他把刀口指向一群舊有勢力的貴族，擺明要挑起來對幹，和他自叫板嘛！如果~沒有強而有力的後盾，簡直是以卵擊石、自取滅亡，幸好吳起有福氣，有位賞識他的領導人-楚悼王，吳起改革才能相當成功，使得楚國變得更加強盛，But(人生最恐怖就是這個 But)~好景不常，人總有一死，這次死的是楚悼王，這意謂著什麼呢？意謂著變天了！吳起沒人罩了！原本舊勢力的貴族肯忍氣如聲，完全是給楚王一個面子，現在楚王一死，吳起的地位頓時動搖，若毛方丈就別想走，僅沒走不了，還賠上寶貴性命，吳起就這樣被弄死了！又是一樁悲慘的故事。此例墨子這麼說：「吳起之裂，其事也」，很合理，吳起的變法，大大影響貴族權力與利益，試圖抵抗、壓制貴族，或許是手段過於強硬，而非採取柔性政策，故造成反彈力道如此之大，很合太盛條件，又合乎難守之結論，此例可說是最佳例子，由自行能力，去影響改變事物，卻遭到事物反噬，原因在於執行過程是以強制性處理方式，而累積出相反的負能量，即是抵抗力，等達到所能負荷的零界點時，便會造成這股負能量潰散揮發。總而言之，這股力量早在你施壓的當下便累積，而施放點在於你的施壓力已無法承擔負能量襲擊，故是施壓者自行造成，也是施壓者自行釋放，與「物極必反」有異取同工之妙理。</p>
+<h1 id="結語"><a href="#結語" class="headerlink" title="結語"></a>結語</h1><hr>
+<p>「太盛難守」意思，是指事物達到鼎盛、最巔峰的階段時，就很難在持續性地處於那個狀態，就像老子所說：「持而盈之，不如其己；揣而銳之，不可長保」那樣。墨子和其他聖人，都想告訴我們做人的道理，不宜鋒芒太露，但同時這也是想告訴我們，如果事物發展過於極端，便會產生等同的反噬力道，最終會害了自己。</p>
+]]></content>
+      <tags>
+        <tag>Memo</tag>
+        <tag>墨子</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>殺手的問題</title>
+    <url>/articles/Killer-s-question/</url>
+    <content><![CDATA[<p>「你怕不怕死？」</p>
+<span id="more"></span>
+<p>「是人都會死，只是沒料到來早了些！」</p>
+<p>「你知道我是誰？」</p>
+<p>「不知道，但我知道你的職業是殺手。」</p>
+<p>「臨死前，還有什麼說的嗎？ 你只要說出一句假話，我就會開槍殺死你。」</p>
+<p>「你會開槍殺死我！」</p>
+<p>殺手沉默一會兒，喃喃自語地說：</p>
+<p>「若我開槍殺你，你的話便不假；若我不開槍殺你，你說的便是假話，那我到底該不該殺你？」</p>
+]]></content>
+      <tags>
+        <tag>創作</tag>
+        <tag>微寫作</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Automata 你還跑! 勘誤表</title>
+    <url>/articles/errata-on-the-automata-book/</url>
+    <content><![CDATA[<p>在看這本書時，發現書中有些地方有錯誤，便決定列出來，提供大家參考使用。</p>
+<ul>
+<li>書名：  AUTOMATA 你還跑！- Automata 及 Formal Language 導論</li>
+<li>作者： 王立天</li>
+<li>ISBN： 9789571443782</li>
+<li>出版年份： 2015</li>
+<li>版次： 初版一刷</li>
+<li>出版商： 三民書局</li>
+</ul>
+<span id="more"></span>
+<script src="//gist.github.com/4c30d33699bbd2cda7fd14e01a767ad5.js"></script>]]></content>
+      <tags>
+        <tag>Book</tag>
+        <tag>勘誤</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>教自己看電影 - 沉默</title>
+    <url>/articles/silence-2016-movie/</url>
+    <content><![CDATA[<p>「沉默」是一部令人省思的電影，我想這指的是上帝的沉默，也許要賽巴斯提奧．羅德里奎茲神父(為了方便記憶，就改叫他為羅神父)保持沉默，別在為主或是天主教發聲，但不是指要放棄信仰，僅只是順從抵抗而已。</p>
+<span id="more"></span>
+<h1 id="吉治郎"><a href="#吉治郎" class="headerlink" title="吉治郎"></a>吉治郎</h1><p>想先從吉治郎這角色，他在劇中的信仰關係，最讓人猜不透，覺得莫名其妙，實際上，吉治郎徹頭徹尾相信上帝存在，看似不斷地背棄上帝，又不斷地信仰上帝，甚至羅神父都鄙視他，直到最後，吉治郎被發現身上藏有天主教的禁物，慘遭殺害，可見他從未背棄自己的信仰，只是換個形式來忠於信仰。</p>
+<h1 id="法蘭西斯柯．卡羅培神父"><a href="#法蘭西斯柯．卡羅培神父" class="headerlink" title="法蘭西斯柯．卡羅培神父"></a>法蘭西斯柯．卡羅培神父</h1><p>接著，法蘭西斯柯．卡羅培神父(改叫他卡神父)，一位為了忠於信仰而殉道者，從未質疑過自己的信仰，選擇在神的引導下，堅持能拯救他人，而斷送自己的生命，卡神父與羅神父相比，對信仰更為執著，劇中有一段是「茂吉」(為自己的村子而犧牲)在準備接受盤問前，向羅神父問了一個問題，「如果被要求踩上帝的模版時，該怎麼辦？(大概是這樣的意思。另外，當時都是以羞辱上帝，檢測是否為天主教教徒)」，羅神父馬上回「踩下去」，但卡神父就在一旁說「不能踩」，兩人對信仰有不同的深淺的執著，當然，這也為各自產生了迥異結局。</p>
+<h1 id="克里斯多夫．費雷拉神父"><a href="#克里斯多夫．費雷拉神父" class="headerlink" title="克里斯多夫．費雷拉神父"></a>克里斯多夫．費雷拉神父</h1><p>這位費神父，是早期到日本的天主教傳教士，也是羅、卡兩位追隨的導師，聽聞到費神父背棄信仰的消息，成了羅、卡兩位神父下定決心，獨自前往日本，試著去證實這只是別人想中傷天主教的謠言，此時日本正處於仇視天主教時期，凡信天主教皆被視為異教徒。其實，故事一開始，就是日本正在消滅天主教，一堆折磨人的畫面，費神父親眼目睹了這一切，但畫面便停在他悲痛萬分的臉孔，在等到他下次出場時，已經是有老婆和小孩，以及有一個日本名字，並學習日本文化，改信佛教，甚至是寫一本揭發天主教謊言的書。當然，費神父的出現是為了說服羅神父，放棄信仰，別在因為自己的堅持，而害別人受苦折磨，羅神父因受不了內心掙扎，又加上費神父在一旁煽風點火，最後，費神父成功勸服羅神父。在勸服事件後，日本政府開始重用二人，二人一同為貿易把關，阻止任何天主教違禁品進入日本。有次費神父說溜嘴，提到「我們的主」，羅神父疑惑地看著他，問說「你剛說我到我們的主」，費神父大方地承認「我說了！」，這是不是意謂著費神父也未放棄自己的信仰。</p>
+<h1 id="賽巴斯提奧．羅德里奎茲神父"><a href="#賽巴斯提奧．羅德里奎茲神父" class="headerlink" title="賽巴斯提奧．羅德里奎茲神父"></a>賽巴斯提奧．羅德里奎茲神父</h1><p>最後，講到戲中主角 - 羅神父，前面已經簡介過其他角色，都有扯到羅神父，大可不必在多介紹。從一開始到結束，羅神父有幾個信仰轉折點需要留意，從肯定主、讚美主，以及肯定自我價值與目的，並覺得自己所做所為，皆是主的旨意，接下來，因為井上大人打壓政策，一步步地由柔和勸導到強硬手段，循次漸進，這當然是整部戲高潮，經歷這樣的轉換過程，羅神父開始質疑、否定，甚至到了精神崩潰狀態。井上大人玩得是心理戰，想徹底拔起天主教在日本的根，要讓信仰天主教的人，看到他們的神父都放棄信仰，而且羅神父放棄原本信仰後，仍定期要羅神父抄寫棄教宣言。故事隨著羅神父的死，來到尾聲，不過，有一幕是交代羅神父死後，以佛教方式舉行葬禮，畫面一跳，進入到棺材，羅神父手中握著一個耶穌受難的十字架，這十字架是「茂吉」給他的，是否意謂羅神父也沒有放棄自己的信仰。</p>
+]]></content>
+      <tags>
+        <tag>電影</tag>
+        <tag>教自己系列</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>世大運開幕的小插曲</title>
+    <url>/articles/Universiade-event/</url>
+    <content><![CDATA[<p>昨天 8 月 19 日，是 2017 世界大學運動會的第一天，晚上 7 點於台北田徑場進行開幕儀式，但發生一點小插曲，由於場外發生抗議事件，造成選手無法進場情況，原本應是運動員進場環節，卻出現僅有旗手進場畫面，不見各國選手蹤影，以上來自於個大新聞媒體平臺的報導。暫先從這角度來看整個抗議行為的適當性是否合理，在綜合比較網路上鄉名是如何看這件事情，當然，這些都是我個人想法，不盡代表任何人立場和評論，僅是陳述心情而已，若有欠缺客觀地方，請見諒。</p>
+<span id="more"></span>
+<p>首先，此次抗議組成團體大多屬於退休軍公教人員，其訴求是反年金改革議題，瞭解抗議之背影，可得知是因政策關係，使某一團體的權利受到減損，才發動這起抗議事件，並選擇在世大運開幕典禮會場附近，究竟為何會形成阻止運動選手進場呢？是預先規劃，或是臨時起意？是直接阻止或間接阻止？何謂直接、間接？這稍稍做個分別，前者是以人牆方式，或者任何阻擋他人前進手法，達到直接阻止運動選手進場，而後者是抗議行為過於激烈，讓執法單位判斷會影響到選手安全，才下達運動選手暫緩進入會場的指令，這兩種結果分能造成運動員無法進入會場，但過程卻有輕重之分。有些新聞媒體寫到出現煙霧彈的字眼，相信這已經充份提高危安層級的理由。</p>
+<p>網友又是如何看待這件事呢？瀏覽每則此新聞之留言，大致可瞧出許多網友不贊同反年改的抗議團體，畢竟影響臺灣在國際上形象，認為此次反年改的抗議時間點不佳，為了獲取更多新聞媒體關注，而不惜犧牲世大運，已不管國家形象的問題。最後，個人想法是，這樣的抗議手法，確實容易引起反感，並嚴重打擊到用心準備的世大運工作團隊，且各國運動選手也深受其害，雖然，政治因素使一部份人權利遭到減損，完全可以理解他們的抗議行為，但此次使用方式過於激烈，相信負面評論會蓋過抗議訴求，希望接下來，世大運各個活動能圓滿進行，反年改的抗議民眾，可以換上正面的抗議活動，別在製造更多對世大運負面聲浪，讓世大運能順利落幕，贏取臺灣在國際上一點點光采和掌聲。</p>
+]]></content>
+      <tags>
+        <tag>心情</tag>
+        <tag>新聞</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>神奇藥水</title>
+    <url>/articles/amazing-water/</url>
+    <content><![CDATA[<p>有天，一位鼻青臉腫的婦人來到就診室，哭哭啼啼地，朝醫生哭訴著說：「我老公每次喝醉酒後，回到家便對我拳打腳踢。」<span id="more"></span>，說完又是一陣啜泣聲，醫生聽完搖搖頭，拿出一瓶裝有液體的藥水，並告訴婦人說：「下次，妳老公喝醉酒回家時，就馬上喝一口，記住千萬不要吞下去，等妳老公睡著後，才能吐掉。」，婦人拿了藥水，點頭道謝後便離開。</p>
+<p>一個月後，婦人眉開眼笑地回到診所，問醫生說：「醫生啊！你開得是什麼藥，這麼神奇？我老公喝醉酒回家，果然就沒有在打我了！」，醫生：「婦人！我開得並不是藥，只是普通的飲用水而已」，婦人一臉狐疑，醫生接著又說：「要妳含著水，就是讓你能適時地閉上嘴而已」。</p>
+]]></content>
+      <tags>
+        <tag>極短篇</tag>
+        <tag>夫妻相處</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>買書不買書？！</title>
+    <url>/articles/may-i-buy-book/</url>
+    <content><![CDATA[<pre>
+藏書不難，能看為難；
+看書不難，能讀為難； 
+讀書不難，能用為難； 
+能用不難，能記為難。
+
+摘錄自「 幽夢影」
+</pre>
+
+<span id="more"></span>
+<p>有鄉民提了一個問題，文中他說到自己又衝動想買書，但手上仍有數本尚未閱讀，內心掙扎著要不要在繼續買書，因而特別到Ptt習書板發問，而我拿了張潮的心聲作為回應。</p>
+<p>沒想到這問題能引起討論，大致上有”勸買”與”勸停”二方陣營，我將各自所持的理由提列出三點。</p>
+<h3 id="勸買方所提出理由："><a href="#勸買方所提出理由：" class="headerlink" title="勸買方所提出理由："></a>勸買方所提出理由：</h3><ol>
+<li><p>害怕絕版：現今出版業很競爭，導致各大出版公司炒短線，有些議題或流行趨勢正趁著現在有人氣時，就趕快發行新書，等到熱度減退後，便停止印刷，故此類順勢而生的書籍，很容易形成絕版。</p>
+</li>
+<li><p>收藏心情：有些書藉具有實用性質，值得珍藏。另外，為了能看到家中書櫃，擺著琳瑯滿目，光看書皮就賞心悅目的圖書，便需要不停地添購各類新書。</p>
+</li>
+<li><p>等待時機：先買著放著等，或許哪天心血來潮，隨時想看就能看，不用重新擬定新的書單。</p>
+</li>
+</ol>
+<h3 id="勸停方的理由："><a href="#勸停方的理由：" class="headerlink" title="勸停方的理由："></a>勸停方的理由：</h3><ol>
+<li><p>經濟和空間考量：一下子買太多書，容易花費金錢，因為，買了不看，就等於把錢轉換成物質保存，失去錢的彈性。另外，書很佔空間，藏書過百，就是一個龐然大物，若時常遷家的人，更能感受到搬書之苦。</p>
+</li>
+<li><p>易形成怠懶：時常購買新書，容易使未讀書是越積越多，久之，連拿起書本的心，都被壓得盪然無存。</p>
+</li>
+<li><p>不值得入手：有些書能讓人只有翻一次價值，這類的書可以在書店翻閱，也可以到圖書館借閱，實在沒有必要去購買。</p>
+</li>
+</ol>
+<p>總之，「公有公有理，婆說婆有理」，買與不買全在自己一念之間，原是沒有什麼討論空間，但分析兩方人馬的論點後，便轉化成一種對購書價值觀的辯論，值得研究琢磨。</p>
+]]></content>
+      <tags>
+        <tag>Book</tag>
+        <tag>Ptt</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>揉皺的紙球</title>
+    <url>/articles/crumpled-a-paper/</url>
+    <content><![CDATA[<p>前些日子，並不像現在歪七扭八的樣子，頭下腳上，身體還有許多道長長的裂痕，至今仍無法相信，此等噩運會發生在自己身上，昔日的友情與信任，卻換來一陣蹂躪和輕視，難道這就是我應得的嗎？</p>
+<span id="more"></span>
+<p>那件事情尚未發生前，我倆是很親近，你數次向我吐露你的心聲，有時你調皮了起來，便對我胡亂塗鴉，一會是字，一會是畫，我將它們委善地收放在自己身上，絲毫不敢大意，深怕辜負了你的好意。</p>
+<p>這種日子倒是愜意，但是經年累月下來，你的字畫是愈來愈多，而我能存放空間是越來越少，就這樣你開始心生厭惡，這一切我都知道，卻無能為力。你的厭惡來自於對我的失望，你可曾想過，我是有限的，不可能完全承載你所有東西。</p>
+<p>對你而言，我只是暫時替代品，僅是一項可利用資源，我猜你是沒辦法理解我了！當你用那隻充滿憤怒的雙手，往我身上扭轉時，一顆熱切的心緩緩地冰冷起來，直到你把我丟向牆的另一頭，我早己當自己死去。此時此刻的我，就像是一團揉皺的紙球。</p>
+]]></content>
+      <tags>
+        <tag>創作</tag>
+        <tag>微寫作</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>新五四運動</title>
+    <url>/articles/new-54-movement/</url>
+    <content><![CDATA[<p>從這頭目睹一百年前的今天，京兆地方聚集了一群人，發起了「五四運動」。從那頭遙望一百年後的今天，臺灣大學校園內也聚集了一群人，發起「新五四運動」，其活動規模是區區之眾，眼界格局更是短淺狹窄，實在是無法與一百年前的五四運動相比了！我看八成是一齣鬧劇，借話題來搏取新聞焦點而已。</p>
+<span id="more"></span>
+<p>想想當年五四運動，是由青年學生為主，以及包括廣大公民、市民和工商人士等中基層，積極地參與的一場示威遊行、請願、罷課、罷工和暴力對抗政府的行動，其訴求是「外爭國權、內除國賊」。反觀，新五四運動，由幾所大學學生發起小型罷課活動，其訴求是「拒絕政治進入校園，還給學校一個乾淨的環境」，兩者一比較，便有了高低之分。</p>
+<p>一百年前的學生，積極運用自身力量去影響政治。現今學生，透過自身力量去阻止政治介入校園，就好比一群小孩捍衛著自己的遊樂場所，不被大人們破壞。</p>
+]]></content>
+      <tags>
+        <tag>心情</tag>
+        <tag>新聞</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>靈性手錶</title>
+    <url>/articles/spiritual-watch/</url>
+    <content><![CDATA[<p>有一天，你問我為什麼沒有戴手錶的習慣？我一時來不及回應，就沒多說了！其實，在當兵的日子裡，我可是錶不離身的，為的就是能精準地掌握時間。</p>
+<span id="more"></span>
+<p>記得那時戴得是機械錶，還是由唯一的堂弟轉贈予我，給我時他緬懷地看著手錶，徐徐地道出他之前當兵，也是穿戴這支，希望我當兵也能派上用場，確實它陪伴著我，度過軍旅中的每分每秒。不過，很可惜現在已經損壞了！都忘記收置於何處。</p>
+<p>說起那支機械錶，可是有靈性的，在軍中時光走得特別快，三天兩頭就要校正一次，反倒是放假回到家中，便緩慢下來，還時常上演停擺的戲碼，害我錯過幾次重要聚會。究竟，靈性是怎麼來的？其中奧祕之處，在於軍營裡時時刻刻都在勞動出公差，動得可勤快，除了午睡片刻，鮮少能躺下休息。反觀，放假回到家中，就不比軍中，有一大半時間，都枯坐在電腦桌前，這錶少了大幅的振盪擺動，漸漸地就越來越沒有動力，直到完全靜止，有時候覺得，這支錶能精準無誤地，透露出主人的生理時鐘，倒是給了我一點警惕作用。</p>
+<p>打從退伍，手機不離身邊後，手機上頭的電子時鐘，取代了手腕上的機械手錶，這意味著我的人生，又邁向另一段嶄新道路，告別充滿靈性和回憶的手錶。</p>
+]]></content>
+      <tags>
+        <tag>心情</tag>
+        <tag>創作</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>啟程</title>
+    <url>/articles/stared-to-go/</url>
+    <content><![CDATA[<div class="poem">
+心，漸行漸遠~
+
+<span id="more"></span>
+
+有人躊躇不前，似乎在等待；
+有人義無反顧，離眾人逐夢；
+有人盲目跟從，隨人群而去。
+
+啟程，揮別昨日的我。
+</div>]]></content>
+      <tags>
+        <tag>創作</tag>
+        <tag>微寫作</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>老去</title>
+    <url>/articles/when-i-am-old/</url>
+    <content><![CDATA[<div class="poem">
+當我老去時，
+
+<span id="more"></span>
+
+潔白長鬚染指著胸口，
+擋住，少時僅存志氣，
+飄揚，老年殘破回憶。
+
+弓似身軀，
+汲汲走入一場場自然試驗。
+
+碗狀蒲團，
+徐徐倒出一塊塊虔誠心磚。
+</div>
+
+]]></content>
+      <tags>
+        <tag>創作</tag>
+        <tag>微寫作</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>微積分究竟在說什麼？ 勘誤表</title>
+    <url>/articles/errata-on-calculus-what-r-u-talking-about/</url>
+    <content><![CDATA[<p>在看這本書時，發現書中有些小地方有錯誤，便決定列出來，提供大家參考使用。<br>雖然，書中有些錯誤，但絕不影響此書價值，肯定是學習微積分路上，值得拜讀的好物。</p>
+<ul>
+<li>書名： 微積分究竟在說什麼？老師從不會教你這些</li>
+<li>作者： 張之嵐</li>
+<li>ISBN： 9789869590631 </li>
+<li>出版年份：2018.06</li>
+<li>出版商：樂果文化 </li>
+</ul>
+<span id="more"></span>
+<hr>
+<ul>
+<li>p.27 倒數第5行，原為 $f(x)=x2+2$ 應修改成 $f(x)=x^2+2$ 。</li>
+<li>p.59 中間 $ax2+bx+c=0$ 應為 $ax^2+bx+c=0$。</li>
+<li>p.163 從上往下第11行，…遠離時波常會變長…，中的”波常”修改為波長。</li>
+<li>p.184 【研究與分析】第2點倒數第三行 $1/x2$ 修改為 $1/x^2$。</li>
+<li>p.194 【研究與分析】第3點的第一行，$y^2=1/2x$ 修改為 $y^2=1/{4x}$。</li>
+<li>p.200 中間的 $cotθ=x/r$ 改為 $cosθ=x/r$。</li>
+<li>p.201 第三行的 $f’(x)=secx$ 修正為 $f’(x) = secx．tanx$。</li>
+<li>p.230 Fig 8.1 圖中 $f(x)=2^{72}$ 修正為 $f(x)=2^x$</li>
+<li>p.234 上面的 4. $a^{xy}=(a^x)a^y$ 修正為 $(a^x)^y$</li>
+<li>p.238 最後一行 「2的幾次方會等於8呢？答案是4。所以 $log_2{8}=4$」，句中 4 皆應修改為 3。</li>
+<li>p.241 【典範範例 8-01】 的 1.$g(x)=2x$ 修正為 $g(x)=2^x$。</li>
+<li>p.285 倒數第二行，$f(x)=e2^x$ 修正為 $f(x)=e^{2x}$.</li>
+<li>p.388 中間式子，第三個等號後面，$-[(cos(p)-cos(0))]$ 的 $cos(p)$ 修正為 $cos(π)$。</li>
+<li>p.415 中間第二式子， $f(-x)=-x3$ 修正為 $f(-x)=-x^3$。</li>
+<li>p.446 最後一行 $\int f(x,y)dxdy$ 修正為 $\int \int f(x,y)dxdy$。</li>
+<li>p.469 【典範範例 14-08】 第一行 $y=x2$ 修正為 $y=x^2$。</li>
+<li>p.495 【研究與分析】式子 $sin^{-1}(\sqrt {13}/2)$ 修正為 $sin^{-1}(2/\sqrt{13})$。</li>
+</ul>
+]]></content>
+      <tags>
+        <tag>Book</tag>
+        <tag>勘誤</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>貝氏統計導論 勘誤表</title>
+    <url>/articles/errata-on-baysian-statistics/</url>
+    <content><![CDATA[<p>在看這本書時，發現書中有些小地方有錯誤，便決定列出來，提供大家參考使用。</p>
+<ul>
+<li>書名： 貝氏統計導論：EXCEL應用</li>
+<li>作者： 楊士慶、陳耀茂</li>
+<li>ISBN： 9789571197197</li>
+<li>出版年份：2018.06</li>
+<li>出版商：五南</li>
+</ul>
+<span id="more"></span>
+<hr>
+<ul>
+<li>p.39 式(2)中等號左邊的 $P(A|B)$ 應修正為 $$(A_1|B)$。</li>
+<li>p.42 例3.4，題目 b 壺原為 2 個紅球，應修正為 8 個紅球。</li>
+<li>p.43 例3.5，題目 b 壺原是紅球 1 個，應修正為紅球 2 個。</li>
+<li>p.57 E 表格中，0 列的 $P(E)$ 欄，原為 0.498，應修正為 0.998。</li>
+<li>p.59 中間的式子，應修正為：<script type="math/tex">P(B \cap E | A)= \frac {P(A|B \cap E) \cdot P(B \cap E)}{P(A)}。</script></li>
+<li>p.60 在 E 表格中，0 列的 $P(E)$ 欄，原為 0.498，應修正為 0.998。</li>
+<li>p.60 倒數第二行的式子，應修正為：<script type="math/tex">P(S|B \cap A) = P(S|A)，P(S|B \cap \bar{A})=P(S|\bar{A})</script></li>
+<li>P.61 中間的 $P(B \cap A)$ 原為 0.0094 修正為 0.00094 ，而 $P(B \cap \bar{A})$ 原為 0.0006 修正為 0.00006 。</li>
+<li>p.61 式(7)中，原 0.0006 應修正為 0.00006 。</li>
+<li>p.63 最後一行，”另外，在第3章第3節…” 應修正為 “另外，在第3章第2節…”。</li>
+<li>p.63 最後一個式子有誤，應參考 P.40 中的式(3)。</li>
+<li>p.64 方框中， 原是 “D 表數碼”，應修正為 “D 表數據”。</li>
+<li>p.67 中間的表格，壺3欄的機率列，原為 $\frac {2}{3}$ 應修正為 1。</li>
+<li>p.72 倒數第二個方框，第一行 “事後分配是與概似和事前分配的乘機成比例”中的，”機” 修改為 “積”。</li>
+<li>p.73 因事前分配的變異數是1，所以，<script type="math/tex">事前分配=\frac {1}{\sqrt{2\pi}}e^{- \frac{(\mu-100)^2}{2}}</script></li>
+<li>p.74 Memo 的方框中，式(7)，應修正為： <script type="math/tex">\begin{align}
+&\propto \frac{1}{\sqrt{2 \pi \times 3}}e^{-\frac{(99-\mu)^2}{2 \times 3}} \frac{1}{\sqrt{2 \pi \times 3}}e^{-\frac{(100-\mu)^2}{2 \times 3}} \frac{1}{\sqrt{2 \pi \times 3}}e^{-\frac{(101-\mu)^2}{2 \times 3}} \frac {1}{\sqrt{2\pi}}e^{- \frac{(\mu-100)^2}{2}} \\\\
+&\propto e^{- \frac{(99-\mu)^2+(100-\mu)^2+(101-\mu)^2} {2\times 3} + \frac{(\mu - 100)^2} {2} }
+\end{align}</script>還有下面的式子，修正為： <script type="math/tex">-\frac{1}{2 \times 3}\lbrace(99-\mu)^2+(100-\mu)^2+(101-\mu)^2\rbrace+\frac{1}{2}(\mu-100)^2 \\\\
+=-\frac{1}{2 \times 3}\lbrace6(\mu-100)^2+2\rbrace</script></li>
+<li>p.76 最下面的公式 $ \pi(\theta | D_1) \propto \theta \times 1 = \theta $ 為 (5) 式。</li>
+<li>p.80 公式(2) 修正為：<script type="math/tex; mode=display">\text{概似} f(D|\theta) = _5{C_4}\theta^4(1-\theta), (0 \le \theta \le 1)</script></li>
+<li>p.80 下面的公式，應修改為：<script type="math/tex">事前分配\pi(\theta) = \text{常數}</script></li>
+<li>p.81 修改為：<script type="math/tex">事前分配\pi(\theta) = 1，(0 \le \theta \le 1)
+\tag{3}</script></li>
+<li>p.82 從上數來第5行，平均值…後分配利用”機”分即可簡單計算，修改為積。</li>
+<li>p.89 最下面的式子，修改為： <script type="math/tex">\text{事後分配}=30 \theta^{5-1}(1-\theta)^{2-1}
+\tag{答}</script></li>
+<li><p>p.91 中間的”事後分配的變異數”公式，應修改為： <script type="math/tex">事後分配的變異數=\frac{5}{196} (\doteq 0.026)</script></p>
+</li>
+<li><p>p.94 最下面的事前分配，應修改為：<script type="math/tex">\begin{align}
+事前分配 & \propto = \frac{1}{\sqrt{2\pi}}e^{-\frac{(100-\mu)^2}{2}}\frac{1}{\sqrt{2\pi}}e^{-\frac{(102-\mu)^2}{2}}\frac{1}{\sqrt{2\pi}}e^{-\frac{(104-\mu)^2}{2}}\frac{1}{\sqrt{2\pi}}e^{-\frac{(\mu-100)^2}{2}} \\\\
+&\propto e^{\frac{1}{2 \times \frac{1}{4}} (\mu -101.5)^2}
+\end{align}</script></p>
+</li>
+<li>p.103 式(6)，e 的指數部份有誤，應修改為： <script type="math/tex">\large
+\text{事後分配} \propto (\sigma^2)^{-\frac{n_1+1}{2} -1 } e^{-\frac{n_1s_1+m_1(\mu -\mu_1)^2}{2\sigma^2}}
+\tag{6}</script></li>
+<li>p.111 例 5.6 中 $M_1$的 $\theta = 0.5 $。</li>
+<li>p.113 中間的95%信賴區間，原為 $ 99367 \le \mu \le 100.93 $，應修改為：<script type="math/tex">99.67 \le \mu \le 100.93</script><br>下面式(3)應修改為：<script type="math/tex">\large
+f(x)=\frac{1}{\sqrt{2\pi} \times \frac{0.64}{\sqrt{4}}}e^{-\frac{(\chi-\mu)^2}{2\times(\frac{0.64}{\sqrt{4}})^2}}
+\tag{3}</script></li>
+<li>p.131 最後一行，修改為： <script type="math/tex">n_0 = 0.02 \text{，} s_0=1</script></li>
+<li>p.132 中間的 $n_1s_1$ 和 $\mu_1$，應修改為： <script type="math/tex">n_1s_1 = 0.02 \times 1 + 138.22 + \frac{0.25 \times 30} {0.25+30} \times (5.11-5)^2 = 138.24 \\\\
+\mu_1 = \frac{30 \times 5.11 + 0.25 \times 5} {0.25+30} = 5.11</script></li>
+<li>p.145 方框內的式(1)，應修改為： <script type="math/tex">\large
+\text{事後分配} \propto (\sigma^2)^{-\frac{n_1+1}{2} -1 } e^{-\frac{n_1s_1+m_1(\mu -\mu_1)^2}{2\sigma^2}}
+\tag{1}</script></li>
+<li>p.150 “在「P_原」工作單…”中，”原”修改為 “元”。</li>
+<li>p.163 上面的式(3)，應修改為：<script type="math/tex">q_i = \frac{1}{1+e^{-(\beta - \gamma_i)}}
+\tag{3}</script></li>
+<li>p.164 式(6) 最未項分母的x，應修改為 $\times$ 符號。</li>
+<li>p.165 上面的式(7)的$q_i$部份，應修改為：<script type="math/tex">q_i = \frac{1}{1+e^{-(\beta - \gamma_i)}}</script><br>另外，式(8)有誤，其最末項是乘上式(5)。</li>
+<li>p.166 中間的$q_i$部份，同上一頁修改。</li>
+<li>p.169 中間$q$部份，也同樣要補上括號。</li>
+<li>p.176 中間的$q_i$部份，補上括號。</li>
+<li>p.179 式(2)的$q_i$部份補上括號。</li>
+<li>p.191 和 p.192 的 Excel 計算有誤。(註：因 F9 未設定為 3，導致計算錯誤。)</li>
+<li>p.216 方框與中間表格，當出席人數為10時，其便當預約數應為 20。</li>
+<li>p.231 第一行應修改為： <script type="math/tex">\text{(5)的指數部份}=-\frac{1}{2} \times \frac{1}{25} \lbrace 21593.8\alpha^2 - 2\times 6603.1\alpha^2 \rbrace + C</script></li>
+<li>p.238 從上往下第5行，”…依序設為 x,y,…”，應修改為：…依序設為 x,u ,…”</li>
+<li>p.240 式(7)的符號錯誤，P 應修改為 $\beta$，X 修改為$\Sigma_0$。</li>
+<li>p.248 最下面的式(4)，應修改為： <script type="math/tex">\large \text{概似}f(D|\mu) \propto e^{-\frac{n(\bar{x}-\mu)^2}{2\sigma^2}} \tag{4}</script></li>
+<li>p.249 式(6) 的推導過程，應修變為： <script type="math/tex">\large
+\begin{align}
+\text{(6)式的指數} &= -\frac{n(\bar{x}-\mu)^2}{2\sigma^2}-\frac{(\mu-\mu_0)^2}{2\sigma_0^2} \\\\
+&= -\frac{1}{2}\lbrace[\frac{n}{\sigma^2}+\frac{1}{\sigma_0^2}]\mu^2-2[\frac{n\bar{x}}{\sigma^2}+\frac{\mu_0}{\sigma_0^2}]\mu\rbrace+\lbrace不含\mu之項\rbrace \\\\
+&= -\frac{1}{2}[\frac{n}{\sigma^2}+\frac{1}{\sigma_0^2}][\mu^2-2(\frac{\frac{n\bar{x}}{\sigma^2}+\frac{\mu_0}{\sigma_0^2}}{\frac{n}{\sigma^2}+\frac{1}{\sigma_0^2}})\mu]+\lbrace不含\mu之項\rbrace \\\\
+&= -\frac{1}{2}[\frac{n}{\sigma^2}+\frac{1}{\sigma_0^2}][\mu-\frac{\frac{n\bar{x}}{\sigma^2}+\frac{\mu_0}{\sigma_0^2}}{\frac{n}{\sigma^2}+\frac{1}{\sigma_0^2}}]^2+\lbrace不含\mu之項\rbrace
+\end{align}</script></li>
+<li>p.250 最後一行式子，應修改為：<script type="math/tex">(\chi_1 - \bar{x})+(\chi_2 - \bar{x})+\dots+(\chi_n-\bar{x}) = 0</script></li>
+<li>p.252 式(4)事後分配公式中，最後一行應修改為：$$<br>\large<br>\propto (\sigma^2)^{-a-\frac{n}{2}-\frac{3}{2}}e^{-\frac{Q+n(\mu-\bar{x})^2+m_0(\mu-\mu_0)^2+2\lambda}{2\sigma^2}}<br>\tag{4}<script type="math/tex; mode=display">
+式(5) 第一行應修為：</script>\text{分子}=\mathcal{Q}+n(\mu - \bar{x})^2+m_0(\mu - \mu_0)^2 + 2\lambda <script type="math/tex">式(6) 事後分配，應修改為：</script><br>\large<br>\text{事後分配} \propto (\sigma^2)^{-a-\frac{n}{2}-\frac{3}{2}}e^{-\frac{Q+(m_0+n)(\mu-\mu_1)^2+\frac{m_0 n}{m_0+n}(\bar{x}-\mu_0)+2\lambda}{2\sigma^2}}<br>\tag{6} <script type="math/tex">式 (7) 應修改為：</script><br>\large<br>\mu_1 = \frac{n\bar{x}+m_0\mu_0}{m_0 + n}<br>\tag{7} $$</li>
+<li>p.253 中間 $m_1$ 和 $n_1$，以及 $n_1s_1$ 部份，應修改為： <script type="math/tex">m_1 = m_0 +n \text{，} n_1=n_0+n \\\\
+n_1s_1 = n_0s_0 + \mathcal{Q} + \frac{m_0n}{m_0+n_0}(\bar{x} - \mu_0)^2</script></li>
+<li>p.255 式(4)應修改為： <script type="math/tex">\text{事後分配} \propto e^{-n\theta}\theta^{n\bar{x}}\times\theta^{a-1}e^{-\lambda\theta} = \theta^{a+n\bar{x}-1}e^{-(\lambda+n)\theta}
+\tag{4}</script><br>以及 第二行原為 $ Ga(\alpha+\bar{n}, \lambda+n) $ 修改為 $ Ga(\alpha+n\bar{x}, \lambda+n) $。</li>
+<li>p.262 於”可利用下式定義”的下面須插入一式： <script type="math/tex">E[g(\theta)] = \int_a^b g(\theta)\cdot p(\theta) \cdot d\theta
+\tag{1}</script></li>
+<li>p.264 公式推導的符號有誤，像是方框內的底標重複，而非按照預期的。</li>
+<li>p.266 最後一行，原為： $ w<em>1 , w_2, \dots ,w</em>{t-2},w_t,w_{t+1},\dots $，應修改為：<script type="math/tex; mode=display">w_1,w\_2,\dots,w_{t-1},w\_t,w\_{t+1},\dots</script></li>
+</ul>
+]]></content>
+      <tags>
+        <tag>Book</tag>
+        <tag>勘誤</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>軌道之雲</title>
+    <url>/articles/orbital-cloud/</url>
+    <content><![CDATA[<p>藤井太洋的「軌道之雲」，這本屬於「硬硬的」科幻小說，但也算不上有到「幻」的程度。小說中，許多技術並非虛構，反而是很真實的存在，屬於現代科技水平。另外，看得出作者很用心在收集相關資料，時常出現一堆IT及航太技術用語，對普羅大眾的讀者而言，這些陌生術語很容易感到不知所措。不過，只要耐著性子，參考書中的註解說明，就能輕鬆掌握到這些知識。好吧！就算不太懂細節，也沒關係，並不會影響劇情的理解。</p>
+<p>幸好，我只有一半的門檻。<br><span id="more"></span></p>
+<p>故事是架構在中美、北韓之間的矛盾利害關係，而身為日本人的作者，自肥地把小說中幾位主要角色，設定為日本人，而且是製造與化解這場危機的關鍵人物，可以想像這本書會在日本科幻小說界中有多受歡迎。</p>
+<p>個人覺得，這本小說有點雷聲大雨點小，幾乎沒什麼爆點，開頭格局很大，結尾卻真有點輕描淡寫，劇情緊湊但空洞，而且支線草草收尾，尤其是賈姆希德那段，原以為他會是大魔王，後來才知道只是串場用的，還有僅用四行就帶過成功切斷太空纜索的瞬間，整個感覺是在看一場實驗結果，如果，作者能多點描寫畫面或是感受，讓讀者也有更多想像空間，才容易引人入勝。</p>
+<p>在角色性格上，又覺得很單薄。沼田明利與她的舅舅白石蝶羽，除了有明顯師徒關係外，其實也沒著墨太多，為什麼明利非得找到他舅舅不可的理由，難道，僅是因為白石不聲不響地離開，太久沒見到他，想見上一面而已，缺少強烈動機。然後，像是白石的死，原本應該有更多親情戲碼，但明利的反應卻出其平淡，或許作者不想處理，就把她丟到一旁，自己去玩樹梅派，沒什麼畫面，等到有技術活，才又把她搬回螢光幕前，真是可憐的IT命。不過，史馬克父女的組合，卻又讓人覺得生動有趣。果然，有個真實的 Elon Musk 作為原型，寫出來的角色就是活靈活現的。</p>
+<p>最後，私心認為，還是伊藤計劃的「虐殺器官」和「和諧」比較精彩好看，讓人一看就完全停不下來，入迷了！</p>
+]]></content>
+      <tags>
+        <tag>Book</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>先知</title>
+    <url>/articles/prophet/</url>
+    <content><![CDATA[<p>這篇隨筆短文是記錄於 2018/12/03 的記事本裡。</p>
+<p>先知除了有智慧外，更有勇氣，有勇氣地指出人性缺點。不得不說，有幾人肯真正面對自己的醜惡，有多少人肯願意為此改變，人性原罪無可避免，人一出生便有了這樣的屬性，但先知勇敢地列舉出來。</p>
+<span id="more"></span>
+<p>緊隨先知的人們，僅是盲目跟從，卻不願加入先知的行列，好像挨著先知，更能感受到智慧之光的照耀，可憐的先知，可悲的追隨者，這群追隨者是為了先知而活著，為了奉獻先知的犧牲者。無力的先知，只能無情地踐踏追隨者而去，成為崇高的象徵，令人有個前進的目標與方向，人們為了能追逐而雀躍，並樂此不疲，追逐成了人間最佳遊戲。</p>
+<p>感嘆先知！他們是如此清醒明白，看著追隨者，明白知道自己能力是有限的，縱使把真相忠實地說出，反而遭到嘰笑與漠視，好像先知就應該沉默不語，先知的沉默，反而顯得更有智慧。</p>
+<p>對的，先知應該沉默，別在為追隨者製造更多煩惱，先知必須慈祥地看著追隨者受苦，就該接受追隨者乞求的眼神，而不是拯救他們。因為，沒人想成為先知，沒有人想像先知那樣痛苦，有誰想遭到眾人投以乞求無助的眼神，索取比施予更幸福，不是嗎？</p>
+]]></content>
+      <tags>
+        <tag>心情</tag>
+        <tag>創作</tag>
+      </tags>
+  </entry>
+</search>
