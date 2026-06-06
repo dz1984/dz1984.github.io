@@ -300,7 +300,6 @@
     
     <div class="post-body" itemprop="articleBody"><p>Nicholas Zakas 大神提出 Scalable Javascript architecutre 後，經由 Addy Osmani 大神不斷地推廣，對這架構非常著迷，所以~找了一些實作此架構的 JS ，一不小心就發現了 Kernel.js ，覺得它輕巧易懂，故寫一篇紀錄自己把玩 Kernel.js 過程。</p>
 <h2 id="寫在前頭"><a href="#寫在前頭" class="headerlink" title="寫在前頭"></a>寫在前頭</h2><span id="more"></span>
-
 <p>你可以從這篇文章得到：</p>
 <ul>
 <li>Kernel.js 簡介。</li>
@@ -344,7 +343,7 @@
 </ul>
 <p>在 console 下顯示狀態紀錄。</p>
 <h3 id="運作原理"><a href="#運作原理" class="headerlink" title="運作原理"></a>運作原理</h3><p>一開始 Status 模組會等待點擊按鈕的事件被觸發，當收到觸發事件後，會透過 Hub 發佈訊息。</p>
-<p>這三個模組皆有 Listen 著 ‘status-update’ 事件，所以<del>當  Hub 發佈 ‘status-update’ 訊息時，各模組就會執行自己本分工作，另外</del> Hub 會偷偷呼叫 updateLog 來開關 Log 模組， 若 Log 模組被停止，就不會和系統發生作用，直到 Log 模組又重新被啟動。</p>
+<p>這三個模組皆有 Listen 著 ‘status-update’ 事件，所以~當  Hub 發佈 ‘status-update’ 訊息時，各模組就會執行自己本分工作，另外~ Hub 會偷偷呼叫 updateLog 來開關 Log 模組， 若 Log 模組被停止，就不會和系統發生作用，直到 Log 模組又重新被啟動。</p>
 <h3 id="程式碼"><a href="#程式碼" class="headerlink" title="程式碼"></a>程式碼</h3><ul>
 <li><a target="_blank" rel="noopener" href="http://jsbin.com/sugoma/">JSBin - Example</a></li>
 <li><a target="_blank" rel="noopener" href="https://gist.github.com/dz1984/8de2ad277205383280fe">Gist</a></li>
@@ -352,8 +351,7 @@
 <h2 id="結語"><a href="#結語" class="headerlink" title="結語"></a>結語</h2><p>模組的好處，是可以將領域邏輯劃分清楚，每一個模組獨自負責自己任務，僅透過 Hub 來傳遞所需訊息，各模組之間不會發生打架情形，甚至不知道對方的存在，完全符合單一責任原則 (SRP) ，也可提高可重復用性。</p>
 <p>最後~引用心目中大神的話。</p>
 <pre><code>In a well-modularized program each module should be about one topic, so I can remain ignorant of anything I don&#39;t need to understand.  - Martin Fowler
-</code></pre>
-<h2 id="參考資料"><a href="#參考資料" class="headerlink" title="參考資料"></a>參考資料</h2><ul>
+</code></pre><h2 id="參考資料"><a href="#參考資料" class="headerlink" title="參考資料"></a>參考資料</h2><ul>
 <li><a target="_blank" rel="noopener" href="http://www.slideshare.net/nzakas/scalable-javascript-application-architecture">Nicholas Zakas - Scalable JavaScript Application Architecture</a></li>
 <li><a target="_blank" rel="noopener" href="http://addyosmani.com/futureproofjs/">Addy Osmani - Future-proofing Your JavaScript Applications For Improved Scalability</a></li>
 <li><a target="_blank" rel="noopener" href="http://alanlindsay.me/kerneljs/">Kernel.js</a></li>

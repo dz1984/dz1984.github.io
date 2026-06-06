@@ -297,22 +297,18 @@
     
     
     <div class="post-body" itemprop="articleBody"><h2 id="寫在前頭"><a href="#寫在前頭" class="headerlink" title="寫在前頭"></a>寫在前頭</h2><span id="more"></span>
-
 <p>近來，想嘗試在 CentOS 7 x86_64 安裝 Scrapy 卻一直受挫，原因是 lxml 無法順利編譯，一些該裝套件（libxml2、libxslt、libxslt-devel 也沒少裝，可以試的方法也都試過，耗了許多寶貴時間，最後，宣告失敗。</p>
 <p>根據以往經驗是在 Ubuntu 上安裝，過程簡單且順利，還順便做了 Vagrant File，其實我大可以在繼續用 Vagrant 方式執行爬蟲，但這次我是使用 DigitalOcean 陽春機，記憶體只有 512 MB，實在不想為了爬個資料就建一個笨重 VM，來拖累整體資源，讓人於心不忍呀！</p>
 <p>有鑑於此，我改採用輕量級的 <strong>Docker</strong> 來執行爬蟲工作，解題過程如下：</p>
 <h2 id="安裝-Docker"><a href="#安裝-Docker" class="headerlink" title="安裝 Docker"></a>安裝 Docker</h2><p>在 CentOS 7 安裝 Docker 很容易，直接使用 <code>yum install</code> 即可，值得一提是 CentOS 7 的 firewalld 防火牆與 Docker 會小打架， firewalld 啟動或重新啟動時，會移除 <code>DOCKER</code> 防火牆設定，所以~啟動或重啟 firewalld 時，記得要在打開 Docker。</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">sudo</span> yum install docker</span><br></pre></td></tr></table></figure>
-
 <h2 id="Dockerfile"><a href="#Dockerfile" class="headerlink" title="Dockerfile"></a>Dockerfile</h2><p>現在需要一個能跑 Scrapy 的爬蟲環境，既然 Ubuntu 安裝容易，就拿原生 Ubuntu 作為 Image OS，在安裝 Scrapy 以及爬蟲程式，這邊是以 eia_crawler 為例子。 </p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Dockerfile for eia_crawler project </span></span><br><span class="line"> </span><br><span class="line">FROM ubuntu:precise</span><br><span class="line">MAINTAINER Donald Zhan &lt;donald.zhan1984@gmail.com&gt;</span><br><span class="line"> </span><br><span class="line"><span class="comment"># Add necessary respnsitory</span></span><br><span class="line">RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 627220E7</span><br><span class="line">RUN <span class="built_in">echo</span> <span class="string">&#x27;deb http://archive.scrapy.org/ubuntu scrapy main&#x27;</span> &gt; /etc/apt/sources.list.d/scrapy.list</span><br><span class="line"> </span><br><span class="line"><span class="comment"># Install scrapy</span></span><br><span class="line">RUN apt-get update -qq  </span><br><span class="line">RUN apt-get -y install scrapy-0.22 git</span><br><span class="line"> </span><br><span class="line"><span class="comment"># Clone eia_crawler project</span></span><br><span class="line">RUN git <span class="built_in">clone</span> https://github.com/dz1984/eia_crawler.git /home/eia_cralwer</span><br><span class="line"> </span><br><span class="line"><span class="comment"># Seting Default Work Directory</span></span><br><span class="line">WORKDIR /home/eia_cralwer</span><br></pre></td></tr></table></figure>
-
 <h2 id="Docker-Container"><a href="#Docker-Container" class="headerlink" title="Docker Container"></a>Docker Container</h2><p>定義好後，就建立一個 Image，並召喚一個 Docker Container 在背景執行它。另外，要小心地方，是每次執行一個 Container 都會是一個乾淨的 Image 環境，所以~執行結束後，還得想個法子把結果拿回來，這邊是用 Volumn 方式，將檔案 Copy 回來。</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">sudo</span> docker build -t eia-crawler .</span><br><span class="line"></span><br><span class="line">$ <span class="built_in">sudo</span> docker run -d -v $(<span class="built_in">pwd</span>)/data:/data eia-crawler bash -c <span class="string">&quot;scrapy crawl lists &amp;&amp; scrapy crawl details &amp;&amp; cp -r results/ /data&quot;</span></span><br></pre></td></tr></table></figure>
-
 <h2 id="結語"><a href="#結語" class="headerlink" title="結語"></a>結語</h2><p>使用 Docker 好處是不用為了爬資料而建立一個 VM，少了開機程序，所耗資源相對少很多，速度明顯變快，難怪 Docker 會如此火紅，有機會在寫一些 Docker 內容。</p>
 <h2 id="參考資料"><a href="#參考資料" class="headerlink" title="參考資料"></a>參考資料</h2><ul>
-<li><a target="_blank" rel="noopener" href="https://www.docker.com/">Docker</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.docker.com">Docker</a></li>
 <li><a target="_blank" rel="noopener" href="https://docs.docker.com/installation/centos/">Installing Docker - CentOS 7</a></li>
 </ul>
 

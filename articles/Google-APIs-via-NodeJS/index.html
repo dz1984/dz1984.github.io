@@ -317,62 +317,60 @@
 <p>想想 Fusion Tables 挺適合在小專案，但如果專案開始長大，就顯得有點不足，故 <strong>天龍特公地</strong> 即將以 PostgreSQL 為 DB，以應付越來越多擴展性功能。</p>
 <h2 id="Google-APIs"><a href="#Google-APIs" class="headerlink" title="Google APIs"></a>Google APIs</h2><p><strong>建立專案</strong></p>
 <p>先到 <a target="_blank" rel="noopener" href="https://console.developers.google.com/project">Google Developers Console</a> 建立新專案。 </p>
-<p><img src="http://i.imgur.com/10GICZK.png"></p>
+<p><img src="http://i.imgur.com/10GICZK.png" alt=""></p>
 <p><strong>開啟 API</strong></p>
 <p>啟動想使用的 API  ，這邊以 <a target="_blank" rel="noopener" href="https://developers.google.com/fusiontables/?csw=1">Google Fusion Tables APIs </a> 為例子。</p>
-<p><img src="http://i.imgur.com/T94oPB4.png"></p>
+<p><img src="http://i.imgur.com/T94oPB4.png" alt=""></p>
 <p><strong>產生憑證</strong></p>
 <p>這邊是以 <strong>瀏覽器金鑰</strong> 為例子。</p>
 <ul>
-<li>按下 **建立新的金鑰 <strong>按鈕後</strong>，<strong>在選擇按下</strong> 瀏覽器金鑰  **按鈕。</li>
+<li>按下 <strong>建立新的金鑰 </strong>按鈕後<strong>，</strong>在選擇按下<strong> 瀏覽器金鑰  </strong>按鈕。</li>
 </ul>
-<p><img src="http://i.imgur.com/Im8jyvv.png"></p>
+<p><img src="http://i.imgur.com/Im8jyvv.png" alt=""></p>
 <ul>
-<li>可以不填寫中介網址，按下 <strong>建立</strong> 按鈕，即會產生一組  <strong>API 金鑰。</strong></li>
+<li>可以不填寫中介網址，按下 <strong>建立</strong> 按鈕，即會產生一組  <strong>API 金鑰。</strong>  </li>
 </ul>
-<p><img src="http://i.imgur.com/INetjjp.png"></p>
+<p><img src="http://i.imgur.com/INetjjp.png" alt=""></p>
 <ul>
 <li>記住這組金鑰，等等會用到。</li>
 </ul>
-<p><img src="http://i.imgur.com/nUz4SFO.png"></p>
+<p><img src="http://i.imgur.com/nUz4SFO.png" alt=""></p>
 <p><strong>如何練習 Google APIs？</strong></p>
 <p>Google APIs  琳瑯滿目，常常不知道要怎麼用，又懶得爬文，沒關係！ Google 很搭心，可以直接用  <a target="_blank" rel="noopener" href="https://developers.google.com/apis-explorer/">APIs Expoloer</a> 把玩每個 APIs ， Try 遍每個 APis 提供的 Method。</p>
 <h2 id="Fusion-Table"><a href="#Fusion-Table" class="headerlink" title="Fusion Table"></a>Fusion Table</h2><p><strong>新增 Fusion Table</strong></p>
 <ul>
 <li>Google Drive 連結 Fusion Table 。</li>
 </ul>
-<p><img src="http://i.imgur.com/KGHjSDN.png"></p>
-<p><img src="http://i.imgur.com/AVizYpP.png"></p>
+<p><img src="http://i.imgur.com/KGHjSDN.png" alt=""></p>
+<p><img src="http://i.imgur.com/AVizYpP.png" alt=""></p>
 <ul>
 <li>在 Google Drive 建立 <strong>空白 Fusion Table</strong> 。</li>
 </ul>
-<p><img src="http://i.imgur.com/DrjIeLC.png"></p>
+<p><img src="http://i.imgur.com/DrjIeLC.png" alt=""></p>
 <p><strong>設定存取權限</strong></p>
 <ul>
-<li>將權限設定成 **Public **。 ( Fusion Table API 無法操作 Private 權限)</li>
+<li>將權限設定成 <strong>Public </strong>。 ( Fusion Table API 無法操作 Private 權限) </li>
 </ul>
-<p><img src="http://i.imgur.com/G2L3KK6.png"></p>
+<p><img src="http://i.imgur.com/G2L3KK6.png" alt=""></p>
 <p><strong>取得 Table ID</strong></p>
 <ul>
-<li><pre><code> 按下 **File** -&gt; **About this table** ，取得 **Table ID**， 當然也可以從 URL 得知 ( docid 後面一大串東西)。
-</code></pre>
-</li>
+<li>按下 <strong>File</strong> -&gt; <strong>About this table</strong> ，取得 <strong>Table ID</strong>， 當然也可以從 URL 得知 ( docid 後面一大串東西)。</li>
 </ul>
-<p><img src="http://i.imgur.com/KykU7qS.png"></p>
+<p><img src="http://i.imgur.com/KykU7qS.png" alt=""></p>
 <h2 id="NodeJS"><a href="#NodeJS" class="headerlink" title="NodeJS"></a>NodeJS</h2><p><strong>專為 NodeJS 打造的 Google APIs  Client</strong></p>
-<p>可以參考  <a target="_blank" rel="noopener" href="https://github.com/google/google-api-nodejs-client/">Google&#x2F;google-api-nodejs-client</a> ，裡面有很完整的安裝說明及<a target="_blank" rel="noopener" href="https://github.com/google/google-api-nodejs-client/tree/master/examples">範例</a>。</p>
+<p>可以參考  <a target="_blank" rel="noopener" href="https://github.com/google/google-api-nodejs-client/">Google/google-api-nodejs-client</a> ，裡面有很完整的安裝說明及<a target="_blank" rel="noopener" href="https://github.com/google/google-api-nodejs-client/tree/master/examples">範例</a>。</p>
 <p><strong>小踹  Fusion Tables Query</strong></p>
 <p>目的只能先 Try sql 語法，還不用動真格寫扣，可以利用 APIs Exploer 平台的 <a target="_blank" rel="noopener" href="https://developers.google.com/apis-explorer/#p/fusiontables/v1/fusiontables.query.sql">fusiontables.query.sql</a> 來踹踹看。</p>
 <ul>
-<li>直接就丟 SQL Script： <code>SELECT * FROM YOUR_TABLE_ID</code>  ，接著就  **Execute **。 ( 記得把_ YOUR_TABLE_ID_ 替換成你剛剛準備的新 Fusion Table ID )</li>
+<li>直接就丟 SQL Script： <code>SELECT * FROM YOUR_TABLE_ID</code>  ，接著就  <strong>Execute </strong>。 ( 記得把<em> YOUR_TABLE_ID</em> 替換成你剛剛準備的新 Fusion Table ID )</li>
 </ul>
-<p><img src="http://i.imgur.com/U6CJu35.png"></p>
+<p><img src="http://i.imgur.com/U6CJu35.png" alt=""></p>
 <ul>
-<li>執行後，可以看到花費時間、Request ，以及  Response 結果，別得不管了！ 只要看到 <strong>rows</strong> 關鍵字，這裡面的東西才是我們要，另外，在看看 <strong>query?</strong> 後面一拖拉庫的東西，用了 _sql _和 <em>key</em> 兩個參數，這是不是在告訴我們一件事，執行 API 時，記得下參數。</li>
+<li>執行後，可以看到花費時間、Request ，以及  Response 結果，別得不管了！ 只要看到 <strong>rows</strong> 關鍵字，這裡面的東西才是我們要，另外，在看看 <strong>query?</strong> 後面一拖拉庫的東西，用了 <em>sql </em>和 <em>key</em> 兩個參數，這是不是在告訴我們一件事，執行 API 時，記得下參數。</li>
 </ul>
-<p><img src="http://i.imgur.com/qxJ0AhU.png"></p>
+<p><img src="http://i.imgur.com/qxJ0AhU.png" alt=""></p>
 <p><strong>動手踹 <s>共 </s>扣</strong></p>
-<p>看完 <a target="_blank" rel="noopener" href="https://github.com/google/google-api-nodejs-client/">Google&#x2F;google-api-nodejs-client</a> 的<a target="_blank" rel="noopener" href="https://github.com/google/google-api-nodejs-client/blob/master/README.md"> README.md </a>，就可以抓到這工具大致用法，那就寫扣去…</p>
+<p>看完 <a target="_blank" rel="noopener" href="https://github.com/google/google-api-nodejs-client/">Google/google-api-nodejs-client</a> 的<a target="_blank" rel="noopener" href="https://github.com/google/google-api-nodejs-client/blob/master/README.md"> README.md </a>，就可以抓到這工具大致用法，那就寫扣去…</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> google = <span class="built_in">require</span>(<span class="string">&#x27;googleapis&#x27;</span>);</span><br><span class="line"><span class="keyword">var</span> fusiontables = google.<span class="title function_">fusiontables</span>(<span class="string">&#x27;v1&#x27;</span>);</span><br><span class="line"> <span class="comment">// 從上面步驟得知 YOUR_API_KEY 和 YOUR_TABLE_ID </span></span><br><span class="line"><span class="keyword">var</span> <span class="variable constant_">API_KEY</span> = <span class="string">&#x27;YOUR_API_KEY&#x27;</span>;</span><br><span class="line"><span class="keyword">var</span> <span class="variable constant_">TABLEID</span> = <span class="string">&#x27;YOUR_TABLE_ID&#x27;</span>;</span><br><span class="line"><span class="keyword">var</span> <span class="variable constant_">SQLSCRIPT</span> = <span class="string">&#x27;SELECT * FROM &#x27;</span> + <span class="variable constant_">TABLEID</span>;</span><br><span class="line"><span class="keyword">var</span> params = &#123;</span><br><span class="line">        <span class="string">&#x27;sql&#x27;</span>: query,</span><br><span class="line">        <span class="string">&#x27;key&#x27;</span>: <span class="variable constant_">API_KEY</span></span><br><span class="line">&#125;;</span><br><span class="line">fusiontables.<span class="property">query</span>.<span class="title function_">sqlGet</span>(params, <span class="keyword">function</span>(<span class="params">err, result</span>) &#123;</span><br><span class="line">    <span class="keyword">if</span> (err) &#123;</span><br><span class="line">        <span class="variable language_">console</span>.<span class="title function_">log</span>(err);</span><br><span class="line">   &#125;</span><br><span class="line">   </span><br><span class="line">   <span class="keyword">var</span> rows = result.<span class="property">rows</span>;</span><br><span class="line">   </span><br><span class="line">   <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;ok&#x27;</span>);  </span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>      
 
     </div>

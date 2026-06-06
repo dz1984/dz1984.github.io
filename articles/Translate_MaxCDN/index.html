@@ -308,7 +308,6 @@
 <li>讓客戶直接查詢</li>
 </ul>
 <span id="more"></span>
-
 <p>MaxCDN 工程師打算重新建置報表及分析平台，提供更多資訊給客戶做決策，像是強大API提供客戶存取 Log 資料，以及給非開發人員使用的 <a target="_blank" rel="noopener" href="https://cp.maxcdn.com/reporting/logs">Log Viewer</a> 。因為這樣特別的需求，MaxCDN 工程團隊使用夢幻工具打造出一個全新的報表環境(reporting stack)，其平台是以<a target="_blank" rel="noopener" href="http://www.mongodb.com/">MongoDB</a>強化版的 <a target="_blank" rel="noopener" href="http://www.tokutek.com/products/tokumx-for-mongodb/">TokuMX</a> 為基礎，比起 MongoDB 還更快速。</p>
 <p>為了更快速塞資料到 TokuMX ，就特別用Go寫成的代理人，Go 比起傳統語言在平行處理策略中，像是C++、Java等，能充分發揮出多核 CPUs 能力，寫出極速的應用程式。</p>
 <p>下面將進入重頭戲，要開始講點技術了！</p>
@@ -318,7 +317,7 @@
 <p>確保高品質備援和靈活性，在達拉斯數據中心設有20個分散點，提供異地備援報表和分析叢集，每台資料庫伺服器都是使用RAID10設定、SSD硬碟、記憶體提高到 128G 。</p>
 <p><img src="http://i.imgur.com/Ly6gv6M.jpg" alt="img"></p>
 <p>每當有請求(request)進來時，就直接放到訊息佇列處理，馬上記錄每筆請求並保存5天，最精華部份是資料會依照公司規模做排序,之後，預計能提供即時綜合統計給需求客戶。為了符合 MongoDB 規模設計，儲存層可依資料成長量做水平擴充，近來測試結果，現在硬體架構可承受每秒 600,000 即時事件請求。</p>
-<p>此解法最大問題是如何有效率接收每秒 200,000 請求及即時儲存，使用 Go 建置可擴充模型， 採用多核CPU搭配 64GB 記憶體優勢，快速處理 TokuMX&#x2F;MongoDB 之間儲存，比原本設計是每秒處理 200,000 請求之目標，表現得更為.出色。</p>
+<p>此解法最大問題是如何有效率接收每秒 200,000 請求及即時儲存，使用 Go 建置可擴充模型， 採用多核CPU搭配 64GB 記憶體優勢，快速處理 TokuMX/MongoDB 之間儲存，比原本設計是每秒處理 200,000 請求之目標，表現得更為.出色。</p>
 <p>(以下省略不譯)</p>
 <h1 id="資料來源"><a href="#資料來源" class="headerlink" title="資料來源"></a>資料來源</h1><ul>
 <li><a target="_blank" rel="noopener" href="http://blog.maxcdn.com/learned-stop-worrying-love-logs/">HOW WE BUILT OUR REAL-TIME ANALYTICS PLATFORM</a></li>

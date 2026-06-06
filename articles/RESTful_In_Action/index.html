@@ -170,7 +170,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Summay"><span class="nav-number">1.</span> <span class="nav-text">Summay</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#REST-RESTFul-Web-Services"><span class="nav-number">1.1.</span> <span class="nav-text">REST &amp; RESTFul Web Services</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8B%95%E6%89%8B%E5%AF%A6%E4%BD%9C"><span class="nav-number">2.</span> <span class="nav-text">動手實作</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BF%AE%E6%94%B9package-json"><span class="nav-number">2.1.</span> <span class="nav-text">修改package.json</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#MongoDB"><span class="nav-number">2.2.</span> <span class="nav-text">MongoDB</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#RESTful-API%E8%A6%8F%E6%A0%BC"><span class="nav-number">2.3.</span> <span class="nav-text">RESTful API規格</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Express-Server"><span class="nav-number">2.4.</span> <span class="nav-text">Express Server</span></a></li></ol></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Summay"><span class="nav-number">1.</span> <span class="nav-text">Summay</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#REST-amp-RESTFul-Web-Services"><span class="nav-number">1.1.</span> <span class="nav-text">REST &amp; RESTFul Web Services</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link"><span class="nav-number">2.</span> <span class="nav-text"></span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8B%95%E6%89%8B%E5%AF%A6%E4%BD%9C"><span class="nav-number">3.</span> <span class="nav-text">動手實作</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BF%AE%E6%94%B9package-json"><span class="nav-number">3.1.</span> <span class="nav-text">修改package.json</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#MongoDB"><span class="nav-number">3.2.</span> <span class="nav-text">MongoDB</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#RESTful-API%E8%A6%8F%E6%A0%BC"><span class="nav-number">3.3.</span> <span class="nav-text">RESTful API規格</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Express-Server"><span class="nav-number">3.4.</span> <span class="nav-text">Express Server</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -298,71 +298,69 @@
     
     
     <div class="post-body" itemprop="articleBody"><h2 id="Summay"><a href="#Summay" class="headerlink" title="Summay"></a>Summay</h2><p>練習使用RESTful Web Servicet技術打造一個簡單書藉管理Web應用程式。</p>
-<h3 id="REST-RESTFul-Web-Services"><a href="#REST-RESTFul-Web-Services" class="headerlink" title="REST &amp; RESTFul Web Services"></a>REST &amp; RESTFul Web Services</h3><p>REST (Reprsentational State Transfer)是軟體構設計風格，並不是標準。RESTful Web Services是使用HTTP協定，並遵循REST原則的Web服務。</p>
-<span id="more"></span>
-<hr>
-<h2 id="動手實作"><a href="#動手實作" class="headerlink" title="動手實作"></a>動手實作</h2><h3 id="修改package-json"><a href="#修改package-json" class="headerlink" title="修改package.json"></a>修改package.json</h3><p>這次實作會用到express、jade、mongoose等packages，另外，superagent和expect.js是用來測試時使用。</p>
+<h3 id="REST-amp-RESTFul-Web-Services"><a href="#REST-amp-RESTFul-Web-Services" class="headerlink" title="REST &amp; RESTFul Web Services"></a>REST &amp; RESTFul Web Services</h3><p>REST (Reprsentational State Transfer)是軟體構設計風格，並不是標準。RESTful Web Services是使用HTTP協定，並遵循REST原則的Web服務。</p>
+<h2 id=""><a href="#" class="headerlink" title=""></a><span id="more"></span></h2><h2 id="動手實作"><a href="#動手實作" class="headerlink" title="動手實作"></a>動手實作</h2><h3 id="修改package-json"><a href="#修改package-json" class="headerlink" title="修改package.json"></a>修改package.json</h3><p>這次實作會用到express、jade、mongoose等packages，另外，superagent和expect.js是用來測試時使用。</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">&#123;</span><br><span class="line">  <span class="string">&quot;name&quot;</span>: <span class="string">&quot;NodeJSTut&quot;</span>,</span><br><span class="line">  <span class="string">&quot;version&quot;</span>: <span class="string">&quot;0.0.1&quot;</span>,</span><br><span class="line">  <span class="string">&quot;description&quot;</span>: <span class="string">&quot;NodeJS Tutorial for RESTful&quot;</span>,</span><br><span class="line">  <span class="string">&quot;keywords&quot;</span>: [</span><br><span class="line">    <span class="string">&quot;OpenShift&quot;</span>,</span><br><span class="line">    <span class="string">&quot;Node.js&quot;</span>,</span><br><span class="line">    <span class="string">&quot;RESTful&quot;</span></span><br><span class="line">  ],</span><br><span class="line">  <span class="string">&quot;author&quot;</span>: &#123;</span><br><span class="line">    <span class="string">&quot;name&quot;</span>: <span class="string">&quot;DonaldIsFreak&quot;</span></span><br><span class="line">  &#125;,</span><br><span class="line"></span><br><span class="line">  <span class="string">&quot;engines&quot;</span>: &#123;</span><br><span class="line">    <span class="string">&quot;node&quot;</span>: <span class="string">&quot;&gt;= 0.10.x&quot;</span>,</span><br><span class="line">    <span class="string">&quot;npm&quot;</span>: <span class="string">&quot;&gt;= 1.0.0&quot;</span></span><br><span class="line">  &#125;,</span><br><span class="line"></span><br><span class="line">  <span class="string">&quot;dependencies&quot;</span>: &#123;</span><br><span class="line">        <span class="string">&quot;express&quot;</span> : <span class="string">&quot;3.3.8&quot;</span>,</span><br><span class="line">        <span class="string">&quot;jade&quot;</span> : <span class="string">&quot;*&quot;</span>,</span><br><span class="line">        <span class="string">&quot;mongoose&quot;</span> : <span class="string">&quot;&gt;=0.0.1&quot;</span></span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="string">&quot;devDependencies&quot;</span>: &#123;</span><br><span class="line">        <span class="string">&quot;superagent&quot;</span> : <span class="string">&quot;&gt;=0.15.0&quot;</span>,</span><br><span class="line">        <span class="string">&quot;expect.js&quot;</span>: <span class="string">&quot;&gt;=0.1.0&quot;</span></span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="string">&quot;bundleDependencies&quot;</span>: [],</span><br><span class="line"></span><br><span class="line">  <span class="string">&quot;private&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">  <span class="string">&quot;main&quot;</span>: <span class="string">&quot;server.js&quot;</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
 <h3 id="MongoDB"><a href="#MongoDB" class="headerlink" title="MongoDB"></a>MongoDB</h3><p>先確定好MongoDB有安裝成功，建立Book Model，目前只有三個欄位，分別是title、isbn，以及description。 (_id是MongoDB自動產生)</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">var</span> mongoose = <span class="built_in">require</span>(<span class="string">&quot;mongoose&quot;</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> bookSchema = <span class="keyword">new</span> mongoose.<span class="title class_">Schema</span>(&#123;</span><br><span class="line">        title : <span class="title class_">String</span>,</span><br><span class="line">        isbn : <span class="title class_">String</span>,</span><br><span class="line">        <span class="attr">description</span>: <span class="title class_">String</span></span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="variable language_">module</span>.<span class="property">exports</span> = mongoose.<span class="title function_">model</span>(<span class="string">&#x27;Book&#x27;</span>,bookSchema);</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h3 id="RESTful-API規格"><a href="#RESTful-API規格" class="headerlink" title="RESTful API規格"></a>RESTful API規格</h3><table>
+<h3 id="RESTful-API規格"><a href="#RESTful-API規格" class="headerlink" title="RESTful API規格"></a>RESTful API規格</h3><div class="table-container">
+<table>
 <thead>
 <tr>
-<th align="left">功能</th>
-<th align="left">URL</th>
-<th align="center">HTTP Method</th>
-<th align="center">Request</th>
-<th align="center">Response</th>
+<th style="text-align:left">功能</th>
+<th style="text-align:left">URL</th>
+<th style="text-align:center">HTTP Method</th>
+<th style="text-align:center">Request</th>
+<th style="text-align:center">Response</th>
 </tr>
 </thead>
-<tbody><tr>
-<td align="left">新增</td>
-<td align="left">&#x2F;books</td>
-<td align="center">POST</td>
-<td align="center">Book JSON</td>
-<td align="center">–</td>
+<tbody>
+<tr>
+<td style="text-align:left">新增</td>
+<td style="text-align:left">/books</td>
+<td style="text-align:center">POST</td>
+<td style="text-align:center">Book JSON</td>
+<td style="text-align:center">—</td>
 </tr>
 <tr>
-<td align="left">刪除</td>
-<td align="left">&#x2F;books&#x2F;:id</td>
-<td align="center">DELETE</td>
-<td align="center">–</td>
-<td align="center">–</td>
+<td style="text-align:left">刪除</td>
+<td style="text-align:left">/books/:id</td>
+<td style="text-align:center">DELETE</td>
+<td style="text-align:center">—</td>
+<td style="text-align:center">—</td>
 </tr>
 <tr>
-<td align="left">修改</td>
-<td align="left">&#x2F;books&#x2F;:id</td>
-<td align="center">PUT</td>
-<td align="center">Book JSON</td>
-<td align="center">–</td>
+<td style="text-align:left">修改</td>
+<td style="text-align:left">/books/:id</td>
+<td style="text-align:center">PUT</td>
+<td style="text-align:center">Book JSON</td>
+<td style="text-align:center">— </td>
 </tr>
 <tr>
-<td align="left">查詢</td>
-<td align="left">&#x2F;books&#x2F;:id</td>
-<td align="center">GET</td>
-<td align="center">–</td>
-<td align="center">Book JSON</td>
+<td style="text-align:left">查詢</td>
+<td style="text-align:left">/books/:id</td>
+<td style="text-align:center">GET</td>
+<td style="text-align:center">—</td>
+<td style="text-align:center">Book JSON</td>
 </tr>
 <tr>
-<td align="left">列表</td>
-<td align="left">&#x2F;books</td>
-<td align="center">GET</td>
-<td align="center">–</td>
-<td align="center">Book JSON</td>
+<td style="text-align:left">列表</td>
+<td style="text-align:left">/books</td>
+<td style="text-align:center">GET</td>
+<td style="text-align:center">—</td>
+<td style="text-align:center">Book JSON</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
+</div>
 <h3 id="Express-Server"><a href="#Express-Server" class="headerlink" title="Express Server"></a>Express Server</h3><ul>
 <li>server.js</li>
 </ul>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">#!<span class="regexp">/bin/</span>env node</span><br><span class="line"><span class="keyword">var</span> express = <span class="built_in">require</span>(<span class="string">&#x27;express&#x27;</span>),</span><br><span class="line">    routes = <span class="built_in">require</span>(<span class="string">&#x27;./routes&#x27;</span>),</span><br><span class="line">    apis = <span class="built_in">require</span>(<span class="string">&#x27;./routes/api&#x27;</span>),</span><br><span class="line">    http = <span class="built_in">require</span>(<span class="string">&#x27;http&#x27;</span>),</span><br><span class="line">    path = <span class="built_in">require</span>(<span class="string">&#x27;path&#x27;</span>),</span><br><span class="line">    mongoose = <span class="built_in">require</span>(<span class="string">&#x27;mongoose&#x27;</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// connect MongoDB</span></span><br><span class="line">mongoose.<span class="title function_">connect</span>(process.<span class="property">env</span>.<span class="property">OPENSHIFT_MONGODB_DB_URL</span>+<span class="string">&#x27;nodejstut&#x27;</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> app = <span class="title function_">express</span>();</span><br><span class="line"></span><br><span class="line"><span class="comment">// all environments</span></span><br><span class="line">app.<span class="title function_">set</span>(<span class="string">&#x27;port&#x27;</span>, process.<span class="property">env</span>.<span class="property">OPENSHIFT_NODEJS_PORT</span> || <span class="number">8080</span>);</span><br><span class="line">app.<span class="title function_">set</span>(<span class="string">&#x27;ip&#x27;</span>,,process.<span class="property">env</span>.<span class="property">OPENSHIFT_NODEJS_IP</span> || <span class="string">&#x27;127.0.0.1&#x27;</span>);</span><br><span class="line">app.<span class="title function_">set</span>(<span class="string">&#x27;views&#x27;</span>, __dirname + <span class="string">&#x27;/views&#x27;</span>);</span><br><span class="line">app.<span class="title function_">set</span>(<span class="string">&#x27;view engine&#x27;</span>, <span class="string">&#x27;jade&#x27;</span>);</span><br><span class="line">app.<span class="title function_">use</span>(express.<span class="title function_">favicon</span>());</span><br><span class="line">app.<span class="title function_">use</span>(express.<span class="title function_">logger</span>(<span class="string">&#x27;dev&#x27;</span>));</span><br><span class="line">app.<span class="title function_">use</span>(express.<span class="title function_">cookieParser</span>());</span><br><span class="line">app.<span class="title function_">use</span>(express.<span class="title function_">bodyParser</span>());</span><br><span class="line">app.<span class="title function_">use</span>(express.<span class="title function_">methodOverride</span>());</span><br><span class="line">app.<span class="title function_">use</span>(app.<span class="property">router</span>);</span><br><span class="line">app.<span class="title function_">use</span>(express.<span class="title function_">static</span>(path.<span class="title function_">join</span>(__dirname, <span class="string">&#x27;public&#x27;</span>)));</span><br><span class="line"></span><br><span class="line"><span class="comment">// development only</span></span><br><span class="line"><span class="keyword">if</span> (<span class="string">&#x27;development&#x27;</span> == app.<span class="title function_">get</span>(<span class="string">&#x27;env&#x27;</span>)) &#123;</span><br><span class="line">  app.<span class="title function_">use</span>(express.<span class="title function_">errorHandler</span>());</span><br><span class="line"> &#125;</span><br><span class="line"></span><br><span class="line">http.<span class="title function_">createServer</span>(app).<span class="title function_">listen</span>(app.<span class="title function_">get</span>(<span class="string">&#x27;port&#x27;</span>),app.<span class="title function_">get</span>(<span class="string">&#x27;ip&#x27;</span>), <span class="keyword">function</span>(<span class="params"></span>)&#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;Express server listening on port &#x27;</span> + app.<span class="title function_">get</span>(<span class="string">&#x27;port&#x27;</span>));</span><br><span class="line">&#125;);</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
 <p>按照上面的RESTful API規格，主要負責MongoDB的CRUD。</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">app.<span class="title function_">all</span>(<span class="string">&#x27;/*&#x27;</span>,<span class="keyword">function</span>(<span class="params">req,res,next</span>)&#123;</span><br><span class="line">    res.<span class="title function_">header</span>(<span class="string">&#x27;Access-Control-Allow-Origin&#x27;</span>,<span class="string">&#x27;*&#x27;</span>);</span><br><span class="line">    res.<span class="title function_">header</span>(<span class="string">&#x27;Access-COntrol-Allow-Headers&#x27;</span>,<span class="string">&#x27;X-Requested-With&#x27;</span>);</span><br><span class="line">    <span class="title function_">next</span>();</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">app.<span class="title function_">get</span>(<span class="string">&#x27;/&#x27;</span>,routes.<span class="property">index</span>);</span><br><span class="line"></span><br><span class="line">app.<span class="title function_">get</span>(<span class="string">&#x27;/books&#x27;</span>,apis.<span class="property">findAll</span>);</span><br><span class="line">app.<span class="title function_">get</span>(<span class="string">&#x27;/books/:id&#x27;</span>,apis.<span class="property">findByID</span>);</span><br><span class="line">app.<span class="title function_">post</span>(<span class="string">&#x27;/books&#x27;</span>,apis.<span class="property">post</span>);</span><br><span class="line">app.<span class="title function_">put</span>(<span class="string">&#x27;/books/:id&#x27;</span>,apis.<span class="property">updates</span>);</span><br><span class="line">app.<span class="title function_">del</span>(<span class="string">&#x27;/books/:id&#x27;</span>,apis.<span class="property">removeByID</span>);</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
 <ul>
-<li><p>routes&#x2F;api.js</p>
+<li><p>routes/api.js</p>
 <ul>
 <li><p><code>GET /books</code>傳回全部Book JSON。</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="built_in">exports</span>.<span class="property">findAll</span> = <span class="keyword">function</span>(<span class="params">req,res,next</span>)&#123;</span><br><span class="line">        <span class="title class_">Book</span>.<span class="title function_">find</span>(<span class="keyword">function</span>(<span class="params">err,books</span>)&#123;</span><br><span class="line">                res.<span class="title function_">send</span>(&#123;<span class="attr">book</span>:books&#125;);</span><br><span class="line">        &#125;);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"> </span><br></pre></td></tr></table></figure>
@@ -371,17 +369,14 @@
 </li>
 </ul>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="built_in">exports</span>.<span class="property">findByID</span> = <span class="keyword">function</span>(<span class="params">req,res,next</span>)&#123;</span><br><span class="line">        <span class="title class_">Book</span>.<span class="title function_">findOne</span>(&#123;<span class="attr">_id</span>:req.<span class="property">params</span>.<span class="property">id</span>&#125;,<span class="keyword">function</span>(<span class="params">err,book</span>)&#123;</span><br><span class="line">                res.<span class="title function_">send</span>(&#123;<span class="attr">book</span>:book&#125;);</span><br><span class="line">        &#125;);</span><br><span class="line">&#125;;</span><br><span class="line"> </span><br></pre></td></tr></table></figure>
-
 <ul>
 <li><code>POST /books</code>取得Book資料後寫入MongoDB。</li>
 </ul>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">   </span><br><span class="line"><span class="built_in">exports</span>.<span class="property">post</span> = <span class="keyword">function</span>(<span class="params">req,res</span>)&#123;</span><br><span class="line">        <span class="keyword">var</span> book = <span class="keyword">new</span> <span class="title class_">Book</span>(&#123;<span class="attr">title</span>:req.<span class="property">body</span>.<span class="property">book</span>.<span class="property">title</span>,<span class="attr">isbn</span>:req.<span class="property">body</span>.<span class="property">book</span>.<span class="property">isbn</span>,<span class="attr">description</span>:req.<span class="property">body</span>.<span class="property">book</span>.<span class="property">description</span>&#125;);</span><br><span class="line">        book.<span class="title function_">save</span>(<span class="keyword">function</span>(<span class="params">err,book</span>)&#123;</span><br><span class="line">                res.<span class="title function_">send</span>(&#123;<span class="attr">book</span>:book&#125;);</span><br><span class="line">        &#125;);</span><br><span class="line">&#125;;</span><br><span class="line"> </span><br></pre></td></tr></table></figure>
-
 <ul>
 <li><code>PUT /books/:id</code>修改:id的Book資料 。</li>
 </ul>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">   </span><br><span class="line"><span class="built_in">exports</span>.<span class="property">updates</span> = <span class="keyword">function</span>(<span class="params">req,res,next</span>)&#123;</span><br><span class="line">        <span class="title class_">Book</span>.<span class="title function_">update</span>(&#123;<span class="attr">_id</span>:req.<span class="property">params</span>.<span class="property">id</span>&#125;,&#123;<span class="attr">$set</span>:&#123;<span class="attr">description</span>:req.<span class="property">body</span>.<span class="property">book</span>.<span class="property">description</span>&#125;&#125;,<span class="keyword">function</span>(<span class="params">err,numberAffected,raw</span>)&#123;</span><br><span class="line">                <span class="keyword">if</span> (err)</span><br><span class="line">                        <span class="variable language_">console</span>.<span class="title function_">log</span>(err);</span><br><span class="line">                res.<span class="title function_">send</span>(<span class="number">200</span>);</span><br><span class="line">        &#125;);</span><br><span class="line">&#125;;</span><br><span class="line"> </span><br></pre></td></tr></table></figure>
-
 <ul>
 <li><p><code>DELETE /books/:id</code>刪除:id的Book資料</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">exports</span>.<span class="property">removeByID</span> = <span class="keyword">function</span>(<span class="params">req,res,next</span>)&#123;</span><br><span class="line">        <span class="title class_">Book</span>.<span class="title function_">remove</span>(&#123;<span class="attr">_id</span>:req.<span class="property">params</span>.<span class="property">id</span>&#125;,<span class="keyword">function</span>(<span class="params">err</span>)&#123;</span><br><span class="line">                <span class="keyword">if</span> (err)</span><br><span class="line">                        <span class="title function_">next</span>(err);</span><br><span class="line">        res.<span class="title function_">send</span>(<span class="number">200</span>);</span><br><span class="line">        &#125;);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></li>
@@ -414,8 +409,8 @@
 </div>
 
           <div class="post-tags">
-              <a href="/tags/RESTful/" rel="tag"># RESTful</a>
               <a href="/tags/NodeJS/" rel="tag"># NodeJS</a>
+              <a href="/tags/RESTful/" rel="tag"># RESTful</a>
               <a href="/tags/MongoDB/" rel="tag"># MongoDB</a>
           </div>
 

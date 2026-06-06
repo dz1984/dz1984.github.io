@@ -298,18 +298,14 @@
     <div class="post-body" itemprop="articleBody"><p>簡單來說是使用 Subview 方式來解決，原理是逐一產生子樣版內容，然後~拼出完成的主要內容。</p>
 <p>細節如下：</p>
 <span id="more"></span>
-
 <ul>
 <li>JS 部份</li>
 </ul>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">var</span> data = &#123;<span class="attr">land_info</span>:[&#123;<span class="attr">k</span>: <span class="string">&#x27;k1&#x27;</span>, <span class="attr">v</span>:<span class="string">&#x27;v1&#x27;</span>&#125;,&#123;<span class="attr">k</span>:<span class="string">&#x27;k2&#x27;</span>,<span class="attr">v</span>:<span class="string">&#x27;v2&#x27;</span>&#125;]&#125;;</span><br><span class="line"><span class="keyword">var</span> content_compiled = _.<span class="title function_">template</span>($(<span class="string">&#x27;#content-tpl&#x27;</span>).<span class="title function_">html</span>());</span><br><span class="line"><span class="keyword">var</span> content = <span class="title function_">content_compiled</span>(data);</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(content);</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-
 <ul>
 <li>主樣版內容</li>
 </ul>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">&quot;text/template&quot;</span> <span class="attr">id</span>=<span class="string">&quot;content-tpl&quot;</span>&gt;</span><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript">&lt;table&gt;</span></span><br><span class="line"><span class="language-javascript"> &lt;%=_.<span class="title function_">reduce</span>(land_info,<span class="keyword">function</span>(<span class="params">content, land</span>)&#123;</span></span><br><span class="line"><span class="language-javascript">   <span class="keyword">var</span> content_compiled = _.<span class="title function_">template</span>($(<span class="string">&#x27;#item-tpl&#x27;</span>).<span class="title function_">html</span>());</span></span><br><span class="line"><span class="language-javascript">   <span class="keyword">var</span> land_content = <span class="title function_">content_compiled</span>(&#123;<span class="attr">land</span>:land&#125;);</span></span><br><span class="line"><span class="language-javascript">   <span class="keyword">return</span> content+land_content;</span></span><br><span class="line"><span class="language-javascript"> &#125;,<span class="string">&quot;&quot;</span>)%&gt;</span></span><br><span class="line"><span class="language-javascript">&lt;/table&gt;</span></span><br><span class="line"><span class="language-javascript"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
 <ul>
 <li>子樣版內容</li>
 </ul>

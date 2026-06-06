@@ -587,7 +587,7 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <p><img src="/images/9d8tw/logo.png"></p>
+          <p><img src="/images/9d8tw/logo.png" alt=""></p>
 <p>這篇心得文躺在 Hackpad.com 已經有三個多月，期間斷斷續續地填加內容，使得語句沒辦法一氣呵成，文末也是草率結尾，像是一篇未完待續的殘章，希望有時間能在豐富本文。</p>
 <h1 id="寫在前頭"><a href="#寫在前頭" class="headerlink" title="寫在前頭"></a>寫在前頭</h1>
           <!--noindex-->
@@ -688,7 +688,7 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <p><img src="/images/dos/dos.jpg"></p>
+          <p><img src="/images/dos/dos.jpg" alt=""></p>
 <p>第一本接觸的電腦書籍，也是最值得回憶的一本。</p>
           <!--noindex-->
             <div class="post-button">
@@ -888,7 +888,7 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <p>這篇是紀錄實作 <a target="_blank" rel="noopener" href="http://9d8.tw/">9d8TW</a> 專案時，因對 Laravel 的 Eloquent ORM 不熟悉，所遭遇到問題後，自行找解答的過程。</p>
+          <p>這篇是紀錄實作 <a target="_blank" rel="noopener" href="http://9d8.tw">9d8TW</a> 專案時，因對 Laravel 的 Eloquent ORM 不熟悉，所遭遇到問題後，自行找解答的過程。</p>
 <h2 id="寫在前頭"><a href="#寫在前頭" class="headerlink" title="寫在前頭"></a>寫在前頭</h2>
           <!--noindex-->
             <div class="post-button">
@@ -1000,16 +1000,12 @@
 </ul>
 <h2 id="解法過程"><a href="#解法過程" class="headerlink" title="解法過程"></a>解法過程</h2><p>在 <a target="_blank" rel="noopener" href="http://www.tinymce.com/wiki.php/Configuration">Configuration</a> 說明文件發現 <code>setup callback</code> 能拿到 <strong>TinyMCE.Editor</strong> 物件，從範例中得知，<code>setup</code> 函式是用來設定一些處理編輯器的事件觸發程式碼。</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">tinymce.<span class="title function_">init</span>(&#123;</span><br><span class="line">  <span class="attr">selector</span>: <span class="string">&#x27;textarea&#x27;</span>,</span><br><span class="line">  <span class="attr">setup</span>: <span class="keyword">function</span>(<span class="params">editor</span>) &#123;</span><br><span class="line">    editor.<span class="title function_">on</span>(<span class="string">&#x27;click&#x27;</span>, <span class="keyword">function</span>(<span class="params">event</span>) &#123;     </span><br><span class="line">      <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;Click&#x27;</span>);</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-
-<p>接著要找出適合事件來處理，這時爬一下文件，可以從 <a target="_blank" rel="noopener" href="http://www.tinymce.com/wiki.php/api4:class.tinymce.Editor">tinymce.Editer</a>　下手，果然<del>在 <strong>Events</strong> 段落列出編輯器的所有事件，這次目的是要做限制，自然很容易聯想到 <strong>BeforeExecCommand</strong> 事件，只要在執行指令之前擋住不處理即可，看到下面程式碼，當觸發到 <strong>BeforeExecCommand</strong> 時，馬上傳回 false，然後</del>編輯器就什麼功能也都不能用了！ </p>
+<p>接著要找出適合事件來處理，這時爬一下文件，可以從 <a target="_blank" rel="noopener" href="http://www.tinymce.com/wiki.php/api4:class.tinymce.Editor">tinymce.Editer</a>　下手，果然~在 <strong>Events</strong> 段落列出編輯器的所有事件，這次目的是要做限制，自然很容易聯想到 <strong>BeforeExecCommand</strong> 事件，只要在執行指令之前擋住不處理即可，看到下面程式碼，當觸發到 <strong>BeforeExecCommand</strong> 時，馬上傳回 false，然後~編輯器就什麼功能也都不能用了！ </p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">tinymce.<span class="title function_">init</span>(&#123;</span><br><span class="line">  <span class="attr">selector</span>: <span class="string">&#x27;textarea&#x27;</span>,</span><br><span class="line">  <span class="attr">setup</span>: <span class="keyword">function</span>(<span class="params">editor</span>) &#123;</span><br><span class="line">    editor.<span class="title function_">on</span>(<span class="string">&#x27;BeforeExecCommand&#x27;</span>, <span class="keyword">function</span>(<span class="params">event</span>) &#123;     </span><br><span class="line">      <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-
 <p>基本上，上面那一步驟，已經做到限制功能目標，但若只想做到部份限制，就須加入一些判斷條件來篩選，那開始把焦點移到 <a target="_blank" rel="noopener" href="http://www.tinymce.com/wiki.php/api4:class.tinymce.CommandEvent">tinymce.CommandEvent</a> 身上，看看有什麼可以用的，找到 <code>CommandEvent</code>有三個屬性很可疑，趕緊秀出來看。</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">tinymce.<span class="title function_">init</span>(&#123;</span><br><span class="line">  <span class="attr">selector</span>: <span class="string">&#x27;textarea&#x27;</span>,</span><br><span class="line">  <span class="attr">setup</span>: <span class="keyword">function</span>(<span class="params">editor</span>) &#123;</span><br><span class="line">    editor.<span class="title function_">on</span>(<span class="string">&#x27;BeforeExecCommand&#x27;</span>, <span class="keyword">function</span>(<span class="params">event</span>) &#123;</span><br><span class="line">      <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;Command:&#x27;</span>+event.<span class="property">command</span>);</span><br><span class="line">      <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;Type:&#x27;</span> + event.<span class="property">type</span>);</span><br><span class="line">      <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;Value:&#x27;</span> + event.<span class="property">value</span>);</span><br><span class="line">      <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-
 <p>玩一下上面的程式碼後，發現在 Toolbar 按下 <strong>粗體</strong> 和在 <code>Format</code> 選單按下 <strong>粗體</strong> ，居然會出現不同的 <code>command</code> 名稱，分別是 <code>mceToggleFormat</code> 和 <code>Bold</code> ，還有從選單按下 <strong>粗體</strong> 和用快速鍵(Ctrl+B) ，也會出現不同的 <code>value</code>，分別是 <code>undefined</code> 和 <code>null</code> ，從這些差異可以開始加入限制條件，弄一個完全禁用 <strong>粗體</strong>　的編輯器。</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">tinymce.<span class="title function_">init</span>(&#123;</span><br><span class="line">  <span class="attr">selector</span>: <span class="string">&#x27;textarea&#x27;</span>,</span><br><span class="line">  <span class="attr">setup</span>: <span class="keyword">function</span>(<span class="params">editor</span>) &#123;</span><br><span class="line">    editor.<span class="title function_">on</span>(<span class="string">&#x27;BeforeExecCommand&#x27;</span>, <span class="keyword">function</span>(<span class="params">event</span>) &#123;</span><br><span class="line">      <span class="keyword">var</span> isDisable = (event.<span class="property">command</span> === <span class="string">&#x27;Bold&#x27;</span>) || (event.<span class="property">command</span> === <span class="string">&#x27;mceToggleFormat&#x27;</span> &amp;&amp; event.<span class="property">value</span> === <span class="string">&#x27;bold&#x27;</span>);</span><br><span class="line">      <span class="keyword">if</span> (isDisable) &#123;</span><br><span class="line">        <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;disable&#x27;</span>);</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-
 <h2 id="結語"><a href="#結語" class="headerlink" title="結語"></a>結語</h2><p>結語還真沒什麼好寫的…</p>
 <p>Have Fun! XD</p>
 <h2 id="參考資料"><a href="#參考資料" class="headerlink" title="參考資料"></a>參考資料</h2><ul>
@@ -1209,62 +1205,60 @@
 <p>想想 Fusion Tables 挺適合在小專案，但如果專案開始長大，就顯得有點不足，故 <strong>天龍特公地</strong> 即將以 PostgreSQL 為 DB，以應付越來越多擴展性功能。</p>
 <h2 id="Google-APIs"><a href="#Google-APIs" class="headerlink" title="Google APIs"></a>Google APIs</h2><p><strong>建立專案</strong></p>
 <p>先到 <a target="_blank" rel="noopener" href="https://console.developers.google.com/project">Google Developers Console</a> 建立新專案。 </p>
-<p><img src="http://i.imgur.com/10GICZK.png"></p>
+<p><img src="http://i.imgur.com/10GICZK.png" alt=""></p>
 <p><strong>開啟 API</strong></p>
 <p>啟動想使用的 API  ，這邊以 <a target="_blank" rel="noopener" href="https://developers.google.com/fusiontables/?csw=1">Google Fusion Tables APIs </a> 為例子。</p>
-<p><img src="http://i.imgur.com/T94oPB4.png"></p>
+<p><img src="http://i.imgur.com/T94oPB4.png" alt=""></p>
 <p><strong>產生憑證</strong></p>
 <p>這邊是以 <strong>瀏覽器金鑰</strong> 為例子。</p>
 <ul>
-<li>按下 **建立新的金鑰 <strong>按鈕後</strong>，<strong>在選擇按下</strong> 瀏覽器金鑰  **按鈕。</li>
+<li>按下 <strong>建立新的金鑰 </strong>按鈕後<strong>，</strong>在選擇按下<strong> 瀏覽器金鑰  </strong>按鈕。</li>
 </ul>
-<p><img src="http://i.imgur.com/Im8jyvv.png"></p>
+<p><img src="http://i.imgur.com/Im8jyvv.png" alt=""></p>
 <ul>
-<li>可以不填寫中介網址，按下 <strong>建立</strong> 按鈕，即會產生一組  <strong>API 金鑰。</strong></li>
+<li>可以不填寫中介網址，按下 <strong>建立</strong> 按鈕，即會產生一組  <strong>API 金鑰。</strong>  </li>
 </ul>
-<p><img src="http://i.imgur.com/INetjjp.png"></p>
+<p><img src="http://i.imgur.com/INetjjp.png" alt=""></p>
 <ul>
 <li>記住這組金鑰，等等會用到。</li>
 </ul>
-<p><img src="http://i.imgur.com/nUz4SFO.png"></p>
+<p><img src="http://i.imgur.com/nUz4SFO.png" alt=""></p>
 <p><strong>如何練習 Google APIs？</strong></p>
 <p>Google APIs  琳瑯滿目，常常不知道要怎麼用，又懶得爬文，沒關係！ Google 很搭心，可以直接用  <a target="_blank" rel="noopener" href="https://developers.google.com/apis-explorer/">APIs Expoloer</a> 把玩每個 APIs ， Try 遍每個 APis 提供的 Method。</p>
 <h2 id="Fusion-Table"><a href="#Fusion-Table" class="headerlink" title="Fusion Table"></a>Fusion Table</h2><p><strong>新增 Fusion Table</strong></p>
 <ul>
 <li>Google Drive 連結 Fusion Table 。</li>
 </ul>
-<p><img src="http://i.imgur.com/KGHjSDN.png"></p>
-<p><img src="http://i.imgur.com/AVizYpP.png"></p>
+<p><img src="http://i.imgur.com/KGHjSDN.png" alt=""></p>
+<p><img src="http://i.imgur.com/AVizYpP.png" alt=""></p>
 <ul>
 <li>在 Google Drive 建立 <strong>空白 Fusion Table</strong> 。</li>
 </ul>
-<p><img src="http://i.imgur.com/DrjIeLC.png"></p>
+<p><img src="http://i.imgur.com/DrjIeLC.png" alt=""></p>
 <p><strong>設定存取權限</strong></p>
 <ul>
-<li>將權限設定成 **Public **。 ( Fusion Table API 無法操作 Private 權限)</li>
+<li>將權限設定成 <strong>Public </strong>。 ( Fusion Table API 無法操作 Private 權限) </li>
 </ul>
-<p><img src="http://i.imgur.com/G2L3KK6.png"></p>
+<p><img src="http://i.imgur.com/G2L3KK6.png" alt=""></p>
 <p><strong>取得 Table ID</strong></p>
 <ul>
-<li><pre><code> 按下 **File** -&gt; **About this table** ，取得 **Table ID**， 當然也可以從 URL 得知 ( docid 後面一大串東西)。
-</code></pre>
-</li>
+<li>按下 <strong>File</strong> -&gt; <strong>About this table</strong> ，取得 <strong>Table ID</strong>， 當然也可以從 URL 得知 ( docid 後面一大串東西)。</li>
 </ul>
-<p><img src="http://i.imgur.com/KykU7qS.png"></p>
+<p><img src="http://i.imgur.com/KykU7qS.png" alt=""></p>
 <h2 id="NodeJS"><a href="#NodeJS" class="headerlink" title="NodeJS"></a>NodeJS</h2><p><strong>專為 NodeJS 打造的 Google APIs  Client</strong></p>
-<p>可以參考  <a target="_blank" rel="noopener" href="https://github.com/google/google-api-nodejs-client/">Google&#x2F;google-api-nodejs-client</a> ，裡面有很完整的安裝說明及<a target="_blank" rel="noopener" href="https://github.com/google/google-api-nodejs-client/tree/master/examples">範例</a>。</p>
+<p>可以參考  <a target="_blank" rel="noopener" href="https://github.com/google/google-api-nodejs-client/">Google/google-api-nodejs-client</a> ，裡面有很完整的安裝說明及<a target="_blank" rel="noopener" href="https://github.com/google/google-api-nodejs-client/tree/master/examples">範例</a>。</p>
 <p><strong>小踹  Fusion Tables Query</strong></p>
 <p>目的只能先 Try sql 語法，還不用動真格寫扣，可以利用 APIs Exploer 平台的 <a target="_blank" rel="noopener" href="https://developers.google.com/apis-explorer/#p/fusiontables/v1/fusiontables.query.sql">fusiontables.query.sql</a> 來踹踹看。</p>
 <ul>
-<li>直接就丟 SQL Script： <code>SELECT * FROM YOUR_TABLE_ID</code>  ，接著就  **Execute **。 ( 記得把_ YOUR_TABLE_ID_ 替換成你剛剛準備的新 Fusion Table ID )</li>
+<li>直接就丟 SQL Script： <code>SELECT * FROM YOUR_TABLE_ID</code>  ，接著就  <strong>Execute </strong>。 ( 記得把<em> YOUR_TABLE_ID</em> 替換成你剛剛準備的新 Fusion Table ID )</li>
 </ul>
-<p><img src="http://i.imgur.com/U6CJu35.png"></p>
+<p><img src="http://i.imgur.com/U6CJu35.png" alt=""></p>
 <ul>
-<li>執行後，可以看到花費時間、Request ，以及  Response 結果，別得不管了！ 只要看到 <strong>rows</strong> 關鍵字，這裡面的東西才是我們要，另外，在看看 <strong>query?</strong> 後面一拖拉庫的東西，用了 _sql _和 <em>key</em> 兩個參數，這是不是在告訴我們一件事，執行 API 時，記得下參數。</li>
+<li>執行後，可以看到花費時間、Request ，以及  Response 結果，別得不管了！ 只要看到 <strong>rows</strong> 關鍵字，這裡面的東西才是我們要，另外，在看看 <strong>query?</strong> 後面一拖拉庫的東西，用了 <em>sql </em>和 <em>key</em> 兩個參數，這是不是在告訴我們一件事，執行 API 時，記得下參數。</li>
 </ul>
-<p><img src="http://i.imgur.com/qxJ0AhU.png"></p>
+<p><img src="http://i.imgur.com/qxJ0AhU.png" alt=""></p>
 <p><strong>動手踹 <s>共 </s>扣</strong></p>
-<p>看完 <a target="_blank" rel="noopener" href="https://github.com/google/google-api-nodejs-client/">Google&#x2F;google-api-nodejs-client</a> 的<a target="_blank" rel="noopener" href="https://github.com/google/google-api-nodejs-client/blob/master/README.md"> README.md </a>，就可以抓到這工具大致用法，那就寫扣去…</p>
+<p>看完 <a target="_blank" rel="noopener" href="https://github.com/google/google-api-nodejs-client/">Google/google-api-nodejs-client</a> 的<a target="_blank" rel="noopener" href="https://github.com/google/google-api-nodejs-client/blob/master/README.md"> README.md </a>，就可以抓到這工具大致用法，那就寫扣去…</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> google = <span class="built_in">require</span>(<span class="string">&#x27;googleapis&#x27;</span>);</span><br><span class="line"><span class="keyword">var</span> fusiontables = google.<span class="title function_">fusiontables</span>(<span class="string">&#x27;v1&#x27;</span>);</span><br><span class="line"> <span class="comment">// 從上面步驟得知 YOUR_API_KEY 和 YOUR_TABLE_ID </span></span><br><span class="line"><span class="keyword">var</span> <span class="variable constant_">API_KEY</span> = <span class="string">&#x27;YOUR_API_KEY&#x27;</span>;</span><br><span class="line"><span class="keyword">var</span> <span class="variable constant_">TABLEID</span> = <span class="string">&#x27;YOUR_TABLE_ID&#x27;</span>;</span><br><span class="line"><span class="keyword">var</span> <span class="variable constant_">SQLSCRIPT</span> = <span class="string">&#x27;SELECT * FROM &#x27;</span> + <span class="variable constant_">TABLEID</span>;</span><br><span class="line"><span class="keyword">var</span> params = &#123;</span><br><span class="line">        <span class="string">&#x27;sql&#x27;</span>: query,</span><br><span class="line">        <span class="string">&#x27;key&#x27;</span>: <span class="variable constant_">API_KEY</span></span><br><span class="line">&#125;;</span><br><span class="line">fusiontables.<span class="property">query</span>.<span class="title function_">sqlGet</span>(params, <span class="keyword">function</span>(<span class="params">err, result</span>) &#123;</span><br><span class="line">    <span class="keyword">if</span> (err) &#123;</span><br><span class="line">        <span class="variable language_">console</span>.<span class="title function_">log</span>(err);</span><br><span class="line">   &#125;</span><br><span class="line">   </span><br><span class="line">   <span class="keyword">var</span> rows = result.<span class="property">rows</span>;</span><br><span class="line">   </span><br><span class="line">   <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;ok&#x27;</span>);  </span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>      
 
       
