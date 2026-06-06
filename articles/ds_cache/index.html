@@ -298,6 +298,7 @@
     
     <div class="post-body" itemprop="articleBody"><h2 id="目的"><a href="#目的" class="headerlink" title="目的"></a>目的</h2><p><a target="_blank" rel="noopener" href="http://bit.ly/1o4Qm7X">ds-cache</a> 提供簡單的 LRU (Least Recently Used) Cache 機制，並以 JSON 字串讀寫檔案，Cache 緩衝區大小即是設定檔案限制容量，當加入資料發現已超過設定檔案限制容量時，則會開始使用 LRU 演算法釋放所需空間。 </p>
 <span id="more"></span>
+
 <h2 id="LRU-Cache-Algorithm"><a href="#LRU-Cache-Algorithm" class="headerlink" title="LRU Cache Algorithm"></a>LRU Cache Algorithm</h2><p>Cache 設計用意，是用來緩衝兩種不同讀寫速率之暫存空間，因 Cache 空間有限，故需要一套存放資料的管理機制，來解決 Cache 塞不下的冏境！ 在  <a target="_blank" rel="noopener" href="http://en.wikipedia.org/wiki/Cache_algorithms">Wiki  - Cache Algorithm</a> 有詳細介紹幾種 Cache 讀寫管理演算法，其中 LRU 演算法最常被使用，核心原理如同字面意思一樣容易瞭解，即是替換最久沒被使用的 Cache 內容，因最近被使用到資料，比起已經閒置一段時間資料，能被重新使用機率較大，故很適合套用於暫存熱門查詢結果情境。 </p>
 <h2 id="介紹"><a href="#介紹" class="headerlink" title="介紹"></a>介紹</h2><p>ds-cache 程式碼簡短容易瞭解，原因除了是由 coffeescript 撰寫外，最主要是因為 <strong>功能並沒有很多。 :D</strong></p>
 <p>雖然~ ds-cache 很陽春，但還是可以講一下實作 LRU 概念， 典型 LRU 是用 <code>hash map + doubly linked list</code> 來完成，因 NodeJS 語言特性，可以不需要使用 doubly linked list 來增加複雜度，改採用 Array 物件取代，ds-cache 會用到一個陣列和一個 Object 來當 hashmap ，在程式碼可以看到這兩個變數，分別是  _queue 和 _cache 。  _queue 作用是記錄現在所有儲放在 Cache 資料的 Key 值，存放順序代表資料使用頻率，越是後面資料越是不常使用，若 Cache 資料有異動時，同時會更新 _queue 陣列順序，另外， _cache 作用是依照 Key 值，快速取得內容，這便是 hashmap 好處，下面會解釋 Cache 異動時， _queue 和 _cache 兩者變化關係。</p>
@@ -306,25 +307,27 @@
 </ul>
 <p>先判斷 Cache 是否已經全滿，若全滿就要清除一塊可儲放空間出來，作法是從 _queue 陣列由後往前抓 Key 值，在一一刪除在 _cache 對應資料，就是從最久沒使用的空間開始清理，清到足夠能放進這筆資料。空間釋放完畢後，接著  將這筆 Key 值放置 _queue 最前面，而 _cache 則加入這筆資料；若是空間足夠就不用清理，直接放入資料，同時異動 _queue 和 _cache。</p>
 <ul>
-<li><strong>取出資料</strong>  </li>
+<li><strong>取出資料</strong></li>
 </ul>
 <p>依 Key 值尋找資料，如果沒有這筆就傳回 null 值； 若有找到就傳回資料，同時在 _queue 陣列，將這筆 Key 值移動到最前面，表示它是最近才被使用。</p>
 <h2 id="API"><a href="#API" class="headerlink" title="API"></a>API</h2><ul>
-<li><p><strong>clear(key) - </strong>依 Key 值清除 Cache ，若 Key 為空值，就全部清除 Cache。</p>
+<li><p>**clear(key) - **依 Key 值清除 Cache ，若 Key 為空值，就全部清除 Cache。</p>
 </li>
-<li><p><strong>save() - </strong>將 Cache 轉成 JSON 字串後，寫入檔案，若啟用<code>auto_save</code> ，則可以不用在手動 save。</p>
+<li><p>**save() - **將 Cache 轉成 JSON 字串後，寫入檔案，若啟用<code>auto_save</code> ，則可以不用在手動 save。</p>
 </li>
-<li><p><strong>load() - </strong>從檔案讀取 JSON 字串後，轉成 Cache。 </p>
+<li><p>**load() - **從檔案讀取 JSON 字串後，轉成 Cache。 </p>
 </li>
-<li><p><strong>size() - </strong> 傳回存放在 Cache 資料數量。</p>
+<li><p>**size() - ** 傳回存放在 Cache 資料數量。</p>
 </li>
-<li><p><strong>content() - </strong>傳回 Cache JSON 字串。</p>
+<li><p>**content() - **傳回 Cache JSON 字串。</p>
 </li>
 </ul>
 <h2 id="安裝"><a href="#安裝" class="headerlink" title="安裝"></a>安裝</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm i ds-cache</span><br></pre></td></tr></table></figure>
+
 <h2 id="範例"><a href="#範例" class="headerlink" title="範例"></a>範例</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> <span class="title class_">Cache</span> = <span class="built_in">require</span>(<span class="string">&quot;ds-cache&quot;</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// initial cache instance</span></span><br><span class="line"><span class="keyword">var</span> cache = <span class="keyword">new</span> <span class="title class_">Cache</span>(</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="attr">limitbytes</span>: <span class="string">&#x27;2M&#x27;</span>,  <span class="comment">// limit file size</span></span><br><span class="line">        <span class="attr">autosave</span>:  <span class="literal">true</span>,</span><br><span class="line">        <span class="attr">filename</span>: <span class="string">&#x27;dscache.json&#x27;</span></span><br><span class="line">    &#125;</span><br><span class="line"> );</span><br><span class="line">    </span><br><span class="line"><span class="comment">// add a data</span></span><br><span class="line">cache.<span class="title function_">set</span>(<span class="string">&#x27;name&#x27;</span>, <span class="string">&#x27;Donald&#x27;</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// get value via key</span></span><br><span class="line">cache.<span class="title function_">get</span>(<span class="string">&#x27;name&#x27;</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// clear  data via key</span></span><br><span class="line">cache.<span class="title function_">clear</span>(<span class="string">&#x27;name&#x27;</span>);</span><br><span class="line">   </span><br><span class="line"><span class="comment">// clear all data</span></span><br><span class="line">cache.<span class="title function_">clear</span>()</span><br></pre></td></tr></table></figure>
+
 <h2 id="結語"><a href="#結語" class="headerlink" title="結語"></a>結語</h2><p>起初為什麼會想要開發這個 Cache 機制呢？ 首先，我去找幾個以儲存為 JSON 檔案的 Cache 套件，但沒有一個是以 JSON 檔案大小為 Cache 緩衝區長度限制，所以~才會自己去勾出一個這樣東西。其次，是想在查詢後，將每一筆結果保存下來，但不是永久性保留下來，而是給它一個保存期限，故選擇使用 LRU 演算法來完成是在好不過。</p>
-<p>為何不使用 <a target="_blank" rel="noopener" href="http://memcached.org">memcached</a>、<a target="_blank" rel="noopener" href="http://redis.io">Redis</a> 等成熟技術？ 理由是如果專案規模不大，並不需要使用到這種等級，ds-cache 會很適用，單純的檔案讀寫及 JSON 處理，沒有額外負擔處理，這是 ds-cache 好處。</p>
+<p>為何不使用 <a target="_blank" rel="noopener" href="http://memcached.org/">memcached</a>、<a target="_blank" rel="noopener" href="http://redis.io/">Redis</a> 等成熟技術？ 理由是如果專案規模不大，並不需要使用到這種等級，ds-cache 會很適用，單純的檔案讀寫及 JSON 處理，沒有額外負擔處理，這是 ds-cache 好處。</p>
 <p>最後，希望這個小東西能對你有幫助。 XD</p>
 <h2 id="參考資料"><a href="#參考資料" class="headerlink" title="參考資料"></a>參考資料</h2><h3 id="文件"><a href="#文件" class="headerlink" title="文件"></a>文件</h3><ul>
 <li><a target="_blank" rel="noopener" href="http://en.wikipedia.org/wiki/Cache_algorithms">Wiki  - Cache Algorithm</a></li>
@@ -333,12 +336,12 @@
 <li><a target="_blank" rel="noopener" href="http://blog.csdn.net/hexinuaa/article/details/6630384">如何设计一个LRU Cache？ - hexinuaa的专栏 - 博客频道 - CSDN.NET</a></li>
 </ul>
 <h3 id="Github"><a href="#Github" class="headerlink" title="Github"></a>Github</h3><ul>
-<li><a target="_blank" rel="noopener" href="https://github.com/hh54188/Node-Simple-Cache">hh54188/Node-Simple-Cache</a></li>
-<li><a target="_blank" rel="noopener" href="https://github.com/isaacs/node-lru-cache">isaacs/node-lru-cache</a></li>
-<li><a target="_blank" rel="noopener" href="https://github.com/sakren/node-cache-storage">sakren/node-cache-storage</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/hh54188/Node-Simple-Cache">hh54188&#x2F;Node-Simple-Cache</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/isaacs/node-lru-cache">isaacs&#x2F;node-lru-cache</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/sakren/node-cache-storage">sakren&#x2F;node-cache-storage</a></li>
 </ul>
 <h3 id="Gist"><a href="#Gist" class="headerlink" title="Gist"></a>Gist</h3><ul>
-<li><a target="_blank" rel="noopener" href="https://gist.github.com/jeroenransijn/4132586">jeroenransijn/Cache.coffee</a></li>
+<li><a target="_blank" rel="noopener" href="https://gist.github.com/jeroenransijn/4132586">jeroenransijn&#x2F;Cache.coffee</a></li>
 </ul>
 
     </div>

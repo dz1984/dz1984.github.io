@@ -17,12 +17,12 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"dz1984.cc","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.27.0","exturl":false,"sidebar":{"position":"right","width_expanded":320,"width_dual_column":240,"display":"hide","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜尋...","empty":"我們無法找到任何有關 ${query} 的搜索結果","hits_time":"找到 ${hits} 個搜索結果（用時 ${time} 毫秒）","hits":"找到 ${hits} 個搜索結果"},"path":"/search.json","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js" defer></script>
 
-    <meta name="description" content="Brainfuck，我來晚了！  Brainfuck，我來晚了！  Brainfuck，我來晚了！  很重要，所以~我講了三次…">
+    <meta name="description" content="** Brainfuck，我來晚了！ **** Brainfuck，我來晚了！ **** Brainfuck，我來晚了！ ** 很重要，所以~我講了三次…">
 <meta property="og:type" content="article">
 <meta property="og:title" content="練習寫 Brainfuck Interpreter">
 <meta property="og:url" content="http://dz1984.cc/articles/BF-Im-late/index.html">
 <meta property="og:site_name" content="1984年產物">
-<meta property="og:description" content="Brainfuck，我來晚了！  Brainfuck，我來晚了！  Brainfuck，我來晚了！  很重要，所以~我講了三次…">
+<meta property="og:description" content="** Brainfuck，我來晚了！ **** Brainfuck，我來晚了！ **** Brainfuck，我來晚了！ ** 很重要，所以~我講了三次…">
 <meta property="og:locale" content="zh_TW">
 <meta property="article:published_time" content="2017-07-01T01:50:15.000Z">
 <meta property="article:modified_time" content="2026-06-06T05:37:58.445Z">
@@ -287,9 +287,10 @@
     
     
     
-    <div class="post-body" itemprop="articleBody"><p><strong> Brainfuck，我來晚了！ </strong><br><strong> Brainfuck，我來晚了！ </strong><br><strong> Brainfuck，我來晚了！ </strong></p>
+    <div class="post-body" itemprop="articleBody"><p>** Brainfuck，我來晚了！ **<br>** Brainfuck，我來晚了！ **<br>** Brainfuck，我來晚了！ **</p>
 <p>很重要，所以~我講了三次…</p>
 <span id="more"></span>
+
 <h1 id="寫在前頭："><a href="#寫在前頭：" class="headerlink" title="寫在前頭："></a>寫在前頭：</h1><hr>
 <p>可以從這篇文章得到：</p>
 <ul>
@@ -302,10 +303,9 @@
 <h1 id="到底-Brainfuck-是什麼東西？"><a href="#到底-Brainfuck-是什麼東西？" class="headerlink" title="到底 Brainfuck 是什麼東西？"></a>到底 Brainfuck 是什麼東西？</h1><hr>
 <p><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/Brainfuck">Wiki</a> 提供了你所有需要的資訊。</p>
 <p>簡單來說，它是一個簡單又難讀懂的 <strong>程式語言</strong>，可以跑在一個簡單的機器模型上，其模型必須具有指令指標、初始化為零的陣列(3000 位元組)、可移動的資料指標(指標初始指向陣列第一個位元組)，以及輸入輸出等功能，故用 Brainfuck 確實可以完成一些小型的計算工作。</p>
-<p>Brainfuck 簡單到只有八個基本指令： <code>&gt; &lt; + - . , [ ]</code> ，分別是大於、小於、加號、減號、句號、逗號、左括號、右括號。</p>
+<p>Brainfuck 簡單到只有八個基本指令： <code>&gt; &lt; + - . , [ ] </code> ，分別是大於、小於、加號、減號、句號、逗號、左括號、右括號。</p>
 <p>沒錯，就這八個特殊符號而已，也正因為全是特殊符號，才搞得程式碼十分難看不易理解。</p>
 <p>整理 Wiki 上面的東西，得到下面表格：</p>
-<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -314,8 +314,7 @@
 <th>用 C 表示</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>&gt;</td>
 <td>資料指標往右移</td>
 <td>++ptr;</td>
@@ -323,7 +322,7 @@
 <tr>
 <td>&lt;</td>
 <td>資料指標往左移</td>
-<td>—ptr;</td>
+<td>–ptr;</td>
 </tr>
 <tr>
 <td>+</td>
@@ -333,7 +332,7 @@
 <tr>
 <td>-</td>
 <td>資料指標指向的位元組值減一</td>
-<td>—*ptr;</td>
+<td>–*ptr;</td>
 </tr>
 <tr>
 <td>.</td>
@@ -343,7 +342,7 @@
 <tr>
 <td>,</td>
 <td>輸入內容到資料指標指向的單元(ASCII碼)</td>
-<td>*ptr=getchar();</td>
+<td>*ptr&#x3D;getchar();</td>
 </tr>
 <tr>
 <td>[</td>
@@ -355,13 +354,11 @@
 <td>如果資料指標指向的內容不為零時，指令指標向前移到對應 <strong><code>&quot;[&quot;</code></strong> 後面的指令</td>
 <td>}</td>
 </tr>
-</tbody>
-</table>
-</div>
+</tbody></table>
 <h1 id="動手實作"><a href="#動手實作" class="headerlink" title="動手實作"></a>動手實作</h1><hr>
 <p>哇！Wiki 上面的解釋，已經完成一大半了！看來用 C 編寫，滿直覺又簡易，索性就直接用 C 來寫一個吧！</p>
 <ul>
-<li>程式碼：<a target="_blank" rel="noopener" href="https://gist.github.com/dz1984/05e4c6cc6e72c563fd4e7af03718734f">Brainfuck interpreter in C</a> </li>
+<li>程式碼：<a target="_blank" rel="noopener" href="https://gist.github.com/dz1984/05e4c6cc6e72c563fd4e7af03718734f">Brainfuck interpreter in C</a></li>
 </ul>
 <p>最近，正在玩 Scheme，也試著改寫出一版，很可惜的地方是感覺從 C 硬轉的，完全沒有 FP 的味道！</p>
 <ul>

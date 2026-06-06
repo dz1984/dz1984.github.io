@@ -29,15 +29,6 @@
   </url>
   
   <url>
-    <loc>http://dz1984.cc/articles/errata-on-baysian-statistics/</loc>
-    
-    <lastmod>2026-06-06</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://dz1984.cc/articles/orbital-cloud/</loc>
     
     <lastmod>2026-06-06</lastmod>
@@ -56,7 +47,7 @@
   </url>
   
   <url>
-    <loc>http://dz1984.cc/articles/errata-on-calculus-what-r-u-talking-about/</loc>
+    <loc>http://dz1984.cc/articles/errata-on-baysian-statistics/</loc>
     
     <lastmod>2026-06-06</lastmod>
     
@@ -66,6 +57,15 @@
   
   <url>
     <loc>http://dz1984.cc/articles/when-i-am-old/</loc>
+    
+    <lastmod>2026-06-06</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://dz1984.cc/articles/errata-on-calculus-what-r-u-talking-about/</loc>
     
     <lastmod>2026-06-06</lastmod>
     
@@ -92,15 +92,6 @@
   </url>
   
   <url>
-    <loc>http://dz1984.cc/articles/crumpled-a-paper/</loc>
-    
-    <lastmod>2026-06-06</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://dz1984.cc/articles/new-54-movement/</loc>
     
     <lastmod>2026-06-06</lastmod>
@@ -110,16 +101,7 @@
   </url>
   
   <url>
-    <loc>http://dz1984.cc/articles/silence-2016-movie/</loc>
-    
-    <lastmod>2026-06-06</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://dz1984.cc/articles/may-i-buy-book/</loc>
+    <loc>http://dz1984.cc/articles/crumpled-a-paper/</loc>
     
     <lastmod>2026-06-06</lastmod>
     
@@ -137,7 +119,16 @@
   </url>
   
   <url>
-    <loc>http://dz1984.cc/articles/Universiade-event/</loc>
+    <loc>http://dz1984.cc/articles/may-i-buy-book/</loc>
+    
+    <lastmod>2026-06-06</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://dz1984.cc/articles/silence-2016-movie/</loc>
     
     <lastmod>2026-06-06</lastmod>
     
@@ -155,7 +146,7 @@
   </url>
   
   <url>
-    <loc>http://dz1984.cc/articles/rethink-mercy/</loc>
+    <loc>http://dz1984.cc/articles/Universiade-event/</loc>
     
     <lastmod>2026-06-06</lastmod>
     
@@ -165,6 +156,15 @@
   
   <url>
     <loc>http://dz1984.cc/articles/Study-Memo-of-Mozi/</loc>
+    
+    <lastmod>2026-06-06</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://dz1984.cc/articles/rethink-mercy/</loc>
     
     <lastmod>2026-06-06</lastmod>
     
@@ -227,7 +227,7 @@
   </url>
   
   <url>
-    <loc>http://dz1984.cc/articles/Think-a-story/</loc>
+    <loc>http://dz1984.cc/articles/A-new-story/</loc>
     
     <lastmod>2026-06-06</lastmod>
     
@@ -236,7 +236,7 @@
   </url>
   
   <url>
-    <loc>http://dz1984.cc/articles/A-new-story/</loc>
+    <loc>http://dz1984.cc/articles/Think-a-story/</loc>
     
     <lastmod>2026-06-06</lastmod>
     
@@ -272,15 +272,6 @@
   </url>
   
   <url>
-    <loc>http://dz1984.cc/articles/Ten-Books-on-2015/</loc>
-    
-    <lastmod>2026-06-06</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://dz1984.cc/articles/schopenhauer/</loc>
     
     <lastmod>2026-06-06</lastmod>
@@ -290,7 +281,7 @@
   </url>
   
   <url>
-    <loc>http://dz1984.cc/articles/lumen-backbone-1/</loc>
+    <loc>http://dz1984.cc/articles/Ten-Books-on-2015/</loc>
     
     <lastmod>2026-06-06</lastmod>
     
@@ -308,6 +299,15 @@
   </url>
   
   <url>
+    <loc>http://dz1984.cc/articles/lumen-backbone-1/</loc>
+    
+    <lastmod>2026-06-06</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://dz1984.cc/articles/review-by-myself/</loc>
     
     <lastmod>2026-06-06</lastmod>
@@ -317,7 +317,7 @@
   </url>
   
   <url>
-    <loc>http://dz1984.cc/articles/happy-learn-dos/</loc>
+    <loc>http://dz1984.cc/articles/underscore-foreach/</loc>
     
     <lastmod>2026-06-06</lastmod>
     
@@ -326,7 +326,7 @@
   </url>
   
   <url>
-    <loc>http://dz1984.cc/articles/underscore-foreach/</loc>
+    <loc>http://dz1984.cc/articles/happy-learn-dos/</loc>
     
     <lastmod>2026-06-06</lastmod>
     
@@ -389,7 +389,7 @@
   </url>
   
   <url>
-    <loc>http://dz1984.cc/articles/Ten-Books/</loc>
+    <loc>http://dz1984.cc/articles/Slide-20140905/</loc>
     
     <lastmod>2026-06-06</lastmod>
     
@@ -398,7 +398,7 @@
   </url>
   
   <url>
-    <loc>http://dz1984.cc/articles/Slide-20140905/</loc>
+    <loc>http://dz1984.cc/articles/Ten-Books/</loc>
     
     <lastmod>2026-06-06</lastmod>
     
@@ -587,20 +587,6 @@
   </url>
   
   <url>
-    <loc>http://dz1984.cc/tags/3D-Sensor/</loc>
-    <lastmod>2026-06-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://dz1984.cc/tags/NUI/</loc>
-    <lastmod>2026-06-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://dz1984.cc/tags/Big-Data/</loc>
     <lastmod>2026-06-06</lastmod>
     <changefreq>weekly</changefreq>
@@ -615,28 +601,14 @@
   </url>
   
   <url>
-    <loc>http://dz1984.cc/tags/Translate/</loc>
+    <loc>http://dz1984.cc/tags/3D-Sensor/</loc>
     <lastmod>2026-06-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://dz1984.cc/tags/GeoJSON/</loc>
-    <lastmod>2026-06-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://dz1984.cc/tags/%E5%85%AC%E6%9C%89%E5%9C%B0%E5%A4%A7%E8%A1%8C%E5%8B%95/</loc>
-    <lastmod>2026-06-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://dz1984.cc/tags/Google-Maps-API/</loc>
+    <loc>http://dz1984.cc/tags/NUI/</loc>
     <lastmod>2026-06-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -664,21 +636,14 @@
   </url>
   
   <url>
+    <loc>http://dz1984.cc/tags/Translate/</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>http://dz1984.cc/tags/DIY/</loc>
-    <lastmod>2026-06-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://dz1984.cc/tags/Cache/</loc>
-    <lastmod>2026-06-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://dz1984.cc/tags/reading/</loc>
     <lastmod>2026-06-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -699,13 +664,6 @@
   </url>
   
   <url>
-    <loc>http://dz1984.cc/tags/TinyMCE/</loc>
-    <lastmod>2026-06-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://dz1984.cc/tags/Google-API/</loc>
     <lastmod>2026-06-06</lastmod>
     <changefreq>weekly</changefreq>
@@ -720,6 +678,13 @@
   </url>
   
   <url>
+    <loc>http://dz1984.cc/tags/GeoJSON/</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>http://dz1984.cc/tags/%E5%A4%A9%E9%BE%8D%E7%89%B9%E5%85%AC%E5%9C%B0/</loc>
     <lastmod>2026-06-06</lastmod>
     <changefreq>weekly</changefreq>
@@ -727,42 +692,28 @@
   </url>
   
   <url>
-    <loc>http://dz1984.cc/tags/PHP/</loc>
+    <loc>http://dz1984.cc/tags/%E5%85%AC%E6%9C%89%E5%9C%B0%E5%A4%A7%E8%A1%8C%E5%8B%95/</loc>
     <lastmod>2026-06-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://dz1984.cc/tags/Laravel/</loc>
+    <loc>http://dz1984.cc/tags/Google-Maps-API/</loc>
     <lastmod>2026-06-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://dz1984.cc/tags/9d8-tw/</loc>
+    <loc>http://dz1984.cc/tags/reading/</loc>
     <lastmod>2026-06-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://dz1984.cc/tags/Backbone-js/</loc>
-    <lastmod>2026-06-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://dz1984.cc/tags/%E5%BF%83%E6%83%85/</loc>
-    <lastmod>2026-06-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://dz1984.cc/tags/Kernel-js/</loc>
+    <loc>http://dz1984.cc/tags/Cache/</loc>
     <lastmod>2026-06-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -783,7 +734,56 @@
   </url>
   
   <url>
+    <loc>http://dz1984.cc/tags/TinyMCE/</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://dz1984.cc/tags/9d8-tw/</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://dz1984.cc/tags/Backbone-js/</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://dz1984.cc/tags/PHP/</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://dz1984.cc/tags/Laravel/</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>http://dz1984.cc/tags/underscore/</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://dz1984.cc/tags/Kernel-js/</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://dz1984.cc/tags/%E5%BF%83%E6%83%85/</loc>
     <lastmod>2026-06-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -839,13 +839,6 @@
   </url>
   
   <url>
-    <loc>http://dz1984.cc/tags/%E4%BD%9B%E5%AD%B8/</loc>
-    <lastmod>2026-06-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://dz1984.cc/tags/%E8%B3%87%E6%9C%AC%E4%B8%BB%E7%BE%A9/</loc>
     <lastmod>2026-06-06</lastmod>
     <changefreq>weekly</changefreq>
@@ -860,7 +853,7 @@
   </url>
   
   <url>
-    <loc>http://dz1984.cc/tags/%E6%96%B0%E8%81%9E/</loc>
+    <loc>http://dz1984.cc/tags/%E4%BD%9B%E5%AD%B8/</loc>
     <lastmod>2026-06-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -874,20 +867,6 @@
   </url>
   
   <url>
-    <loc>http://dz1984.cc/tags/%E9%9B%BB%E5%BD%B1/</loc>
-    <lastmod>2026-06-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://dz1984.cc/tags/%E6%95%99%E8%87%AA%E5%B7%B1%E7%B3%BB%E5%88%97/</loc>
-    <lastmod>2026-06-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://dz1984.cc/tags/%E5%8B%98%E8%AA%A4/</loc>
     <lastmod>2026-06-06</lastmod>
     <changefreq>weekly</changefreq>
@@ -895,7 +874,7 @@
   </url>
   
   <url>
-    <loc>http://dz1984.cc/tags/Ptt/</loc>
+    <loc>http://dz1984.cc/tags/%E6%96%B0%E8%81%9E/</loc>
     <lastmod>2026-06-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -910,6 +889,27 @@
   
   <url>
     <loc>http://dz1984.cc/tags/%E5%A4%AB%E5%A6%BB%E7%9B%B8%E8%99%95/</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://dz1984.cc/tags/Ptt/</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://dz1984.cc/tags/%E9%9B%BB%E5%BD%B1/</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://dz1984.cc/tags/%E6%95%99%E8%87%AA%E5%B7%B1%E7%B3%BB%E5%88%97/</loc>
     <lastmod>2026-06-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
